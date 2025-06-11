@@ -418,13 +418,6 @@ export default function BiodiversityPage() {
                                                     strokeLinejoin="round"
                                                 />
                                             </svg>
-                                            {/*  SVG Icons Moving  */}
-                                            <style
-                                                dangerouslySetInnerHTML={{
-                                                    __html:
-                                                        "\n                                            .air {\n                                                stroke-dasharray: 150;\n                                                stroke-dashoffset: 150;\n                                                animation: dash 6s cubic-bezier(0.7, 0, 0.3, 1) infinite;\n                                            }\n\n                                            @keyframes dash {\n                                                from {\n                                                    stroke-dashoffset: 150;\n                                                }\n\n                                                to {\n                                                    stroke-dashoffset: 0;\n                                                }\n                                            }\n                                        "
-                                                }}
-                                            />
                                         </div>
                                     </div>
                                     <div className="biodiversity-benefits_text-wrapper">
@@ -464,13 +457,6 @@ export default function BiodiversityPage() {
                                                     strokeLinejoin="round"
                                                 />
                                             </svg>
-                                            {/*  SVG Icons Moving  */}
-                                            <style
-                                                dangerouslySetInnerHTML={{
-                                                    __html:
-                                                        "\n                                            .light {\n                                                stroke-dasharray: 150;\n                                                stroke-dashoffset: 150;\n                                                animation: dash 6s cubic-bezier(0.7, 0, 0.3, 1) infinite;\n                                            }\n\n                                            @keyframes dash {\n                                                from {\n                                                    stroke-dashoffset: 150;\n                                                }\n\n                                                to {\n                                                    stroke-dashoffset: 0;\n                                                }\n                                            }\n                                        "
-                                                }}
-                                            />
                                         </div>
                                     </div>
                                     <div className="biodiversity-benefits_text-wrapper">
@@ -510,13 +496,6 @@ export default function BiodiversityPage() {
                                                     strokeLinejoin="round"
                                                 />
                                             </svg>
-                                            {/*  SVG Icons Moving  */}
-                                            <style
-                                                dangerouslySetInnerHTML={{
-                                                    __html:
-                                                        "\n                                            .stream {\n                                                stroke-dasharray: 150;\n                                                stroke-dashoffset: 150;\n                                                animation: dash 6s cubic-bezier(0.7, 0, 0.3, 1) infinite;\n                                            }\n\n                                            @keyframes dash {\n                                                from {\n                                                    stroke-dashoffset: 200;\n                                                }\n\n                                                to {\n                                                    stroke-dashoffset: 0;\n                                                }\n                                            }\n                                        "
-                                                }}
-                                            />
                                         </div>
                                     </div>
                                     <div className="biodiversity-benefits_text-wrapper">
@@ -556,13 +535,6 @@ export default function BiodiversityPage() {
                                                     strokeLinejoin="round"
                                                 />
                                             </svg>
-                                            {/*  SVG Icons Moving  */}
-                                            <style
-                                                dangerouslySetInnerHTML={{
-                                                    __html:
-                                                        "\n                                            .water {\n                                                stroke-dasharray: 150;\n                                                stroke-dashoffset: 150;\n                                                animation: dash 3.4s linear infinite;\n                                            }\n\n                                            @keyframes dash {\n                                                from {\n                                                    stroke-dashoffset: 150;\n                                                }\n\n                                                to {\n                                                    stroke-dashoffset: 0;\n                                                }\n                                            }\n                                        "
-                                                }}
-                                            />
                                         </div>
                                     </div>
                                     <div className="biodiversity-benefits_text-wrapper">
@@ -673,14 +645,6 @@ export default function BiodiversityPage() {
                                 className="marquee-image"
                             />
                         </div>
-                    </div>
-                    <div className="biodiversity-highlights_local-style w-embed">
-                        <style
-                            dangerouslySetInnerHTML={{
-                                __html:
-                                    "\n                        @keyframes scroll {\n                            from {\n                                transform: translateX(0);\n                            }\n\n                            to {\n                                transform: translateX(calc(-100% - 3rem));\n                            }\n                        }\n\n                        .scroll {\n                            animation: scroll 30s linear infinite;\n                        }\n\n                        .reverse {\n                            animation-direction: reverse;\n                        }\n\n                        .marquee-image {\n                            -webkit-transform: translateZ(0);\n                        }\n                    "
-                            }}
-                        />
                     </div>
                 </section>
                 <div className="section_biodiversity-experience">
