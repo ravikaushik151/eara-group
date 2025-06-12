@@ -30,7 +30,7 @@ export default function LocationPage() {
                                     <div className="text-color-green">
                                         <div className="text-size-regular">
                                             In a world where concrete overshadows green, we give you an
-                                            oasis where the two coexist. Ims is serenity that lies arm's
+                                            oasis where the two coexist. Ims is serenity that lies arms
                                             reach away from the sprint of urban life.
                                         </div>
                                     </div>

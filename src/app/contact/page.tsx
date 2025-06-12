@@ -28,7 +28,7 @@ export default function ContactPage() {
                                         <div className="contact-hero_heading-wrapper">
                                             <div className="text-color-dark-rainforest">
                                                 <h1 data-animate={2} className="heading-style-h2">
-                                                    Aren't You Excited for What Life Has the Potential to Be?
+                                                    Arent You Excited for What Life Has the Potential to Be?
                                                 </h1>
                                             </div>
                                         </div>

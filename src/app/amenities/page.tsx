@@ -364,7 +364,7 @@ export default function AmenitiesPage() {
                                             />
                                         </div>
                                         <div className="text-size-regular text-style-allcaps">
-                                            KIDS' PLAY AREA
+                                            KIDS PLAY AREA
                                         </div>
                                     </div>
                                 </div>
@@ -1804,7 +1804,7 @@ export default function AmenitiesPage() {
                                         id="w-node-c5f35628-85c6-3565-78f5-6ee45993ec32-ac1b3ec9"
                                         className="button-group"
                                     >
-                                        <a href="location.html" className="button w-inline-block">
+                                        <a href="location" className="button w-inline-block">
                                             <div className="button_text">Learn about the location</div>
                                             <div className="button-arrow_wrapper" />
                                             <div className="button-arrow_image w-embed">
