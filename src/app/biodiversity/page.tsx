@@ -40,7 +40,7 @@ export default function BiodiversityPage() {
                                         <div className="text-color-dark-rainforest">
                                             <h1 data-animate={2} className="heading-style-h2">
                                                 Walk amidst this wonderland. <br />
-                                                You won't believe that it's your home.
+                                                You wont believe that its your home.
                                             </h1>
                                         </div>
                                     </div>
@@ -208,7 +208,7 @@ export default function BiodiversityPage() {
                                                 <div className="text-color-dark-rainforest">
                                                     <div className="home-highlights_content-wrap">
                                                         <div className="text-size-regular">
-                                                            As far as the eye can see, you'll see a lovely cover of
+                                                            As far as the eye can see, youll see a lovely cover of
                                                             green, making for a picturesque backdrop and a serene
                                                             mental picture.
                                                         </div>
