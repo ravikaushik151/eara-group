@@ -1,6 +1,5 @@
 import InnerPreloader from "../components/InnerPerloader";
 
-
 export default function LocationPage() {
     return (
         <>

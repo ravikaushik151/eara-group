@@ -2,6 +2,7 @@ import InnerPreloader from "../components/InnerPerloader";
 import SwiperGallery from "../components/SwiperComponent"
 
 
+
 export default function GalleryPage() {
     return (
         <>

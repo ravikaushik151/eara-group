@@ -8,6 +8,7 @@ import InnerPreloader from '../components/InnerPerloader';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function AmenitiesPage() {
     const splitRef = useRef(null);
     const typeSplitInstance = useRef(null);
