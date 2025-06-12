@@ -486,7 +486,7 @@ export default function Home() {
                         <div className="home-highlights_point-circle">
                           <div className="home-highlights_point-text">8</div>
                         </div>
-                        <div className="home-highlights_text">Kids' Play Area</div>
+                        <div className="home-highlights_text">Kids Play Area</div>
                       </div>
                     </div>
                     <div className="home-highlights_points-grid last">
@@ -704,7 +704,7 @@ export default function Home() {
                       <div className="text-size-regular text-color-offwhite">
                         A spacious city layout. A direct line to Electronic City. Fast
                         connectivity to most of Bengaluru. Hosa Road is full of
-                        opportunities and is primed to be the city's new hub.
+                        opportunities and is primed to be the citys new hub.
                       </div>
                     </div>
                   </div>
