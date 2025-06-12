@@ -678,7 +678,7 @@ export default function BiodiversityPage() {
                                     id="w-node-d0652c2b-b21b-1534-5aec-fe2f6fe24122-ac1b3eca"
                                     className="button-group"
                                 >
-                                    <a href="amenities.html" className="button w-inline-block">
+                                    <a href="amenities" className="button w-inline-block">
                                         <div className="button_text dark">View all amenities</div>
                                         <div className="button-arrow_wrapper white" />
                                         <div className="button-arrow_image w-embed">

@@ -263,7 +263,7 @@ export default function Home() {
                 </div>
                 <div className="home-stats_more-wrapper">
                   <div className="button-group">
-                    <a href="biodiversity.html" className="button w-inline-block">
+                    <a href="biodiversity" className="button w-inline-block">
                       <div className="button_text">More about biodiversity</div>
                       <div className="button-arrow_wrapper" />
                       <div className="button-arrow_image w-embed">
@@ -633,7 +633,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="button-group">
-                      <a href="contact.html" className="button w-inline-block">
+                      <a href="contact" className="button w-inline-block">
                         <div className="button_text">Enquire Now</div>
                         <div className="button-arrow_wrapper" />
                         <div className="button-arrow_image w-embed">
@@ -792,7 +792,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="button-group">
-                    <a href="contact.html" className="button w-inline-block">
+                    <a href="contact" className="button w-inline-block">
                       <div className="button_text">Enquire Now</div>
                       <div className="button-arrow_wrapper" />
                       <div className="button-arrow_image w-embed">
@@ -949,7 +949,7 @@ export default function Home() {
                         </h3>
                       </div>
                       <div className="button-group">
-                        <a href="contact.html" className="button w-inline-block">
+                        <a href="contact" className="button w-inline-block">
                           <div className="button_text">Enquire Now</div>
                           <div className="button-arrow_wrapper" />
                           <div className="button-arrow_image w-embed">

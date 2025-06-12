@@ -266,7 +266,7 @@ export default function LocationPage() {
                                                 </h3>
                                             </div>
                                             <div className="button-group">
-                                                <a href="contact.html" className="button w-inline-block">
+                                                <a href="contact" className="button w-inline-block">
                                                     <div className="button_text">Enquire Now</div>
                                                     <div className="button-arrow_wrapper" />
                                                     <div className="button-arrow_image w-embed">
