@@ -139,7 +139,7 @@ export default function Career() {
                         <p>Oversees design, planning, and execution...</p>
                         <p>
                           <strong>Qualifications:</strong>
-                          <br /> Bachelor's/Master’s in Architecture...
+                          <br /> Bachelor’s/Master’s in Architecture...
                         </p>
                       </>
                     ),
