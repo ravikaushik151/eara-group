@@ -45,22 +45,22 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="about">
+                <Link className="nav-link" href="/about">
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="blog">
+                <Link className="nav-link" href="/blog">
                   Blog
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="career">
+                <Link className="nav-link" href="/career">
                   Career
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="contact">
+                <Link className="nav-link" href="/contact">
                   Contact
                 </Link>
               </li>
