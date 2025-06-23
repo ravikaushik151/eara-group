@@ -1,16 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-
-import HomeService from "@/components/HomeService";
-
-import WhyChouseUs from "@/components/WhyChouseUs";
-import Portfolio from "@/components/Portfolio";
-import Estimate from "@/components/Estimate";
-
-import Testimonals from "@/components/Testimonals";
-import Faq from "@/components/Faq";
-import Brands from "@/components/Brands";
 import Link from "next/link";
 export default function Career() {
   const [formData, setFormData] = useState({
