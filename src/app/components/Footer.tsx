@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 
-
 export default function Footer() {
     return (
         <footer className="footer">
@@ -33,6 +32,8 @@ export default function Footer() {
                     <p className="footer-contact">+91 78295 54411</p>
                     <p>enquiries@assetzproperty.com</p>
                 </div>
+
+                {/* Association */}
                 <div className="footer-column">
                     <div className="footer-association">
                         <p>In Association With</p>
@@ -45,6 +46,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+
                 {/* Get In Touch Form */}
                 <div className="footer-column">
                     <h4 className="footer-heading">GET IN TOUCH</h4>
@@ -55,6 +57,11 @@ export default function Footer() {
                         <button type="submit" className="footer-button">SUBMIT</button>
                     </form>
                 </div>
+            </div>
+
+            {/* Copyright */}
+            <div className="footer-bottom">
+                <p>© {new Date().getFullYear()} Eara Group. All rights reserved.</p>
             </div>
         </footer>
     );
