@@ -184,12 +184,7 @@ export default function Home() {
             <div className="content">
               <h2>About Us</h2>
               <p>
-                Welcome to a world, where every element is thoughtfully orchestrated to
-                give you a fulfilling and enriching life experience. With <em>Sora</em>{" "}
-                representing the boundless expanse of the sky and <em>Saki</em>{" "}
-                representing the perpetual bloom of life, homes at Sora &amp; Saki
-                perfectly encapsulate the essence of elevated living. Begin your journey
-                into a lifestyle surrounded by like-minded people and convenience.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
               </p>
             </div>
             <div className="image-wrapper">
@@ -207,8 +202,8 @@ export default function Home() {
                       <img
                         src="/img/biodiversity-highlights-6.png"
                         alt="Entry"
-                        width={930}
-                        height={350}
+                        width={600}
+                        height={250}
                       />
                     </div>
                     <div className="flip-back">
@@ -222,8 +217,8 @@ export default function Home() {
                       <img
                         src="/img/biodiversity-highlights-6.png"
                         alt="Entry"
-                        width={930}
-                        height={350}
+                        width={600}
+                        height={250}
                       />
                     </div>
                     <div className="flip-back">
@@ -237,8 +232,8 @@ export default function Home() {
                       <img
                         src="/img/biodiversity-highlights-6.png"
                         alt="Entry"
-                        width={930}
-                        height={350}
+                        width={600}
+                        height={250}
                       />
                     </div>
                     <div className="flip-back">
@@ -252,8 +247,8 @@ export default function Home() {
                       <img
                         src="/img/biodiversity-highlights-6.png"
                         alt="Entry"
-                        width={930}
-                        height={350}
+                        width={600}
+                        height={250}
                       />
                     </div>
                     <div className="flip-back">
@@ -271,8 +266,7 @@ export default function Home() {
                 <div className="">
                   <h3>Zero Out</h3>
                   <p>
-                    800 kg of organic waste is converted to manure in the organic
-                    waste converter.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
@@ -280,8 +274,7 @@ export default function Home() {
                 <div className="">
                   <h3>Smart Power</h3>
                   <p>
-                    Power is generated from solar panels. Natural light design
-                    reduces dependence on artificial lighting.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
@@ -289,8 +282,7 @@ export default function Home() {
                 <div className="">
                   <h3>Sponge Effect</h3>
                   <p>
-                    Smart water systems reduce your utility bills while keeping your
-                    home future-ready and sustainable.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
@@ -298,7 +290,7 @@ export default function Home() {
           </section>
           {/* Section 4: Blog Section */}
           <section>
-            <h2>LATEST BLOGS</h2>
+            <h2 className='text-center'>LATEST BLOGS</h2>
             <div className="blog-grid">
               <div className="blog-card">
                 <img src="images/Amenities-clubhouse-min.jpg" alt="Blog 1" />

@@ -1,5 +1,6 @@
 'use client';
 import Script from 'next/script';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/css/normalize.css';
 import '../public/css/components.css';
