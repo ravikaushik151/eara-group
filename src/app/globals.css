@@ -711,16 +711,20 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar-nav   {margin-top: 30px !important;}
-.navbar .nav-item .nav-link {
-  color: #2A2565 !important;
-  padding: 10px  !important;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.41;
-  letter-spacing: 3%;
-}
+  .navbar-nav {
+    margin-top: 30px !important;
+  }
+
+  .navbar .nav-item .nav-link {
+    color: #2A2565 !important;
+    padding: 10px !important;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.41;
+    letter-spacing: 3%;
+  }
+
   .text-black {
     color: #000 !important;
   }
