@@ -11,7 +11,7 @@ export default function Header() {
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
             <Image
-              src="/img/logo-white.png"
+              src="/img/logo.png"
               className="logo"
               alt="logo"
               width={150}
