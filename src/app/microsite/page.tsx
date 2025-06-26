@@ -6,47 +6,16 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== "undefined" && window.Lenis) {
-      const lenis = new window.Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: "vertical",
-        gestureDirection: "vertical",
-        smooth: true,
-        mouseMultiplier: 1,
-        smoothTouch: false,
-        touchMultiplier: 2,
-        infinite: false,
-      });
-
-      const getCurrentPath = () => window.location.pathname;
-      const setLerp = () => {
-        lenis.options.lerp =
-          getCurrentPath() === "/being-here-at-studio" ? 0.1 : undefined;
-        console.log("lerp applied:", lenis.options.lerp);
-        console.log("Current Path:", getCurrentPath());
-      };
-
-      setTimeout(setLerp, 100);
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-      requestAnimationFrame(raf);
-    }
-
+ 
     const form = document.getElementById(
       "wf-form-Melodies-of-Life-Contact-Form"
     );
     const trigger = document.getElementById("brochure-download-trigger");
     const popup = document.getElementById("popup-form");
     const thankYou = document.getElementById("popup-thankyou");
-    const sourceInput = document.getElementById("SourceURL");
+   
 
-    if (sourceInput) {
-      sourceInput.value = window.location.href;
-    }
+  
 
     if (trigger && popup) {
       trigger.addEventListener("click", (e) => {
@@ -60,27 +29,7 @@ export default function Home() {
       if (thankYou) thankYou.style.display = "none";
     };
 
-    if (form) {
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(form.action, {
-          method: form.method,
-          body: new FormData(form),
-        })
-          .then((res) => {
-            if (res.ok) {
-              closePopup();
-              document.getElementById("brochure-download-link")?.click();
-              if (thankYou) thankYou.style.display = "flex";
-            } else {
-              alert(
-                "There was an issue with your submission. Please try again."
-              );
-            }
-          })
-          .catch((err) => console.error("Submission error:", err));
-      });
-    }
+   
   }, []);
 
   return (
