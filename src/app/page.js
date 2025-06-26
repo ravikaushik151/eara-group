@@ -1,17 +1,17 @@
-'use client';
-import { useEffect } from 'react';
+"use client";
+import { useEffect } from "react";
 
 import Link from "next/link";
 import Preloader from "./components/Preloader";
 
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.Lenis) {
+    if (typeof window !== "undefined" && window.Lenis) {
       const lenis = new window.Lenis({
         duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: 'vertical',
-        gestureDirection: 'vertical',
+        direction: "vertical",
+        gestureDirection: "vertical",
         smooth: true,
         mouseMultiplier: 1,
         smoothTouch: false,
@@ -21,9 +21,10 @@ export default function Home() {
 
       const getCurrentPath = () => window.location.pathname;
       const setLerp = () => {
-        lenis.options.lerp = getCurrentPath() === '/being-here-at-studio' ? 0.1 : undefined;
-        console.log('lerp applied:', lenis.options.lerp);
-        console.log('Current Path:', getCurrentPath());
+        lenis.options.lerp =
+          getCurrentPath() === "/being-here-at-studio" ? 0.1 : undefined;
+        console.log("lerp applied:", lenis.options.lerp);
+        console.log("Current Path:", getCurrentPath());
       };
 
       setTimeout(setLerp, 100);
@@ -35,7 +36,9 @@ export default function Home() {
       requestAnimationFrame(raf);
     }
 
-    const form = document.getElementById("wf-form-Melodies-of-Life-Contact-Form");
+    const form = document.getElementById(
+      "wf-form-Melodies-of-Life-Contact-Form"
+    );
     const trigger = document.getElementById("brochure-download-trigger");
     const popup = document.getElementById("popup-form");
     const thankYou = document.getElementById("popup-thankyou");
@@ -70,21 +73,18 @@ export default function Home() {
               document.getElementById("brochure-download-link")?.click();
               if (thankYou) thankYou.style.display = "flex";
             } else {
-              alert("There was an issue with your submission. Please try again.");
+              alert(
+                "There was an issue with your submission. Please try again."
+              );
             }
           })
           .catch((err) => console.error("Submission error:", err));
       });
     }
-
   }, []);
-
-
 
   return (
     <>
-
-
       <main className="main-wrapper">
         <div className="overflow-clip">
           <div
@@ -119,7 +119,9 @@ export default function Home() {
                 >
                   <div className="text-color-offwhite">
                     <h1 className="display-1">
-                      <span className="span-text text-color-enchanted">breathe</span>{" "}
+                      <span className="span-text text-color-enchanted">
+                        breathe
+                      </span>{" "}
                       with you
                     </h1>
                   </div>
@@ -145,7 +147,8 @@ export default function Home() {
                 >
                   <div className="text-color-offwhite">
                     <h5 className="heading-style-h5">
-                      Introducing 39 acres of the most luxurious experience in nature.
+                      Introducing 39 acres of the most luxurious experience in
+                      nature.
                     </h5>
                   </div>
                 </div>
@@ -180,15 +183,105 @@ export default function Home() {
           </div>
         </div>
         <div id="scroll-more">
-          <section className="section-1">
+          <section className="section-1 px-md-5 px-3">
             <div className="content">
               <h2>About Us</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industrys standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
               </p>
             </div>
             <div className="image-wrapper">
-              <img src="images/Club-Entrance-View-min.jpg" alt="Luxury interior" />
+              <img
+                src="images/Club-Entrance-View-min.jpg"
+                alt="Luxury interior"
+              />
+            </div>
+          </section>
+
+          <section className="same-gap postion-relative bg-light">
+            <div className="container-fluid">
+              <div id="project" className data-bs-ride="carousel">
+                <div className="row">
+                  <div className="title text-center mb-3">
+                    <h2 className="text-black mb-4">Ongoing Projects</h2>
+                  </div>
+                </div>
+                <div className="row d-flex align-content-center justify-content-center px-md-3">
+                  <div className="col-md-5 text-center">
+                    <img
+                      src="images/Club-Entrance-View-min.jpg"
+                      alt="Luxury interior"
+                    />
+                  </div>
+                  <div
+                    className="col-md-5 ps-md-5 d-flex align-content-center align-items-center"
+                    data-aos="fade-left"
+                    data-aos-duration={1500}
+                  >
+                    <div>
+                      <div className="title text-left">
+                        <h4 className=" text-black mb-2 fs-4">Lorem Lipsom</h4>
+                        <p>
+                          <span className="text-black">
+                            <i
+                              className="fa fa-map-marker mx-1"
+                              aria-hidden="true"
+                            />
+                            Sompura fermentum Lorem - consectetur risus
+                          </span>
+                        </p>
+                      </div>
+                      <div className="">
+                        <p className="text-justify lh text-black mt-3">
+                          fermentum Lorem consectetur risus tincidunt auctor
+                          quis sapien Lorem at. aliquet quis ullamcorper sit
+                          suscipit tortor suscipit libero et
+                        </p>
+                        <p className="text-justify lh text-black mt-3">
+                          vel malesuada quis non vitae eu bibendum vestibulum
+                          mauris vel amet, malesuada eu luctus. malesuada ante
+                          lacinia Suspendisse aliquet Nullam vel eu. tellus
+                          adipiscing malesuada eu ullamcorper et sollicitudin
+                        </p>
+                      </div>
+                      <div className="row align-items-center mb-3 mt-4 mob-center">
+                        <div className="col-md-6 border-end border-dark">
+                          <h4 className="bhk text-black fs-5 mb-2">
+                            2 &amp; 3 BHK'S
+                          </h4>
+                          <div className="text-black">
+                            <h6>30+ World Class Amenities</h6>
+                          </div>
+                        </div>
+                        <div className="col-md-6 px-5 text-black">
+                          <h6 className="mb-2">149 Sollicitudin</h6>
+                          <h6 className="mb-2">Malesuada ante: 78%</h6>
+                          <h6 className="mb-0">Malesuada quis + 9 Floors</h6>
+                        </div>
+                      </div>
+
+                      <p>
+                        <a
+                          href="#"
+                          className="btn btn-dark text-white border"
+                          style={{ fontSize: "15px !important" }}
+                        >
+                          More Details
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
           {/* Section 2: 360 Lifestyle Cards */}
@@ -252,21 +345,32 @@ export default function Home() {
                       />
                     </div>
                     <div className="flip-back">
-                      <div className="overlay-text">HIGH-END SPECIFICATIONS</div>
+                      <div className="overlay-text">
+                        HIGH-END SPECIFICATIONS
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section>
+          <section className="px-md-5 px-3">
             <h2 className="text-center">TESTIMONIALS</h2>
             <div className="info-cards">
               <div className="info-box">
                 <div className="">
                   <h3>Zero Out</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industrys
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
@@ -274,7 +378,16 @@ export default function Home() {
                 <div className="">
                   <h3>Smart Power</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industrys
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
@@ -282,23 +395,32 @@ export default function Home() {
                 <div className="">
                   <h3>Sponge Effect</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industrys
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
                 </div>
               </div>
             </div>
           </section>
           {/* Section 4: Blog Section */}
-          <section>
-            <h2 className='text-center'>LATEST BLOGS</h2>
+          <section className="px-md-5 px-3">
+            <h2 className="text-center">LATEST BLOGS</h2>
             <div className="blog-grid">
               <div className="blog-card">
                 <img src="images/Amenities-clubhouse-min.jpg" alt="Blog 1" />
                 <div className="content">
                   <h4>The Future of Smart Living</h4>
                   <p>
-                    Discover how smart technologies are redefining luxury in modern
-                    homes.
+                    Discover how smart technologies are redefining luxury in
+                    modern homes.
                   </p>
                 </div>
               </div>
@@ -307,8 +429,8 @@ export default function Home() {
                 <div className="content">
                   <h4>Eco-Conscious Architecture</h4>
                   <p>
-                    Explore architectural trends that prioritize sustainability and
-                    efficiency.
+                    Explore architectural trends that prioritize sustainability
+                    and efficiency.
                   </p>
                 </div>
               </div>
@@ -325,8 +447,6 @@ export default function Home() {
             </div>
           </section>
         </div>
-
-
       </main>
     </>
   );

@@ -1,4 +1,5 @@
 'use client';
+import Image from "next/image";
 
 import Link from 'next/link';
 
@@ -6,7 +7,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container">
-
+               
                 {/* Project Info */}
                 <div className="footer-column">
                     <h4 className="footer-title">Eara Group</h4>
@@ -23,21 +24,21 @@ export default function Footer() {
 
                 {/* Developer Info */}
                 <div className="footer-column">
-                    <h4 className="footer-title">Assetz</h4>
-                    <p>
-                        Assetz Property Group,<br />
-                        No.30, Crescent Road,<br />
-                        Bengaluru, Karnataka 560 001
-                    </p>
-                    <p className="footer-contact">+91 78295 54411</p>
-                    <p>enquiries@assetzproperty.com</p>
+                    <h4 className="footer-title">Quick Links</h4>
+                   <ul style={{listStyle:"none"}}>
+                    <li className=''><Link href="./" className='text-decoration-none text-white'>Home</Link></li>
+                    <li><Link href="/about" className='text-decoration-none text-white'>About</Link></li>
+                    <li><Link href="/blog" className='text-decoration-none text-white'>Blog</Link></li>
+                    <li><Link href="/career" className='text-decoration-none text-white'>Career</Link></li>
+                    <li><Link href="/contact" className='text-decoration-none text-white'>Contact</Link></li>
+                   </ul>
                 </div>
 
                 {/* Association */}
                 <div className="footer-column">
                     <div className="footer-association">
                         <p>In Association With</p>
-                        <img src="/images/fairlark-logo.png" alt="Fairlark Logo" className="footer-logo" />
+                       
                         <div className="footer-social">
                             <Link href="#"><i className="fab fa-facebook-f"></i></Link>
                             <Link href="#"><i className="fab fa-instagram"></i></Link>
@@ -51,10 +52,10 @@ export default function Footer() {
                 <div className="footer-column">
                     <h4 className="footer-heading">GET IN TOUCH</h4>
                     <form className="footer-form">
-                        <input type="text" placeholder="Name" className="footer-input" />
-                        <input type="email" placeholder="Email" className="footer-input" />
-                        <input type="tel" placeholder="Contact Number" className="footer-input" />
-                        <button type="submit" className="footer-button">SUBMIT</button>
+                        <input type="text" placeholder="Name" className="footer-input rounded-0" />
+                        <input type="email" placeholder="Email" className="footer-input rounded-0" />
+                        <input type="tel" placeholder="Contact Number" className="footer-input rounded-0" />
+                        <button type="submit" className="footer-button mb-3">SUBMIT</button>
                     </form>
                 </div>
             </div>
