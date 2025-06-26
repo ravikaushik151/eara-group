@@ -59,7 +59,7 @@ export default function Career() {
               <div className="overlay2 ">
                 <div className="text-white d-block">
                   {" "}
-                  <p className="text-center d-block fs-1 mb-0 text-uppercase">
+                  <p className="text-center d-block fs-1 mb-3 text-uppercase">
                     {" "}
                     Career
                   </p>

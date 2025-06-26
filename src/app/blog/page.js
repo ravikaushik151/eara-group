@@ -39,7 +39,7 @@ export default function Blog() {
                             <Image src="/img/banner (1).png" height={2880} width={1920} className='img-fluid masterpiece rounded-4' alt="masterpiece" />
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
-                                    <p className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</p>
+                                    <p className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</p>
                                     <p className="text-center d-block fs-6 ">
                                         <Link className="text-white text-decoration-none" href={'./'}> Home</Link> / Blog
                                     </p>
