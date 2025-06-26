@@ -47,7 +47,7 @@ export default function BiodiversityPage() {
                                     <div className="biodiversity-hero-grid">
                                         <div className="biodiversity-hero_img-wrap">
                                             <img
-                                                src="images/biodiversity-hero.png"
+                                                src="/images/biodiversity-hero.png"
                                                 loading="lazy"
                                                 alt=""
                                                 className="biodiversity-hero_image mol-img_parallax"
@@ -87,7 +87,7 @@ export default function BiodiversityPage() {
                                             </div>
                                             <div className="home-highlights_arrow-wrapper">
                                                 <img
-                                                    src="images/Caret.svg"
+                                                    src="/images/Caret.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="home-highlights_arrow"
@@ -105,7 +105,7 @@ export default function BiodiversityPage() {
                                                 </div>
                                             </div>
                                             <img
-                                                src="images/quality-highlights.png"
+                                                src="/images/quality-highlights.png"
                                                 loading="lazy"
                                                 alt=""
                                                 className="home-header_mbl-image"
@@ -123,7 +123,7 @@ export default function BiodiversityPage() {
                                             </div>
                                             <div className="home-highlights_arrow-wrapper">
                                                 <img
-                                                    src="images/Caret.svg"
+                                                    src="/images/Caret.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="home-highlights_arrow"
@@ -141,7 +141,7 @@ export default function BiodiversityPage() {
                                                 </div>
                                             </div>
                                             <img
-                                                src="images/highlights-temperature.png"
+                                                src="/images/highlights-temperature.png"
                                                 loading="lazy"
                                                 alt=""
                                                 className="home-header_mbl-image"
@@ -159,7 +159,7 @@ export default function BiodiversityPage() {
                                             </div>
                                             <div className="home-highlights_arrow-wrapper">
                                                 <img
-                                                    src="images/Caret.svg"
+                                                    src="/images/Caret.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="home-highlights_arrow"
@@ -178,7 +178,7 @@ export default function BiodiversityPage() {
                                                 </div>
                                             </div>
                                             <img
-                                                src="images/highlights-biodiverstiy.png"
+                                                src="/images/highlights-biodiverstiy.png"
                                                 loading="lazy"
                                                 alt=""
                                                 className="home-header_mbl-image"
@@ -196,7 +196,7 @@ export default function BiodiversityPage() {
                                             </div>
                                             <div className="home-highlights_arrow-wrapper">
                                                 <img
-                                                    src="images/Caret.svg"
+                                                    src="/images/Caret.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="home-highlights_arrow"
@@ -216,7 +216,7 @@ export default function BiodiversityPage() {
                                                 </div>
                                             </div>
                                             <img
-                                                src="images/highlights-scenic.png"
+                                                src="/images/highlights-scenic.png"
                                                 loading="lazy"
                                                 alt=""
                                                 className="home-header_mbl-image"
@@ -234,7 +234,7 @@ export default function BiodiversityPage() {
                                             </div>
                                             <div className="home-highlights_arrow-wrapper">
                                                 <img
-                                                    src="images/Caret.svg"
+                                                    src="/images/Caret.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="home-highlights_arrow"
@@ -254,7 +254,7 @@ export default function BiodiversityPage() {
                                                 </div>
                                             </div>
                                             <img
-                                                src="images/highlights-water.png"
+                                                src="/images/highlights-water.png"
                                                 loading="lazy"
                                                 alt=""
                                                 className="home-header_mbl-image"
@@ -266,31 +266,31 @@ export default function BiodiversityPage() {
                                 <div className="home-header_right">
                                     <div className="home-header_right-wrap">
                                         <img
-                                            src="images/quality-highlights.png"
+                                            src="/images/quality-highlights.png"
                                             loading="lazy"
                                             alt=""
                                             className="home-header_right-wrap-image"
                                         />
                                         <img
-                                            src="images/highlights-temperature.png"
+                                            src="/images/highlights-temperature.png"
                                             loading="lazy"
                                             alt=""
                                             className="home-header_right-wrap-image"
                                         />
                                         <img
-                                            src="images/highlights-biodiverstiy.png"
+                                            src="/images/highlights-biodiverstiy.png"
                                             loading="lazy"
                                             alt=""
                                             className="home-header_right-wrap-image"
                                         />
                                         <img
-                                            src="images/highlights-scenic.png"
+                                            src="/images/highlights-scenic.png"
                                             loading="lazy"
                                             alt=""
                                             className="home-header_right-wrap-image"
                                         />
                                         <img
-                                            src="images/highlights-water.png"
+                                            src="/images/highlights-water.png"
                                             loading="lazy"
                                             alt=""
                                             sizes="(max-width: 991px) 100vw, 34vw"
@@ -301,13 +301,13 @@ export default function BiodiversityPage() {
                                 </div>
                             </div>
                             <img
-                                src="images/Top-leaf.svg"
+                                src="/images/Top-leaf.svg"
                                 loading="lazy"
                                 alt=""
                                 className="home-highlights_right-leaf"
                             />
                             <img
-                                src="images/highlights-leaf-center.svg"
+                                src="/images/highlights-leaf-center.svg"
                                 loading="lazy"
                                 alt=""
                                 className="home-highlifhts_center-leaf"
@@ -559,43 +559,43 @@ export default function BiodiversityPage() {
                     <div className="marquee">
                         <div className="marquee-content scroll">
                             <img
-                                src="images/Tennis.jpg"
+                                src="/images/Tennis.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/badmiton.jpg"
+                                src="/images/badmiton.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/dog.jpg"
+                                src="/images/dog.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/biodiversity-highlights-4.png"
+                                src="/images/biodiversity-highlights-4.png"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/biodiversity-highlights-5.png"
+                                src="/images/biodiversity-highlights-5.png"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/biodiversity-highlights-6.png"
+                                src="/images/biodiversity-highlights-6.png"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/jogging.jpg"
+                                src="/images/jogging.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
@@ -603,43 +603,43 @@ export default function BiodiversityPage() {
                         </div>
                         <div className="marquee-content scroll">
                             <img
-                                src="images/Tennis.jpg"
+                                src="/images/Tennis.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/badmiton.jpg"
+                                src="/images/badmiton.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/dog.jpg"
+                                src="/images/dog.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/biodiversity-highlights-4.png"
+                                src="/images/biodiversity-highlights-4.png"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/biodiversity-highlights-5.png"
+                                src="/images/biodiversity-highlights-5.png"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/biodiversity-highlights-6.png"
+                                src="/images/biodiversity-highlights-6.png"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"
                             />
                             <img
-                                src="images/jogging.jpg"
+                                src="/images/jogging.jpg"
                                 loading="lazy"
                                 alt=""
                                 className="marquee-image"

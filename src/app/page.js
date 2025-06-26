@@ -97,7 +97,7 @@ export default function Home() {
               className="home-hero_backgound-wrapper"
             >
               <img
-                src="images/hero-image-edit-bg-1-1.png"
+                src="/images/hero-image-edit-bg-1-1.png"
                 loading="eager"
                 alt="Hero nature background"
                 className="home-hero_background-image"
@@ -133,7 +133,7 @@ export default function Home() {
               className="home-hero_image-wrapper"
             >
               <img
-                src="images/hero-image-edit-4.png"
+                src="/images/hero-image-edit-4.png"
                 loading="eager"
                 alt=""
                 className="home-hero_image"
@@ -201,7 +201,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <img
-                src="images/Club-Entrance-View-min.jpg"
+                src="/images/Club-Entrance-View-min.jpg"
                 alt="Luxury interior"
               />
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
 
           <section className="same-gap postion-relative bg-light">
             <div className="container-fluid">
-              <div id="project" className data-bs-ride="carousel">
+              <div id="project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
                   <div className="title text-center mb-3">
                     <h2 className="text-black mb-4">Ongoing Projects</h2>
@@ -218,7 +218,7 @@ export default function Home() {
                 <div className="row d-flex align-content-center justify-content-center px-md-3">
                   <div className="col-md-5 text-center">
                     <img
-                      src="images/Club-Entrance-View-min.jpg"
+                      src="/images/Club-Entrance-View-min.jpg"
                       alt="Luxury interior"
                     />
                   </div>
@@ -415,7 +415,7 @@ export default function Home() {
             <h2 className="text-center">LATEST BLOGS</h2>
             <div className="blog-grid">
               <div className="blog-card">
-                <img src="images/Amenities-clubhouse-min.jpg" alt="Blog 1" />
+                <img src="/images/Amenities-clubhouse-min.jpg" alt="Blog 1" />
                 <div className="content">
                   <h4>The Future of Smart Living</h4>
                   <p>
@@ -425,7 +425,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card">
-                <img src="images/Amenities-clubhouse-min.jpg" alt="Blog 2" />
+                <img src="/images/Amenities-clubhouse-min.jpg" alt="Blog 2" />
                 <div className="content">
                   <h4>Eco-Conscious Architecture</h4>
                   <p>
@@ -435,7 +435,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card">
-                <img src="images/Amenities-clubhouse-min.jpg" alt="Blog 3" />
+                <img src="/images/Amenities-clubhouse-min.jpg" alt="Blog 3" />
                 <div className="content">
                   <h4>Why Choose Integrated Townships?</h4>
                   <p>

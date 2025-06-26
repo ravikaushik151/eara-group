@@ -100,7 +100,7 @@ export default function AmenitiesPage() {
                                     >
                                         <div className="amenities-hero_image-wrapper">
                                             <img
-                                                src="images/Amenities--The-Clubhouze.jpg"
+                                                src="/images/Amenities--The-Clubhouze.jpg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="amenities-hero_image mol-img_parallax"
@@ -119,7 +119,7 @@ export default function AmenitiesPage() {
                                                     </div>
                                                     <div className="amenities-hero_arrow-wrapper">
                                                         <img
-                                                            src="images/amenities-arrow.svg"
+                                                            src="/images/amenities-arrow.svg"
                                                             loading="lazy"
                                                             alt=""
                                                             className="amenities-hero_arrow-imge"
@@ -136,7 +136,7 @@ export default function AmenitiesPage() {
                                     >
                                         <div className="amenities-hero_image-wrapper">
                                             <img
-                                                src="images/Outdoor-Amenities.jpg"
+                                                src="/images/Outdoor-Amenities.jpg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="amenities-hero_image mol-img_parallax"
@@ -155,7 +155,7 @@ export default function AmenitiesPage() {
                                                     </div>
                                                     <div className="amenities-hero_arrow-wrapper">
                                                         <img
-                                                            src="images/amenities-arrow.svg"
+                                                            src="/images/amenities-arrow.svg"
                                                             loading="lazy"
                                                             alt=""
                                                             className="amenities-hero_arrow-imge"
@@ -172,7 +172,7 @@ export default function AmenitiesPage() {
                                     >
                                         <div className="amenities-hero_image-wrapper">
                                             <img
-                                                src="images/Wide-Roads.jpg"
+                                                src="/images/Wide-Roads.jpg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="amenities-hero_image mol-img_parallax"
@@ -191,7 +191,7 @@ export default function AmenitiesPage() {
                                                     </div>
                                                     <div className="amenities-hero_arrow-wrapper">
                                                         <img
-                                                            src="images/amenities-arrow.svg"
+                                                            src="/images/amenities-arrow.svg"
                                                             loading="lazy"
                                                             alt=""
                                                             className="amenities-hero_arrow-imge"
@@ -207,7 +207,7 @@ export default function AmenitiesPage() {
                                     >
                                         <div className="amenities-hero_image-wrapper">
                                             <img
-                                                src="images/The-Utilities.jpg"
+                                                src="/images/The-Utilities.jpg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="amenities-hero_image mol-img_parallax"
@@ -226,7 +226,7 @@ export default function AmenitiesPage() {
                                                     </div>
                                                     <div className="amenities-hero_arrow-wrapper">
                                                         <img
-                                                            src="images/amenities-arrow.svg"
+                                                            src="/images/amenities-arrow.svg"
                                                             loading="lazy"
                                                             alt=""
                                                             className="amenities-hero_arrow-imge"
@@ -268,7 +268,7 @@ export default function AmenitiesPage() {
                         </div>
                         <div className="amenities-clubhouse_bg-image-wrapper">
                             <img
-                                src="images/Amenities-clubhouse-min.jpg"
+                                src="/images/Amenities-clubhouse-min.jpg"
                                 loading="lazy"
                                 width="Auto"
                                 alt=""
@@ -314,7 +314,7 @@ export default function AmenitiesPage() {
                     </section>
                     <section className="section_amenities-view">
                         <img
-                            src="images/Amenities-Club-Rare-min.jpg"
+                            src="/images/Amenities-Club-Rare-min.jpg"
                             loading="lazy"
                             alt=""
                             className="amenities-view_bg-image mol-img_parallax"
@@ -341,7 +341,7 @@ export default function AmenitiesPage() {
                                     <div className="amenities-btb_feature amenities-btb_amphitheater">
                                         <div className="amenities-btb_feature-img-wrap">
                                             <img
-                                                src="images/Amphitheater.webp"
+                                                src="/images/Amphitheater.webp"
                                                 loading="lazy"
                                                 width={394}
                                                 sizes="(max-width: 479px) 56vw, (max-width: 991px) 45vw, 37vw"
@@ -356,7 +356,7 @@ export default function AmenitiesPage() {
                                     <div className="amenities-btb_feature amenities-btb_kids-play">
                                         <div className="amenities-btb_feature-img-wrap">
                                             <img
-                                                src="images/Kids-Play-Area.webp"
+                                                src="/images/Kids-Play-Area.webp"
                                                 loading="lazy"
                                                 width={394}
                                                 sizes="(max-width: 479px) 56vw, (max-width: 991px) 45vw, 37vw"
@@ -389,7 +389,7 @@ export default function AmenitiesPage() {
                                     <div className="amenities-btb_feature amenities-btb_citizen-park">
                                         <div className="amenities-btb_feature-img-wrap">
                                             <img
-                                                src="images/Senior-citizen-park.webp"
+                                                src="/images/Senior-citizen-park.webp"
                                                 loading="lazy"
                                                 width={394}
                                                 alt=""
@@ -403,7 +403,7 @@ export default function AmenitiesPage() {
                                     <div className="amenities-btb_feature amenities-btb_box-cricket">
                                         <div className="amenities-btb_feature-img-wrap">
                                             <img
-                                                src="images/Box-Cricket.webp"
+                                                src="/images/Box-Cricket.webp"
                                                 loading="lazy"
                                                 width={394}
                                                 sizes="(max-width: 479px) 56vw, (max-width: 991px) 45vw, 37vw"
@@ -423,7 +423,7 @@ export default function AmenitiesPage() {
                                     <div className="amenities-btb_feature amenities-btb_pet-park">
                                         <div className="amenities-btb_feature-img-wrap">
                                             <img
-                                                src="images/Pet-park.webp"
+                                                src="/images/Pet-park.webp"
                                                 loading="lazy"
                                                 width={394}
                                                 sizes="(max-width: 479px) 19vw, (max-width: 991px) 21vw, 37vw"
@@ -438,7 +438,7 @@ export default function AmenitiesPage() {
                                     <div className="amenities-btb_feature amenities-btb_bird-zone">
                                         <div className="amenities-btb_feature-img-wrap">
                                             <img
-                                                src="images/Bird-watching-zone.webp"
+                                                src="/images/Bird-watching-zone.webp"
                                                 loading="lazy"
                                                 width={394}
                                                 sizes="(max-width: 479px) 38vw, (max-width: 991px) 21vw, 37vw"
@@ -472,7 +472,7 @@ export default function AmenitiesPage() {
                                 </div>
                                 <div className="amenities-cover_image-wrapper">
                                     <img
-                                        src="images/Amenities-Roundbout-View-min.jpg"
+                                        src="/images/Amenities-Roundbout-View-min.jpg"
                                         loading="lazy"
                                         alt=""
                                         className="amenities-cover_image mol-img_parallax"
@@ -497,7 +497,7 @@ export default function AmenitiesPage() {
                                         className="amenities-road_right"
                                     >
                                         <img
-                                            src="images/12-m-wide-roads-09-09.png"
+                                            src="/images/12-m-wide-roads-09-09.png"
                                             loading="lazy"
                                             alt=""
                                             className="amenities-road_img"
@@ -585,7 +585,7 @@ export default function AmenitiesPage() {
                                 </div>
                                 <div className="amenities-road_image-wrap">
                                     <img
-                                        src="images/12-meter-bg-image-min.jpg"
+                                        src="/images/12-meter-bg-image-min.jpg"
                                         loading="lazy"
                                         alt=""
                                         className="amenities-road_image mol-img_parallax"
@@ -611,7 +611,7 @@ export default function AmenitiesPage() {
                                         className="amenities-road_right"
                                     >
                                         <img
-                                            src="images/9-m-wide-roads-09-10.png"
+                                            src="/images/9-m-wide-roads-09-10.png"
                                             loading="lazy"
                                             alt=""
                                             className="amenities-road_img"
@@ -698,7 +698,7 @@ export default function AmenitiesPage() {
                                 </div>
                                 <div className="amenities-road_image-wrap">
                                     <img
-                                        src="images/9-meter-bg-image-min.jpg"
+                                        src="/images/9-meter-bg-image-min.jpg"
                                         loading="lazy"
                                         alt=""
                                         className="amenities-road_image mol-img_parallax"
@@ -1827,7 +1827,7 @@ export default function AmenitiesPage() {
                                 </div>
                                 <div className="amenities-gateway_image-wrapper">
                                     <img
-                                        src="images/Amenities-community-min.jpg"
+                                        src="/images/Amenities-community-min.jpg"
                                         loading="lazy"
                                         alt=""
                                         className="amenities-gateway_image mol-img_parallax"

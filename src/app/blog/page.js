@@ -91,14 +91,14 @@ export default function Blog() {
                                         </Link>
                                     </div>
                                     <div className="services-content">
-                                        <h5 className="title my-3">
-                                            <Link className='text-dark text-decoration-none' href={`/blog/${post.slug}`}>
+                                        <h6 className="title my-3  fw-bold">
+                                            <Link className='text-dark  fw-bold text-decoration-none' href={`/blog/${post.slug}`} style={{fontSize:"21px",fontWeight:"600"}}>
                                                 {post.title}
                                             </Link>
-                                        </h5>
+                                        </h6>
                                         <p className='mb-0'>{post.excerpt}</p>
-                                        <div className="text-center py-3 my-3 ">
-                                            <Link href={`/blog/${post.slug}`} className="btn text-bg-dark  ">Read More</Link>
+                                        <div className="text-center py-3 my-3 small ">
+                                            <Link href={`/blog/${post.slug}`} className="btn btn-dark  ">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ export default function Blog() {
                                             className={`page-item mx-1 bg-black ${currentPage === i + 1 ? 'active' : ''}`}
                                             onClick={() => setCurrentPage(i + 1)}
                                         >
-                                            <button className="page-link bg-black text-white rounded-0 ">{i + 1}</button>
+                                            <button className="page-link bg-black border-dark text-white rounded-0 ">{i + 1}</button>
                                         </li>
                                     ))}
                                 </ul>

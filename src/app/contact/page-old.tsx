@@ -16,7 +16,7 @@ export default function ContactPage() {
                                 >
                                     <img
                                         className="contact-hero_image"
-                                        src="images/contact-hero.png"
+                                        src="/images/contact-hero.png"
                                         alt=""
                                         loading="lazy"
                                     />
@@ -164,7 +164,7 @@ export default function ContactPage() {
                                             </div>
                                             <div className="contact-forefront_arrow">
                                                 <img
-                                                    src="images/location_venue-arrow.svg"
+                                                    src="/images/location_venue-arrow.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="contact-forefront_arrow"
@@ -182,7 +182,7 @@ export default function ContactPage() {
                                 </div>
                                 <div className="contact-forefront_image-wrapper">
                                     <img
-                                        src="images/Copy-of-Central-Park-View-2-min.jpg"
+                                        src="/images/Copy-of-Central-Park-View-2-min.jpg"
                                         loading="lazy"
                                         alt="Central-Park"
                                         className="contact-forefront_image mol-img_parallax"

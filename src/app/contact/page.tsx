@@ -23,7 +23,7 @@ export default function About() {
 
       <section className="section-padding bg-white " id="">
         <div className="container bg-light px-4 px-3 px-md-5 py-md-5">
-          <div className='row  '>
+          <div className='row>
             <div className="col-md-12 d-block mx-auto ">
               <div className="heading ">
                 <h2 className="text-center">
@@ -86,14 +86,14 @@ export default function About() {
                   <div className="contact_info_sec text-bg-dark px-md-5 py-md-5 px-4 py-4  text-white shadow">
                     <h4 className="text-white mb-3">Contact Info</h4>
                     <div className="d-flex info_single align-items-center text-white pb-2">
-                      <a href="tel:+911234567890" className='text-white text-decoration-none'>
+                      <Link href="tel:+911234567890" className="text-white text-decoration-none">
                         <i className="fas fa-headset"></i>
-                        <span> +91 1234567890</span></a>
+                        <span> +91 1234567890</span></Link>
                     </div>
                     <div className="d-flex info_single align-items-center text-white pb-2">
-                      <a href="mailto:abc@gmail.com" className='text-white text-decoration-none'>
+                      <Link href="mailto:abc@gmail.com" className="text-white text-decoration-none">
                         <i className="fas fa-envelope-open-text"></i>
-                        <span> ac@gmail.com </span> </a>
+                        <span> ac@gmail.com </span> </Link>
                     </div>
                     <div className="d-flex info_single text-white  pb-2">
                       <i className="fas fa-map-marked-alt text-white mt-1"></i>

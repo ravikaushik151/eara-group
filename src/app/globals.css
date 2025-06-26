@@ -4,19 +4,19 @@ html {
   scroll-behavior: auto !important;
 }
 
-@media screen and (max-width:1920px) {
+@media screen and (max-width: 1920px) {
   html {
     font-size: calc(0.625rem + 0.41666666666666674vw);
   }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width: 1440px) {
   html {
     font-size: calc(0.8126951092611863rem + 0.20811654526534862vw);
   }
 }
 
-@media screen and (max-width:479px) {
+@media screen and (max-width: 479px) {
   html {
     font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
   }
@@ -36,13 +36,13 @@ input[type="file"]:focus-visible {
 }
 
 /* Get rid of top margin on first element in any rich text element */
-.w-richtext> :not(div):first-child,
-.w-richtext>div:first-child> :first-child {
+.w-richtext > :not(div):first-child,
+.w-richtext > div:first-child > :first-child {
   margin-top: 0 !important;
 }
 
 /* Get rid of bottom margin on last element in any rich text element */
-.w-richtext>:last-child,
+.w-richtext > :last-child,
 .w-richtext ol li:last-child,
 .w-richtext ul li:last-child {
   margin-bottom: 0 !important;
@@ -98,7 +98,6 @@ input[type="file"]:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
-
   .hide,
   .hide-tablet {
     display: none !important;
@@ -211,9 +210,8 @@ input[type="file"]:focus-visible {
 }
 
 @media (min-width: 992px) {
-
   .nav-logo-link {
-    color: #F3F4EF;
+    color: #f3f4ef;
     /* Apply styles for screens 992px and above */
   }
 }
@@ -228,7 +226,7 @@ input[type="file"]:focus-visible {
 
 @media (min-width: 992px) {
   .nav-logo-link {
-    color: #F3F4EF;
+    color: #f3f4ef;
   }
 }
 
@@ -240,7 +238,7 @@ input[type="file"]:focus-visible {
 
 .swiper-scrollbar-drag {
   height: 100%;
-  background: #738E62;
+  background: #738e62;
   border-radius: 2px;
 }
 
@@ -265,7 +263,7 @@ input[type="file"]:focus-visible {
   height: 100%;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .video-gallery-sec {
     display: block;
   }
@@ -278,7 +276,6 @@ input[type="file"]:focus-visible {
     width: 100%;
   }
 }
-
 
 html,
 body {
@@ -534,40 +531,6 @@ p {
   transition: all 0.5s;
 }
 
-.marquee {
-  position: relative;
-  width: 100%;
-  height: 100px;
-
-  overflow: hidden;
-}
-
-.marquee div {
-  display: block;
-  position: absolute;
-  width: 300%;
-  overflow: hidden;
-  animation: marquee 30s linear infinite;
-}
-
-.marquee div:hover {
-  animation-play-state: paused;
-}
-
-.marquee span {
-  float: left;
-  width: 50%;
-}
-
-@keyframes marquee {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -50%;
-  }
-}
 
 .image-container {
   position: relative;
@@ -716,7 +679,7 @@ p {
   }
 
   .navbar .nav-item .nav-link {
-    color: #2A2565 !important;
+    color: #2a2565 !important;
     padding: 10px !important;
     font-family: "Poppins";
     font-weight: 600;
@@ -877,7 +840,7 @@ p {
   filter: brightness(0);
 }
 
-.hover-dropdown:hover>.dropdown-menu {
+.hover-dropdown:hover > .dropdown-menu {
   display: block;
   margin-top: 0;
 }
@@ -969,13 +932,13 @@ input[type="file"]:focus-visible {
 }
 
 /* Get rid of top margin on first element in any rich text element */
-.w-richtext> :not(div):first-child,
-.w-richtext>div:first-child> :first-child {
+.w-richtext > :not(div):first-child,
+.w-richtext > div:first-child > :first-child {
   margin-top: 0 !important;
 }
 
 /* Get rid of bottom margin on last element in any rich text element */
-.w-richtext> :last-child,
+.w-richtext > :last-child,
 .w-richtext ol li:last-child,
 .w-richtext ul li:last-child {
   margin-bottom: 0 !important;
@@ -1033,7 +996,6 @@ input[type="file"]:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
-
   .hide,
   .hide-tablet {
     display: none !important;
@@ -1344,7 +1306,7 @@ h2 {
 .lifestyle-section {
   background: #fdf3e9;
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   text-align: center;
   position: relative;
 }
@@ -1493,7 +1455,6 @@ h2 {
   }
 }
 
-
 .footer {
   background-color: #000;
   color: #fff;
@@ -1610,10 +1571,6 @@ h2 {
   border-top: 1px solid #e5d8ce;
 }
 
-
-
-
-
 .section-2 h2,
 section h2 {
   font-size: 2.5rem;
@@ -1628,7 +1585,7 @@ section h2 {
 }
 
 .navbar-toggler {
-  border: var(--bs-border-width) solid var(--logoBbg)
+  border: var(--bs-border-width) solid var(--logoBbg);
 }
 
 .h5,
@@ -1639,7 +1596,8 @@ h5 {
 }
 
 .white-png {
-  filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%)
+    hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
 .object-fit-cover {
@@ -1715,5 +1673,40 @@ footer button:hover {
   opacity: 1;
 }
 .white-png {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%)
+    hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.marquee div {
+  display: block;
+  position: absolute;
+  width: 300%;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee div:hover {
+  animation-play-state: paused;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
 }

@@ -41,7 +41,7 @@ export default function LocationPage() {
                 <div className="section_location-duration">
                     <div className="location-duration_image-wrapper">
                         <img
-                            src="images/Location-hero-bg-min.jpg"
+                            src="/images/Location-hero-bg-min.jpg"
                             loading="lazy"
                             alt=""
                             className="location-duration_image mol-img_parallax"
@@ -57,7 +57,7 @@ export default function LocationPage() {
                                     >
                                         <div className="location-duration_icon-wrapper">
                                             <img
-                                                src="images/location_duration-1.svg"
+                                                src="/images/location_duration-1.svg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="location-duration_icon"
@@ -78,7 +78,7 @@ export default function LocationPage() {
                                     >
                                         <div className="location-duration_icon-wrapper">
                                             <img
-                                                src="images/location_duration2.svg"
+                                                src="/images/location_duration2.svg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="location-duration_icon"
@@ -103,7 +103,7 @@ export default function LocationPage() {
                                     >
                                         <div className="location-duration_icon-wrapper">
                                             <img
-                                                src="images/location_duration-3.svg"
+                                                src="/images/location_duration-3.svg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="location-duration_icon"
@@ -128,7 +128,7 @@ export default function LocationPage() {
                                     >
                                         <div className="location-duration_icon-wrapper">
                                             <img
-                                                src="images/location_duration-4.svg"
+                                                src="/images/location_duration-4.svg"
                                                 loading="lazy"
                                                 alt=""
                                                 className="location-duration_icon"
@@ -170,7 +170,7 @@ export default function LocationPage() {
                         </div>
                     </div>
                     <img
-                        src="images/Location-map-for-website.png"
+                        src="/images/Location-map-for-website.png"
                         loading="lazy"
                         alt=""
                         className="location-map_bg-map"
@@ -209,7 +209,7 @@ export default function LocationPage() {
                                                     <div className="text-size-regular">View on Google Maps</div>
                                                 </div>
                                                 <img
-                                                    src="images/location_venue-arrow.svg"
+                                                    src="/images/location_venue-arrow.svg"
                                                     loading="lazy"
                                                     alt=""
                                                     className="location-venue_arrow-image"
@@ -236,7 +236,7 @@ export default function LocationPage() {
                                     className="location-venue_image-wrapper"
                                 >
                                     <img
-                                        src="images/Location-venue-img-min.jpg"
+                                        src="/images/Location-venue-img-min.jpg"
                                         loading="lazy"
                                         alt=""
                                         className="location-venue_image mol-img_parallax"
@@ -291,7 +291,7 @@ export default function LocationPage() {
                                         className="location-cta_image-wrapper"
                                     >
                                         <img
-                                            src="images/home-cta_leafC.png"
+                                            src="/images/home-cta_leafC.png"
                                             loading="lazy"
                                             sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 991px) 72vw, 87vw"
                                             srcSet="images/home-cta_leafC-p-500.png 500w, images/home-cta_leafC-p-800.png 800w, images/home-cta_leafC-p-1080.png 1080w, images/home-cta_leafC.png 1834w"

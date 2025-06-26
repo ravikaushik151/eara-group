@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className="footer-column">
                     <h4 className="footer-title">Quick Links</h4>
                    <ul style={{listStyle:"none"}}>
-                    <li className=''><Link href="./" className='text-decoration-none text-white'>Home</Link></li>
+                    <li className='noclass'><Link href="./" className='text-decoration-none text-white'>Home</Link></li>
                     <li><Link href="/about" className='text-decoration-none text-white'>About</Link></li>
                     <li><Link href="/blog" className='text-decoration-none text-white'>Blog</Link></li>
                     <li><Link href="/career" className='text-decoration-none text-white'>Career</Link></li>

@@ -81,11 +81,11 @@ export default function Career() {
       </div>
       <section className="bg-light py-5">
         <div className="container">
-          <div className="text-center mb-4">
+          <div className="text-center mb-5">
             <h2>Careers – Explore Our Job Opportunities</h2>
           </div>
 
-          <div className="row">
+          <div className="row ">
             {/* Accordion Section */}
             <div className="col-lg-6">
               <div className="accordion" id="jobAccordion">
@@ -103,6 +103,8 @@ export default function Career() {
                           Education: Graduate
                           <br />
                           Collect data and update
+                          laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique. lacinia. ipsum nisi ullamcorper dolor, tristique. a vel quis non lacinia. nibh vel dignissim aliquet lacinia libero nibh at Donec dolor,
+                          laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique.
                           laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique. lacinia. ipsum nisi ullamcorper dolor, tristique. a vel quis non lacinia. nibh vel dignissim aliquet lacinia libero nibh at Donec dolor,
                           laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique.
                         </p>
@@ -166,7 +168,7 @@ export default function Career() {
                     </h5>
                     <div
                       id={`collapse${index}`}
-                      className={`accordion-collapse collapse ${index === 0 
+                      className={`accordion-collapse collapse ${index === 0 ? "show" : ""
                         }`}
                       data-bs-parent="#jobAccordion"
                     >
@@ -182,7 +184,7 @@ export default function Career() {
               <div className="px-3 px-md-4  py-4">
                 <h5
                   className="text-uppercase mb-4"
-                  style={{ color: "#1d577d" }}
+                  style={{ color: "#282563" }}
                 >
                   APPLY FOR YOUR JOB
                 </h5>
@@ -264,7 +266,7 @@ export default function Career() {
                     <div className="text-center form-group col-md-12">
                       <button
                         type="submit"
-                        className="btn btn-primary py-2 px-4 mt-2"
+                        className="btn btn-dark py-2 px-4 mt-2"
                       >
                         Submit
                       </button>

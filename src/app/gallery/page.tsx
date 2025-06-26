@@ -51,7 +51,7 @@ export default function GalleryPage() {
                                 >
                                     <video
                                         controls
-                                        src="images/gallery/Assetz-Melodies-Of-Life-Route.mp4"
+                                        src="/images/gallery/Assetz-Melodies-Of-Life-Route.mp4"
                                     ></video>
                                 </div>
                                 <div
@@ -60,7 +60,7 @@ export default function GalleryPage() {
                                 >
                                     <video
                                         controls
-                                        src="images/gallery/Assetz-Melodies-Of-Life-Lifestyle-Av.mp4"
+                                        src="/images/gallery/Assetz-Melodies-Of-Life-Lifestyle-Av.mp4"
                                     ></video>
                                 </div>
                                 <div
