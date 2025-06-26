@@ -83,7 +83,7 @@ export default function About() {
               </div>
             </section>
             {/* Mission & Vision Section */}
-            <section className="" style={{ backgroundColor: "#F3F4EF" }}>
+            <section className="noclass" style={{ backgroundColor: "#F3F4EF" }}>
               <div className="container">
                 <div className="row">
                   <div className="col-md-12">
@@ -124,7 +124,7 @@ export default function About() {
               <h2 className="text-center">TESTIMONIALS</h2>
               <div className="info-cards">
                 <div className="info-box">
-                  <div className="">
+                  <div className="noclass">
                     <h3>Zero Out</h3>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -132,7 +132,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="info-box">
-                  <div className="">
+                  <div className="noclass">
                     <h3>Smart Power</h3>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -140,7 +140,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="info-box">
-                  <div className="">
+                  <div className="noclass">
                     <h3>Sponge Effect</h3>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

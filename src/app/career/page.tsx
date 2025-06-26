@@ -158,7 +158,7 @@ export default function Career() {
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${index}`}
-                        aria-expanded={index === 0 ? "true" : "false"}
+                        aria-expanded={index === 0 }
                         aria-controls={`collapse${index}`}
                       >
                         {job.title}
@@ -166,7 +166,7 @@ export default function Career() {
                     </h5>
                     <div
                       id={`collapse${index}`}
-                      className={`accordion-collapse collapse ${index === 0 ? "show" : ""
+                      className={`accordion-collapse collapse ${index === 0 
                         }`}
                       data-bs-parent="#jobAccordion"
                     >

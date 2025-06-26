@@ -108,7 +108,7 @@ export default function ContactPage() {
                                                 <input
                                                     type="hidden"
                                                     name="projectname"
-                                                    className=""
+                                                    className="noclass"
                                                     defaultValue="Ims"
                                                 />
                                                 <input

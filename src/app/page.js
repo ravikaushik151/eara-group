@@ -240,7 +240,7 @@ export default function Home() {
                           </span>
                         </p>
                       </div>
-                      <div className="">
+                      <div className="noclass">
                         <p className="text-justify lh text-black mt-3">
                           fermentum Lorem consectetur risus tincidunt auctor
                           quis sapien Lorem at. aliquet quis ullamcorper sit
@@ -358,7 +358,7 @@ export default function Home() {
             <h2 className="text-center">TESTIMONIALS</h2>
             <div className="info-cards">
               <div className="info-box">
-                <div className="">
+                <div className="noclass">
                   <h3>Zero Out</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -375,7 +375,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="info-box">
-                <div className="">
+                <div className="noclass">
                   <h3>Smart Power</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -392,7 +392,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="info-box">
-                <div className="">
+                <div className="noclass">
                   <h3>Sponge Effect</h3>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
