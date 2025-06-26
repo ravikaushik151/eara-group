@@ -256,7 +256,7 @@ export default function Home() {
                       <div className="row align-items-center mb-3 mt-4 mob-center">
                         <div className="col-md-6 border-end border-dark">
                           <h4 className="bhk text-black fs-5 mb-2">
-                            2 &amp; 3 BHK'S
+                            2 &amp; 3 BHK
                           </h4>
                           <div className="text-black">
                             <h6>30+ World Class Amenities</h6>
