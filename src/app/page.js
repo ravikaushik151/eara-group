@@ -230,7 +230,7 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left">
-                        <h4 className=" text-black mb-2 fs-4 m-center" style={{fontSize:"24px"}}>Lorem Lipsom</h4>
+                        <h4 className=" text-black mb-2 fs-4 m-center" style={{ fontSize: "24px" }}>Lorem Lipsom</h4>
                         <p>
                           <span className="text-black">
                             <i
@@ -272,7 +272,7 @@ export default function Home() {
 
                       <p className="m-center py-md-0 py-3">
                         <a
-                          href="#"
+                          href="/microsite"
                           className="btn btn-dark text-white border"
                           style={{ fontSize: "15px !important" }}
                         >

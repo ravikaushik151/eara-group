@@ -71,6 +71,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/microsite" className="text-decoration-none text-white">
+                  Project
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-decoration-none text-white">
                   Blog
                 </Link>
