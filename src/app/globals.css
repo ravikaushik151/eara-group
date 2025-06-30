@@ -1579,6 +1579,7 @@ section h2 {
   text-transform: uppercase;
   font-family: "Times New Roman", sans-serif;
   margin-bottom: 40px;
+  line-height: 1.25 !important;
 }
 
 .text-bg-dark {

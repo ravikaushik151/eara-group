@@ -83,19 +83,19 @@ export default function About() {
               </div>
             </section>
             {/* Mission & Vision Section */}
-            <section className="noclass" style={{ backgroundColor: "#F3F4EF" }}>
+            <section className="noclass" >
               <div className="container">
                 <div className="row">
-                  <div className="col-md-12">
-                    <div className=" text-center">
+                  <div className="col-md-12 mb-3">
+                    <div className=" text-center ">
                       <h2 className="mb-3">Our Mission &amp; Vision</h2>
                       <p>What drives us forward and what we aim to achieve</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="row my-3">
-                  <div className="col-md-5 d-block mx-auto bg-white px-md-5 py-md-5">
+                <div className="row my-3 ">
+                  <div className="col-md-5 d-block mx-auto  px-md-5 py-md-5 py-4 bg-white mb-3">
                     <div className="text-center">
                       <h3 className="fw-bold">Our Mission</h3>
                       <p>
@@ -105,7 +105,7 @@ export default function About() {
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-5 d-block mx-auto bg-white px-md-5 py-md-5">
+                  <div className="col-md-5 d-block mx-auto  px-md-5 py-md-5 py-4 bg-white mb-3">
                     <div className="text-center">
                       <h3 className="fw-bold">Our Vision</h3>
                       <p>

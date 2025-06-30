@@ -82,7 +82,8 @@ export default function Career() {
       <section className="bg-light py-5">
         <div className="container">
           <div className="text-center mb-5">
-            <h2>Careers – Explore Our Job Opportunities</h2>
+              <h2>Careers </h2>
+            {/* <h2>Careers - Explore Our Job Opportunities</h2> */}
           </div>
 
           <div className="row ">
