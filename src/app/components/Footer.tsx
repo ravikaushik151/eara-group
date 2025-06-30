@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
           </div>
           {/* Project Info */}
-          <div className="col-md-3 ps-md-4 ps-0">
+          <div className="col-md-3 ps-md-4 ps-0  py-3 py-md-0">
             <h4 className="footer-title m-center">Address</h4>
             <p className="m-center">
               <strong>Eara Group</strong>
@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Developer Info */}
           <div className="col-md-2 m-center py-3 py-md-0">
             <h4 className="footer-title ">Quick Links</h4>
-            <ul style={{ listStyle: "none" }}>
+            <ul className="px-0" style={{ listStyle: "none" }}>
               <li className="noclass">
                 <Link href="./" className="text-decoration-none text-white">
                   Home
