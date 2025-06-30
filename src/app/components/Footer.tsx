@@ -19,14 +19,15 @@ export default function Footer() {
                   className="logo white-png d-block mx-auto"
                 />
               </Link>
-              <p className="pt-3 text-center">RERA No. : PRM/KA/RERA/1251/309/PR/280324/006745</p>
-             
+              <p className="pt-3 text-center">
+                RERA No. : PRM/KA/RERA/1251/309/PR/280324/006745
+              </p>
             </div>
           </div>
           {/* Project Info */}
           <div className="col-md-3 ps-md-4 ps-0">
-            <h4 className="footer-title">Address</h4>
-            <p className="">
+            <h4 className="footer-title m-center">Address</h4>
+            <p className="m-center">
               <strong>Eara Group</strong>
               <br />
               KIADB Hardware & IT Park,
@@ -35,27 +36,29 @@ export default function Footer() {
               <br />
               Bangalore 562 149
             </p>
-            <p className="pt-3 mb-2 fw-bold fs-6 text-start">Follow Us</p>
+            <p className="pt-3 mb-2 fw-bold fs-6 text-start m-center">
+              Follow Us
+            </p>
 
-              <div className="footer-social text-center d-flex justify-content-start">
-                <Link href="#">
-                  <i className="fab fa-facebook-f"></i>
-                </Link>
-                <Link href="#">
-                  <i className="fab fa-instagram"></i>
-                </Link>
-                <Link href="#">
-                  <i className="fab fa-youtube"></i>
-                </Link>
-                <Link href="#">
-                  <i className="fab fa-linkedin-in"></i>
-                </Link>
-              </div>
+            <div className="footer-social text-center d-flex justify-content-md-start justify-content-center ">
+              <Link href="#">
+                <i className="fab fa-facebook-f"></i>
+              </Link>
+              <Link href="#">
+                <i className="fab fa-instagram"></i>
+              </Link>
+              <Link href="#">
+                <i className="fab fa-youtube"></i>
+              </Link>
+              <Link href="#">
+                <i className="fab fa-linkedin-in"></i>
+              </Link>
+            </div>
           </div>
 
           {/* Developer Info */}
-          <div className="col-md-2">
-            <h4 className="footer-title">Quick Links</h4>
+          <div className="col-md-2 m-center py-3 py-md-0">
+            <h4 className="footer-title ">Quick Links</h4>
             <ul style={{ listStyle: "none" }}>
               <li className="noclass">
                 <Link href="./" className="text-decoration-none text-white">
@@ -88,7 +91,7 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
-               <li>
+              <li>
                 <Link
                   href="/contact"
                   className="text-decoration-none text-white"
@@ -103,7 +106,7 @@ export default function Footer() {
 
           {/* Get In Touch Form */}
           <div className="col-md-3">
-            <h4 className="footer-heading">GET IN TOUCH</h4>
+            <h4 className="footer-heading m-center">GET IN TOUCH</h4>
             <form className="footer-form">
               <input
                 type="text"
@@ -120,9 +123,11 @@ export default function Footer() {
                 placeholder="Contact Number"
                 className="footer-input rounded-0"
               />
-              <button type="submit" className="footer-button mb-3">
-                SUBMIT
-              </button>
+              <div className="m-center">
+                <button type="submit" className="footer-button mb-3">
+                  SUBMIT
+                </button>
+              </div>
             </form>
           </div>
         </div>

@@ -220,6 +220,7 @@ export default function Home() {
                     <img
                       src="/images/Club-Entrance-View-min.jpg"
                       alt="Luxury interior"
+                      className="img-fluid  mb-3"
                     />
                   </div>
                   <div
@@ -229,7 +230,7 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left">
-                        <h4 className=" text-black mb-2 fs-4">Lorem Lipsom</h4>
+                        <h4 className=" text-black mb-2 fs-4 m-center" style={{fontSize:"24px"}}>Lorem Lipsom</h4>
                         <p>
                           <span className="text-black">
                             <i
@@ -241,12 +242,12 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="noclass">
-                        <p className="text-justify lh text-black mt-3">
+                        <p className="text-justify m-center lh text-black mt-3">
                           fermentum Lorem consectetur risus tincidunt auctor
                           quis sapien Lorem at. aliquet quis ullamcorper sit
                           suscipit tortor suscipit libero et
                         </p>
-                        <p className="text-justify lh text-black mt-3">
+                        <p className="text-justify m-center lh text-black mt-3">
                           vel malesuada quis non vitae eu bibendum vestibulum
                           mauris vel amet, malesuada eu luctus. malesuada ante
                           lacinia Suspendisse aliquet Nullam vel eu. tellus
@@ -254,22 +255,22 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="row align-items-center mb-3 mt-4 mob-center">
-                        <div className="col-md-6 border-end border-dark">
+                        <div className="col-md-6 col-12 border-end border-dark m-center">
                           <h4 className="bhk text-black fs-5 mb-2">
                             2 &amp; 3 BHK
                           </h4>
-                          <div className="text-black">
+                          <div className="text-black m-center">
                             <h6>30+ World Class Amenities</h6>
                           </div>
                         </div>
-                        <div className="col-md-6 px-5 text-black">
+                        <div className="col-md-6 col-12 px-5 text-black m-center">
                           <h6 className="mb-2">149 Sollicitudin</h6>
                           <h6 className="mb-2">Malesuada ante: 78%</h6>
                           <h6 className="mb-0">Malesuada quis + 9 Floors</h6>
                         </div>
                       </div>
 
-                      <p>
+                      <p className="m-center py-md-0 py-3">
                         <a
                           href="#"
                           className="btn btn-dark text-white border"
