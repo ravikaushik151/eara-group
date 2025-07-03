@@ -16,7 +16,7 @@ const slides = [
         desc: '',
         button: '',
         href: '',
-        img: '/images/hero-image-edit-7.jpg',
+        img: '/images/hero-image-edit-8.jpg',
     },
 ];
 
