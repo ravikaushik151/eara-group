@@ -6,7 +6,7 @@ export const posts = [
     h1: "Why Choose Integrated Townships?",
     meta_title: "Benefits of Integrated Townships | 2025 Living Trends",
     description: "Explore how integrated townships redefine modern living with convenience, community, and connectivity.",
-    image: "/img/Amenities-clubhouse-min.jpg",
+    image: "/images/Blog_1.jpg",
     excerpt: "From better infrastructure to enhanced quality of life, integrated townships are the future of urban development...",
     content: `
       <p>Integrated townships are large-scale, self-sufficient communities that include residential, commercial, and recreational spaces. They are designed to offer a balanced lifestyle with everything you need close at hand.</p>
@@ -29,7 +29,7 @@ export const posts = [
     h1: "Eco-Conscious Architecture",
     meta_title: "Eco-Friendly Balcony Garden Design Ideas | 2025 Guide",
     description: "Learn how eco-conscious architecture is transforming compact urban spaces like balconies into lush green retreats.",
-    image: "/img/Amenities-clubhouse-min.jpg",
+    image: "/images/Blog_2.jpg",
     excerpt: "Transform your small balcony into an eco-friendly retreat with space-saving garden elements and sustainable design...",
     content: `
       <p>Eco-conscious architecture emphasizes sustainability, even in compact living spaces like balconies. With thoughtful design, these small spaces can be transformed into functional green zones.</p>
@@ -52,7 +52,7 @@ export const posts = [
     h1: "The Future of Smart Living",
     meta_title: "Smart Living Trends for 2025 | Bedroom Design & Automation",
     description: "Discover how smart living integrates comfort, technology, and style to redefine bedroom interiors in 2025.",
-    image: "/img/Amenities-clubhouse-min.jpg",
+    image: "/images/Blog_3.jpg",
     excerpt: "From voice-controlled lighting to multifunctional furniture, smart living is shaping the way we design our bedrooms...",
     content: `
       <p>Smart living is not just about gadgets — it's a holistic approach to creating intuitive, efficient, and comfortable environments. In bedrooms, this translates to seamless tech and calming design.</p>

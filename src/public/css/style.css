@@ -2196,7 +2196,7 @@ figcaption {
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
-  display: grid;
+  /*display: grid;*/
 }
 
 .biodiversity-benefits_items {
@@ -3454,7 +3454,6 @@ figcaption {
 
 .home-masterplan_left {
   width: 100%;
-  padding-top: 11.25rem;
   padding-bottom: 4rem;
 }
 
@@ -3967,14 +3966,14 @@ figcaption {
 
 .swiper-wrapper {
   height: 80vh;
-  margin-bottom: 4rem;
+  /*margin-bottom: 4rem;*/
   display: flex;
 }
 
 .swiper-slide {
   flex: none;
   width: 100vw;
-  max-width: 80rem;
+  /*max-width: 80rem;*/
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -7846,4 +7845,19 @@ figcaption {
     font-size: 14px;
     padding: 10px;
   }
+}
+
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+  margin: 0 6px;
+  width: 30px !important;
+  height: 5px !important;
+  border-radius: 0 !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
 }

@@ -50,7 +50,7 @@ export default function Career() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/img/banner (1).png"
+                src="/images/hero-image-edit-4.jpg"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece rounded-4"
@@ -82,7 +82,7 @@ export default function Career() {
       <section className="bg-light py-5">
         <div className="container">
           <div className="text-center mb-5">
-              <h2>Careers </h2>
+            <h2>Careers </h2>
             {/* <h2>Careers - Explore Our Job Opportunities</h2> */}
           </div>
 
@@ -161,7 +161,7 @@ export default function Career() {
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${index}`}
-                        aria-expanded={index === 0 }
+                        aria-expanded={index === 0}
                         aria-controls={`collapse${index}`}
                       >
                         {job.title}

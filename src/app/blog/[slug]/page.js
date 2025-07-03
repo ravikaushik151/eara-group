@@ -24,7 +24,7 @@ export default async function BlogPost({ params }) {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/img/banner (1).png"
+                src="/images/bBlog_1.jpg"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece rounded-4"

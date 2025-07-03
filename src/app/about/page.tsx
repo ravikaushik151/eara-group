@@ -8,10 +8,10 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/img/banner (1).png"
+                src="/images/About-About-us.jpg"
                 height={2880}
                 width={1920}
-                className="img-fluid masterpiece rounded-4"
+                className="img-fluid masterpiece"
                 alt="masterpiece"
               />
               <div className="overlay2 ">
@@ -78,7 +78,7 @@ export default function About() {
                   width={648}
                   height={338}
                   className="img-fluid"
-                  src="/img/Club-Entrance-View-min.jpg"
+                  src="/images/About-Us-Main.jpg"
                 />
               </div>
             </section>
