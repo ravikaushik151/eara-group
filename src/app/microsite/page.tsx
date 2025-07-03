@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 import Image from "next/image";
+import AmenitiesMarquee from "../components/AmenitiesMarquee";
 export default function Home() {
   useEffect(() => {
 
@@ -312,83 +313,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <section>
-              <div className="marquee">
-                <div>
-                  <Image
-                    src="/images/Ganesha-Temple.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Basketball-Court.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/CCTV.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Elders-Garden.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Ev.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Gym.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Joggin.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Landscape-Garden.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Tennis.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                  <Image
-                    src="/images/Yoga-Lawn.jpg"
-                    alt="amenities"
-                    width={300}
-                    height={200}
-                    className="img-fluid p-2"
-                  />
-                </div>
-
-              </div>
-            </section>
+            <AmenitiesMarquee />
           </div>
 
 
