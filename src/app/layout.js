@@ -11,8 +11,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 export const metadata = {
-  title: 'Your Site Title',
-  description: 'Your description here',
+  title: 'Eara Group',
+  description: 'Eara Group',
 };
 
 export default function RootLayout({ children }) {
