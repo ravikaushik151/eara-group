@@ -69,7 +69,12 @@ export default function About() {
               <div className="content">
                 <h2>About Us</h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  Eara began with a quiet belief, that the finest things in life aren’t loud. They’re felt in silence, built with care, and remembered because they hold meaning.<br />
+                  We are thinkers, makers, and believers in slow design, where intention leads, detail matters, and beauty is uncovered, not added. Our approach is rooted in timeless values: clarity, depth, and respect for the land, the craft, and the lives shaped within.<br />
+                  We don’t chase more. We pursue what’s right, with restraint, purpose, and grace. For us, real estate is where philosophy becomes place.  With every development, like Amidst Nature, we create spaces grounded in stillness and emotional connection, not just places to live, but places to truly arrive.<br />
+                  Because we’re not just here to build.
+                  We’re here to create what deserves to last.
+
                 </p>
               </div>
               <div className="image-wrapper">

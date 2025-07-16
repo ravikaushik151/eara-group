@@ -95,16 +95,8 @@ export default function Home() {
             <div className="content">
               <h2>About Us</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                At Eara, we don’t just build — we craft spaces that speak in silence.
+                Spaces where design is intentional, nature is honoured, and every detail reflects quiet sophistication. Rooted in calm and shaped by purpose, our creations go beyond brick and land — they become places of presence, peace, and permanence. Amidst Nature is our bold beginning — and a promise of everything Eara stands for: thoughtful design, emotional resonance, and premium living redefined.
               </p>
             </div>
             <div className="image-wrapper">
@@ -138,7 +130,7 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left">
-                        <h4 className=" text-black mb-2 fs-4 m-center" style={{ fontSize: "24px" }}>Lorem Lipsom</h4>
+                        <h4 className=" text-black mb-2 fs-4 m-center" style={{ fontSize: "24px" }}>Amidst Nature</h4>
                         <p>
                           <span className="text-black">
                             <i
@@ -151,30 +143,22 @@ export default function Home() {
                       </div>
                       <div className="noclass">
                         <p className="text-justify m-center lh text-black mt-3">
-                          fermentum Lorem consectetur risus tincidunt auctor
-                          quis sapien Lorem at. aliquet quis ullamcorper sit
-                          suscipit tortor suscipit libero et
-                        </p>
-                        <p className="text-justify m-center lh text-black mt-3">
-                          vel malesuada quis non vitae eu bibendum vestibulum
-                          mauris vel amet, malesuada eu luctus. malesuada ante
-                          lacinia Suspendisse aliquet Nullam vel eu. tellus
-                          adipiscing malesuada eu ullamcorper et sollicitudin
+                          Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot — it’s a path back to balance.
                         </p>
                       </div>
                       <div className="row align-items-center mb-3 mt-4 mob-center">
                         <div className="col-md-6 col-12 border-end border-dark m-center">
                           <h4 className="bhk text-black fs-5 mb-2">
-                            2 &amp; 3 BHK
+                            ₹7999/sq.ft.
                           </h4>
                           <div className="text-black m-center">
-                            <h6>30+ World Class Amenities</h6>
+                            <h6>launch price — exclusive, value-driven investment</h6>
                           </div>
                         </div>
                         <div className="col-md-6 col-12 px-5 text-black m-center">
-                          <h6 className="mb-2">149 Sollicitudin</h6>
-                          <h6 className="mb-2">Malesuada ante: 78%</h6>
-                          <h6 className="mb-0">Malesuada quis + 9 Floors</h6>
+                          <h6 className="mb-2">15 acres</h6>
+                          <h6 className="mb-2">1500 – 3300 sq.ft.</h6>
+                          <h6 className="mb-0">BMRDA Approved</h6>
                         </div>
                       </div>
 

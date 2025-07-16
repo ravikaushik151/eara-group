@@ -16,23 +16,7 @@ const slides = [
         desc: '',
         button: '',
         href: '',
-        img: '/images/hero-image-edit-7.jpg',
-    },
-    {
-        title: '',
-        subtitle: '',
-        desc: '',
-        button: '',
-        href: '',
         img: '/images/hero-image-edit-4-new.jpg',
-    },
-    {
-        title: '',
-        subtitle: '',
-        desc: '',
-        button: '',
-        href: '',
-        img: '/images/hero-image-edit-3.jpg',
     },
 ];
 
