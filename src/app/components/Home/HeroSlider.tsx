@@ -24,7 +24,7 @@ const slides = [
         desc: '',
         button: '',
         href: '',
-        img: '/images/hero-image-edit-4.jpg',
+        img: '/images/hero-image-edit-4-new.jpg',
     },
     {
         title: '',
