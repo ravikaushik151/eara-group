@@ -11,9 +11,9 @@ import Link from 'next/link';
 
 const slides = [
     {
-        title: '',
+        title: 'Luxury reimagined in green. Welcome to EARA',
         subtitle: '',
-        desc: '',
+        desc: 'In a home kissed by trees and wrapped in serenity, you don’t just live — you thrive',
         button: '',
         href: '',
         img: '/images/hero-image-edit-4-new.jpg',
@@ -48,7 +48,7 @@ export default function HomeHeroSlider() {
                             />
                             <div className="container position-relative z-1">
                                 <div className="text-start">
-                                    <h1 className="display-3 fw-bold mb-3">{slide.title}</h1>
+                                    <h1 className="display-3 fw-bold mb-3 w-75">{slide.title}</h1>
                                     {slide.subtitle && <h4 className="mb-3 fw-light">{slide.subtitle}</h4>}
                                     {slide.desc && <p className="mb-4 lead">{slide.desc}</p>}
                                     <Link href={slide.href} className="btn btn-outline-light px-4 py-2 d-none">

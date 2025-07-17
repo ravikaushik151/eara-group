@@ -30,11 +30,7 @@ export default function Footer() {
             <p className="m-center">
               <strong>Eara Group</strong>
               <br />
-              KIADB Hardware & IT Park,
-              <br />
-              Near Shell Office, Devanahalli,
-              <br />
-              Bangalore 562 149
+              Kaggalipura, <br />Off Kanakapura Road, <br />Bengaluru, Karnataka 560082
             </p>
             <p className="pt-3 mb-2 fw-bold fs-6 text-start m-center">
               Follow Us

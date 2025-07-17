@@ -69,12 +69,9 @@ export default function About() {
               <div className="content">
                 <h2>About Us</h2>
                 <p>
-                  Eara began with a quiet belief, that the finest things in life aren’t loud. They’re felt in silence, built with care, and remembered because they hold meaning.<br />
-                  We are thinkers, makers, and believers in slow design, where intention leads, detail matters, and beauty is uncovered, not added. Our approach is rooted in timeless values: clarity, depth, and respect for the land, the craft, and the lives shaped within.<br />
-                  We don’t chase more. We pursue what’s right, with restraint, purpose, and grace. For us, real estate is where philosophy becomes place.  With every development, like Amidst Nature, we create spaces grounded in stillness and emotional connection, not just places to live, but places to truly arrive.<br />
-                  Because we’re not just here to build.
-                  We’re here to create what deserves to last.
-
+                  At EARA, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                  Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.<br />
+                  Our developments are not just investments in land, but in lifestyle. With a strong commitment to transparency, design excellence, and eco-responsibility, EARA creates environments that offer more than just space we blend conscious living and modern convenience.
                 </p>
               </div>
               <div className="image-wrapper">
@@ -104,9 +101,7 @@ export default function About() {
                     <div className="text-center">
                       <h3 className="fw-bold">Our Mission</h3>
                       <p>
-                        To deliver exceptional living experiences by integrating
-                        quality, innovation, and sustainability in every project
-                        we undertake.
+                        At EARA, we are dedicated to crafting serene, sustainable living environments that harmonize with nature. Our commitment to innovation, integrity, and quality shapes spaces that foster well-being, a sense of belonging, and quiet sophistication. Through thoughtful design and eco-conscious practices, we aim to create not just homes, but havens where communities thrive in harmony with the land.
                       </p>
                     </div>
                   </div>
@@ -114,9 +109,8 @@ export default function About() {
                     <div className="text-center">
                       <h3 className="fw-bold">Our Vision</h3>
                       <p>
-                        To become a leading real estate brand known for
-                        transforming lifestyles and shaping communities with
-                        trust and integrity.
+                        To create timeless living environments where elegance and sustainability coexist — nurturing life, honoring the land, and empowering communities to thrive in quiet harmony with nature.<br />
+                        Guided by innovation, built with integrity, and defined by quality, every space we craft reflects our unwavering commitment to a more sustainable tomorrow.
                       </p>
                     </div>
                   </div>

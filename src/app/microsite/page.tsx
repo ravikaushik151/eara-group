@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AmenitiesMarquee from "../components/AmenitiesMarquee";
 import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
+import Clubhouse from "../components/ClubhouseMarquee";
 export default function Home() {
   useEffect(() => {
 
@@ -49,7 +50,7 @@ export default function Home() {
               <div className="row text-center text-white">
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3">Project Size</h6>
-                  <p className="mb-0 fs-2 fw-light">80 Acres</p>
+                  <p className="mb-0 fs-2 fw-light">15 Acres</p>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3">Possession</h6>
@@ -76,26 +77,10 @@ export default function Home() {
               <div className="row  px-md-5">
                 <div className="col-md-6 d-flex align-items-center">
                   <div className=" ">
-                    <h2>About Us</h2>
-                    <p>
-                      At Binary Realty, we don’t just build structures — we
-                      shape meaningful spaces that reflect aspirations, enhance
-                      lifestyles, and stand the test of time. With every
-                      project, we blend innovation with intention, delivering
-                      homes defined by design clarity, construction excellence,
-                      and long-term value.
-                    </p>
-                    <p>
-                      Driven by a team that brings together deep industry
-                      experience and a forward-looking mindset, we approach each
-                      development as an opportunity to create more than just
-                      living spaces — we build communities rooted in trust,
-                      quality, and modern urban thinking.
-                    </p>
-                    <p>
-                      From vision to reality, every detail matters — and at
-                      Binary Realty, we ensure each one brings you closer to a
-                      better way of living.
+                    <h2 className="mb-0">Amidst Nature</h2>
+                    <span className="fs-5">Crafted by Earth. Designed by Eara.</span>
+                    <p className="mt-4">
+                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot &mdash; it&rsquo;s a path back to balance.
                     </p>
                   </div>
                 </div>
@@ -231,6 +216,26 @@ export default function Home() {
               </div>
             </div>
             <AmenitiesMarquee />
+          </div>
+
+
+          {/* Section 2: 360 Lifestyle Cards */}
+          <div className="section_biodiversity-benefits py-5" id="amenities">
+            <div className="padding-global">
+              <div className="container-large">
+                <div className="biodiversity-benefits_components">
+                  <div
+                    id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
+                    className="biodiversity-benefits_header-wrap"
+                  >
+                    <h2 data-animate={1} className="heading-style-h2">
+                      Club House
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Clubhouse />
           </div>
 
 
@@ -461,7 +466,7 @@ export default function Home() {
                   <div className="home-connectivity_image-wrapper">
                     <Image
                       alt="google map"
-                      src="https://placehold.co/700x1050?text=Master+Plan"
+                      src="https://placehold.co/700x1050?text=Location"
                       width={700}
                       height={700}
                     />
@@ -476,19 +481,16 @@ export default function Home() {
                           data-animate={1}
                           className="heading-style-h2 text-color-offwhite"
                         >
-                          Located{" "}
+                          Located in{" "}
                           <span className="text-color-accent">
-                            Off Hosa Road,
+                            Kaggalipura,
                           </span>{" "}
-                          Bengaluru.
+                          Off Kanakapura Road, Bengaluru.
                         </h2>
                       </div>
-                      <div className="home-connectivity_text-wrapper">
+                      <div className="w-100">
                         <div className="text-size-regular text-color-offwhite">
-                          A spacious city layout. A direct line to Electronic
-                          City. Fast connectivity to most of Bengaluru. Hosa
-                          Road is full of opportunities and is primed to be the
-                          citys new hub.
+                          Surrounded by serene greenery and nestled along the city’s fast-developing Kanakapura stretch, Kaggalipura is a peaceful retreat that’s seamlessly connected to Bengaluru’s most prominent hubs. With wide roads, clean air, and spiritual landmarks nearby, it’s not just a location — it’s a lifestyle.
                         </div>
                       </div>
                     </div>
@@ -497,20 +499,13 @@ export default function Home() {
                         id="w-node-_9441ef5f-b995-4318-be5b-df8ccce3289b-ac1b3e9a"
                         className="home-connectivity_distance"
                       >
-                        <div className="home-connectivity_distance-icon">
-                          <img
-                            src="/images/Layer_1-9.svg"
-                            loading="lazy"
-                            alt=""
-                            className="home-connectivity-icon"
-                          />
-                        </div>
+
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">HSR Layout</div>
+                            <div className="text-size-large">Art of Living International Center</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">7.4 kms</div>
+                            <div className="text-size-regular">7 mins</div>
                           </div>
                         </div>
                       </div>
@@ -518,22 +513,15 @@ export default function Home() {
                         id="w-node-_2e82b6e9-e071-cd09-e477-4c91b9a4b018-ac1b3e9a"
                         className="home-connectivity_distance"
                       >
-                        <div className="home-connectivity_distance-icon">
-                          <img
-                            src="/images/Layer_1-9.svg"
-                            loading="lazy"
-                            alt=""
-                            className="home-connectivity-icon"
-                          />
-                        </div>
+
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
                             <div className="text-size-large">
-                              Electronic City
+                              Vajarahalli Metro Station
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">9 kms</div>
+                            <div className="text-size-regular">15 mins</div>
                           </div>
                         </div>
                       </div>
@@ -541,40 +529,26 @@ export default function Home() {
                         id="w-node-_681bb572-5097-8f68-667c-d8add2d0c9a1-ac1b3e9a"
                         className="home-connectivity_distance"
                       >
-                        <div className="home-connectivity_distance-icon">
-                          <img
-                            src="/images/Layer_1-9.svg"
-                            loading="lazy"
-                            alt=""
-                            className="home-connectivity-icon"
-                          />
-                        </div>
+
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">Koramangala</div>
+                            <div className="text-size-large">NICE Road Junction</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">10.5 kms</div>
+                            <div className="text-size-regular">10 mins</div>
                           </div>
                         </div>
                       </div>
                       <div className="home-connectivity_distance">
-                        <div className="home-connectivity_distance-icon">
-                          <img
-                            src="/images/Layer_1-9.svg"
-                            loading="lazy"
-                            alt=""
-                            className="home-connectivity-icon"
-                          />
-                        </div>
+
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
                             <div className="text-size-large">
-                              HAL Old Airport Road
+                              Kumarans School
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">12 kms</div>
+                            <div className="text-size-regular">10–15 mins</div>
                           </div>
                         </div>
                       </div>
@@ -582,38 +556,24 @@ export default function Home() {
                         id="w-node-_681bb572-5097-8f68-667c-d8add2d0c9a1-ac1b3e9a"
                         className="home-connectivity_distance"
                       >
-                        <div className="home-connectivity_distance-icon">
-                          <img
-                            src="/images/Layer_1-9.svg"
-                            loading="lazy"
-                            alt=""
-                            className="home-connectivity-icon"
-                          />
-                        </div>
+
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">Koramangala</div>
+                            <div className="text-size-large">Metro Cash & Carry</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">10.5 kms</div>
+                            <div className="text-size-regular">20–25 mins</div>
                           </div>
                         </div>
                       </div>
                       <div className="home-connectivity_distance">
-                        <div className="home-connectivity_distance-icon">
-                          <img
-                            src="/images/Layer_1-9.svg"
-                            loading="lazy"
-                            alt=""
-                            className="home-connectivity-icon"
-                          />
-                        </div>
+
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">Airport Road</div>
+                            <div className="text-size-large"> Global Village Tech Park</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">12 kms</div>
+                            <div className="text-size-regular">20–25 mins</div>
                           </div>
                         </div>
                       </div>

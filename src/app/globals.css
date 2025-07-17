@@ -36,13 +36,13 @@ input[type="file"]:focus-visible {
 }
 
 /* Get rid of top margin on first element in any rich text element */
-.w-richtext > :not(div):first-child,
-.w-richtext > div:first-child > :first-child {
+.w-richtext> :not(div):first-child,
+.w-richtext>div:first-child> :first-child {
   margin-top: 0 !important;
 }
 
 /* Get rid of bottom margin on last element in any rich text element */
-.w-richtext > :last-child,
+.w-richtext> :last-child,
 .w-richtext ol li:last-child,
 .w-richtext ul li:last-child {
   margin-bottom: 0 !important;
@@ -98,6 +98,7 @@ input[type="file"]:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
+
   .hide,
   .hide-tablet {
     display: none !important;
@@ -674,7 +675,10 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  .m-center {text-align: center !important;}
+  .m-center {
+    text-align: center !important;
+  }
+
   .navbar-nav {
     margin-top: 30px !important;
   }
@@ -841,7 +845,7 @@ p {
   filter: brightness(0);
 }
 
-.hover-dropdown:hover > .dropdown-menu {
+.hover-dropdown:hover>.dropdown-menu {
   display: block;
   margin-top: 0;
 }
@@ -933,13 +937,13 @@ input[type="file"]:focus-visible {
 }
 
 /* Get rid of top margin on first element in any rich text element */
-.w-richtext > :not(div):first-child,
-.w-richtext > div:first-child > :first-child {
+.w-richtext> :not(div):first-child,
+.w-richtext>div:first-child> :first-child {
   margin-top: 0 !important;
 }
 
 /* Get rid of bottom margin on last element in any rich text element */
-.w-richtext > :last-child,
+.w-richtext> :last-child,
 .w-richtext ol li:last-child,
 .w-richtext ul li:last-child {
   margin-bottom: 0 !important;
@@ -997,6 +1001,7 @@ input[type="file"]:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
+
   .hide,
   .hide-tablet {
     display: none !important;
@@ -1382,7 +1387,7 @@ h2 {
 /* Show overlay on hover */
 .overlay-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
@@ -1598,8 +1603,7 @@ h5 {
 }
 
 .white-png {
-  filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%)
-    hue-rotate(213deg) brightness(104%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
 .object-fit-cover {
@@ -1674,9 +1678,9 @@ footer button:hover {
   transform: translateY(0);
   opacity: 1;
 }
+
 .white-png {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%)
-    hue-rotate(70deg) brightness(99%) contrast(107%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
 }
 
 .marquee {
@@ -1712,4 +1716,3 @@ footer button:hover {
     left: -100%;
   }
 }
-

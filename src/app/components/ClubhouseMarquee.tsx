@@ -4,23 +4,20 @@ import Image from 'next/image';
 import styles from '../../public/css/AmenitiesMarquee.module.css';
 
 const images = [
-    { src: '/images/Joggin.jpg', title: 'Concrete Roads' },
-    { src: '/images/Ev.jpg', title: 'Underground Utilities' },
-    { src: '/images/Yoga-Lawn.jpg', title: 'Rainwater Harvesting (RWH)' },
-    { src: '/images/Landscape-Garden.jpg', title: 'Landscaped Gardens' },
-    { src: '/images/Gym.jpg', title: 'Clubhouse' },
-    { src: '/images/CCTV.jpg', title: 'CCTV, 24/7 Security' },
-    { src: '/images/Tennis.jpg', title: 'Pickleball Court' },
-    { src: '/images/Basketball-Court.jpg', title: 'Cricket Pitch' },
-    { src: '/images/Ev.jpg', title: '8 Ft Compound Wall' },
-    { src: '/images/Elders-Garden.jpg', title: 'Elders Park & Children’s Play Area' },
-    { src: '/images/Ganesha-Temple.jpg', title: 'Ganesha Temple' },
-    { src: '/images/Landscape-Garden.jpg', title: 'Amphitheatre' },
-    { src: '/images/Landscape-Garden.jpg', title: 'Themed Plantation' },
+    { src: '/images/Gym.jpg', title: 'Lounge & Gym' },
+    { src: '/images/Yoga-Lawn.jpg', title: 'Pool & Deck' },
+    { src: '/images/Basketball-Court.jpg', title: 'Indoor/Outdoor Party Areas' },
+    { src: '/images/Landscape-Garden.jpg', title: 'Jacuzzi' },
+    { src: '/images/Ev.jpg', title: 'Steam & Sauna' },
+    { src: '/images/Elders-Garden.jpg', title: 'Library' },
+    { src: '/images/CCTV.jpg', title: 'Café' },
+    { src: '/images/Yoga-Lawn.jpg', title: 'Yoga Room' },
+    { src: '/images/Tennis.jpg', title: 'Board Games & More' },
 ];
 
 
-export default function Amenities() {
+
+export default function Clubhouse() {
     return (
         <section className={styles.section}>
             <div className={styles.marquee}>

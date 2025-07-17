@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
 import HomeHeroSlider from "./components/Home/HeroSlider";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -93,21 +94,26 @@ export default function Home() {
         <div id="scroll-more">
           <section className="section-1 px-md-5 px-3">
             <div className="content">
-              <h2>About Us</h2>
-              <p>
-                At Eara, we don’t just build — we craft spaces that speak in silence.
-                Spaces where design is intentional, nature is honoured, and every detail reflects quiet sophistication. Rooted in calm and shaped by purpose, our creations go beyond brick and land — they become places of presence, peace, and permanence. Amidst Nature is our bold beginning — and a promise of everything Eara stands for: thoughtful design, emotional resonance, and premium living redefined.
+              <h2 className="mb-0">Green Thinking. Luxurious Living.</h2>
+              <span className="fs-5">Because true luxury is not loud. It’s peaceful</span>
+              <p className="mt-4">
+                At EARA, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
               </p>
+              <Link
+                href="/about"
+                className="btn btn-dark text-white border mt-4"
+              >
+                Read More…
+              </Link>
             </div>
             <div className="image-wrapper">
-              <img
-                src="/images/About-Abut us .jpg"
-                alt="About"
+              <img src="/images/About-Abut us .jpg" alt="About"
               />
             </div>
           </section>
 
-          <section className="same-gap postion-relative bg-light">
+          <section className="same-gap postion-relative bg-light d-none">
             <div className="container-fluid">
               <div id="project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
@@ -177,6 +183,77 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <section className="same-gap position-relative bg-light">
+            <div className="container-fluid">
+              <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
+                <div className="row">
+                  <div className="title text-center mb-3">
+                    <h2 className="text-black mb-4">Upcoming Project</h2>
+                  </div>
+                </div>
+                <div className="row align-items-center">
+                  <div className="col-md-6 text-center">
+                    <Image
+                      alt="google map"
+                      src="https://placehold.co/700x1050?text=Upcoming+Project"
+                      width={800}
+                      height={600}
+                    />
+                  </div>
+                  <div
+                    className="col-md-5"
+                    data-aos="fade-left"
+                    data-aos-duration={1500}
+                  >
+                    <div>
+                      <div className="title text-left">
+                        <h4 className="text-black mb-2 fs-4 m-center" style={{ fontSize: "24px" }}>
+                          Premium Plotted Development
+                        </h4>
+                        <p>
+                          <span className="text-black">
+                            <i className="fa fa-map-marker mx-1" aria-hidden="true" />
+                            Kaggalipura, Off Kanakapura Road
+                          </span>
+                        </p>
+                      </div>
+                      <div className="noclass">
+                        <p className="text-justify m-center lh text-black mt-3">
+                          The project is nestled just off Kanakapura Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.
+                        </p>
+                      </div>
+                      <div className="row align-items-start mb-3 mt-4 mob-center">
+                        <div className="col-12 text-black">
+                          <h5 className="mb-3">Key Highlights of the Project:</h5>
+                          <ul className="text-black ps-3">
+                            <li>Plot sizes ranging from 1500 – 3300 sq ft.</li>
+                            <li>7,000 sq.ft. clubhouse with gym, pool, yoga room, café & library</li>
+                            <li>Indoor and outdoor party zones</li>
+                            <li>Ganesha temple, amphitheatre, elders’ park, children’s play area</li>
+                            <li>Cricket pitch & pickleball court</li>
+                            <li>Underground electrical cabling & LED streetlights</li>
+                            <li>Rainwater harvesting & sewage treatment plant</li>
+                            <li>Avenue plantation & landscaped green zones</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p className="m-center py-md-0 py-3">
+                        <a
+                          href="/microsite"
+                          className="btn btn-dark text-white border"
+                          style={{ fontSize: "15px" }}
+                        >
+                          More Details
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Section 2: 360 Lifestyle Cards */}
           <section className="lifestyle-section">
             <div className="container">
@@ -193,7 +270,8 @@ export default function Home() {
                       />
                     </div>
                     <div className="flip-back">
-                      <div className="overlay-text">Ethos Sutainablity</div>
+                      <div className="overlay-text">Sutainablity</div>
+                      <p className="mt-5">Creating future-ready communities that respect the land and restore balance with nature.</p>
                     </div>
                   </div>
                 </div>
@@ -208,7 +286,8 @@ export default function Home() {
                       />
                     </div>
                     <div className="flip-back">
-                      <div className="overlay-text">Ethos Innovation</div>
+                      <div className="overlay-text">Innovation</div>
+                      <p className="mt-5">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.</p>
                     </div>
                   </div>
                 </div>
@@ -223,7 +302,8 @@ export default function Home() {
                       />
                     </div>
                     <div className="flip-back">
-                      <div className="overlay-text">Ethos Intergrity</div>
+                      <div className="overlay-text">Intergrity</div>
+                      <p className="mt-5">Rooted in transparency and trust — every decision guided by what’s right and reliable.</p>
                     </div>
                   </div>
                 </div>
@@ -238,9 +318,8 @@ export default function Home() {
                       />
                     </div>
                     <div className="flip-back">
-                      <div className="overlay-text">
-                        Ethos Quality
-                      </div>
+                      <div className="overlay-text">Quality</div>
+                      <p className="mt-5">Delivering excellence in every detail, from foundation to finish.</p>
                     </div>
                   </div>
                 </div>

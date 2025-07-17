@@ -97,32 +97,40 @@ export default function Contact() {
                         className="text-white text-decoration-none"
                       >
                         <i className="fas fa-headset me-2"></i>
-                        <span>+91 1234567890</span>
+                        <span>+91 80 XXX XXXX</span>
                       </Link>
                     </div>
 
                     <div className="d-flex info_single align-items-center pb-2">
                       <Link
-                        href="mailto:abc@gmail.com"
+                        href="mailto:info@earagroup.com"
                         className="text-white text-decoration-none"
                       >
                         <i className="fas fa-envelope-open-text me-2"></i>
-                        <span>abc@gmail.com</span>
+                        <span> info@earagroup.com</span>
                       </Link>
                     </div>
 
                     <div className="d-flex info_single pb-2">
                       <i className="fas fa-map-marked-alt text-white mt-1 me-2"></i>
                       <span>
-                        <strong className="d-block mb-1">EARA GROUP</strong>
-                        KIADB Hardware & IT Park, Near Shell Office,
-                        Devanahalli, Bangalore 562 149
+                        <strong className="d-block mb-1">Address</strong>
+                        Kaggalipura, Off Kanakapura Road, Bengaluru, Karnataka 560082
                       </span>
                     </div>
                   </div>
                 </div>
                 {/* End Contact Info */}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="p-0">
+        <div className="contanter-fuild">
+          <div className="row">
+            <div className="col-md-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248853.859776601!2d77.43455888476556!3d12.949982343870047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1752757648398!5m2!1sen!2sin" width="100%" height="450" loading="lazy"></iframe>
             </div>
           </div>
         </div>
