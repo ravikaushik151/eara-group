@@ -116,10 +116,10 @@ export default function Home() {
                         className="home-stats_item"
                       >
                         <div className="text-color-accent">
-                          <h2 className="heading-style-h1">1000+</h2>
+                          <h2 className="heading-style-h1">Acres</h2>
                         </div>
                         <div className="text-color-offwhite">
-                          <div className="text-size-regular">Trees</div>
+                          <div className="text-size-regular">15 acres</div>
                         </div>
                       </div>
                       <div
@@ -128,12 +128,12 @@ export default function Home() {
                       >
                         <div className="text-color-accent">
                           <h2 className="heading-style-h1">
-                            1500 – 3300 <span className="heading-style-h5"></span>
+                            Plot Sizes<span className="heading-style-h5"></span>
                           </h2>
                         </div>
                         <div className="text-color-offwhite">
                           <div className="text-size-regular">
-                            sq.ft.
+                            1500 – 3300 Sqft
                           </div>
                         </div>
                       </div>
@@ -142,11 +142,11 @@ export default function Home() {
                         className="home-stats_item"
                       >
                         <div className="text-color-accent">
-                          <h2 className="heading-style-h1">BMRDA </h2>
+                          <h2 className="heading-style-h1">Approved </h2>
                         </div>
                         <div className="text-color-offwhite">
                           <div className="text-size-regular">
-                            Approved
+                            BMRDA
                           </div>
                         </div>
                       </div>

@@ -655,7 +655,7 @@ figcaption {
 
 .heading-style-h1 {
   letter-spacing: -.4px;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -770,7 +770,7 @@ figcaption {
 .text-size-regular {
   letter-spacing: -.12px;
   text-wrap: balance;
-  font-size: .9375rem;
+  font-size: 1.938rem;
 }
 
 .text-size-regular.text-color-light-green {
