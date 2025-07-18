@@ -48,10 +48,10 @@ export default function HomeHeroSlider() {
                             />
                             <div className="container position-relative z-1">
                                 <div className="text-start">
-                                    <h1 className="display-3 fw-bold mb-3 w-75">{slide.title}</h1>
+                                    <h1 className="display-3 fw-bold mb-3 w-50 text-center">{slide.title}</h1>
                                     {slide.subtitle && <h4 className="mb-3 fw-light">{slide.subtitle}</h4>}
                                     {slide.desc && <p className="mb-4 lead">{slide.desc}</p>}
-                                    <Link href={slide.href} className="btn btn-outline-light px-4 py-2 d-none">
+                                    <Link href={slide.href} className="btn btn-outline-light px-4 py-2 d-none  text-center">
                                         {slide.button}
                                     </Link>
                                 </div>
