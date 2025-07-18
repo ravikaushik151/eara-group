@@ -767,10 +767,16 @@ figcaption {
   display: grid;
 }
 
+.highlights .text-size-regular {
+  letter-spacing: -.12px;
+  text-wrap: balance;
+  font-size: 1.9375rem;
+}
+
 .text-size-regular {
   letter-spacing: -.12px;
   text-wrap: balance;
-  font-size: 1.938rem;
+  font-size: .9375rem;
 }
 
 .text-size-regular.text-color-light-green {

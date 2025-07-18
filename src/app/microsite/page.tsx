@@ -110,7 +110,7 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className="home-stats_items">
+                    <div className="home-stats_items highlights">
                       <div
                         id="w-node-cdea1d55-fe63-8f1c-3822-d0c3250461c3-ac1b3e9a"
                         className="home-stats_item"
