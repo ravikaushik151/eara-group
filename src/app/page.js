@@ -272,7 +272,7 @@ export default function Home() {
                     </div>
                     <div className="flip-back">
                       <div className="overlay-text">Sutainablity</div>
-                      <p className="mt-5">Creating future-ready communities that respect the land and restore balance with nature.</p>
+                      <p className="mt-5 w-75">Creating future-ready communities that respect the land and restore balance with nature.</p>
                     </div>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ export default function Home() {
                     </div>
                     <div className="flip-back">
                       <div className="overlay-text">Innovation</div>
-                      <p className="mt-5">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.</p>
+                      <p className="mt-5 w-75">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.</p>
                     </div>
                   </div>
                 </div>
@@ -304,7 +304,7 @@ export default function Home() {
                     </div>
                     <div className="flip-back">
                       <div className="overlay-text">Intergrity</div>
-                      <p className="mt-5">Rooted in transparency and trust — every decision guided by what’s right and reliable.</p>
+                      <p className="mt-5 w-75">Rooted in transparency and trust — every decision guided by what’s right and reliable.</p>
                     </div>
                   </div>
                 </div>
@@ -320,7 +320,7 @@ export default function Home() {
                     </div>
                     <div className="flip-back">
                       <div className="overlay-text">Quality</div>
-                      <p className="mt-5">Delivering excellence in every detail, from foundation to finish.</p>
+                      <p className="mt-5 w-75">Delivering excellence in every detail, from foundation to finish.</p>
                     </div>
                   </div>
                 </div>

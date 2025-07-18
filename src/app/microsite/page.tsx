@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="py-5 bg-light" id="price">
+          <section className="py-5 bg-light d-none" id="price">
             <div className="container">
               <h2 className="text-center">Price</h2>
               <div className="row justify-content-center g-4">

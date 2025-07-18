@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-family: Times New Roman, sans-serif;
 }
 
 /* Focus state style for keyboard navigation for the focusable elements */
@@ -33,6 +34,10 @@ body {
 input[type="file"]:focus-visible {
   outline: 0.125rem solid #4d65ff;
   outline-offset: 0.125rem;
+}
+
+h1 {
+  font-family: Times New Roman, sans-serif;
 }
 
 /* Get rid of top margin on first element in any rich text element */
@@ -287,7 +292,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Times New Roman, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 25px;

@@ -47,10 +47,14 @@ export default function HomeHeroSlider() {
                                 className="z-n1"
                             />
                             <div className="container position-relative z-1">
-                                <div className="text-start">
-                                    <h1 className="display-3 fw-bold mb-3 w-75 text-center">Luxury reimagined <br />in green. Welcome to EARA</h1>
-                                    {slide.subtitle && <h4 className="mb-3 fw-light">{slide.subtitle}</h4>}
-                                    {slide.desc && <p className="mb-4 lead">{slide.desc}</p>}
+                                <div className="d-flex">
+                                    <div>
+                                        <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA</h1>
+
+                                        {slide.subtitle && <h4 className="mb-3 fw-light">{slide.subtitle}</h4>}
+
+                                        {slide.desc && <p className="mb-4 lead text-center w-100 text-success">In a home kissed by trees and wrapped in serenity, <br /> you don’t just live - you thrive</p>}
+                                    </div>
                                     <Link href={slide.href} className="btn btn-outline-light px-4 py-2 d-none  text-center">
                                         {slide.button}
                                     </Link>
