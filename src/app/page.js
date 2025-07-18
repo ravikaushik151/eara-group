@@ -5,6 +5,7 @@ import Link from "next/link";
 import Preloader from "./components/Preloader";
 import HomeHeroSlider from "./components/Home/HeroSlider";
 import Image from "next/image";
+import TestimonialSlider from "./components/Home/TestimonialSlider";
 
 export default function Home() {
   useEffect(() => {
@@ -95,7 +96,7 @@ export default function Home() {
           <section className="section-1 px-md-5 px-3">
             <div className="content">
               <h2 className="mb-0">Green Thinking. Luxurious Living.</h2>
-              <span className="fs-5">Because true luxury is not loud. It’s peaceful</span>
+              <span className="fs-5">Because true luxury is not loud. It’s peaceful.</span>
               <p className="mt-4">
                 At EARA, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
                 Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
@@ -195,10 +196,10 @@ export default function Home() {
                 <div className="row align-items-center">
                   <div className="col-md-6 text-center">
                     <Image
-                      alt="google map"
-                      src="https://placehold.co/700x1050?text=Upcoming+Project"
-                      width={800}
-                      height={600}
+                      alt="Project"
+                      src="/images/Upcoming Project.jpg"
+                      width={500}
+                      height={700}
                     />
                   </div>
                   <div
@@ -326,62 +327,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="px-md-5 px-3">
-            <h2 className="text-center">TESTIMONIALS</h2>
-            <div className="info-cards">
-              <div className="info-box">
-                <div className="noclass">
-                  <h3>Zero Out</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industrys
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>
-              </div>
-              <div className="info-box">
-                <div className="noclass">
-                  <h3>Smart Power</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industrys
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>
-              </div>
-              <div className="info-box">
-                <div className="noclass">
-                  <h3>Sponge Effect</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industrys
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <TestimonialSlider />
           {/* Section 4: Blog Section */}
           <section className="px-md-5 px-3">
             <h2 className="text-center">LATEST BLOGS</h2>

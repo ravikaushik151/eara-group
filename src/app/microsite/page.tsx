@@ -53,20 +53,20 @@ export default function Home() {
                   <p className="mb-0 fs-2 fw-light">15 Acres</p>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3">Possession</h6>
-                  <p className="mb-0 fs-2 fw-light">2029</p>
+                  <h6 className="fw-bold text-uppercase fs-5 mb-3">Approved</h6>
+                  <p className="mb-0 fs-2 fw-light">BMRDA</p>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light mt-4 mt-md-0">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3">
-                    Starting Price
+                    Possession
                   </h6>
-                  <p className="mb-0 fs-2 fw-light">Rs 98 Lack*</p>
+                  <p className="mb-0 fs-2 fw-light">12 Months</p>
                 </div>
                 <div className="col-6 col-md-3 mt-4 mt-md-0">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3">
-                    Available Units
+                    Plot Sizes
                   </h6>
-                  <p className="mb-0 fs-2 fw-light">2 &amp; 3 BHK</p>
+                  <p className="mb-0 fs-2 fw-light">1500 – 3300 sq.ft.</p>
                 </div>
               </div>
             </div>
@@ -128,12 +128,12 @@ export default function Home() {
                       >
                         <div className="text-color-accent">
                           <h2 className="heading-style-h1">
-                            2 & 3 <span className="heading-style-h5">BHKS</span>
+                            1500 – 3300 <span className="heading-style-h5"></span>
                           </h2>
                         </div>
                         <div className="text-color-offwhite">
                           <div className="text-size-regular">
-                            Miyawaki Forest
+                            sq.ft.
                           </div>
                         </div>
                       </div>
@@ -142,11 +142,11 @@ export default function Home() {
                         className="home-stats_item"
                       >
                         <div className="text-color-accent">
-                          <h2 className="heading-style-h1">30+</h2>
+                          <h2 className="heading-style-h1">BMRDA </h2>
                         </div>
                         <div className="text-color-offwhite">
                           <div className="text-size-regular">
-                            World Class Amenities
+                            Approved
                           </div>
                         </div>
                       </div>
