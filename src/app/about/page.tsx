@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TestimonialSlider from "../components/Home/TestimonialSlider";
 export default function About() {
   return (
     <>
@@ -109,7 +110,7 @@ export default function About() {
                     <div className="text-center">
                       <h3 className="fw-bold">Our Vision</h3>
                       <p>
-                        To create timeless living environments where elegance and sustainability coexist — nurturing life, honoring the land, and empowering communities to thrive in quiet harmony with nature.<br />
+                        To create timeless living environments where elegance and sustainability coexist - nurturing life, honoring the land, and empowering communities to thrive in quiet harmony with nature.<br />
                         Guided by innovation, built with integrity, and defined by quality, every space we craft reflects our unwavering commitment to a more sustainable tomorrow.
                       </p>
                     </div>
@@ -119,35 +120,7 @@ export default function About() {
 
               </div>
             </section>
-            <section>
-              <h2 className="text-center">TESTIMONIALS</h2>
-              <div className="info-cards">
-                <div className="info-box">
-                  <div className="noclass">
-                    <h3>Zero Out</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                  </div>
-                </div>
-                <div className="info-box">
-                  <div className="noclass">
-                    <h3>Smart Power</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                  </div>
-                </div>
-                <div className="info-box">
-                  <div className="noclass">
-                    <h3>Sponge Effect</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <TestimonialSlider />
           </div>
         </div>
       </section>

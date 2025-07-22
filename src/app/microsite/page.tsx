@@ -66,7 +66,7 @@ export default function Home() {
                   <h6 className="fw-bold text-uppercase fs-5 mb-3">
                     Plot Sizes
                   </h6>
-                  <p className="mb-0 fs-2 fw-light">1500 – 3300 sq.ft.</p>
+                  <p className="mb-0 fs-2 fw-light">1500 - 3300 sq.ft.</p>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
                     <h2 className="mb-0">Amidst Nature</h2>
                     <span className="fs-5">Crafted by Earth. Designed by Eara.</span>
                     <p className="mt-4">
-                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot &mdash; it&rsquo;s a path back to balance.
+                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
                     </p>
                   </div>
                 </div>
@@ -464,12 +464,7 @@ export default function Home() {
               <div className="container-large">
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
-                    <Image
-                      alt="google map"
-                      src="https://placehold.co/700x1050?text=Location"
-                      width={700}
-                      height={700}
-                    />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.194431840613!2d77.5151932!3d12.8046365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41001a586e09%3A0x36693ac44946a387!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1753163287315!5m2!1sen!2sin" width="100%" height="700" loading="lazy"></iframe>
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"

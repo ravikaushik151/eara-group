@@ -1,18 +1,28 @@
-"use client";
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaCheckCircle } from 'react-icons/fa';
+
 export default function Career() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    city: "",
-    phone: "",
-    post1: "Sales Manager",
-    experience: "Fresher",
-    msg: "",
+    name: '',
+    email: '',
+    city: '',
+    phone: '',
+    post1: 'Sales Manager',
+    experience: 'Fresher',
+    msg: '',
     fileatt: null,
   });
+
+  const reasons = [
+    'Culture of Integrity',
+    'Innovation-First Mindset',
+    'Impact-Driven Work',
+    'Trusted Legacy',
+  ];
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -31,24 +41,25 @@ export default function Career() {
     });
 
     try {
-      const response = await fetch("/api/careers", {
-        method: "POST",
+      const response = await fetch('/api/careers', {
+        method: 'POST',
         body: form,
       });
 
       const result = await response.json();
-      alert(result.message || "Form submitted successfully!");
+      alert(result.message || 'Form submitted successfully!');
     } catch (err) {
-      alert("Error submitting form. Please try again.");
+      alert('Error submitting form. Please try again.');
     }
   };
 
   return (
     <>
+      {/* Banner */}
       <div id="carouselExampleDark" className="header-section">
         <div className="row">
           <div className="col-md-12">
-            <div className="image-container">
+            <div className="image-container position-relative">
               <Image
                 src="/images/hero-image-edit-4.jpg"
                 height={2880}
@@ -56,155 +67,69 @@ export default function Career() {
                 className="img-fluid masterpiece rounded-4"
                 alt="masterpiece"
               />
-              <div className="overlay2 ">
-                <div className="text-white d-block">
-                  {" "}
-                  <p className="text-center d-block fs-1 mb-3 text-uppercase">
-                    {" "}
-                    Career
-                  </p>
-                  <p className="text-center d-block fs-6 ">
-                    <Link
-                      className="text-white text-decoration-none"
-                      href={"./"}
-                    >
-                      {" "}
-                      Home
-                    </Link>{" "}
-                    / Career{" "}
-                  </p>
-                </div>
+              <div className="overlay2 position-absolute top-50 start-50 translate-middle text-center text-white">
+                <p className="fs-1 mb-3 text-uppercase">Career</p>
+                <p className="fs-6">
+                  <Link className="text-white text-decoration-none" href="/">
+                    Home
+                  </Link>{' '}
+                  / Career
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Career Section */}
       <section className="bg-light py-5">
         <div className="container">
           <div className="text-center mb-5">
-            <h2>Careers </h2>
-            {/* <h2>Careers - Explore Our Job Opportunities</h2> */}
+            <h2 className="mb-2">Build the Future with EARA</h2>
+            <span>
+              Be part of a mission where values lead, ideas thrive, and growth is a shared journey.
+            </span>
           </div>
 
-          <div className="row ">
-            {/* Accordion Section */}
-            <div className="col-lg-6">
-              <div className="accordion" id="jobAccordion">
-                {[
-                  {
-                    title: "Sales Executive",
-                    content: (
-                      <>
-                        <p>
-                          Dynamic and highly energetic individuals needed...
-                        </p>
-                        <p>
-                          Experience: 0-3 years
-                          <br />
-                          Education: Graduate
-                          <br />
-                          Collect data and update
-                          laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique. lacinia. ipsum nisi ullamcorper dolor, tristique. a vel quis non lacinia. nibh vel dignissim aliquet lacinia libero nibh at Donec dolor,
-                          laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique.
-                          laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique. lacinia. ipsum nisi ullamcorper dolor, tristique. a vel quis non lacinia. nibh vel dignissim aliquet lacinia libero nibh at Donec dolor,
-                          laoreet tristique. fringilla. dolor nibh ullamcorper sit tristique.
-                        </p>
-                      </>
-                    ),
-                  },
-                  {
-                    title: "Project Manager",
-                    content: (
-                      <>
-                        <p>Responsible for planning, coordinating...</p>
-                        <p>
-                          <strong>Key Responsibilities:</strong>
-                          <br />
-                          1. Project Planning...
-                        </p>
-                      </>
-                    ),
-                  },
-                  {
-                    title: "Lead Architect",
-                    content: (
-                      <>
-                        <p>Oversees design, planning, and execution...</p>
-                        <p>
-                          <strong>Qualifications:</strong>
-                          <br /> Bachelor’s/Master’s in Architecture...
-                        </p>
-                      </>
-                    ),
-                  },
-                  {
-                    title: "Brand Manager",
-                    content: (
-                      <>
-                        <p>Develop strategic marketing plans...</p>
-                        <p>
-                          Experience: 3–7 years
-                          <br />
-                          Education: PG
-                          <br />
-                          Location: Corporate Office
-                        </p>
-                      </>
-                    ),
-                  },
-                ].map((job, index) => (
-                  <div className="accordion-item" key={index}>
-                    <h5 className="accordion-header ">
-                      <button
-                        className={`accordion-button text-dark fs-6 fw-bold ${index !== 0 ? "collapsed" : ""
-                          }`}
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${index}`}
-                        aria-expanded={index === 0}
-                        aria-controls={`collapse${index}`}
-                      >
-                        {job.title}
-                      </button>
-                    </h5>
-                    <div
-                      id={`collapse${index}`}
-                      className={`accordion-collapse collapse ${index === 0 ? "show" : ""
-                        }`}
-                      data-bs-parent="#jobAccordion"
-                    >
-                      <div className="accordion-body">{job.content}</div>
-                    </div>
+          <div className="row align-items-center">
+            {/* Why Join */}
+            <div className="col-lg-6 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
+                Why Join <span className="text-danger">EARA</span> Groups?
+              </h2>
+              <p className="text-muted mb-4">
+                At EARA, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
+              </p>
+
+              <div className="row">
+                {reasons.map((reason) => (
+                  <div key={reason} className="col-6 d-flex align-items-start mb-3">
+                    <FaCheckCircle className="text-success me-2 mt-1" />
+                    <span className="text-dark">{reason}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Application Form */}
+            {/* Job Form */}
             <div className="col-lg-6 bg-white">
-              <div className="px-3 px-md-4  py-4">
-                <h5
-                  className="text-uppercase mb-4"
-                  style={{ color: "#282563" }}
-                >
+              <div className="px-3 px-md-4 py-4 border rounded shadow-sm">
+                <h5 className="text-uppercase mb-4" style={{ color: '#282563' }}>
                   APPLY FOR YOUR JOB
                 </h5>
                 <form onSubmit={handleSubmit} encType="multipart/form-data">
                   <div className="row">
                     {[
-                      ["name", "Name", "text", "Name"],
-                      ["email", "Email address", "email", "Email"],
-                      ["city", "City", "text", "City"],
-                      ["phone", "Phone Number", "text", "Mobile No."],
+                      ['name', 'Name', 'text', 'Name'],
+                      ['email', 'Email address', 'email', 'Email'],
+                      ['city', 'City', 'text', 'City'],
+                      ['phone', 'Phone Number', 'text', 'Mobile No.'],
                     ].map(([name, label, type, placeholder]) => (
                       <div className="form-group col-md-6" key={name}>
-                        <label className="d-none" htmlFor={name}>
-                          {label}
-                        </label>
                         <input
                           type={type}
-                          className="form-control mb-3 py-2"
                           name={name}
+                          className="form-control mb-3 py-2"
                           onChange={handleChange}
                           required
                           placeholder={placeholder}
@@ -212,22 +137,7 @@ export default function Career() {
                       </div>
                     ))}
 
-                    <div className="form-group col-md-6">
-                      <label className="d-none">Apply for:</label>
-                      <select
-                        name="post1"
-                        className="form-control mb-3 py-2"
-                        onChange={handleChange}
-                      >
-                        <option value="Sales Manager">Sales Manager</option>
-                        <option value="Project Manager">Project Manager</option>
-                        <option value="Lead Architect">Lead Architect</option>
-                        <option value="Brand Manager">Brand Manager</option>
-                      </select>
-                    </div>
-
-                    <div className="form-group col-md-6">
-                      <label className="d-none">Experience:</label>
+                    <div className="form-group col-md-12">
                       <select
                         name="experience"
                         className="form-control mb-3 py-2"
@@ -242,7 +152,6 @@ export default function Career() {
                     </div>
 
                     <div className="form-group col-md-12">
-                      <label className="d-none">Message:</label>
                       <textarea
                         name="msg"
                         className="form-control mb-3 py-2"
@@ -253,7 +162,6 @@ export default function Career() {
                     </div>
 
                     <div className="form-group col-md-12">
-                      <label className="d-none">Resume:</label>
                       <input
                         type="file"
                         name="fileatt"
@@ -264,11 +172,8 @@ export default function Career() {
                       />
                     </div>
 
-                    <div className="text-center form-group col-md-12">
-                      <button
-                        type="submit"
-                        className="btn btn-dark py-2 px-4 mt-2"
-                      >
+                    <div className="text-center col-md-12">
+                      <button type="submit" className="btn btn-dark py-2 px-4 mt-2">
                         Submit
                       </button>
                     </div>
