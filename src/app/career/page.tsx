@@ -89,9 +89,9 @@ export default function Career() {
             {/* Why Join */}
             <div className="col-lg-6 mb-4">
               <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
-                Why Join <span className="text-danger">EARA</span> Groups?
+                Why Join <span className="text-danger">EARA</span> Group?
               </h2>
-              <p className="text-muted mb-4">
+              <p className="mb-4">
                 At EARA, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
               </p>
 
