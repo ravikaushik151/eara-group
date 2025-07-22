@@ -264,7 +264,7 @@ export default function Home() {
                   <div className="flip-inner">
                     <div className="flip-front">
                       <img
-                        src="/images/Ethos_Sutainablity.jpg"
+                        src="/images/Ethos-Sustainablity.jpg"
                         alt="Entry"
                         width={600}
                         height={250}
