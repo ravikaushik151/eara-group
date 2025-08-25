@@ -17,8 +17,8 @@ const testimonials = [
 
 const TestimonialSlider = () => {
     return (
-        <section className="px-md-5 px-3 py-5 bg-light">
-            <h2 className="text-center mb-4 fw-bold">TESTIMONIALS</h2>
+        <section className="px-md-5 px-3 py-5 bg-light theme-bg-light">
+            <h2 className="text-center mb-4 fw-bold theme-color-dark">TESTIMONIALS</h2>
 
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
@@ -32,11 +32,12 @@ const TestimonialSlider = () => {
                     768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 },
                 }}
+                className='mb-3'
             >
                 {testimonials.map((text, index) => (
                     <SwiperSlide key={index}>
-                        <div className="info-box p-4 bg-white shadow-sm h-100 rounded">
-                            <p className="text-muted">{text}</p>
+                        <div className="info-box p-4 bg-white  theme-bg-dark shadow-sm h-100 rounded">
+                            <p className="text-muted theme-color-light">{text}</p>
                         </div>
                     </SwiperSlide>
                 ))}
