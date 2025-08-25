@@ -51,10 +51,10 @@ export default function Blog() {
             </div>
 
             {/* Blog Content */}
-            <section className="section-padding" style={{ marginTop: '0px' }}>
+            <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
                 <div className="container">
                     <div className="row justify-content-end mb-4">
-                        <div className='col-md-4'>
+                        <div className='col-md-4 '>
                             <h2 className="text-center">
                                 Blogs
                             </h2>
@@ -77,8 +77,8 @@ export default function Blog() {
                     </div>
                     <div className="row">
                         {paginatedPosts.length > 0 ? paginatedPosts.map((post) => (
-                            <div className="col-md-4 py-3 px-3" key={post.slug}>
-                                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 ">
+                            <div className="col-md-4 py-3 px-3 " key={post.slug}>
+                                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3  theme-bg-dark">
                                     <div className="services-thumb">
                                         <Link href={`/blog/${post.slug}`}>
                                             <Image
@@ -92,13 +92,13 @@ export default function Blog() {
                                     </div>
                                     <div className="services-content">
                                         <h6 className="title my-3  fw-bold">
-                                            <Link className='text-dark  fw-bold text-decoration-none' href={`/blog/${post.slug}`} style={{ fontSize: "21px", fontWeight: "600" }}>
+                                            <Link className='text-dark  fw-bold text-decoration-none theme-color-light' href={`/blog/${post.slug}`} style={{ fontSize: "21px", fontWeight: "600" }}>
                                                 {post.title}
                                             </Link>
                                         </h6>
-                                        <p className='mb-0'>{post.excerpt}</p>
-                                        <div className="text-center py-3 my-3 small ">
-                                            <Link href={`/blog/${post.slug}`} className="btn btn-dark  ">Read More</Link>
+                                        <p className='mb-0 theme-color-light'>{post.excerpt}</p>
+                                        <div className="text-center py-3 my-3 small  ">
+                                            <Link href={`/blog/${post.slug}`} className="btn btn-dark theme-bg-light theme-color-dark ">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ export default function Blog() {
                                             className={`page-item mx-1 bg-black ${currentPage === i + 1 ? 'active' : ''}`}
                                             onClick={() => setCurrentPage(i + 1)}
                                         >
-                                            <button className="page-link bg-black border-dark text-white rounded-0 ">{i + 1}</button>
+                                            <button className="page-link bg-black border-dark text-white rounded-0 theme-bg-dark">{i + 1}</button>
                                         </li>
                                     ))}
                                 </ul>

@@ -76,11 +76,11 @@ export default function Career() {
       </div>
 
       {/* Career Section */}
-      <section className="bg-light py-5">
+      <section className="bg-light py-5 theme-bg-light">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-center mb-5 theme-color-dark">
             <h2 className="mb-2">Build the Future with EARA</h2>
-            <span>
+            <span className=' theme-color-dark'>
               Be part of a mission where values lead, ideas thrive, and growth is a shared journey.
             </span>
           </div>
@@ -88,10 +88,10 @@ export default function Career() {
           <div className="row align-items-center">
             {/* Why Join */}
             <div className="col-lg-6 mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
-                Why Join <span className="text-danger">EARA</span> Group?
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4  theme-color-dark">
+                Why Join <span className="text-success ">EARA</span> Group?
               </h2>
-              <p className="mb-4">
+              <p className="mb-4  theme-color-dark">
                 At EARA, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
               </p>
 
@@ -99,16 +99,16 @@ export default function Career() {
                 {reasons.map((reason) => (
                   <div key={reason} className="col-6 d-flex align-items-start mb-3">
                     <FaCheckCircle className="text-success me-2 mt-1" />
-                    <span className="text-dark">{reason}</span>
+                    <span className="text-dark  theme-color-dark">{reason}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Job Form */}
-            <div className="col-lg-6 bg-white">
-              <div className="px-3 px-md-4 py-4 border rounded shadow-sm">
-                <h5 className="text-uppercase mb-4" style={{ color: '#282563' }}>
+            <div className="col-lg-6 ">
+              <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
+                <h5 className="text-uppercase mb-4 theme-color-dark " style={{ color: '#282563' }}>
                   APPLY FOR YOUR JOB
                 </h5>
                 <form onSubmit={handleSubmit} encType="multipart/form-data">
@@ -167,7 +167,7 @@ export default function Career() {
                     </div>
 
                     <div className="text-center col-md-12">
-                      <button type="submit" className="btn btn-dark py-2 px-4 mt-2">
+                      <button type="submit" className="btn btn-dark py-2 px-4 mt-2 theme-bg-dark theme-color-light">
                         Submit
                       </button>
                     </div>

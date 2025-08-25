@@ -43,43 +43,43 @@ export default function Home() {
         </div>
         <div id="scroll-more">
           <section
-            className="project-info-section"
-            style={{ backgroundColor: "#1e291d" }}
+            className="project-info-section theme-bg-dark"
+           
           >
             <div className="container">
               <div className="row text-center text-white">
                 <div className="col-6 col-md-3 border-end border-light">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3">Project Size</h6>
-                  <p className="mb-0 fs-2 fw-light">15 Acres</p>
+                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Project Size</h6>
+                  <p className="mb-0 fs-2 fw-light theme-color-light">15 Acres</p>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3">Approved</h6>
-                  <p className="mb-0 fs-2 fw-light">BMRDA</p>
+                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved</h6>
+                  <p className="mb-0 fs-2 fw-light theme-color-light">BMRDA</p>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light mt-4 mt-md-0">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3">
+                  <h6 className="fw-bold text-uppercase fs-5 mb-3  theme-color-light">
                     Possession
                   </h6>
-                  <p className="mb-0 fs-2 fw-light">12 Months</p>
+                  <p className="mb-0 fs-2 fw-light theme-color-light">12 Months</p>
                 </div>
                 <div className="col-6 col-md-3 mt-4 mt-md-0">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3">
+                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">
                     Plot Sizes
                   </h6>
-                  <p className="mb-0 fs-2 fw-light">1500 - 3300 sq.ft.</p>
+                  <p className="mb-0 fs-2 fw-light theme-color-light">1500 - 3300 sq.ft.</p>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="section-1" id="about">
+          <section className="section-1 theme-bg-light" id="about">
             <div className="contenter">
               <div className="row  px-md-5">
                 <div className="col-md-6 d-flex align-items-center">
                   <div className=" ">
-                    <h2 className="mb-0">Amidst Nature</h2>
-                    <span className="fs-5">Crafted by Earth. Designed by Eara.</span>
-                    <p className="mt-4">
+                    <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
+                    <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by Eara.</span>
+                    <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
                     </p>
                   </div>
@@ -97,14 +97,14 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <div className="py-5" style={{ backgroundColor: "#1e291d" }}>
+          <div className="py-5 theme-bg-dark" >
             <div className="padding-global">
               <div className="container-large">
                 <div className="home-stats_components">
                   <div className="home-stats_content-wrapper">
                     <div className="home-stats_text-wrapper">
                       <div className="text-color-grey">
-                        <div className="text-size-medium">
+                        <div className="text-size-medium theme-color-light">
                           Enter and see a sprawling canvas of green within the
                           city
                         </div>
@@ -116,10 +116,10 @@ export default function Home() {
                         className="home-stats_item"
                       >
                         <div className="text-color-accent">
-                          <h2 className="heading-style-h1">Acres</h2>
+                          <h2 className="heading-style-h1 theme-color-light">Acres</h2>
                         </div>
                         <div className="text-color-offwhite">
-                          <div className="text-size-regular">15 acres</div>
+                          <div className="text-size-regular theme-color-light">15 acres</div>
                         </div>
                       </div>
                       <div
@@ -127,12 +127,12 @@ export default function Home() {
                         className="home-stats_item"
                       >
                         <div className="text-color-accent">
-                          <h2 className="heading-style-h1">
+                          <h2 className="heading-style-h1 theme-color-light">
                             Plot Sizes<span className="heading-style-h5"></span>
                           </h2>
                         </div>
                         <div className="text-color-offwhite">
-                          <div className="text-size-regular">
+                          <div className="text-size-regular theme-color-light">
                             1500 – 3300 Sqft
                           </div>
                         </div>
@@ -142,10 +142,10 @@ export default function Home() {
                         className="home-stats_item"
                       >
                         <div className="text-color-accent">
-                          <h2 className="heading-style-h1">Approved </h2>
+                          <h2 className="heading-style-h1 theme-color-light">Approved </h2>
                         </div>
                         <div className="text-color-offwhite">
-                          <div className="text-size-regular">
+                          <div className="text-size-regular theme-color-light">
                             BMRDA
                           </div>
                         </div>
@@ -200,7 +200,7 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <div className="section_biodiversity-benefits py-5" id="amenities">
+          <div className="section_biodiversity-benefits py-5  theme-bg-light" id="amenities">
             <div className="padding-global">
               <div className="container-large">
                 <div className="biodiversity-benefits_components">
@@ -220,7 +220,7 @@ export default function Home() {
 
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <div className="section_biodiversity-benefits py-5" id="amenities">
+          <div className="section_biodiversity-benefits py-5 theme-bg-dark " id="amenities">
             <div className="padding-global">
               <div className="container-large">
                 <div className="biodiversity-benefits_components">
@@ -228,7 +228,7 @@ export default function Home() {
                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
                     className="biodiversity-benefits_header-wrap"
                   >
-                    <h2 data-animate={1} className="heading-style-h2">
+                    <h2 data-animate={1} className="heading-style-h2 theme-color-light">
                       Club House
                     </h2>
                   </div>
@@ -241,7 +241,7 @@ export default function Home() {
 
           <div
             data-w-id="8905ac58-eaf7-356f-bf47-4ad8001e257f"
-            className="section_home-masterplan"
+            className="section_home-masterplan theme-bg-light"
             id="master-plan"
           >
             <div className="padding-global">
@@ -250,7 +250,7 @@ export default function Home() {
                   <div className="home-masterplan_left">
                     <h2
                       data-animate={1}
-                      className="heading-style-h2 text-color-dark-rainforest"
+                      className="heading-style-h2 text-color-dark-rainforest theme-color-dark"
                     >
                       The Master Plan
                     </h2>
@@ -269,7 +269,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="home-masterplan_legend">
-                    <div className="heading-style-h5">Legend</div>
+                    <div className="heading-style-h5  theme-color-dark">Legend</div>
                     <div className="home-highlights_legend-grid">
                       <div
                         id="w-node-be4663ad-c0a0-253c-f46e-d6c640bbbb11-ac1b3e9a"
@@ -279,13 +279,13 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">9</div>
                           </div>
-                          <div className="home-highlights_text">Clubhouse</div>
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Clubhouse</div>
                         </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">10</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
                             Community Seating
                           </div>
                         </div>
@@ -293,7 +293,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">11</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
                             Box Cricket
                           </div>
                         </div>
@@ -301,13 +301,13 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">12</div>
                           </div>
-                          <div className="home-highlights_text">Parking</div>
+                          <div className=" home-highlights_text theme-color-dark">Parking</div>
                         </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">13</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Bird Watching Zone
                           </div>
                         </div>
@@ -315,7 +315,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">14</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Amphitheatre
                           </div>
                         </div>
@@ -323,7 +323,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">15</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Multipurpose Lawn
                           </div>
                         </div>
@@ -331,7 +331,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">16</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Senior Citizen Park
                           </div>
                         </div>
@@ -344,13 +344,13 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">1</div>
                           </div>
-                          <div className="home-highlights_text">Entry/Exit</div>
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Entry/Exit</div>
                         </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">2</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Entrace Archway
                           </div>
                         </div>
@@ -358,19 +358,19 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">3</div>
                           </div>
-                          <div className="home-highlights_text">Roundabout</div>
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Roundabout</div>
                         </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">4</div>
                           </div>
-                          <div className="home-highlights_text">Pet Park</div>
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Pet Park</div>
                         </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">5</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Tennis Court
                           </div>
                         </div>
@@ -378,7 +378,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">6</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Multipurpose Court
                           </div>
                         </div>
@@ -386,13 +386,13 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">7</div>
                           </div>
-                          <div className="home-highlights_text">Open Park</div>
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Open Park</div>
                         </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">8</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Kids Play Area
                           </div>
                         </div>
@@ -402,7 +402,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">17</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
                             Padel Tennis
                           </div>
                         </div>
@@ -410,7 +410,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">18</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
                             Garden Pavilion
                           </div>
                         </div>
@@ -418,7 +418,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">19</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
                             Leisure Park
                           </div>
                         </div>
@@ -426,7 +426,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">20</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
                             Miyawaki Forest
                           </div>
                         </div>
@@ -434,7 +434,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">21</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
                             Avenue Plantation
                           </div>
                         </div>
@@ -442,7 +442,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">22</div>
                           </div>
-                          <div className="home-highlights_text">
+                          <div className=" home-highlights_text theme-color-dark">
                             Outdoor Gym
                           </div>
                         </div>
@@ -450,7 +450,7 @@ export default function Home() {
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">23</div>
                           </div>
-                          <div className="home-highlights_text">Services</div>
+                          <div className=" home-highlights_text theme-color-dark">Services</div>
                         </div>
                       </div>
                     </div>
@@ -459,7 +459,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="section_home-connectivity" id="location">
+          <div className="section_home-connectivity theme-bg-dark" id="location">
             <div className="padding-global">
               <div className="container-large">
                 <div className="home-connectivity_components">
@@ -474,7 +474,7 @@ export default function Home() {
                       <div className="home-connectivity_heading-wrapper">
                         <h2
                           data-animate={1}
-                          className="heading-style-h2 text-color-offwhite"
+                          className="heading-style-h2 text-color-offwhite theme-color-light"
                         >
                           Located in{" "}
                           <span className="text-color-accent">
@@ -484,7 +484,7 @@ export default function Home() {
                         </h2>
                       </div>
                       <div className="w-100">
-                        <div className="text-size-regular text-color-offwhite">
+                        <div className="text-size-regular text-color-offwhite theme-color-light">
                           Surrounded by serene greenery and nestled along the city’s fast-developing Kanakapura stretch, Kaggalipura is a peaceful retreat that’s seamlessly connected to Bengaluru’s most prominent hubs. With wide roads, clean air, and spiritual landmarks nearby, it’s not just a location — it’s a lifestyle.
                         </div>
                       </div>
@@ -497,10 +497,10 @@ export default function Home() {
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">Art of Living International Center</div>
+                            <div className="text-size-large theme-color-light">Art of Living International Center</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">7 mins</div>
+                            <div className="text-size-regular theme-color-light">7 mins</div>
                           </div>
                         </div>
                       </div>
@@ -511,12 +511,12 @@ export default function Home() {
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">
+                            <div className="text-size-large theme-color-light">
                               Vajarahalli Metro Station
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">15 mins</div>
+                            <div className="text-size-regular theme-color-light">15 mins</div>
                           </div>
                         </div>
                       </div>
@@ -527,10 +527,10 @@ export default function Home() {
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">NICE Road Junction</div>
+                            <div className="text-size-large theme-color-light">NICE Road Junction</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">10 mins</div>
+                            <div className="text-size-regular theme-color-light">10 mins</div>
                           </div>
                         </div>
                       </div>
@@ -538,12 +538,12 @@ export default function Home() {
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">
+                            <div className="text-size-large  theme-color-light">
                               Kumarans School
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">10–15 mins</div>
+                            <div className="text-size-regular theme-color-light">10–15 mins</div>
                           </div>
                         </div>
                       </div>
@@ -554,10 +554,10 @@ export default function Home() {
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large">Metro Cash & Carry</div>
+                            <div className="text-size-large theme-color-light">Metro Cash & Carry</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">20–25 mins</div>
+                            <div className="text-size-regular theme-color-light">20–25 mins</div>
                           </div>
                         </div>
                       </div>
@@ -565,10 +565,10 @@ export default function Home() {
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large"> Global Village Tech Park</div>
+                            <div className="text-size-large theme-color-light"> Global Village Tech Park</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular">20–25 mins</div>
+                            <div className="text-size-regular theme-color-light">20–25 mins</div>
                           </div>
                         </div>
                       </div>
