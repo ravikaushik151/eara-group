@@ -68,12 +68,14 @@ export default function About() {
             </div>
             <section className="section-1">
               <div className="content">
-                <h2>About Us</h2>
-                <p>
-                  At EARA, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
-                  Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.<br />
-                  Our developments are not just investments in land, but in lifestyle. With a strong commitment to transparency, design excellence, and eco-responsibility, EARA creates environments that offer more than just space we blend conscious living and modern convenience.
+                <h2 className="mb-3">About Us</h2>
+                <p className="mb-2">
+                  At EARA, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
+
                 </p>
+                <p className="mb-2">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
+                </p>
+                <p className="mb-2">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
               </div>
               <div className="image-wrapper">
                 <Image
