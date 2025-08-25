@@ -258,7 +258,7 @@ export default function Home() {
           {/* Section 2: 360 Lifestyle Cards */}
           <section className="lifestyle-section  ">
             <div className="container">
-              <h2 className="theme-color-dark">Ethos of EARA Group</h2>
+              <h2 className="theme-color-dark"> {/*Ethos of */} EARA Group</h2>
               {/* <div className="lifestyle-grid">
                 <div className="flip-card rounded-tl">
                   <div className="flip-inner">
