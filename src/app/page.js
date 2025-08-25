@@ -93,11 +93,11 @@ export default function Home() {
           <HomeHeroSlider />
         </div>
         <div id="scroll-more">
-          <section className="section-1 px-md-5 px-3">
+          <section className="section-1 px-md-5 px-3 theme-bg-light">
             <div className="content">
-              <h2 className="mb-0">Green Thinking. Luxurious Living.</h2>
-              <span className="fs-5">Because true luxury is not loud. It’s peaceful.</span>
-              <p className="mt-4">
+              <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
+              <span className="fs-5 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
+              <p className="mt-4 theme-color-dark">
                 At EARA, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
                 Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
               </p>
@@ -185,12 +185,12 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="same-gap position-relative bg-light">
+          <section className="same-gap position-relative bg-light theme-bg-dark">
             <div className="container-fluid">
               <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
                   <div className="title text-center mb-3">
-                    <h2 className="text-black mb-4">Upcoming Project</h2>
+                    <h2 className="text-black mb-4 theme-color-light">Upcoming Project</h2>
                   </div>
                 </div>
                 <div className="row align-items-center">
@@ -209,25 +209,25 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left">
-                        <h4 className="text-black mb-2 fs-4 m-center" style={{ fontSize: "24px" }}>
+                        <h4 className="text-black mb-2 fs-4 m-center theme-color-light" style={{ fontSize: "24px" }}>
                           Ultra Premium Plotted Development
                         </h4>
-                        <p>
-                          <span className="text-black">
+                        <p className="">
+                          <span className="theme-color-light">
                             <i className="fa fa-map-marker mx-1" aria-hidden="true" />
                             Kaggalipura, Off Kanakapura Road
                           </span>
                         </p>
                       </div>
                       <div className="noclass">
-                        <p className="text-justify m-center lh text-black mt-3">
+                        <p className="text-justify m-center lh text-black mt-3 theme-color-light">
                           The project is nestled just off Kanakapura Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.
                         </p>
                       </div>
                       <div className="row align-items-start mb-3 mt-4 mob-center">
                         <div className="col-12 text-black">
-                          <h5 className="mb-3">Key Highlights of the Project:</h5>
-                          <ul className="text-black ps-3">
+                          <h5 className="mb-3 theme-color-light">Key Highlights of the Project:</h5>
+                          <ul className="text-black ps-3 theme-color-light">
                             <li>Plot sizes ranging from 1500 – 3300 sq ft.</li>
                             <li>7,000 sq.ft. clubhouse with gym, pool, yoga room, café & library</li>
                             <li>Indoor and outdoor party zones</li>
@@ -242,7 +242,7 @@ export default function Home() {
                       <p className="m-center py-md-0 py-3">
                         <a
                           href="/microsite"
-                          className="btn btn-dark text-white border"
+                          className="btn btn-dark text-white border green-bg"
                           style={{ fontSize: "15px" }}
                         >
                           More Details
@@ -256,7 +256,7 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="lifestyle-section">
+          <section className="lifestyle-section theme-bg-light ">
             <div className="container">
               <h2>Ethos of EARA Group</h2>
               <div className="lifestyle-grid">
@@ -329,34 +329,34 @@ export default function Home() {
           </section>
           <TestimonialSlider />
           {/* Section 4: Blog Section */}
-          <section className="px-md-5 px-3">
-            <h2 className="text-center">LATEST BLOGS</h2>
-            <div className="blog-grid">
-              <div className="blog-card">
+          <section className="px-md-5 px-3  theme-bg-dark">
+            <h2 className="text-center theme-color-light">LATEST BLOGS</h2>
+            <div className="blog-grid ">
+              <div className="blog-card theme-bg-light">
                 <img src="/images/Blog_1.jpg" alt="Blog 1" />
                 <div className="content">
-                  <h4>The Future of Smart Living</h4>
-                  <p>
+                  <h4 className="theme-color-dark">The Future of Smart Living</h4>
+                  <p className="theme-color-dark">
                     Discover how smart technologies are redefining luxury in
                     modern homes.
                   </p>
                 </div>
               </div>
-              <div className="blog-card">
+              <div className="blog-card  theme-bg-light">
                 <img src="/images/Blog_2.jpg" alt="Blog 2" />
                 <div className="content">
-                  <h4>Eco-Conscious Architecture</h4>
-                  <p>
+                  <h4 className="theme-color-dark">Eco-Conscious Architecture</h4>
+                  <p className="theme-color-dark">
                     Explore architectural trends that prioritize sustainability
                     and efficiency.
                   </p>
                 </div>
               </div>
-              <div className="blog-card">
+              <div className="blog-card  theme-bg-light">
                 <img src="/images/Blog_3.jpg" alt="Blog 3" />
                 <div className="content">
-                  <h4>Why Choose Integrated Townships?</h4>
-                  <p>
+                  <h4 className="theme-color-dark">Why Choose Integrated Townships?</h4>
+                  <p className="theme-color-dark">
                     Benefits of living in planned, self-sufficient residential
                     environments.
                   </p>

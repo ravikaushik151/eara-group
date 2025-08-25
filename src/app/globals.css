@@ -25,7 +25,7 @@ html {
   --primary-color: #FBE5CE;;
   --secondary-color: #352822;
   --accent-color: #583a2c;
-  --green-bg :#234740;
+  --green-bg : #0C5F17;
   }
 
 body {
@@ -1744,5 +1744,5 @@ footer button:hover {
   background-color: var(--accent-color) !important;
 }
 .green-bg {
-  background-color: var(--green-color) !important;
+  background-color: var(--green-bg) !important;
 }
