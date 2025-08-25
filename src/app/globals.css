@@ -24,8 +24,9 @@ html {
 :root {
   --primary-color: #FBE5CE;;
   --secondary-color: #352822;
- 
-}
+  --accent-color: #583a2c;
+  --green-bg :#234740;
+  }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -585,8 +586,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Background with rgba(68, 68, 68, 0.78) */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #583a2c8a;
   color: white;
   /* Text color */
   display: flex;
@@ -1738,4 +1739,10 @@ footer button:hover {
 }
 .theme-color-light {
   color: var(--primary-color) !important;
+}
+.accent-bg {
+  background-color: var(--accent-color) !important;
+}
+.green-bg {
+  background-color: var(--green-color) !important;
 }

@@ -32,8 +32,8 @@ export default function Header() {
     <>
       {/* ✅ Mobile Navbar */}
       <nav
-        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white d-md-none shadow-sm ${
-          isVisible ? "navbar-visible bg-white " : "navbar-hidden"
+        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${
+          isVisible ? "navbar-visible bg-white accent-bg " : "navbar-hidden"
         }`}
         style={{ zIndex: 999 }}
       >
@@ -84,7 +84,7 @@ export default function Header() {
       <div
         className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${
           isVisible ? "navbar-visible bg-white " : "navbar-hidden"
-        } ${lastScrollY < 100 ? "bg-transparent" : ""}`}
+        } ${lastScrollY < 100 ? "bg-transparent" : "accent-bg"}`}
         style={{ zIndex: 999 }}
       >
         <div className="container py-3 d-flex justify-content-between align-items-center">
@@ -94,7 +94,7 @@ export default function Header() {
               alt="logo"
               width={150}
               height={66}
-              className={lastScrollY < 100 ? "white-png logo" : ""}
+              className={lastScrollY < 100 ? "white-png logo" : "white-png"}
             />
           </Link>
           <nav className="d-flex gap-4">
@@ -111,11 +111,11 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 className={`text-decoration-none d-flex align-items-center gap-2 mx-2  ${
-                  lastScrollY < 100 ? "text-white" : "text-dark"
+                  lastScrollY < 100 ? "text-white" : "text-white"
                 }`}
               >
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-                  <circle cx="4" cy="4" r="4" fill="#a1c889" />
+                  <circle cx="4" cy="4" r="4" fill="#fff" />
                 </svg>
                 <span>{link.label}</span>
               </Link>

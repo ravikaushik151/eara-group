@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer accent-bg">
       <div className="container">
         <div className="row">
           <div className="col-md-4">
