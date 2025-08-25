@@ -256,10 +256,10 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="lifestyle-section theme-bg-light ">
+          <section className="lifestyle-section  ">
             <div className="container">
-              <h2>Ethos of EARA Group</h2>
-              <div className="lifestyle-grid">
+              <h2 className="theme-color-dark">Ethos of EARA Group</h2>
+              {/* <div className="lifestyle-grid">
                 <div className="flip-card rounded-tl">
                   <div className="flip-inner">
                     <div className="flip-front">
@@ -324,7 +324,72 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div> */}
+
+              <div className="row">
+                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
+                  <div className=" row  shadow  ">
+                    <div className="col-md-6">
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                    </div>
+                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                      <div>
+                        <h5 className="theme-color-dark text-start fw-bold">Sustainability</h5>
+                        <p className="theme-color-dark text-start small">Creating future-ready communities that respect the land and restore balance with nature.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
+                  <div className=" row  shadow  ">
+                    <div className="col-md-6">
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                    </div>
+                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                      <div>
+                        <h5 className="theme-color-dark text-start fw-bold">Innovation</h5>
+                        <p className="theme-color-dark text-start small">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
+
+              <div className="row">
+                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
+                  <div className=" row  shadow  ">
+                    <div className="col-md-6">
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                    </div>
+                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                      <div>
+                        <h5 className="theme-color-dark text-start fw-bold">Intergrity</h5>
+                        <p className="theme-color-dark text-start small">Rooted in transparency and trust — every decision guided by what’s right and reliable.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
+                  <div className=" row  shadow  ">
+                    <div className="col-md-6">
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                    </div>
+                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                      <div>
+                        <h5 className="theme-color-dark text-start fw-bold">Quality</h5>
+                        <p className="theme-color-dark text-start small">Delivering excellence in every detail, from foundation to finish.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
             </div>
           </section>
           <TestimonialSlider />
