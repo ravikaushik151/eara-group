@@ -24,7 +24,7 @@ export default async function BlogPost({ params }) {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/bBlog_1.jpg"
+                src="/images/About-About-us.jpg"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece rounded-4"
@@ -44,7 +44,7 @@ export default async function BlogPost({ params }) {
       </div>
 
 
-      <section className="section-padding" style={{ marginTop: '0px' }}>
+      <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-3">
@@ -54,10 +54,10 @@ export default async function BlogPost({ params }) {
                   <Image src={post.image} className="w-100" alt={post.title} width={1296} height={607} />
                 </div>
                 <div className="title text-left">
-                  <h2 className="text-main fs-2 fw-bold my-4">{post.title}</h2>
+                  <h2 className="text-main fs-2 fw-bold my-4 theme-color-dark">{post.title}</h2>
                 </div>
                 <div className="py-3">
-                  <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                  <div className=' theme-color-dark' dangerouslySetInnerHTML={{ __html: post.content }} />
                 </div>
               </div>
             </div>
