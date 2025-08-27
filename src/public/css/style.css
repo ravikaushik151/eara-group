@@ -7821,6 +7821,13 @@ figcaption {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .home-connectivity_distance-text {
+    grid-row-gap: .1875rem;
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+  }
+
   .popup-content {
     padding: 15px;
     max-width: 90%;

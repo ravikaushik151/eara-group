@@ -200,7 +200,7 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <div className="section_biodiversity-benefits py-5  theme-bg-light" id="amenities">
+          <section className="section_biodiversity-benefits py-5  theme-bg-light" id="amenities">
             <div className="padding-global">
               <div className="container-large">
                 <div className="biodiversity-benefits_components">
@@ -208,7 +208,7 @@ export default function Home() {
                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
                     className=""
                   >
-                    <h2 data-animate={1} className="m-center text-center heading-style-h2 theme-color-dark">
+                    <h2 data-animate={1} className="m-center text-center  theme-color-dark">
                       Amenities
                     </h2>
                   </div>
@@ -216,11 +216,11 @@ export default function Home() {
               </div>
             </div>
             <AmenitiesMarquee />
-          </div>
+          </section>
 
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <div className="section_biodiversity-benefits py-5 theme-bg-dark " id="amenities">
+          <section className="section_biodiversity-benefits py-5 theme-bg-dark " id="amenities">
             <div className="padding-global">
               <div className="container-large">
                 <div className="biodiversity-benefits_components">
@@ -228,7 +228,7 @@ export default function Home() {
                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
                     className=""
                   >
-                    <h2 data-animate={1} className="heading-style-h2 theme-color-light text-center">
+                    <h2 data-animate={1} className=" theme-color-light text-center">
                       Club House
                     </h2>
                   </div>
@@ -236,10 +236,10 @@ export default function Home() {
               </div>
             </div>
             <Clubhouse />
-          </div>
+          </section>
 
 
-          <div
+          <section
             data-w-id="8905ac58-eaf7-356f-bf47-4ad8001e257f"
             className="section_home-masterplan theme-bg-light"
             id="master-plan"
@@ -250,9 +250,9 @@ export default function Home() {
                   <div className="home-masterplan_left">
                     <h2
                       data-animate={1}
-                      className="heading-style-h2 text-color-dark-rainforest theme-color-dark m-center"
+                      className=" text-color-dark-rainforest theme-color-dark m-center"
                     >
-                      The Master Plan
+                       Master Plan
                     </h2>
                   </div>
                   <div
@@ -458,7 +458,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
           <div className="section_home-connectivity theme-bg-dark" id="location">
             <div className="padding-global">
               <div className="container-large">
@@ -474,7 +474,7 @@ export default function Home() {
                       <div className="home-connectivity_heading-wrapper">
                         <h2
                           data-animate={1}
-                          className="heading-style-h2 text-color-offwhite theme-color-light"
+                          className="heading-style-h2 text-color-offwhite theme-color-light m-center"
                         >
                           Located in{" "}
                           <span className="text-color-accent">
@@ -484,7 +484,7 @@ export default function Home() {
                         </h2>
                       </div>
                       <div className="w-100">
-                        <div className="text-size-regular text-color-offwhite theme-color-light">
+                        <div className="text-size-regular text-color-offwhite theme-color-light m-center">
                           Surrounded by serene greenery and nestled along the city’s fast-developing Kanakapura stretch, Kaggalipura is a peaceful retreat that’s seamlessly connected to Bengaluru’s most prominent hubs. With wide roads, clean air, and spiritual landmarks nearby, it’s not just a location — it’s a lifestyle.
                         </div>
                       </div>
@@ -492,83 +492,83 @@ export default function Home() {
                     <div className="home-connectivity_distance-wrapper">
                       <div
                         id="w-node-_9441ef5f-b995-4318-be5b-df8ccce3289b-ac1b3e9a"
-                        className="home-connectivity_distance"
+                        className="home-connectivity_distance m-center"
                       >
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light">Art of Living International Center</div>
+                            <div className="text-size-large theme-color-light m-center">Art of Living International Center</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light">7 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">7 mins</div>
                           </div>
                         </div>
                       </div>
                       <div
                         id="w-node-_2e82b6e9-e071-cd09-e477-4c91b9a4b018-ac1b3e9a"
-                        className="home-connectivity_distance"
+                        className="home-connectivity_distance m-center"
                       >
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light">
+                            <div className="text-size-large theme-color-light m-center">
                               Vajarahalli Metro Station
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light">15 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">15 mins</div>
                           </div>
                         </div>
                       </div>
                       <div
                         id="w-node-_681bb572-5097-8f68-667c-d8add2d0c9a1-ac1b3e9a"
-                        className="home-connectivity_distance"
+                        className="home-connectivity_distance m-center"
                       >
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light">NICE Road Junction</div>
+                            <div className="text-size-large theme-color-light m-center">NICE Road Junction</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light">10 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">10 mins</div>
                           </div>
                         </div>
                       </div>
-                      <div className="home-connectivity_distance">
+                      <div className="home-connectivity_distance m-center">
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large  theme-color-light">
+                            <div className="text-size-large  theme-color-light m-center">
                               Kumarans School
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light">10–15 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">10–15 mins</div>
                           </div>
                         </div>
                       </div>
                       <div
                         id="w-node-_681bb572-5097-8f68-667c-d8add2d0c9a1-ac1b3e9a"
-                        className="home-connectivity_distance"
+                        className="home-connectivity_distance m-center"
                       >
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light">Metro Cash & Carry</div>
+                            <div className="text-size-large theme-color-light m-center">Metro Cash & Carry</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light">20–25 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">20–25 mins</div>
                           </div>
                         </div>
                       </div>
-                      <div className="home-connectivity_distance">
+                      <div className="home-connectivity_distance m-center">
 
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light"> Global Village Tech Park</div>
+                            <div className="text-size-large theme-color-light m-center"> Global Village Tech Park</div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light">20–25 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">20–25 mins</div>
                           </div>
                         </div>
                       </div>
