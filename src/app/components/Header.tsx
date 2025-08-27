@@ -32,9 +32,8 @@ export default function Header() {
     <>
       {/* ✅ Mobile Navbar */}
       <nav
-        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${
-          isVisible ? "navbar-visible bg-white accent-bg navbar-dark" : "navbar-hidden"
-        }`}
+        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${isVisible ? "navbar-visible bg-white accent-bg navbar-dark" : "navbar-hidden"
+          }`}
         style={{ zIndex: 999 }}
       >
         <div className="container-fluid">
@@ -63,11 +62,12 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-white">
               {[
-                 { href: "/", label: "Home" },
-              { href: "/about", label: "About" },
-              { href: "/blog", label: "Blogs" },
-              { href: "/career", label: "Career" },
-              { href: "/contact", label: "Contact" },
+                { href: "/", label: "Home" },
+                { href: "/about", label: "About" },
+                { href: "/microsite", label: "Project" },
+                { href: "/blog", label: "Blogs" },
+                { href: "/career", label: "Career" },
+                { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li className="nav-item" key={link.href}>
                   <Link className="nav-link " href={link.href}>
@@ -82,9 +82,8 @@ export default function Header() {
 
       {/* ✅ Desktop Navbar */}
       <div
-        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${
-          isVisible ? "navbar-visible bg-white " : "navbar-hidden"
-        } ${lastScrollY < 100 ? "bg-transparent" : "accent-bg"}`}
+        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${isVisible ? "navbar-visible bg-white " : "navbar-hidden"
+          } ${lastScrollY < 100 ? "bg-transparent" : "accent-bg"}`}
         style={{ zIndex: 999 }}
       >
         <div className="container py-3 d-flex justify-content-between align-items-center">
@@ -101,18 +100,16 @@ export default function Header() {
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
-               { href: "/microsite", label: "Project" },
+              { href: "/microsite", label: "Project" },
               { href: "/blog", label: "Blogs" },
-
               { href: "/career", label: "Career" },
               { href: "/contact", label: "Contact" },
             ].map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-decoration-none d-flex align-items-center gap-2 mx-2  ${
-                  lastScrollY < 100 ? "text-white" : "text-white"
-                }`}
+                className={`text-decoration-none d-flex align-items-center gap-2 mx-2  ${lastScrollY < 100 ? "text-white" : "text-white"
+                  }`}
               >
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
                   <circle cx="4" cy="4" r="4" fill="#fff" />
