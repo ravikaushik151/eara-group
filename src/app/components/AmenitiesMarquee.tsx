@@ -25,7 +25,7 @@ const amenities = [
 
 export default function AmenitiesSection() {
     return (
-        <section className="py-5">
+        <section className="py-0 mb-3">
             <div className="container text-center">
                 <div className="row g-4 ">
                     {amenities.map((item, idx) => (

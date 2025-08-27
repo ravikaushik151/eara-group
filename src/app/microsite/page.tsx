@@ -206,9 +206,9 @@ export default function Home() {
                 <div className="biodiversity-benefits_components">
                   <div
                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
-                    className="biodiversity-benefits_header-wrap"
+                    className=""
                   >
-                    <h2 data-animate={1} className="heading-style-h2">
+                    <h2 data-animate={1} className="m-center text-center heading-style-h2 theme-color-dark">
                       Amenities
                     </h2>
                   </div>
@@ -226,9 +226,9 @@ export default function Home() {
                 <div className="biodiversity-benefits_components">
                   <div
                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
-                    className="biodiversity-benefits_header-wrap"
+                    className=""
                   >
-                    <h2 data-animate={1} className="heading-style-h2 theme-color-light">
+                    <h2 data-animate={1} className="heading-style-h2 theme-color-light text-center">
                       Club House
                     </h2>
                   </div>
@@ -250,7 +250,7 @@ export default function Home() {
                   <div className="home-masterplan_left">
                     <h2
                       data-animate={1}
-                      className="heading-style-h2 text-color-dark-rainforest theme-color-dark"
+                      className="heading-style-h2 text-color-dark-rainforest theme-color-dark m-center"
                     >
                       The Master Plan
                     </h2>
@@ -265,7 +265,7 @@ export default function Home() {
                       src="https://placehold.co/700x700?text=Master+Plan"
                       loading="lazy"
                       alt=""
-                      className="home-masterplan_img"
+                      className="home-masterplan_img img-fluid" 
                     />
                   </div>
                   <div className="home-masterplan_legend">

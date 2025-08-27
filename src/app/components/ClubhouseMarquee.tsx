@@ -16,7 +16,7 @@ const images = [
 
 export default function Clubhouse() {
     return (
-        <section className="py-5">
+        <div className="mb-3">
             <div className="container text-center">
                 <div className="row g-4">
                     {images.map((item, idx) => (
@@ -29,6 +29,6 @@ export default function Clubhouse() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
