@@ -200,6 +200,7 @@ export default function Home() {
                       src="/images/Upcoming Project.jpg"
                       width={500}
                       height={700}
+                      className="img-fluid  mb-3"
                     />
                   </div>
                   <div
@@ -208,8 +209,8 @@ export default function Home() {
                     data-aos-duration={1500}
                   >
                     <div>
-                      <div className="title text-left">
-                        <h4 className="text-black mb-2 fs-4 m-center theme-color-light" style={{ fontSize: "24px" }}>
+                      <div className="title text-left ">
+                        <h4 className="text-black mb-2 fs-md-4  theme-color-light" style={{ fontSize: "24px" }}>
                           Ultra Premium Plotted Development
                         </h4>
                         <p className="">
@@ -330,12 +331,12 @@ export default function Home() {
                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
-                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold">Sustainability</h5>
-                        <p className="theme-color-dark text-start small">Creating future-ready communities that respect the land and restore balance with nature.
+                        <h5 className="theme-color-dark text-start fw-bold m-center">Sustainability</h5>
+                        <p className="theme-color-dark text-start small m-center">Creating future-ready communities that respect the land and restore balance with nature.
                         </p>
                       </div>
                     </div>
@@ -344,12 +345,12 @@ export default function Home() {
                  <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
-                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold">Innovation</h5>
-                        <p className="theme-color-dark text-start small">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.
+                        <h5 className="theme-color-dark text-start fw-bold m-center">Innovation</h5>
+                        <p className="theme-color-dark text-start small m-center">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.
                         </p>
                       </div>
                     </div>
@@ -362,12 +363,12 @@ export default function Home() {
                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
-                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold">Intergrity</h5>
-                        <p className="theme-color-dark text-start small">Rooted in transparency and trust — every decision guided by what’s right and reliable.
+                        <h5 className="theme-color-dark text-start fw-bold m-center">Intergrity</h5>
+                        <p className="theme-color-dark text-start small m-center">Rooted in transparency and trust — every decision guided by what’s right and reliable.
                         </p>
                       </div>
                     </div>
@@ -376,12 +377,12 @@ export default function Home() {
                  <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-5" />
+                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
-                    <div className=" col-md-6 px-3 d-flex flex-column justify-content-center">
+                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold">Quality</h5>
-                        <p className="theme-color-dark text-start small">Delivering excellence in every detail, from foundation to finish.
+                        <h5 className="theme-color-dark text-start fw-bold m-center">Quality</h5>
+                        <p className="theme-color-dark text-start small m-center">Delivering excellence in every detail, from foundation to finish.
                         </p>
                       </div>
                     </div>

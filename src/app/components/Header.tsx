@@ -33,7 +33,7 @@ export default function Header() {
       {/* ✅ Mobile Navbar */}
       <nav
         className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${
-          isVisible ? "navbar-visible bg-white accent-bg " : "navbar-hidden"
+          isVisible ? "navbar-visible bg-white accent-bg navbar-dark" : "navbar-hidden"
         }`}
         style={{ zIndex: 999 }}
       >
@@ -42,9 +42,9 @@ export default function Header() {
             <Image
               src="/img/logo-dark.png"
               alt="logo"
-              width={80}
+              width={120}
               height={66}
-              className="logo"
+              className={lastScrollY < 100 ? "white-png logo img-fluid" : "white-png"}
             />
           </Link>
 
@@ -61,7 +61,7 @@ export default function Header() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarScroll">
-            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-white">
               {[
                  { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -70,7 +70,7 @@ export default function Header() {
               { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <li className="nav-item" key={link.href}>
-                  <Link className="nav-link" href={link.href}>
+                  <Link className="nav-link " href={link.href}>
                     {link.label}
                   </Link>
                 </li>
