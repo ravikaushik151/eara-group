@@ -685,9 +685,9 @@ p {
   vertical-align: middle;
   margin-bottom: 0px;
 }
-.eimg {max-width: 200px !important;}
+.eimg {max-width: 223px !important;}
 @media only screen and (max-width: 768px) {
-  .eimg {max-width: 180px !important;}
+  .eimg {max-width: 200px !important;}
   .m-center {
     text-align: center !important;
   }

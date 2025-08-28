@@ -331,7 +331,7 @@ export default function Home() {
                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
+                      <img src="/images/Sutainablity.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
@@ -345,7 +345,7 @@ export default function Home() {
                  <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
+                      <img src="/images/Innovation_2.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
@@ -363,7 +363,7 @@ export default function Home() {
                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
+                      <img src="/images/Intergrity.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
@@ -377,7 +377,7 @@ export default function Home() {
                  <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
-                      <img src="/images/go-green-icon.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
+                      <img src="/images/Quality.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
