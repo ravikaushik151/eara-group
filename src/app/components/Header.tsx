@@ -60,7 +60,7 @@ export default function Header() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarScroll">
-            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll text-white">
+            <ul className="navbar-nav text-center me-auto my-2 my-lg-0 navbar-nav-scroll text-white">
               {[
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
