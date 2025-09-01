@@ -199,7 +199,7 @@ export default function Home() {
                       alt="Project"
                       src="/images/Upcoming Project.jpg"
                       width={500}
-                      height={700}
+                      height={600}
                       className="img-fluid  mb-3"
                     />
                   </div>
@@ -342,7 +342,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
+                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
                       <img src="/images/Innovation_2.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
@@ -356,7 +356,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
               </div>
 
               <div className="row">
@@ -374,7 +374,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                 <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
+                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
                   <div className=" row  shadow  ">
                     <div className="col-md-6">
                       <img src="/images/Quality.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
@@ -388,7 +388,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
               </div>
 
             </div>
