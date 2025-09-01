@@ -9,7 +9,7 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/About-About-us.jpg"
+                src="/images/ABout_Us_Eara.jpg"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"
@@ -83,7 +83,7 @@ export default function About() {
                   width={648}
                   height={338}
                   className="img-fluid"
-                  src="/images/About-Us-Main.jpg"
+                  src="/images/About-Abut us_Entry Gate.jpg"
                 />
               </div>
             </section>
@@ -136,12 +136,12 @@ export default function About() {
           </div>
         </div>
       </section>
-    
 
 
-            <TestimonialSlider />
-        
-       
+
+      <TestimonialSlider />
+
+
     </>
   );
 }

@@ -36,7 +36,7 @@ export default function Blog() {
                 <div className='row'>
                     <div className='col-md-12'>
                         <div className="image-container">
-                            <Image src="/images/hero-image-edit-6.jpg" height={2880} width={1920} className='img-fluid masterpiece rounded-4' alt="masterpiece" />
+                            <Image src="/images/Blog_Eara_Here Image.jpg" height={2880} width={1920} className='img-fluid masterpiece rounded-4' alt="masterpiece" />
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
                                     <p className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</p>
