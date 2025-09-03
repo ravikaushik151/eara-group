@@ -93,25 +93,28 @@ export default function Home() {
           {/* <HomeHeroSlider /> */}
           <div className="overflow-hidden position-relative">
             <div className="position-relative text-white d-flex align-items-center" style={{ height: '100vh' }}>
-              <picture>
-                <source
-                  media="(max-width: 576px)"
-                  srcSet="/images/hero-image-edit-4-new.webp"
-                />
-                <source
-                  media="(min-width: 577px)"
-                  srcSet="/images/mobiler-banner.webp"
-                />
-                <img
-                  src="/images/hero-image-edit-4-new.webp"
-                  alt="About us"
-                  width="1350"
-                  height="900"
-                  className="img-fluid rounded-2"
+             
+              <Image
+                src='/images/hero-image-edit-4-new.webp'
+                alt='banner'
+                fill
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+                className="object-cover z-n1 d-none d-md-block"
 
-                />
-              </picture>
+              />
 
+                 <Image
+                src='/images/mobiler-banner.webp'
+                alt='banner'
+                fill
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+                className="object-cover z-n1 d-block d-md-none"
+
+              />
               <div className="container position-relative z-1">
                 <div className="d-flex">
                   <div>
