@@ -89,7 +89,7 @@ export default function Home() {
                     <Image
                       width={500}
                       height={900}
-                      src="/images/About-Abut us .jpg"
+                      src="/images/About-Abutus.jpg"
                       alt="Luxury interior"
                     />
                   </div>
