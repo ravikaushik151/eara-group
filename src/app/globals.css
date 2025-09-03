@@ -3,7 +3,11 @@ html {
   font-size: calc(0.625rem + 0.41666666666666663vw);
   scroll-behavior: auto !important;
 }
-*{font-display:swap}
+
+* {
+  font-display: swap
+}
+
 @media screen and (max-width: 1920px) {
   html {
     font-size: calc(0.625rem + 0.41666666666666674vw);
@@ -21,19 +25,21 @@ html {
     font-size: calc(0.7494769874476988rem + 0.8368200836820083vw);
   }
 }
+
 :root {
-  --primary-color: #FBE5CE;;
+  --primary-color: #FBE5CE;
+  ;
   --secondary-color: #352822;
   --accent-color: #583a2c;
-  --green-bg : #0C5F17;
-  }
+  --green-bg: #0C5F17;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-family: Times New Roman, sans-serif;
- 
+  font-display: swap;
 }
 
 /* Focus state style for keyboard navigation for the focusable elements */
@@ -45,6 +51,7 @@ input[type="file"]:focus-visible {
 
 h1 {
   font-family: Times New Roman, sans-serif;
+  font-display: swap;
 }
 
 /* Get rid of top margin on first element in any rich text element */
@@ -303,6 +310,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 25px;
+  font-display: swap;
 }
 
 p {
@@ -340,6 +348,7 @@ p {
   color: #fff !important;
   padding: 10px 25px !important;
   font-family: "Poppins";
+  font-display: swap;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.41;
@@ -370,6 +379,7 @@ p {
   letter-spacing: 7%;
   text-transform: capitalize;
   color: #fff;
+  font-display: swap;
 }
 
 #carouselExampleDark1 {
@@ -396,6 +406,7 @@ p {
   letter-spacing: 7%;
   text-transform: capitalize;
   color: #fff;
+  font-display: swap;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -424,6 +435,7 @@ p {
 
 .heading {
   font-family: "Poppins";
+  font-display: swap;
   font-weight: 300;
   font-size: 35px;
   line-height: 1.3;
@@ -437,6 +449,7 @@ p {
 
 .sub-heading {
   font-family: "Roboto";
+  font-display: swap;
   font-weight: 300;
   font-size: 17px;
   line-height: 22px;
@@ -447,6 +460,7 @@ p {
 
 .service-heading {
   font-family: "Poppins";
+  font-display: swap;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -459,6 +473,7 @@ p {
 
 .service-text {
   font-family: "Roboto";
+  font-display: swap;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -477,7 +492,7 @@ p {
 
 .about-text {
   font-family: "Poppins";
-
+  font-display: swap;
   font-size: 21px;
   line-height: 1.62;
   letter-spacing: 3%;
@@ -572,6 +587,7 @@ p {
 
 .overlay .text {
   font-family: "Poppins";
+  font-display: swap;
   font-weight: 275;
   font-size: 35px;
   line-height: 141%;
@@ -597,6 +613,7 @@ p {
 
 .overlay2 .text {
   font-family: "Poppins";
+  font-display: swap;
   font-weight: 275;
   font-size: 35px;
   line-height: 141%;
@@ -684,10 +701,18 @@ p {
   letter-spacing: 3%;
   vertical-align: middle;
   margin-bottom: 0px;
+  font-display: swap;
 }
-.eimg {max-width: 223px !important;}
+
+.eimg {
+  max-width: 223px !important;
+}
+
 @media only screen and (max-width: 768px) {
-  .eimg {max-width: 200px !important;}
+  .eimg {
+    max-width: 200px !important;
+  }
+
   .m-center {
     text-align: center !important;
   }
@@ -700,6 +725,7 @@ p {
     color: #fff !important;
     padding: 10px !important;
     font-family: "Poppins";
+    font-display: swap;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.41;
@@ -1096,6 +1122,7 @@ section {
 h2 {
   margin-bottom: 40px;
   font-family: "Times New Roman", sans-serif;
+  font-display: swap;
 }
 
 /* SECTION 1: Luxury & Lifestyle */
@@ -1293,6 +1320,7 @@ h2 {
   h2 {
     font-size: 24px;
     font-family: "Times New Roman", sans-serif;
+    font-display: swap;
   }
 
   .grid {
@@ -1320,12 +1348,14 @@ h2 {
 .content h2 {
   line-height: 50px;
   font-family: "Times New Roman", sans-serif;
+  font-display: swap;
 }
 
 .lifestyle-section {
   background: #fdf3e9;
   padding: 60px 20px;
   font-family: "Segoe UI", sans-serif;
+  font-display: swap;
   text-align: center;
   position: relative;
 }
@@ -1461,6 +1491,7 @@ h2 {
   .lifestyle-section h2 {
     font-size: 24px;
     font-family: "Times New Roman", sans-serif;
+    font-display: swap;
   }
 
   .overlay-text {
@@ -1596,6 +1627,7 @@ section h2 {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Times New Roman", sans-serif;
+  font-display: swap;
   margin-bottom: 40px;
   line-height: 1.25 !important;
 }
@@ -1613,6 +1645,7 @@ h5 {
   font-size: 20px !important;
   font-weight: 600 !important;
   font-family: "Times New Roman", sans-serif;
+  font-display: swap;
 }
 
 .white-png {
@@ -1729,24 +1762,31 @@ footer button:hover {
     left: -100%;
   }
 }
+
 .theme-bg-light {
   background-color: var(--primary-color) !important;
 }
+
 .theme-bg-dark {
   background-color: var(--secondary-color) !important;
 }
+
 .theme-color-dark {
   color: var(--secondary-color) !important;
 }
+
 .theme-color-light {
   color: var(--primary-color) !important;
 }
+
 .accent-bg {
   background-color: var(--accent-color) !important;
 }
+
 .green-bg {
   background-color: var(--green-bg) !important;
 }
+
 .object-cover {
   object-fit: cover;
 }
