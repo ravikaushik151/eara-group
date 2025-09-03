@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/webclip.svg" />
-        
       </head>
       <body>
         <ClientWrapper>
