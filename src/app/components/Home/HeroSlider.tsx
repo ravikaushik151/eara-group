@@ -16,7 +16,7 @@ const slides = [
         desc: 'In a home kissed by trees and wrapped in serenity, you don’t just live — you thrive',
         button: '',
         href: '',
-        img: '/images/hero-image-edit-4-new.jpg',
+        img: '/images/hero-image-edit-4-new.webp',
     },
 ];
 

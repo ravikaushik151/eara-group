@@ -399,7 +399,7 @@ export default function Home() {
             <h2 className="text-center theme-color-light">LATEST BLOGS</h2>
             <div className="blog-grid ">
               <div className="blog-card theme-bg-light">
-                <img src="/images/Blog_1.jpg" alt="Blog 1" />
+                <img src="/images/Blog_1-s.jpg" alt="Blog 1" />
                 <div className="content">
                   <h4 className="theme-color-dark">The Future of Smart Living</h4>
                   <p className="theme-color-dark">
@@ -409,7 +409,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card  theme-bg-light">
-                <img src="/images/Blog_2.jpg" alt="Blog 2" />
+                <img src="/images/Blog_2-s.jpg" alt="Blog 2" />
                 <div className="content">
                   <h4 className="theme-color-dark">Eco-Conscious Architecture</h4>
                   <p className="theme-color-dark">
@@ -419,7 +419,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card  theme-bg-light">
-                <img src="/images/Blog_3.jpg" alt="Blog 3" />
+                <img src="/images/Blog_3-s.jpg" alt="Blog 3" />
                 <div className="content">
                   <h4 className="theme-color-dark">Why Choose Integrated Townships?</h4>
                   <p className="theme-color-dark">
