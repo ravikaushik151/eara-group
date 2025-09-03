@@ -243,7 +243,7 @@ export default function Home() {
                   <div className="col-md-6 text-center">
                     <Image
                       alt="Project"
-                      src="/images/Upcoming Project.webp"
+                      src="/images/UpcomingProject.webp"
                       width={500}
                       height={750}
                       className="img-fluid  mb-3"
