@@ -44,6 +44,8 @@ export default function Header() {
               width={120}
               height={66}
               className={lastScrollY < 100 ? "white-png logo img-fluid" : "white-png"}
+              priority
+              fetchPriority="high"
             />
           </Link>
 
@@ -94,6 +96,8 @@ export default function Header() {
               width={150}
               height={66}
               className={lastScrollY < 100 ? "white-png logo" : "white-png"}
+              priority
+              fetchPriority="high"
             />
           </Link>
           <nav className="d-flex gap-4">
