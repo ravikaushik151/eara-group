@@ -1747,3 +1747,6 @@ footer button:hover {
 .green-bg {
   background-color: var(--green-bg) !important;
 }
+.object-cover {
+  object-fit: cover;
+}
