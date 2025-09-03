@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import Link from "next/link";
 import Preloader from "./components/Preloader";
-import HomeHeroSlider from "./components/Home/HeroSlider";
+// import HomeHeroSlider from "./components/Home/HeroSlider";
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 
@@ -90,7 +90,36 @@ export default function Home() {
     <>
       <main className="main-wrapper">
         <div className="overflow-clip">
-          <HomeHeroSlider />
+          {/* <HomeHeroSlider /> */}
+          <div className="overflow-hidden position-relative">
+            <div className="position-relative text-white d-flex align-items-center" style={{ height: '100vh' }}>
+              <Image
+                src='/images/hero-image-edit-4-new.webp'
+                alt='banner'
+                fill
+                priority
+                fetchPriority="high"
+                sizes="100vw"
+                className="object-cover z-n1"
+
+              />
+              <div className="container position-relative z-1">
+                <div className="d-flex">
+                  <div>
+                    <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA</h1>
+
+                    <h4 className="mb-3 fw-light">{``}</h4>
+
+                   <p className="mb-4 lead text-center w-100 text-success">In a home kissed by trees and wrapped in serenity, <br /> you don’t just live - you thrive</p>
+                  </div>
+                  <Link href='#' className="btn btn-outline-light px-4 py-2 d-none  text-center">
+                    Explore More
+                  </Link>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
         <div id="scroll-more">
           <section className="section-1 px-md-5 px-3 theme-bg-light">
