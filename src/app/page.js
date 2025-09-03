@@ -115,9 +115,7 @@ export default function Home() {
                 width={997}
                 height={578}
                 className="img-fluid rounded-2"
-                priority // 👈 preload only if above-the-fold (hero/important section)
-                fetchPriority="high"
-
+                loading="lazy"
                 sizes="(max-width: 576px) 100vw,
                 (max-width: 768px) 90vw,
                 (max-width: 1200px) 70vw,
@@ -434,7 +432,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card  theme-bg-light">
-                <Image src="/images/Blog_3-s.jpg" alt="Blog 3" loading="lazy"  width={578}
+                <Image src="/images/Blog_3-s.jpg" alt="Blog 3" loading="lazy" width={578}
                   height={200} />
                 <div className="content">
                   <h4 className="theme-color-dark">Why Choose Integrated Townships?</h4>
