@@ -110,7 +110,7 @@ export default function Home() {
 
                     <h4 className="mb-3 fw-light">{``}</h4>
 
-                   <p className="mb-4 lead text-center w-100 text-success">In a home kissed by trees and wrapped in serenity, <br /> you don’t just live - you thrive</p>
+                    <p className="mb-4 lead text-center w-100 text-success">In a home kissed by trees and wrapped in serenity, <br /> you don’t just live - you thrive</p>
                   </div>
                   <Link href='#' className="btn btn-outline-light px-4 py-2 d-none  text-center">
                     Explore More
