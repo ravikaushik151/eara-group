@@ -109,7 +109,18 @@ export default function Home() {
               </Link>
             </div>
             <div className="image-wrapper">
-              <Image src="/images/About-Abutus.webp" alt="Aboutus" className="img-fluid" width={997} height={578} 
+              <Image
+                src="/images/About-Abutus.webp"
+                alt="About us"
+                width={997}
+                height={578}
+                className="img-fluid rounded-2"
+                priority // 👈 preload only if above-the-fold (hero/important section)
+                fetchPriority="high"
+                sizes="(max-width: 576px) 100vw,
+                (max-width: 768px) 90vw,
+                (max-width: 1200px) 70vw,
+                997px"
               />
             </div>
           </section>
@@ -201,7 +212,7 @@ export default function Home() {
                       width={500}
                       height={750}
                       className="img-fluid  mb-3"
-                        
+
                     />
                   </div>
                   <div
