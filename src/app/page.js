@@ -109,19 +109,25 @@ export default function Home() {
               </Link>
             </div>
             <div className="image-wrapper">
-              <Image
-                src="/images/About-Abutus.webp"
-                alt="About us"
-                width={997}
-                height={578}
-                className="img-fluid rounded-2"
-                sizes="(max-width: 576px) 100vw,
-                (max-width: 768px) 90vw,
-                (max-width: 1200px) 70vw,
-                997px"
-                srcSet="/images/About-Abutus-mobile.webp 576w, /images/About-Abutus.webp 997w"
-                unoptimized
-              />
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcSet="/images/About-Abutus-mobile.webp"
+                />
+                <source
+                  media="(min-width: 577px)"
+                  srcSet="/images/About-Abutus.webp"
+                />
+                <img
+                  src="/images/About-Abutus.webp"
+                  alt="About us"
+                  width="997"
+                  height="578"
+                  className="img-fluid rounded-2"
+                  loading="lazy"
+                />
+              </picture>
+
             </div>
           </section>
 
