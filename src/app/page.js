@@ -201,6 +201,7 @@ export default function Home() {
                       width={500}
                       height={600}
                       className="img-fluid  mb-3"
+                       priority 
                     />
                   </div>
                   <div

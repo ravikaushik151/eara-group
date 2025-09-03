@@ -44,7 +44,7 @@ export default function Home() {
         <div id="scroll-more">
           <section
             className="project-info-section theme-bg-dark"
-           
+
           >
             <div className="container">
               <div className="row text-center text-white">
@@ -91,6 +91,7 @@ export default function Home() {
                       height={900}
                       src="/images/About-Abutus.jpg"
                       alt="Luxury interior"
+                      priority
                     />
                   </div>
                 </div>
@@ -252,7 +253,7 @@ export default function Home() {
                       data-animate={1}
                       className=" text-color-dark-rainforest theme-color-dark m-center"
                     >
-                       Master Plan
+                      Master Plan
                     </h2>
                   </div>
                   <div
@@ -265,7 +266,7 @@ export default function Home() {
                       src="https://placehold.co/700x700?text=Master+Plan"
                       loading="lazy"
                       alt=""
-                      className="home-masterplan_img img-fluid" 
+                      className="home-masterplan_img img-fluid"
                     />
                   </div>
                   <div className="home-masterplan_legend">
