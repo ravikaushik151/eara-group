@@ -46,6 +46,7 @@ export default function HomeHeroSlider() {
                                 priority   // 👈 ensures hero image loads first
                                 sizes="100vw"
                                 className="object-cover z-n1"
+                                fetchPriority="high"
                             />
                             <div className="container position-relative z-1">
                                 <div className="d-flex">

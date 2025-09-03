@@ -117,6 +117,7 @@ export default function Home() {
                 className="img-fluid rounded-2"
                 priority // 👈 preload only if above-the-fold (hero/important section)
                 fetchPriority="high"
+
                 sizes="(max-width: 576px) 100vw,
                 (max-width: 768px) 90vw,
                 (max-width: 1200px) 70vw,
@@ -212,7 +213,7 @@ export default function Home() {
                       width={500}
                       height={750}
                       className="img-fluid  mb-3"
-
+                      loading="lazy"
                     />
                   </div>
                   <div
@@ -411,7 +412,8 @@ export default function Home() {
             <h2 className="text-center theme-color-light">LATEST BLOGS</h2>
             <div className="blog-grid ">
               <div className="blog-card theme-bg-light">
-                <img src="/images/Blog_1-s.jpg" alt="Blog 1" />
+                <Image src="/images/Blog_1-s.jpg" alt="Blog 1" loading="lazy" width={578}
+                  height={200} />
                 <div className="content">
                   <h4 className="theme-color-dark">The Future of Smart Living</h4>
                   <p className="theme-color-dark">
@@ -421,7 +423,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card  theme-bg-light">
-                <img src="/images/Blog_2-s.jpg" alt="Blog 2" />
+                <Image src="/images/Blog_2-s.jpg" alt="Blog 2" loading="lazy" width={578}
+                  height={200} />
                 <div className="content">
                   <h4 className="theme-color-dark">Eco-Conscious Architecture</h4>
                   <p className="theme-color-dark">
@@ -431,7 +434,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog-card  theme-bg-light">
-                <img src="/images/Blog_3-s.jpg" alt="Blog 3" />
+                <Image src="/images/Blog_3-s.jpg" alt="Blog 3" loading="lazy"  width={578}
+                  height={200} />
                 <div className="content">
                   <h4 className="theme-color-dark">Why Choose Integrated Townships?</h4>
                   <p className="theme-color-dark">
