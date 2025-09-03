@@ -43,7 +43,6 @@ export default function HomeHeroSlider() {
                                 src={slide.img}
                                 alt={slide.title}
                                 fill
-                                priority   // 👈 ensures hero image loads first
                                 sizes="100vw"
                                 className="object-cover z-n1"
                             />
