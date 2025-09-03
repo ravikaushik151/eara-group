@@ -109,7 +109,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="image-wrapper">
-              <img src="/images/About-Abutus.webp" alt="Aboutus"
+              <Image src="/images/About-Abutus.webp" alt="Aboutus" className="img-fluid" width={997} height={578} priority
               />
             </div>
           </section>
@@ -199,7 +199,7 @@ export default function Home() {
                       alt="Project"
                       src="/images/Upcoming Project.jpg"
                       width={500}
-                      height={600}
+                      height={750}
                       className="img-fluid  mb-3"
                        priority 
                     />
