@@ -121,6 +121,8 @@ export default function Home() {
                 (max-width: 768px) 90vw,
                 (max-width: 1200px) 70vw,
                 997px"
+                srcSet="/images/About-Abutus-mobile.webp 576w, /images/About-Abutus.webp 997w"
+                unoptimized
               />
             </div>
           </section>
