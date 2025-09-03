@@ -125,7 +125,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="same-gap postion-relative bg-light d-none">
+          {/* <section className="same-gap postion-relative bg-light d-none">
             <div className="container-fluid">
               <div id="project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
@@ -194,7 +194,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="same-gap position-relative bg-light theme-bg-dark">
             <div className="container-fluid">
