@@ -1,11 +1,12 @@
 // app/layout.js
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/css/normalize.css';
 import '../public/css/components.css';
 import '../public/css/style.css';
 import './globals.css';
 
+import Script from "next/script"; // ✅ Import Script component
 import ClientWrapper from './components/ClientWrapper';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -30,6 +31,13 @@ export default function RootLayout({ children }) {
             <Footer />
           </div>
         </ClientWrapper>
+
+        {/* ✅ Add FontAwesome Kit Script */}
+        <Script
+          src="https://kit.fontawesome.com/0ff5fd7d37.js"
+          crossOrigin="anonymous"
+          strategy="afterInteractive" // Loads after page is interactive
+        />
       </body>
     </html>
   );
