@@ -42,9 +42,10 @@ export default function HomeHeroSlider() {
                             <Image
                                 src={slide.img}
                                 alt={slide.title}
-                                layout="fill"
-                                objectFit="cover"
-                                className="z-n1"
+                                fill
+                                priority   // 👈 ensures hero image loads first
+                                sizes="100vw"
+                                className="object-cover z-n1"
                             />
                             <div className="container position-relative z-1">
                                 <div className="d-flex">
