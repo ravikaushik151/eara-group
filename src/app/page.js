@@ -115,8 +115,6 @@ export default function Home() {
                 width={997}
                 height={578}
                 className="img-fluid rounded-2"
-                priority
-                fetchPriority="high"
                 sizes="(max-width: 576px) 100vw,
                 (max-width: 768px) 90vw,
                 (max-width: 1200px) 70vw,

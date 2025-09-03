@@ -43,10 +43,11 @@ export default function HomeHeroSlider() {
                                 src={slide.img}
                                 alt={slide.title}
                                 fill
-                                
+                                priority
+                                fetchPriority="high"
                                 sizes="100vw"
                                 className="object-cover z-n1"
-                               
+
                             />
                             <div className="container position-relative z-1">
                                 <div className="d-flex">

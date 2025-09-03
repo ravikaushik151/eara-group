@@ -1,12 +1,10 @@
 // app/layout.js
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './globals.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../public/css/normalize.css';
 import '../public/css/components.css';
 import '../public/css/style.css';
-
+import './globals.css';
 
 import ClientWrapper from './components/ClientWrapper';
 import Header from './components/Header';
