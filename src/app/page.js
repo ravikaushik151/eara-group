@@ -109,7 +109,7 @@ export default function Home() {
               </Link>
             </div>
             <div className="image-wrapper">
-              <img src="/images/About-Abutus.webp" alt="About"
+              <img src="/images/About-Abutus.webp" alt="Aboutus"
               />
             </div>
           </section>
