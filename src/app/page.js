@@ -92,7 +92,7 @@ export default function Home() {
         <div className="overflow-clip">
           {/* <HomeHeroSlider /> */}
           <div className="overflow-hidden position-relative">
-            <div className="position-relative text-white d-flex align-items-center" style={{ height: '100vh' }}>
+            <div className="position-relative text-white d-flex align-items-md-center align-items-end" style={{ height: '100vh' }}>
 
               <Image
                 src='/images/hero-image-edit-4-new.webp'
@@ -107,7 +107,7 @@ export default function Home() {
 
 
               <div className="container position-relative z-1">
-                <div className="d-flex">
+                <div className="d-flex my-md-0 my-5 py-md-0 py-4">
                   <div>
                     <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA</h1>
 
