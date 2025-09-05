@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+//import '@fortawesome/fontawesome-free/css/all.min.css';removed added svg icons instead
 
 import Script from "next/script"; // ✅ Import Script component
 import ClientWrapper from './components/ClientWrapper';
