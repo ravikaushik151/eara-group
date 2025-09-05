@@ -95,7 +95,7 @@ export default function Home() {
             <div className="position-relative text-white d-flex align-items-md-center align-items-end" style={{ height: '100vh' }}>
 
               <Image
-                src='/images/hero-image-edit-4-new.webp'
+                src='/images/hero-image-edit-4-new.avif'
                 alt='banner'
                 fill
                 priority
@@ -246,7 +246,7 @@ export default function Home() {
                   <div className="col-md-6 text-center">
                     <Image
                       alt="Project"
-                      src="/images/UpcomingProject.webp"
+                      src="/images/UpcomingProject.avif"
                       width={500}
                       height={750}
                       className="img-fluid  mb-3"
