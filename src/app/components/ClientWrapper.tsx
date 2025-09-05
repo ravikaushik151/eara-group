@@ -18,12 +18,12 @@ export default function ClientWrapper({ children }) {
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         strategy="afterInteractive"
       />
-      <Script
+      {/* <Script
         src="/js/main.js"
         strategy="afterInteractive"
         onLoad={() => console.log('Custom interactions loaded')}
         onError={(e) => console.error('Failed to load interactions', e)}
-      />
+      /> */}
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         strategy="afterInteractive"

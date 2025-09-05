@@ -1,9 +1,9 @@
 // app/layout.js
 // import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './normalize.css';
-import './components.css';
-import './style.css';
+//import './normalize.css';
+//import './components.css';
+//import './style.css';
 import './globals.css';
 
 import Script from "next/script"; // ✅ Import Script component

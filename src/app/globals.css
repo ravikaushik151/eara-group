@@ -1790,3 +1790,26 @@ footer button:hover {
 .object-cover {
   object-fit: cover;
 }
+
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+  margin: 0 6px;
+  width: 30px !important;
+  height: 5px !important;
+  border-radius: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.amenity-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
