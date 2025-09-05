@@ -1,12 +1,13 @@
 "use client";
 import { useEffect } from "react";
-
+//import './style.css';
 import Link from "next/link";
 
 import Image from "next/image";
 import AmenitiesMarquee from "../components/AmenitiesMarquee";
 import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
+
 export default function Home() {
   useEffect(() => {
 
