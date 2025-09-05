@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="footer-association">
               <Link href="/">
                 <Image
-                  src="/img/logo-dark.png"
+                  src="/images/logo-dark.webp"
                   alt="logo"
                   width={150}
                   height={66}

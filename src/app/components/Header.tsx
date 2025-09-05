@@ -39,7 +39,7 @@ export default function Header() {
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
             <Image
-              src="/img/logo-dark.png"
+              src="/images/logo-dark.webp"
               alt="logo"
               width={120}
               height={66}
