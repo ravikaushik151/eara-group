@@ -1,6 +1,6 @@
 // app/layout.js
 // 
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 //import './normalize.css';
 //import './components.css';
 //import './style.css';
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/webclip.svg" />
+
       </head>
       <body>
         <ClientWrapper>
@@ -36,7 +37,7 @@ export default function RootLayout({ children }) {
           </div>
         </ClientWrapper>
 
-       
+
       </body>
     </html>
   );
