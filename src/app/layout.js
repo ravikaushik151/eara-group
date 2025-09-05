@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import './components.css';
 //import './style.css';
 import './globals.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 import Script from "next/script"; // ✅ Import Script component
 import ClientWrapper from './components/ClientWrapper';

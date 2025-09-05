@@ -1,10 +1,10 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import { Pagination, Autoplay } from 'swiper/modules';
+//import 'swiper/css';
+//import 'swiper/css/navigation';
+//import 'swiper/css/pagination';
 
 const testimonials = [
     "Nature is at the heart of this community, not just an afterthought. The preservation of trees, the native landscaping, and the peaceful ambiance make Amidst Nature feel like home even before I build.",
@@ -21,10 +21,10 @@ const TestimonialSlider = () => {
             <h2 className="text-center mb-4 fw-bold theme-color-dark">TESTIMONIALS</h2>
 
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
+                modules={[Pagination, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
-                navigation
+
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 5000 }}
                 loop
