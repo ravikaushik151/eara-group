@@ -6,8 +6,9 @@
 //import './style.css';
 //defer css into clientwrapper for better performance
 import './globals.css';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.css';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
 //import '@fortawesome/fontawesome-free/css/all.min.css';removed added svg icons instead
 
 import Script from "next/script"; // ✅ Import Script component

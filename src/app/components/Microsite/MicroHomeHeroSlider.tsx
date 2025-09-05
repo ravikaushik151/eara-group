@@ -3,8 +3,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectFade, Pagination } from 'swiper/modules'; // ← Add Pagination
 //import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
+//import 'swiper/css/navigation';
+//import 'swiper/css/effect-fade';
 //import 'swiper/css/pagination'; // ← Import Pagination styles
 import Image from 'next/image';
 import Link from 'next/link';
