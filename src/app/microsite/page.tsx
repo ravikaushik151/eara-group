@@ -73,8 +73,8 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="section-1 theme-bg-light" id="about">
-            <div className="contenter">
+          <section className="section theme-bg-light" id="about">
+            <div className="container">
               <div className="row  px-md-5">
                 <div className="col-md-6 d-flex align-items-center">
                   <div className=" ">
@@ -85,14 +85,16 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="image-wrapper">
+                <div className="col-md-6 ">
+                  <div className="px-md-5">
                     <Image
-                      width={500}
-                      height={900}
-                      src="/images/About-Abutus.jpg"
-                      alt="Luxury interior"
+                      alt="Project"
+                      src="/images/UpcomingProject.avif"
+                      width={5500}
+                      height={750}
+                      className="img-fluid  mb-3  rounded-4"
                       priority
+                      fetchPriority="high" style={{ maxHeight: "70vh", objectFit: "cover", objectPosition: "bottom center" }}
                     />
                   </div>
                 </div>
