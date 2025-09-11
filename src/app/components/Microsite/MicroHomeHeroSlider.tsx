@@ -30,7 +30,7 @@ const slides = [
 
 export default function MicroHomeHeroSlider() {
     return (
-        <div className="overflow-hidden position-relative">
+        <div className="overflow-hidden position-relative ">
             <Swiper
                 modules={[Autoplay, Navigation, EffectFade, Pagination]}
                 navigation={{
@@ -46,7 +46,7 @@ export default function MicroHomeHeroSlider() {
 
                 {slides.map((slide, i) => (
                     <SwiperSlide key={i}>
-                        <div className="position-relative text-white d-flex align-items-center" style={{ height: '100vh' }}>
+                        <div className="position-relative text-white d-flex align-items-center micositeheader" >
                             <Image
                                 src={slide.img}
                                 alt={slide.title}

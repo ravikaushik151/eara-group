@@ -2119,7 +2119,8 @@ footer button:hover {
   width: 100%;
   display: flex;
 }
-
+.micositeheader {height:100vh; }
+.micositeheader {height:100vh; }
 @media screen and (max-width: 991px) {
   .padding-xlarge {
     padding: 3rem;
@@ -3022,6 +3023,7 @@ footer button:hover {
 }
 
 @media screen and (max-width: 767px) {
+  
   h1 {
     font-size: 2.5rem;
   }

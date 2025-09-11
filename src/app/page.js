@@ -140,25 +140,34 @@ export default function Home() {
                 Read More…
               </Link>
             </div>
-            <div className="image-wrapper">
-              <picture>
+            <div>
+              <Image
+                alt="Project"
+                src="/images/UpcomingProject.avif"
+                width={1000}
+                height={750}
+                className="img-fluid  mb-3 w-100 rounded-4"
+                priority
+                fetchPriority="high" style={{ maxHeight: "70vh", objectFit: "cover", objectPosition: "bottom center" }}
+              />
+              {/* <picture>
                 <source
                   media="(max-width: 576px)"
-                  srcSet="/images/About-Abutus-mobile.webp"
+                  srcSet="/images/UpcomingProject.avif"
                 />
                 <source
                   media="(min-width: 577px)"
-                  srcSet="/images/About-Abutus.webp"
+                  srcSet="/images/UpcomingProject.avif"
                 />
                 <img
-                  src="/images/About-Abutus.webp"
+                  src="/images/UpcomingProject.avif"
                   alt="About us"
                   width="997"
                   height="578"
                   className="img-fluid rounded-2"
                   loading="lazy"
                 />
-              </picture>
+              </picture> */}
 
             </div>
           </section>
@@ -266,8 +275,8 @@ export default function Home() {
                         </h4>
                         <p className="">
                           <span className="theme-color-light">
-                            
-                            <svg  style={{width: "20px", height: "20px" }} className="w-8 h-8 theme-color-light"  fill="currentColor"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/></svg>
+
+                            <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 theme-color-light" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" /></svg>
                             Kaggalipura, Off Kanakapura Road
                           </span>
                         </p>
