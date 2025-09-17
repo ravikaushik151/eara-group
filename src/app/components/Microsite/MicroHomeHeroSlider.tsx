@@ -16,16 +16,9 @@ const slides = [
         desc: '',
         button: '',
         href: '',
-        img: '/images/hero-image-edit-8.jpg',
-    },
-    {
-        title: '',
-        subtitle: '',
-        desc: '',
-        button: '',
-        href: '',
         img: '/images/hero-image-edit-9.jpg',
     },
+   
 ];
 
 export default function MicroHomeHeroSlider() {
