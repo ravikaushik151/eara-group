@@ -9,7 +9,7 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/Earan.jpeg.jpg"
+                src="/images/Earan.jpeg.jpg "
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"

@@ -484,7 +484,7 @@ export default function Home() {
               <div className="container-large">
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.194431840613!2d77.5151932!3d12.8046365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41001a586e09%3A0x36693ac44946a387!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1753163287315!5m2!1sen!2sin" width="100%" height="750" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.194431840613!2d77.5151932!3d12.8046365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41001a586e09%3A0x36693ac44946a387!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1753163287315!5m2!1sen!2sin" width="100%" height="580" loading="lazy"></iframe>
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"
@@ -600,7 +600,7 @@ export default function Home() {
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{top:"376px", maxHeight:"426px", objectFit:"cover", objectPosition:"bottom bottom", position:"absolute", opacity:".6"}}
+                      style={{top:"220px", maxHeight:"350px", objectFit:"cover", objectPosition:"bottom bottom", position:"absolute", opacity:".6"}}
                     />
                   </div>
                 </div>
