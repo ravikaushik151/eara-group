@@ -270,15 +270,15 @@ export default function Home() {
                     <Image
                       width={500}
                       height={900}
-                      src="https://placehold.co/700x900?text=Master+Plan"
+                      src="https://placehold.co/700x700?text=Master+Plan"
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid"
                     />
                   </div>
-                  <div className="home-masterplan_legend"  >
+                  <div className="home-masterplan_legend position-relative"  >
                     <div className="heading-style-h5  theme-color-dark">Legend</div>
-                    <div className="home-highlights_legend-grid">
+                    <div className="home-highlights_legend-grid ">
                       
                       <div
                         id="w-node-_5bcfc565-769c-8295-15b8-0bc64774afab-ac1b3e9a"
@@ -472,7 +472,7 @@ export default function Home() {
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{marginTop:"-5%", maxHeight:"220px", objectFit:"cover", objectPosition:"bottom center"}}
+                      style={{top:"80px", maxHeight:"750px", objectFit:"cover", objectPosition:"center", position:"absolute", opacity:".2"}}
                     />
                   </div>
                 </div>

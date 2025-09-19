@@ -1917,7 +1917,7 @@ footer button:hover {
 }
 
 .home-masterplan_component {
-  grid-column-gap: 9.25rem;
+  grid-column-gap: 9rem;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
