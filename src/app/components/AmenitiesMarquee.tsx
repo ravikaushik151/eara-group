@@ -25,7 +25,7 @@ const amenities = [
 
 export default function AmenitiesSection() {
     return (
-        <section className="py-0 mb-3">
+        <section className="py-0 mb-3 position-relative" >
             <div className="container text-center">
                 <div className="row g-4 ">
                     {amenities.map((item, idx) => (
@@ -43,7 +43,7 @@ export default function AmenitiesSection() {
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{marginTop:"30px", maxHeight:"220px", objectFit:"cover", objectPosition:"bottom bottom"}}
+                      style={{marginTop:"30px", maxHeight:"475px", objectFit:"cover", objectPosition:"bottom bottom", position:"absolute", opacity:".2"}}
                     />
                 </div>
             </div>

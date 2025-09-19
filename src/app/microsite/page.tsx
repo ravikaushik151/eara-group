@@ -79,7 +79,7 @@ export default function Home() {
           <section className="section theme-bg-light" id="about" >
             <div className="container">
               <div className="row  px-md-5">
-                <div className="col-md-6 d-flex align-items-center" style={{backgroundImage:"url(/images/page-6.png)",backgroundSize:"100% 30%", backgroundRepeat:"no-repeat",backgroundPosition:" bottom center"}}>
+                <div className="col-md-6 d-flex align-items-center" style={{backgroundImage:"url(/images/page-6.png)",backgroundSize:"100% 49%", backgroundRepeat:"no-repeat",backgroundPosition:" bottom center"}}>
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
                     <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by Eara.</span>
@@ -207,9 +207,9 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="section_biodiversity-benefits py-5  theme-bg-light" id="amenities">
-            <div className="padding-global">
-              <div className="container-large">
+          <section className="section_biodiversity-benefits py-5  theme-bg-light" id="amenities"  >
+            <div className="padding-global" >
+              <div className="container-large" >
                 <div className="biodiversity-benefits_components">
                   <div
                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
@@ -488,7 +488,7 @@ export default function Home() {
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"
-                    className="home-connectivity_content-wrapper"
+                    className="home-connectivity_content-wrapper  position-relative"
                   >
                     <div className="home-connectivity_content">
                       <div className="home-connectivity_heading-wrapper">
@@ -600,7 +600,7 @@ export default function Home() {
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{marginTop:"30px", maxHeight:"220px", objectFit:"cover", objectPosition:"bottom bottom"}}
+                      style={{top:"376px", maxHeight:"426px", objectFit:"cover", objectPosition:"bottom bottom", position:"absolute", opacity:".6"}}
                     />
                   </div>
                 </div>
