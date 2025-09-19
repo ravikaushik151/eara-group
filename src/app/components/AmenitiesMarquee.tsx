@@ -36,6 +36,15 @@ export default function AmenitiesSection() {
                             </div>
                         </div>
                     ))}
+                     <Image
+                      width={800}
+                      height={200}
+                      src="/images/page-2.png"
+                      loading="lazy"
+                      alt=""
+                      className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
+                      style={{marginTop:"30px", maxHeight:"220px", objectFit:"cover", objectPosition:"bottom bottom"}}
+                    />
                 </div>
             </div>
         </section>

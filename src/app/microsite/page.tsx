@@ -73,10 +73,13 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="section theme-bg-light" id="about">
+
+       
+
+          <section className="section theme-bg-light" id="about" >
             <div className="container">
               <div className="row  px-md-5">
-                <div className="col-md-6 d-flex align-items-center">
+                <div className="col-md-6 d-flex align-items-center" style={{backgroundImage:"url(/images/page-6.png)",backgroundSize:"100% 30%", backgroundRepeat:"no-repeat",backgroundPosition:" bottom center"}}>
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
                     <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by Eara.</span>
@@ -220,6 +223,7 @@ export default function Home() {
               </div>
             </div>
             <AmenitiesMarquee />
+           
           </section>
 
 
@@ -250,11 +254,11 @@ export default function Home() {
           >
             <div className="padding-global">
               <div className="container-large">
-                <div className="home-masterplan_component">
-                  <div className="home-masterplan_left">
+                <div className="home-masterplan_component ">
+                  <div className="home-masterplan_left ">
                     <h2
                       data-animate={1}
-                      className=" text-color-dark-rainforest theme-color-dark m-center"
+                      className=" text-color-dark-rainforest theme-color-dark m-center mb-0"
                     >
                       Master Plan
                     </h2>
@@ -265,81 +269,17 @@ export default function Home() {
                   >
                     <Image
                       width={500}
-                      height={700}
-                      src="https://placehold.co/700x700?text=Master+Plan"
+                      height={900}
+                      src="https://placehold.co/700x900?text=Master+Plan"
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid"
                     />
                   </div>
-                  <div className="home-masterplan_legend">
+                  <div className="home-masterplan_legend"  >
                     <div className="heading-style-h5  theme-color-dark">Legend</div>
                     <div className="home-highlights_legend-grid">
-                      <div
-                        id="w-node-be4663ad-c0a0-253c-f46e-d6c640bbbb11-ac1b3e9a"
-                        className="home-highlights_points-grid"
-                      >
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">9</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Clubhouse</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">10</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
-                            Community Seating
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">11</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
-                            Box Cricket
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">12</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">Parking</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">13</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Bird Watching Zone
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">14</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Amphitheatre
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">15</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Multipurpose Lawn
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">16</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Senior Citizen Park
-                          </div>
-                        </div>
-                      </div>
+                      
                       <div
                         id="w-node-_5bcfc565-769c-8295-15b8-0bc64774afab-ac1b3e9a"
                         className="home-highlights_points-grid"
@@ -401,7 +341,73 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
+                      <div
+                        id="w-node-be4663ad-c0a0-253c-f46e-d6c640bbbb11-ac1b3e9a"
+                        className="home-highlights_points-grid"
+                      >
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">9</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Clubhouse</div>
+                        </div>
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">10</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
+                            Community Seating
+                          </div>
+                        </div>
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">11</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
+                            Box Cricket
+                          </div>
+                        </div>
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">12</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark">Parking</div>
+                        </div>
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">13</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark">
+                            Bird Watching Zone
+                          </div>
+                        </div>
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">14</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark">
+                            Amphitheatre
+                          </div>
+                        </div>
+                        <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">15</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark">
+                            Multipurpose Lawn
+                          </div>
+                        </div>
+                       
+                      </div>
                       <div className="home-highlights_points-grid last">
+                      <div className="home-highlights_points">
+                          <div className="home-highlights_point-circle">
+                            <div className="home-highlights_point-text">16</div>
+                          </div>
+                          <div className=" home-highlights_text theme-color-dark">
+                            Senior Citizen Park
+                          </div>
+                        </div>
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">17</div>
@@ -457,7 +463,17 @@ export default function Home() {
                           <div className=" home-highlights_text theme-color-dark">Services</div>
                         </div>
                       </div>
+                     
                     </div>
+                    <Image
+                      width={800}
+                      height={200}
+                      src="/images/page-5.png"
+                      loading="lazy"
+                      alt=""
+                      className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
+                      style={{marginTop:"-5%", maxHeight:"220px", objectFit:"cover", objectPosition:"bottom center"}}
+                    />
                   </div>
                 </div>
               </div>
@@ -468,7 +484,7 @@ export default function Home() {
               <div className="container-large">
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.194431840613!2d77.5151932!3d12.8046365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41001a586e09%3A0x36693ac44946a387!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1753163287315!5m2!1sen!2sin" width="100%" height="700" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.194431840613!2d77.5151932!3d12.8046365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41001a586e09%3A0x36693ac44946a387!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1753163287315!5m2!1sen!2sin" width="100%" height="750" loading="lazy"></iframe>
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"
@@ -478,7 +494,7 @@ export default function Home() {
                       <div className="home-connectivity_heading-wrapper">
                         <h2
                           data-animate={1}
-                          className="heading-style-h2 text-color-offwhite theme-color-light m-center"
+                          className="heading-style-h2 text-color-offwhite theme-color-light m-center mb-3"
                         >
                           Located in{" "}
                           <span className="text-color-accent">
@@ -493,7 +509,7 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className="home-connectivity_distance-wrapper">
+                    <div className="home-connectivity_distance-wrapper" >
                       <div
                         id="w-node-_9441ef5f-b995-4318-be5b-df8ccce3289b-ac1b3e9a"
                         className="home-connectivity_distance m-center"
@@ -577,6 +593,15 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
+                    <Image
+                      width={800}
+                      height={200}
+                      src="/images/page-6.png"
+                      loading="lazy"
+                      alt=""
+                      className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
+                      style={{marginTop:"30px", maxHeight:"220px", objectFit:"cover", objectPosition:"bottom bottom"}}
+                    />
                   </div>
                 </div>
               </div>

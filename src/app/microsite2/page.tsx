@@ -83,7 +83,177 @@ export default function Home() {
 
 
 
+          <section className="d-flex align-items-center justify-content-center p-0 theme-bg-light" id="philosophy" >
+            <div className="container-fluid p-0">
+              <div className="row g-0 align-items-center w-100 mx-auto shadow-lg rounded-3 overflow-hidden" >
 
+
+                <div className="col-md-6 order-2 order-md-2" style={{
+                  backgroundColor: `#FBE5CE`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center bottom",
+                  // backgroundImage:`url("/images/page-3.png")`
+
+                }}>
+                  <div className="row">
+                    <div className="col-md-7 ps-md-5 ps-3 d-flex  px-4   align-items-top justify-content-center ">
+                      <div className="">
+
+
+                        <div className="flex-grow-1  py-5 ">
+                          <h3 className="fs-2 mb-3  theme-color-dark fw-bold" >
+                            Before You, the Wind <br />
+                            Walked Here.
+
+                          </h3>
+                          <div>
+
+                            <p className=" theme-color-dark mb-3">
+                              This land has heard the lullaby of birds long before human voices.
+                            </p>
+                            <p className=" theme-color-dark mb-3">
+                              It has felt the rhythm of rain, the hush of morning mist, the footprints of time.
+                            </p>
+                            <p className=" theme-color-dark mb-3">
+                              Now, it awaits yours, with grace, with quiet, with open arms. Nature remembers. And welcomes.
+                            </p>
+
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-md-5 mb-md-0 mb-4">
+                      <div className="d-flex  align-items-center justify-content-center">
+
+
+
+                        <div>
+                          <div className="d-flex flex-column align-items-center px-3">
+                            <div style={{ height: '10rem', width: '1px', backgroundColor: '#ced4da' }} className="theme-bg-dark"></div>
+                            <svg className="my-2 text-secondary" width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                              <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="2" fill="none" className="theme-color-dark" />
+                            </svg>
+                            <h3 className="small text-uppercase fw-semibold text-secondary theme-color-dark text-center my-4 fs-2 theme-color-dark" style={{ letterSpacing: '0.1px' }}>
+                              BRAND PHILOSOPHY
+                            </h3>
+                            <svg className="my-2 text-secondary" width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                              <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="2" fill="none" className="theme-color-dark" />
+                            </svg>
+                            <div style={{ height: '10rem', width: '1px', backgroundColor: '#ced4da' }} className="theme-bg-dark"></div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-12 margin-img" style={{ backgroundImage: "url(/images/page-3.png)", minHeight: "80px", backgroundSize: "cover", marginTop: "-40%", backgroundPosition: "bottom center" }}>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div className="col-md-6  order-1 order-md-1">
+                  <img
+                    src='/images/About-About-us.jpg'
+                    alt="Brand Philosophy"
+                    className="img-fluid w-100 h-100 mb-md-0 mb-3 fe-md-5"
+                    style={{ objectFit: 'cover', minHeight: '500px', objectPosition: 'center right' }}
+
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="d-flex align-items-center justify-content-center p-0 theme-bg-light" id="philosophy" >
+            <div className="container-fluid p-0">
+              <div className="row g-0 align-items-center w-100 mx-auto shadow-lg rounded-3 overflow-hidden" >
+
+
+                <div className="col-md-6 order-2 order-md-2" style={{
+                  backgroundColor: `#FBE5CE`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center bottom",
+                  // backgroundImage:`url("/images/page-3.png")`
+
+                }}>
+                  <div className="row">
+                  <div className="col-md-5 mb-md-0 mb-4">
+                      <div className="d-flex  align-items-center justify-content-center">
+                        <div>
+                          <div className="d-flex flex-column align-items-center  px-3">
+                            <div style={{ height: '10rem', width: '1px', backgroundColor: '#ced4da' }} className="theme-bg-dark"></div>
+                            <svg className="my-2 text-secondary" width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                              <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="2" fill="none" className="theme-color-dark" />
+                            </svg>
+                            <h3 className="small text-uppercase fw-semibold text-secondary theme-color-dark text-center my-4 fs-2 theme-color-dark" style={{ letterSpacing: '0.1px' }}>
+                              BRAND PHILOSOPHY
+                            </h3>
+                            <svg className="my-2 text-secondary" width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                              <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="2" fill="none" className="theme-color-dark" />
+                            </svg>
+                            <div style={{ height: '10rem', width: '1px', backgroundColor: '#ced4da' }} className="theme-bg-dark"></div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-7 ps-md-5 ps-3 d-flex  px-4   align-items-top justify-content-center ">
+                      <div className="">
+
+
+                        <div className="flex-grow-1  py-5 ">
+                          <h3 className="fs-2 mb-3  theme-color-dark fw-bold" >
+                            Before You, the Wind <br />
+                            Walked Here.
+
+                          </h3>
+                          <div>
+
+                            <p className=" theme-color-dark mb-3">
+                              This land has heard the lullaby of birds long before human voices.
+                            </p>
+                            <p className=" theme-color-dark mb-3">
+                              It has felt the rhythm of rain, the hush of morning mist, the footprints of time.
+                            </p>
+                            <p className=" theme-color-dark mb-3">
+                              Now, it awaits yours, with grace, with quiet, with open arms. Nature remembers. And welcomes.
+                            </p>
+
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    
+                    <div className="col-md-12 margin-img" style={{ backgroundImage: "url(/images/page-3.png)", minHeight: "80px", backgroundSize: "cover", marginTop: "-40%", backgroundPosition: "bottom center" }}>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div className="col-md-6  order-1 order-md-2">
+                  <img
+                    src='/images/About-About-us.jpg'
+                    alt="Brand Philosophy"
+                    className="img-fluid w-100 h-100 mb-md-0 mb-3 fs-md-5"
+                    style={{ objectFit: 'cover', minHeight: '500px', objectPosition: 'center right' }}
+
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section className="d-flex align-items-center justify-content-center p-0 theme-bg-light" id="philosophy">
             <div className="container-fluid p-0">
