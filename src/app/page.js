@@ -109,7 +109,7 @@ export default function Home() {
               <div className="container position-relative z-1">
                 <div className="d-flex my-md-0 my-5 py-md-0 py-4">
                   <div>
-                    <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA</h1>
+                    <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA Group</h1>
 
                     <h4 className="mb-3 fw-light">{``}</h4>
 
@@ -130,7 +130,7 @@ export default function Home() {
               <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
               <span className="fs-5 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
               <p className="mt-4 theme-color-dark">
-                At EARA, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                At EARA Group, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
                 Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
               </p>
               <Link

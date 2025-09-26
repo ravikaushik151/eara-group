@@ -74,15 +74,15 @@ export default function Home() {
           </section>
 
 
-       
+
 
           <section className="section theme-bg-light" id="about" >
             <div className="container">
               <div className="row  px-md-5">
-                <div className="col-md-6 d-flex align-items-center" style={{backgroundImage:"url(/images/page-6.png)",backgroundSize:"100% 49%", backgroundRepeat:"no-repeat",backgroundPosition:" bottom center"}}>
+                <div className="col-md-6 d-flex align-items-center" style={{ backgroundImage: "url(/images/page-6.png)", backgroundSize: "100% 49%", backgroundRepeat: "no-repeat", backgroundPosition: " bottom center" }}>
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
-                    <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by Eara.</span>
+                    <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by EARA Group.</span>
                     <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
                     </p>
@@ -223,7 +223,7 @@ export default function Home() {
               </div>
             </div>
             <AmenitiesMarquee />
-           
+
           </section>
 
 
@@ -279,7 +279,7 @@ export default function Home() {
                   <div className="home-masterplan_legend position-relative"  >
                     <div className="heading-style-h5  theme-color-dark">Legend</div>
                     <div className="home-highlights_legend-grid ">
-                      
+
                       <div
                         id="w-node-_5bcfc565-769c-8295-15b8-0bc64774afab-ac1b3e9a"
                         className="home-highlights_points-grid"
@@ -397,10 +397,10 @@ export default function Home() {
                             Multipurpose Lawn
                           </div>
                         </div>
-                       
+
                       </div>
                       <div className="home-highlights_points-grid last">
-                      <div className="home-highlights_points">
+                        <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">16</div>
                           </div>
@@ -463,7 +463,7 @@ export default function Home() {
                           <div className=" home-highlights_text theme-color-dark">Services</div>
                         </div>
                       </div>
-                     
+
                     </div>
                     <Image
                       width={800}
@@ -472,7 +472,7 @@ export default function Home() {
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{top:"80px", maxHeight:"750px", objectFit:"cover", objectPosition:"center", position:"absolute", opacity:".2"}}
+                      style={{ top: "80px", maxHeight: "750px", objectFit: "cover", objectPosition: "center", position: "absolute", opacity: ".2" }}
                     />
                   </div>
                 </div>
@@ -600,7 +600,7 @@ export default function Home() {
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{top:"220px", maxHeight:"350px", objectFit:"cover", objectPosition:"bottom bottom", position:"absolute", opacity:".6"}}
+                      style={{ top: "220px", maxHeight: "350px", objectFit: "cover", objectPosition: "bottom bottom", position: "absolute", opacity: ".6" }}
                     />
                   </div>
                 </div>

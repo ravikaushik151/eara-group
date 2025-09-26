@@ -79,7 +79,7 @@ export default function Career() {
       <section className="bg-light py-5 theme-bg-light">
         <div className="container">
           <div className="text-center mb-5 theme-color-dark">
-            <h2 className="mb-2">Build the Future with EARA</h2>
+            <h2 className="mb-2">Build the Future with EARA Group</h2>
             <span className=' theme-color-dark'>
               Be part of a mission where values lead, ideas thrive, and growth is a shared journey.
             </span>
@@ -92,7 +92,7 @@ export default function Career() {
                 Why Join <span className="text-success ">EARA</span> Group?
               </h2>
               <p className="mb-4  theme-color-dark">
-                At EARA, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
+                At EARA Group, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
               </p>
 
               <div className="row">

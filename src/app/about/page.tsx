@@ -9,7 +9,7 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/Earan.jpeg.jpg "
+                src="/images/Earan.jpeg.jpg"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"
@@ -70,12 +70,12 @@ export default function About() {
               <div className="content">
                 <h2 className="mb-3 theme-color-dark">About Us</h2>
                 <p className="mb-2 theme-color-dark">
-                  At EARA, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
+                  At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
                 </p>
                 <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
                 </p>
-                <p className="mb-2 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
+                <p className="mb-2 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
               </div>
               <div className="image-wrapper">
                 <Image
@@ -114,7 +114,7 @@ export default function About() {
                     <div className="text-center">
                       <h3 className="fw-bold theme-color-dark">Our Mission</h3>
                       <p className="theme-color-dark">
-                        At EARA, we are dedicated to crafting serene, sustainable living environments that harmonize with nature. Our commitment to innovation, integrity, and quality shapes spaces that foster well-being, a sense of belonging, and quiet sophistication. Through thoughtful design and eco-conscious practices, we aim to create not just homes, but havens where communities thrive in harmony with the land.
+                        At EARA Group, we are dedicated to crafting serene, sustainable living environments that harmonize with nature. Our commitment to innovation, integrity, and quality shapes spaces that foster well-being, a sense of belonging, and quiet sophistication. Through thoughtful design and eco-conscious practices, we aim to create not just homes, but havens where communities thrive in harmony with the land.
                       </p>
                     </div>
                   </div>
