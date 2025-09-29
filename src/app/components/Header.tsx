@@ -66,7 +66,7 @@ export default function Header() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
-                { href: "/microsite", label: "Project" },
+                { href: "/project", label: "Project" },
                 { href: "/blog", label: "Blogs" },
                 { href: "/career", label: "Career" },
                 { href: "/contact", label: "Contact" },
@@ -104,7 +104,7 @@ export default function Header() {
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
-              { href: "/microsite", label: "Project" },
+              { href: "/project", label: "Project" },
               { href: "/blog", label: "Blogs" },
               { href: "/career", label: "Career" },
               { href: "/contact", label: "Contact" },

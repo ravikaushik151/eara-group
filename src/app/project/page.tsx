@@ -43,23 +43,41 @@ export default function Project() {
                 <div className="padding-global">
                     <div className="container-large">
                         {/* Featured Project Section */}
-                        <section className="section-1 p-0">
-                            <div className="content">
+                        <section className="section-1 p-0 row align-items-center">
+                            <div className="content col-md-6">
                                 <h2 className="mb-3 theme-color-dark">Amidst Nature</h2>
-                                <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by EARA Group.</span>
-                                <p className="mt-4  theme-color-dark">
-                                    <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
+                                <span className="fs-5 theme-color-dark">
+                                    Crafted by Earth. Designed by EARA Group.
+                                </span>
+                                <p className="mt-4 theme-color-dark">
+                                    <strong>
+                                        Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green
+                                        mornings, golden silence, and grounded luxury.
+                                    </strong>
+                                    <br />
+                                    Spread across 15 lush acres in Kaggalipura, just off Kanakapura
+                                    Road, this premium plotted development invites you to design your
+                                    forever home in a place where the city fades and nature speaks.
+                                    Thoughtfully approved by BMRDA and connected to every urban
+                                    convenience, this is more than a plot - it&rsquo;s a path back to
+                                    balance.
                                 </p>
+
+                                {/* CTA Button */}
+                                <Link href="/microsite" className="btn btn-dark text-white border mt-4">
+                                    Explore Microsite
+                                </Link>
                             </div>
-                            <div className="">
+
+                            <div className="col-md-6 text-center">
                                 <Image
                                     width={400}
                                     height={400}
                                     src="https://placehold.co/700x700?text=Project"
                                     loading="lazy"
-                                    alt=""
-                                    className="home-masterplan_img img-fluid"
-                                    style={{ height: "500px" }}
+                                    alt="Amidst Nature Project"
+                                    className="home-masterplan_img img-fluid rounded shadow"
+                                    style={{ height: "500px", objectFit: "cover" }}
                                 />
                             </div>
                         </section>
