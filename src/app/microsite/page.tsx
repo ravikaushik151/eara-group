@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="col-md-6 d-flex align-items-center" style={{ backgroundImage: "url(/images/page-6.png)", backgroundSize: "100% 49%", backgroundRepeat: "no-repeat", backgroundPosition: " bottom center" }}>
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
-                    <span className="fs-5  theme-color-dark">Crafted by Earth. Designed by EARA Group.</span>
+                    <span className="fs-5 theme-color-dark">Crafted by Earth. Designed by EARA Group.</span>
                     <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
                     </p>
@@ -97,7 +97,7 @@ export default function Home() {
                       height={750}
                       className="img-fluid  mb-3  rounded-4"
                       priority
-                      fetchPriority="high" style={{ maxHeight: "70vh", objectFit: "cover", objectPosition: "bottom center" }}
+                      fetchPriority="high" style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "bottom center" }}
                     />
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function Home() {
                   <div className="home-stats_content-wrapper">
                     <div className="home-stats_text-wrapper">
                       <div className="text-color-grey">
-                        <div className="text-size-medium theme-color-light">
+                        <div className="text-size-medium theme-color-light fs-5">
                           Enter and see a sprawling canvas of green within the
                           city
                         </div>
@@ -479,9 +479,19 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <div className="section_home-connectivity theme-bg-dark" id="location">
+          <section className="section_home-connectivity theme-bg-dark" id="location">
             <div className="padding-global">
               <div className="container-large">
+                <div className="home-connectivity_content">
+                  <div className="home-connectivity_heading-wrapper text-center">
+                    <h2
+                      data-animate={1}
+                      className="heading-style-h2 text-color-offwhite theme-color-light m-center"
+                    >
+                      Location
+                    </h2>
+                  </div>
+                </div>
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.194431840613!2d77.5151932!3d12.8046365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae41001a586e09%3A0x36693ac44946a387!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1753163287315!5m2!1sen!2sin" width="100%" height="580" loading="lazy"></iframe>
@@ -492,7 +502,7 @@ export default function Home() {
                   >
                     <div className="home-connectivity_content">
                       <div className="home-connectivity_heading-wrapper">
-                        <h2
+                        <h3
                           data-animate={1}
                           className="heading-style-h2 text-color-offwhite theme-color-light m-center mb-3"
                         >
@@ -501,7 +511,7 @@ export default function Home() {
                             Kaggalipura,
                           </span>{" "}
                           Off Kanakapura Road, Bengaluru.
-                        </h2>
+                        </h3>
                       </div>
                       <div className="w-100">
                         <div className="text-size-regular text-color-offwhite theme-color-light m-center">
@@ -606,7 +616,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </main>
     </>

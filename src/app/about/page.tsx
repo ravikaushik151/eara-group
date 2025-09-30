@@ -68,7 +68,7 @@ export default function About() {
             </div>
             <section className="section-1 ">
               <div className="content">
-                <h2 className="mb-3 theme-color-dark">About Us</h2>
+                <h2 className="mb-3 theme-color-dark fs-2">About Us</h2>
                 <p className="mb-2 theme-color-dark">
                   At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
@@ -104,7 +104,7 @@ export default function About() {
                   <div className="col-md-12 mb-3">
                     <div className=" text-center ">
                       <h2 className="mb-3 theme-color-light">Our Mission &amp; Vision</h2>
-                      <p className="theme-color-light">What drives us forward and what we aim to achieve</p>
+                      <p className="theme-color-light fs-4">What drives us forward and what we aim to achieve</p>
                     </div>
                   </div>
                 </div>

@@ -89,7 +89,7 @@ export default function Career() {
             {/* Why Join */}
             <div className="col-lg-6 mb-4">
               <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4  theme-color-dark">
-                Why Join <span className="text-success ">EARA</span> Group?
+                Why Join <span className="text-color-accent">EARA</span> Group?
               </h2>
               <p className="mb-4  theme-color-dark">
                 At EARA Group, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
@@ -98,7 +98,7 @@ export default function Career() {
               <div className="row">
                 {reasons.map((reason) => (
                   <div key={reason} className="col-6 d-flex align-items-start mb-3">
-                    <FaCheckCircle className="text-success me-2 mt-1" />
+                    <FaCheckCircle className="text-color-accentme-2 mt-1" />
                     <span className="text-dark  theme-color-dark">{reason}</span>
                   </div>
                 ))}
@@ -167,7 +167,7 @@ export default function Career() {
                     </div>
 
                     <div className="text-center col-md-12">
-                      <button type="submit" className="btn btn-dark py-2 px-4 mt-2 theme-bg-dark theme-color-light">
+                      <button type="submit" className="btn theme-btn py-2 px-4 mt-2">
                         Submit
                       </button>
                     </div>

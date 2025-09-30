@@ -52,7 +52,7 @@ export default function HomeHeroSlider() {
                             <div className="container position-relative z-1">
                                 <div className="d-flex">
                                     <div>
-                                        <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA Group</h1>
+                                        <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined in green. <br /> Welcome to EARA Group</h1>
 
                                         {slide.subtitle && <h4 className="mb-3 fw-light">{slide.subtitle}</h4>}
 

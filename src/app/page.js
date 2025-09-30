@@ -6,6 +6,7 @@ import Preloader from "./components/Preloader";
 // import HomeHeroSlider from "./components/Home/HeroSlider";
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
+import LatestBlogs from "./components/LatestBlogs";
 
 export default function Home() {
   useEffect(() => {
@@ -109,7 +110,7 @@ export default function Home() {
               <div className="container position-relative z-1">
                 <div className="d-flex my-md-0 my-5 py-md-0 py-4">
                   <div>
-                    <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined <br />in green. Welcome to EARA Group</h1>
+                    <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined in green. <br />Welcome to EARA Group</h1>
 
                     <h4 className="mb-3 fw-light">{``}</h4>
 
@@ -128,16 +129,15 @@ export default function Home() {
           <section className="section-1 px-md-5 px-3 theme-bg-light">
             <div className="content">
               <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
-              <span className="fs-5 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
+              <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
               <p className="mt-4 theme-color-dark">
                 At EARA Group, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
                 Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
               </p>
               <Link
                 href="/about"
-                className="btn btn-dark text-white border mt-4"
-              >
-                Read More…
+                className="btn theme-btn text-white border mt-4"
+              > Read More
               </Link>
             </div>
             <div>
@@ -148,7 +148,7 @@ export default function Home() {
                 height={750}
                 className="img-fluid  mb-3 w-100 rounded-4"
                 priority
-                fetchPriority="high" style={{ maxHeight: "70vh", objectFit: "cover", objectPosition: "bottom center" }}
+                fetchPriority="high" style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "bottom center" }}
               />
               {/* <picture>
                 <source
@@ -260,7 +260,7 @@ export default function Home() {
                       height={750}
                       className="img-fluid  mb-3"
                       priority
-                      fetchPriority="high"
+                      fetchPriority="high" style={{ maxHeight: "65vh", objectFit: "cover", objectPosition: "bottom center" }}
                     />
                   </div>
                   <div
@@ -270,7 +270,7 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left ">
-                        <h4 className="text-black mb-2 fs-md-4  theme-color-light" style={{ fontSize: "24px" }}>
+                        <h4 className="text-black mb-2 fs-4 theme-color-light">
                           Ultra Premium Plotted Development
                         </h4>
                         <p className="">
@@ -288,7 +288,7 @@ export default function Home() {
                       </div>
                       <div className="row align-items-start mb-3 mt-4 mob-center">
                         <div className="col-12 text-black">
-                          <h5 className="mb-3 theme-color-light">Key Highlights of the Project:</h5>
+                          <h5 className="mb-3 theme-color-light fs-4">Key Highlights of the Project:</h5>
                           <ul className="text-black ps-3 theme-color-light">
                             <li>Plot sizes ranging from 1500 – 3300 sq ft.</li>
                             <li>7,000 sq.ft. clubhouse with gym, pool, yoga room, café & library</li>
@@ -304,8 +304,7 @@ export default function Home() {
                       <p className="m-center py-md-0 py-3">
                         <a
                           href="/microsite"
-                          className="btn btn-dark text-white border green-bg"
-                          style={{ fontSize: "15px" }}
+                          className="btn theme-btn"
                         >
                           More Details
                         </a>
@@ -396,7 +395,7 @@ export default function Home() {
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center">Sustainability</h5>
+                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Sustainability</h5>
                         <p className="theme-color-dark text-start small m-center">Creating future-ready communities that respect the land and restore balance with nature.
                         </p>
                       </div>
@@ -410,7 +409,7 @@ export default function Home() {
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center">Innovation</h5>
+                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Innovation</h5>
                         <p className="theme-color-dark text-start small m-center">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.
                         </p>
                       </div>
@@ -428,7 +427,7 @@ export default function Home() {
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center">Intergrity</h5>
+                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Intergrity</h5>
                         <p className="theme-color-dark text-start small m-center">Rooted in transparency and trust — every decision guided by what’s right and reliable.
                         </p>
                       </div>
@@ -442,7 +441,7 @@ export default function Home() {
                     </div>
                     <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                       <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center">Quality</h5>
+                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Quality</h5>
                         <p className="theme-color-dark text-start small m-center">Delivering excellence in every detail, from foundation to finish.
                         </p>
                       </div>
@@ -456,44 +455,7 @@ export default function Home() {
           </section>
           <TestimonialSlider />
           {/* Section 4: Blog Section */}
-          <section className="px-md-5 px-3  theme-bg-dark">
-            <h2 className="text-center theme-color-light">LATEST BLOGS</h2>
-            <div className="blog-grid ">
-              <div className="blog-card theme-bg-light">
-                <Image src="/images/Blog_1-s.jpg" alt="Blog 1" loading="lazy" width={578}
-                  height={200} />
-                <div className="content">
-                  <h4 className="theme-color-dark">The Future of Smart Living</h4>
-                  <p className="theme-color-dark">
-                    Discover how smart technologies are redefining luxury in
-                    modern homes.
-                  </p>
-                </div>
-              </div>
-              <div className="blog-card  theme-bg-light">
-                <Image src="/images/Blog_2-s.jpg" alt="Blog 2" loading="lazy" width={578}
-                  height={200} />
-                <div className="content">
-                  <h4 className="theme-color-dark">Eco-Conscious Architecture</h4>
-                  <p className="theme-color-dark">
-                    Explore architectural trends that prioritize sustainability
-                    and efficiency.
-                  </p>
-                </div>
-              </div>
-              <div className="blog-card  theme-bg-light">
-                <Image src="/images/Blog_3-s.jpg" alt="Blog 3" loading="lazy" width={578}
-                  height={200} />
-                <div className="content">
-                  <h4 className="theme-color-dark">Why Choose Integrated Townships?</h4>
-                  <p className="theme-color-dark">
-                    Benefits of living in planned, self-sufficient residential
-                    environments.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <LatestBlogs />
         </div>
       </main>
     </>

@@ -37,7 +37,7 @@ const TestimonialSlider = () => {
                 {testimonials.map((text, index) => (
                     <SwiperSlide key={index}>
                         <div className="info-box p-4 bg-white  theme-bg-dark shadow-sm h-100 rounded">
-                            <p className="text-muted theme-color-light">{text}</p>
+                            <p className="theme-color-light">{text}</p>
                         </div>
                     </SwiperSlide>
                 ))}

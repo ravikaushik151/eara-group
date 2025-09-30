@@ -54,12 +54,12 @@ export default function Blog() {
             <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
                 <div className="container">
                     <div className="row justify-content-end mb-4">
-                        <div className='col-md-4 '>
+                        <div className='col-md-12'>
                             <h2 className="text-center">
                                 Blogs
                             </h2>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md-2 d-none">
                             <input
                                 type="text"
                                 className="form-control"
@@ -68,7 +68,7 @@ export default function Blog() {
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md-2 d-none">
                             <select className="form-select" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
                                 <option value="newest">Sort by Newest</option>
                                 <option value="oldest">Sort by Oldest</option>
@@ -77,7 +77,7 @@ export default function Blog() {
                     </div>
                     <div className="row">
                         {paginatedPosts.length > 0 ? paginatedPosts.map((post) => (
-                            <div className="col-md-4 py-3 px-3 " key={post.slug}>
+                            <div className="col-md-4 py-3" key={post.slug}>
                                 <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3  theme-bg-dark">
                                     <div className="services-thumb">
                                         <Link href={`/blog/${post.slug}`}>
@@ -87,18 +87,20 @@ export default function Blog() {
                                                 alt={post.title}
                                                 width={500}
                                                 height={500}
+                                                style={{ minHeight: "250px", objectFit: "cover" }}
                                             />
+
                                         </Link>
                                     </div>
                                     <div className="services-content">
-                                        <h6 className="title my-3  fw-bold">
-                                            <Link className='text-dark  fw-bold text-decoration-none theme-color-light' href={`/blog/${post.slug}`} style={{ fontSize: "21px", fontWeight: "600" }}>
+                                        <h6 className="title my-3 text-center fw-bold">
+                                            <Link className='text-dark  fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`} style={{ fontWeight: "600" }}>
                                                 {post.title}
                                             </Link>
                                         </h6>
                                         <p className='mb-0 theme-color-light'>{post.excerpt}</p>
                                         <div className="text-center py-3 my-3 small  ">
-                                            <Link href={`/blog/${post.slug}`} className="btn btn-dark theme-bg-light theme-color-dark ">Read More</Link>
+                                            <Link href={`/blog/${post.slug}`} className="btn theme-btn">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
