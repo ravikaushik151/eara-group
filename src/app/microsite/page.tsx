@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div id="scroll-more">
           <section
-            className="project-info-section theme-bg-dark"
+            className="project-info-section theme-bg-dark section-small"
 
           >
             <div className="container">
