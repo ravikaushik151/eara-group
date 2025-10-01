@@ -39,12 +39,13 @@ export default function Project() {
             </div>
 
             {/* Intro Section */}
-            <section id="TOP" className="section_amenities-hero theme-bg-light page-about">
+            <section id="TOP" className="section_amenities-hero theme-bg-light ">
                 <div className="padding-global">
                     <div className="container-large">
                         {/* Featured Project Section */}
                         <section className="section-1 p-0 row align-items-center">
-                            <div className="content col-md-6">
+                            <div className="content col-md-6 page-project  ">
+                                <div className="mb-md-5">
                                 <h2 className="mb-3 theme-color-dark">Amidst Nature</h2>
                                 <span className="fs-4 theme-color-dark">
                                     Crafted by Earth. Designed by EARA Group.
@@ -64,9 +65,10 @@ export default function Project() {
                                 </p>
 
                                 {/* CTA Button */}
-                                <Link href="/microsite" className="btn theme-bg-dark text-light mt-4">
+                                <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
                                     Explore Microsite
                                 </Link>
+                                </div>
                             </div>
 
                             <div className="col-md-6 text-center">

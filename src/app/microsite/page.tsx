@@ -76,10 +76,10 @@ export default function Home() {
 
 
 
-          <section className="section theme-bg-light" id="about" >
+          <section className="section theme-bg-light page-project-amidst" id="about" >
             <div className="container">
               <div className="row  px-md-5">
-                <div className="col-md-6 d-flex align-items-center" style={{ backgroundImage: "url(/images/page-6.png)", backgroundSize: "100% 49%", backgroundRepeat: "no-repeat", backgroundPosition: " bottom center" }}>
+                <div className="col-md-6 d-flex align-items-center" >
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
                     <span className="fs-5 theme-color-dark">Crafted by Earth. Designed by EARA Group.</span>

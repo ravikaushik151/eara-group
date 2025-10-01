@@ -19181,3 +19181,46 @@ footer button:hover {
   padding: 130px;
 }
 
+.page-project {
+  position: relative;
+  z-index: 1;
+}
+
+.page-project {
+  background-image: url("/images/Flower_Wara.png");
+  background-size: 25%;
+  background-position: 100% 100%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+
+
+.page-project-amidst{
+  position: relative;
+  z-index: 1;
+  background-color: var(--theme-bg-light);
+}
+
+.page-project-amidst {
+  background-image: url("/images/Flower_Wara.png");
+  background-size: 15%;
+  background-position: 100% 75%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.page-project-amidst::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/images/Flower_Wara.png') right 100% / 100% 80% no-repeat;
+  transform: scaleY( -1);
+  pointer-events: none;
+  z-index: 0;
+  background-size: 15%;
+  background-position:  0% 100%;
+}
+
