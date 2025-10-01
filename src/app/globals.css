@@ -19042,3 +19042,35 @@ footer button:hover {
 .margin-img {
   margin-top: -5%;
 }
+
+.lifestyle-section {
+  position: relative;
+  background: url('/images/FLower 3 -8.png') right 50% / 100% 80% no-repeat;
+  color: #fff;
+  overflow: hidden;
+  background-size: 10% 30%;
+  background-position: right 103%;
+  /* pseudo-element bahar na nikle */
+}
+
+.lifestyle-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/FLower 3 -8.png') right 50% / 100% 80% no-repeat;
+  transform: scaleX(-1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 10% 30%;
+  background-position: inherit;
+}
+
+.lifestyle-section>* {
+  position: relative;
+  z-index: 1;
+  /* content image ke upar rahe */
+}

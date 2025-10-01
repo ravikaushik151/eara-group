@@ -126,7 +126,13 @@ export default function Home() {
           </div>
         </div>
         <div id="scroll-more">
-          <section className="section-1 px-md-5 px-3 theme-bg-light">
+          <section className="section-1 px-md-5 px-3 theme-bg-light" style={{
+            backgroundImage: "url('/images/Line_2-8.png')",
+            backgroundSize: "100% 80%",   // ✅ width 100%, height 80%
+            backgroundPosition: "center 308%", // ✅ right aligned, center vertically
+            color: "#fff",
+            backgroundRepeat: "no-repeat",   // ✅ fixed
+          }}>
             <div className="content">
               <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
               <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
@@ -243,7 +249,13 @@ export default function Home() {
             </div>
           </section> */}
 
-          <section className="same-gap position-relative bg-light theme-bg-dark">
+          <section className="same-gap position-relative bg-light theme-bg-dark" style={{
+            backgroundImage: "url('/images/Flower_Wara.png')",
+            backgroundSize: "25% 50%",   // ✅ width 100%, height 80%
+            backgroundPosition: "right 99%", // ✅ right aligned, center vertically
+            color: "#fff",
+            backgroundRepeat: "no-repeat",   // ✅ fixed
+          }}>
             <div className="container-fluid">
               <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
@@ -317,7 +329,7 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="lifestyle-section  ">
+          <section className="lifestyle-section">
             <div className="container">
               <h2 className="theme-color-dark"> {/*Ethos of */} EARA Group</h2>
               {/* <div className="lifestyle-grid">
