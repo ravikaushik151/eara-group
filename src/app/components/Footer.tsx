@@ -128,7 +128,7 @@ export default function Footer() {
                 className="footer-input rounded-0"
               />
               <div className="m-center">
-                <button type="submit" className="btn theme-btn mb-3">
+                <button type="submit" className="btn theme-bg-light mb-3">
                   SUBMIT
                 </button>
               </div>

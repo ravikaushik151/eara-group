@@ -64,7 +64,7 @@ export default function Project() {
                                 </p>
 
                                 {/* CTA Button */}
-                                <Link href="/microsite" className="btn theme-btn mt-4">
+                                <Link href="/microsite" className="btn theme-bg-dark text-light mt-4">
                                     Explore Microsite
                                 </Link>
                             </div>

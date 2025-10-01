@@ -100,7 +100,7 @@ export default function Blog() {
                                         </h6>
                                         <p className='mb-0 theme-color-light'>{post.excerpt}</p>
                                         <div className="text-center py-3 my-3 small  ">
-                                            <Link href={`/blog/${post.slug}`} className="btn theme-btn">Read More</Link>
+                                            <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@ export default function Blog() {
                                             className={`page-item mx-1 bg-black ${currentPage === i + 1 ? 'active' : ''}`}
                                             onClick={() => setCurrentPage(i + 1)}
                                         >
-                                            <button className="page-link bg-black border-dark text-white rounded-0 theme-bg-dark">{i + 1}</button>
+                                            <button className="page-link btn t text-light rounded-0 theme-bg-dark">{i + 1}</button>
                                         </li>
                                     ))}
                                 </ul>
