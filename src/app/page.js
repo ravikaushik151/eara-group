@@ -128,8 +128,8 @@ export default function Home() {
         <div id="scroll-more">
           <section className="section-1 px-md-5 px-3 theme-bg-light" style={{
             backgroundImage: "url('/images/Line_2-8.png')",
-            backgroundSize: "100% 80%",   // ✅ width 100%, height 80%
-            backgroundPosition: "center 308%", // ✅ right aligned, center vertically
+            backgroundSize: "75% 82%",   // ✅ width 100%, height 80%
+            backgroundPosition: "183% 300%", // ✅ right aligned, center vertically
             color: "#fff",
             backgroundRepeat: "no-repeat",   // ✅ fixed
           }}>
