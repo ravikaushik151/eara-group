@@ -32,7 +32,12 @@ export default function Contact() {
       </div>
 
       <section className="section-padding bg-white theme-bg-light">
-        <div className="container bg-light theme-bg-dark px-3 px-md-5 py-md-5 py-3">
+        <div className="container bg-light theme-bg-dark py-md-5 py-3" style={{
+          backgroundImage: "url('/images/Nature_AMidst.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          color: "#fff", // text white ho jaye
+        }}>
           <div className="row">
             <div className="col-md-12 mx-auto">
               <div className="heading">
@@ -42,7 +47,7 @@ export default function Contact() {
           </div>
 
           <div className="row">
-            <div className="col-md-10 mx-auto">
+            <div className="col-md-11 mx-auto">
               <div className="row">
                 {/* Contact Form */}
                 <div className="col-md-7">

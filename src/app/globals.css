@@ -15942,7 +15942,7 @@ footer button:hover {
   z-index: 1;
   grid-row-gap: 2rem;
   flex-direction: column;
-  padding-bottom: 14.25rem;
+  /*padding-bottom: 14.25rem;*/
   display: flex;
   position: relative;
 }
@@ -15967,7 +15967,7 @@ footer button:hover {
 .text-size-regular {
   letter-spacing: -.12px;
   text-wrap: balance;
-  font-size: .9375rem;
+  /*font-size: .9375rem;*/
 }
 
 .home-connectivity_distance-wrapper {
