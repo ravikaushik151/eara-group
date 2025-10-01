@@ -142,7 +142,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="btn theme-btn text-white border mt-4"
+                className="btn theme-bg-dark text-white border mt-4"
               > Read More
               </Link>
             </div>
@@ -316,7 +316,7 @@ export default function Home() {
                       <p className="m-center py-md-0 py-3">
                         <a
                           href="/microsite"
-                          className="btn theme-btn"
+                          className="btn theme-bg-light"
                         >
                           More Details
                         </a>

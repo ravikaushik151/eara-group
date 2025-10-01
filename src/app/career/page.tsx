@@ -99,7 +99,7 @@ export default function Career() {
                 {reasons.map((reason) => (
                   <div key={reason} className="col-6 d-flex align-items-start mb-3">
                     <FaCheckCircle className="text-color-accentme-2 mt-1" />
-                    <span className="text-dark  theme-color-dark">{reason}</span>
+                    <span className="text-dark  theme-color-dark">&nbsp; {reason} </span>
                   </div>
                 ))}
               </div>
@@ -167,7 +167,7 @@ export default function Career() {
                     </div>
 
                     <div className="text-center col-md-12">
-                      <button type="submit" className="btn theme-btn py-2 px-4 mt-2">
+                      <button type="submit" className="btn theme-bg-dark text-white py-2 px-4 mt-2">
                         Submit
                       </button>
                     </div>
