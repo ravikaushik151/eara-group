@@ -31,13 +31,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <section className="section-padding bg-white theme-bg-light">
-        <div className="container bg-light theme-bg-dark py-md-5 py-3" style={{
-          backgroundImage: "url('/images/Nature_AMidst.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          color: "#fff", // text white ho jaye
-        }}>
+      <section className="section-padding bg-white theme-bg-dark contact">
+        <div className="container">
           <div className="row">
             <div className="col-md-12 mx-auto">
               <div className="heading">

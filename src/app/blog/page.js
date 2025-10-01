@@ -51,7 +51,7 @@ export default function Blog() {
             </div>
 
             {/* Blog Content */}
-            <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
+            <section className="section-padding theme-bg-light blog-main-page" style={{ marginTop: '0px' }}>
                 <div className="container">
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>

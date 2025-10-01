@@ -19151,7 +19151,7 @@ footer button:hover {
   inset: 0;
 
   background: url('/images/Big-8.png') right 50% / 100% 80% no-repeat;
-  transform: scaleX( -1);
+  transform: scaleX(-1);
 
   pointer-events: none;
 
@@ -19159,6 +19159,7 @@ footer button:hover {
   background-size: 7%;
   background-position: inherit;
 }
+
 .testimonials {
   position: relative;
   background: url('/images/Line-8.png');
@@ -19181,3 +19182,92 @@ footer button:hover {
   padding: 130px;
 }
 
+.blog-main-page {
+  position: relative;
+  z-index: 1;
+}
+
+.blog-main-page {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.blog-main-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.carrer {
+  position: relative;
+  z-index: 1;
+}
+
+.carrer {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.carrer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+.contact {
+  position: relative;
+  z-index: 1;
+}
+
+.contact {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  overflow: hidden;
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}

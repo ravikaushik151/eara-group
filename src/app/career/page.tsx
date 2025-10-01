@@ -76,7 +76,7 @@ export default function Career() {
       </div>
 
       {/* Career Section */}
-      <section className="bg-light py-5 theme-bg-light">
+      <section className="bg-light py-5 theme-bg-light carrer">
         <div className="container">
           <div className="text-center mb-5 theme-color-dark">
             <h2 className="mb-2">Build the Future with EARA Group</h2>
