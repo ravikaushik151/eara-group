@@ -19074,3 +19074,25 @@ footer button:hover {
   z-index: 1;
   /* content image ke upar rahe */
 }
+
+.testimonials {
+  position: relative;
+  background: url('/images/Line-8.png');
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  padding: 130px;
+}
+
+.blog {
+  position: relative;
+  background: url('/images/Line_2-8.png');
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 75%;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  padding: 130px;
+}
