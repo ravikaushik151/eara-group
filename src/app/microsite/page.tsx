@@ -104,7 +104,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <div className="py-5 theme-bg-dark" >
+          <div className="py-5 theme-bg-dark d-none" >
             <div className="padding-global">
               <div className="container-large">
                 <div className="home-stats_components">
@@ -277,7 +277,6 @@ export default function Home() {
                     />
                   </div>
                   <div className="home-masterplan_legend position-relative"  >
-                    <div className="heading-style-h5  theme-color-dark">Legend</div>
                     <div className="home-highlights_legend-grid ">
 
                       <div
@@ -507,7 +506,7 @@ export default function Home() {
                           className="heading-style-h2 text-color-offwhite theme-color-light m-center mb-3"
                         >
                           Located in{" "}
-                          <span className="text-color-accent">
+                          <span className="text-white">
                             Kaggalipura,
                           </span>{" "}
                           Off Kanakapura Road, Bengaluru.

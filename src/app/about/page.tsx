@@ -57,7 +57,7 @@ export default function About() {
                 </div>
                 <div className="amenities-hero_text-head text-center">
                   <div className="text-color-green">
-                    <div className="text-size-regular  theme-color-dark">
+                    <div className="text-size-regular theme-color-dark fs-4">
                       Join us on our journey as we continue to shape the
                       skylines of tomorrow and create spaces where dreams
                       thrive.

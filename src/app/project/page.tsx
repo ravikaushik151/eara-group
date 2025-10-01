@@ -46,7 +46,7 @@ export default function Project() {
                         <section className="section-1 p-0 row align-items-center">
                             <div className="content col-md-6">
                                 <h2 className="mb-3 theme-color-dark">Amidst Nature</h2>
-                                <span className="fs-5 theme-color-dark">
+                                <span className="fs-4 theme-color-dark">
                                     Crafted by Earth. Designed by EARA Group.
                                 </span>
                                 <p className="mt-4 theme-color-dark">
