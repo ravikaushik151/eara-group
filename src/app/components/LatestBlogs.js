@@ -7,7 +7,7 @@ export default function LatestBlogs() {
     const topPosts = posts.slice(0, 3);
 
     return (
-        <section className="px-md-5 px-3 theme-bg-dark">
+        <section className="px-md-5 px-3 theme-bg-dark blog">
             <h2 className="text-center theme-color-light">LATEST BLOGS</h2>
             <div className="blog-grid">
                 {topPosts.map((post) => (

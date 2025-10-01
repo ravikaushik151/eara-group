@@ -17,7 +17,7 @@ const testimonials = [
 
 const TestimonialSlider = () => {
     return (
-        <section className="px-md-5 px-3 bg-light theme-bg-light">
+        <section className="px-md-5 px-3 bg-light theme-bg-light testimonials">
             <h2 className="text-center mb-4 fw-bold theme-color-dark">TESTIMONIALS</h2>
 
             <Swiper
