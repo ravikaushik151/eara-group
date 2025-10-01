@@ -228,7 +228,7 @@ export default function Home() {
 
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="section_biodiversity-benefits py-5 theme-bg-dark " id="amenities">
+          <section className="section_biodiversity-benefits py-5 theme-bg-dark section-small" id="amenities">
             <div className="padding-global">
               <div className="container-large">
                 <div className="biodiversity-benefits_components">
@@ -249,7 +249,7 @@ export default function Home() {
 
           <section
             data-w-id="8905ac58-eaf7-356f-bf47-4ad8001e257f"
-            className="section_home-masterplan theme-bg-light"
+            className="section_home-masterplan theme-bg-light lifestyle-section"
             id="master-plan"
           >
             <div className="padding-global">
@@ -464,7 +464,7 @@ export default function Home() {
                       </div>
 
                     </div>
-                    <Image
+                    {/* <Image
                       width={800}
                       height={200}
                       src="/images/page-5.png"
@@ -472,13 +472,13 @@ export default function Home() {
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
                       style={{ top: "80px", maxHeight: "750px", objectFit: "cover", objectPosition: "center", position: "absolute", opacity: ".2" }}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section className="section_home-connectivity theme-bg-dark" id="location">
+          <section className="section_home-connectivity theme-bg-dark page-about-mv" id="location">
             <div className="padding-global">
               <div className="container-large">
                 <div className="home-connectivity_content">
@@ -602,7 +602,7 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <Image
+                    {/* <Image
                       width={800}
                       height={200}
                       src="/images/page-6.png"
@@ -610,7 +610,7 @@ export default function Home() {
                       alt=""
                       className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
                       style={{ top: "220px", maxHeight: "270px", objectFit: "cover", objectPosition: "bottom bottom", position: "absolute", opacity: ".6" }}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>

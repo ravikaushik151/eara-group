@@ -19103,7 +19103,7 @@ footer button:hover {
   pointer-events: none;
   /* overlay click block na kare */
   z-index: 0;
-  background-size: 20% 45%;
+  background-size: 18% 35%;
   background-position: inherit;
 }
 
@@ -19138,7 +19138,7 @@ footer button:hover {
 
 .section-small {
   background-image: url("/images/Big-8.png");
-  background-size: 7%;
+  background-size: 6%;
   background-position: 0% 100%;
   color: rgb(255, 255, 255);
   background-repeat: no-repeat;
@@ -19156,7 +19156,7 @@ footer button:hover {
   pointer-events: none;
 
   z-index: 0;
-  background-size: 7%;
+  background-size: 6%;
   background-position: inherit;
 }
 
@@ -19207,7 +19207,7 @@ footer button:hover {
 
 .page-project-amidst {
   background-image: url("/images/Flower_Wara.png");
-  background-size: 15%;
+  background-size: 12.5%;
   background-position: 100% 75%;
   color: rgb(255, 255, 255);
   background-repeat: no-repeat;
@@ -19222,7 +19222,7 @@ footer button:hover {
   transform: scaleY( -1);
   pointer-events: none;
   z-index: 0;
-  background-size: 15%;
+  background-size: 12.5%;
   background-position:  0% 100%;
 }
 
