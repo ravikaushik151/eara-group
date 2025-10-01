@@ -39,7 +39,7 @@ export default function About() {
         </div>
       </div>
 
-      <section id="TOP" className="section_amenities-hero theme-bg-light">
+      <section id="TOP" className="section_amenities-hero theme-bg-light page-about" >
         <div className="padding-global">
           <div className="container-large">
             <div className="amenities-hero_components">
@@ -92,7 +92,7 @@ export default function About() {
         </div>
       </section>
 
-      <section id="" className="section_amenities-hero theme-bg-dark">
+      <section id="" className="section_amenities-hero theme-bg-dark page-about-mv">
         <div className="padding-global">
           <div className="container-large">
 
@@ -110,12 +110,7 @@ export default function About() {
                 </div>
 
                 <div className="row my-3 ">
-                  <div className="col-md-5 d-block mx-auto  px-md-5 py-md-5 py-4 bg-white mb-3 theme-bg-light" style={{
-                    backgroundImage: "url('/images/Flower_Wara.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center -27%",
-                    color: "#fff", // text white ho jaye
-                  }}>
+                  <div className="col-md-5 d-block mx-auto  px-md-5 py-md-5 py-4 bg-white mb-3 theme-bg-light" >
                     <div className="text-center">
                       <h3 className="fw-bold theme-color-dark">Our Mission</h3>
                       <p className="theme-color-dark">
@@ -123,12 +118,7 @@ export default function About() {
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-5 d-block mx-auto  px-md-5 py-md-5 py-4 bg-white mb-3 theme-bg-light" style={{
-                    backgroundImage: "url('/images/Flower_Wara.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center -27%",
-                    color: "#fff", // text white ho jaye
-                  }}>
+                  <div className="col-md-5 d-block mx-auto  px-md-5 py-md-5 py-4 bg-white mb-3 theme-bg-light" >
                     <div className="text-center">
                       <h3 className="fw-bold theme-color-dark">Our Vision</h3>
                       <p className="theme-color-dark">

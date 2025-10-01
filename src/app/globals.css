@@ -19075,6 +19075,90 @@ footer button:hover {
   /* content image ke upar rahe */
 }
 
+.page-about-mv {
+  position: relative;
+  z-index: 1;
+}
+
+.page-about-mv {
+  position: relative;
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  color: #fff;
+  overflow: hidden;
+
+  background-size: 15% 30%;
+  background-position: right 106%;
+  /* pseudo-element bahar na nikle */
+}
+
+.page-about-mv::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  transform: scale(-1, -1);
+  /* ✅ sirf image invert hogi */
+  /* optional transparency */
+  pointer-events: none;
+  /* overlay click block na kare */
+  z-index: 0;
+  background-size: 20% 45%;
+  background-position: inherit;
+}
+
+
+.page-about {
+  position: relative;
+  z-index: 1;
+}
+
+.page-about {
+  background-image: url("/images/Line-8.png");
+  background-size: 100% 80%;
+  background-position: 100% 200%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-line {
+  background-image: url("/images/Line_2-8.png");
+  background-size: 100% 80%;
+  background-position: 100% 200%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-small {
+  position: relative;
+  z-index: 1;
+}
+
+.section-small {
+  background-image: url("/images/Big-8.png");
+  background-size: 7%;
+  background-position: 0% 100%;
+  color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+
+}
+
+.section-small::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url('/images/Big-8.png') right 50% / 100% 80% no-repeat;
+  transform: scaleX( -1);
+
+  pointer-events: none;
+
+  z-index: 0;
+  background-size: 7%;
+  background-position: inherit;
+}
 .testimonials {
   position: relative;
   background: url('/images/Line-8.png');
@@ -19096,3 +19180,4 @@ footer button:hover {
   background-repeat: no-repeat;
   padding: 130px;
 }
+

@@ -39,7 +39,7 @@ export default function Project() {
             </div>
 
             {/* Intro Section */}
-            <section id="TOP" className="section_amenities-hero theme-bg-light">
+            <section id="TOP" className="section_amenities-hero theme-bg-light page-about">
                 <div className="padding-global">
                     <div className="container-large">
                         {/* Featured Project Section */}
