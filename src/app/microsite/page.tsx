@@ -504,7 +504,7 @@ export default function Home() {
                       <div className="home-connectivity_heading-wrapper">
                         <h3
                           data-animate={1}
-                          className="heading-style-h2 text-color-offwhite theme-color-light m-center mb-3"
+                          className="fs-2 text-color-offwhite theme-color-light m-center mb-3"
                         >
                           Located in{" "}
                           <span className="text-white">
