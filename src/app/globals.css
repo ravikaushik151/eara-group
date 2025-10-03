@@ -15544,8 +15544,8 @@ h2 {
 
 .section-2 h2,
 section h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2.5rem !important;
+  font-weight: 600 !important;
   text-transform: uppercase;
   font-family: "Times New Roman", sans-serif;
   font-display: swap;
