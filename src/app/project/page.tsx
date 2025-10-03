@@ -11,7 +11,7 @@ export default function Project() {
                     <div className="col-md-12">
                         <div className="image-container">
                             <Image
-                                src="/images/Earan.jpeg.jpg"
+                                src="/images/project header.webp"
                                 height={2880}
                                 width={1920}
                                 className="img-fluid masterpiece"
@@ -46,28 +46,28 @@ export default function Project() {
                         <section className="section-1 p-0 row align-items-center">
                             <div className="content col-md-6 page-project  ">
                                 <div className="mb-md-5">
-                                <h2 className="mb-3 theme-color-dark">Amidst Nature</h2>
-                                <span className="fs-4 theme-color-dark">
-                                    Crafted by Earth. Designed by EARA Group.
-                                </span>
-                                <p className="mt-4 theme-color-dark">
-                                    <strong>
-                                        Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green
-                                        mornings, golden silence, and grounded luxury.
-                                    </strong>
-                                    <br />
-                                    Spread across 15 lush acres in Kaggalipura, just off Kanakapura
-                                    Road, this premium plotted development invites you to design your
-                                    forever home in a place where the city fades and nature speaks.
-                                    Thoughtfully approved by BMRDA and connected to every urban
-                                    convenience, this is more than a plot - it&rsquo;s a path back to
-                                    balance.
-                                </p>
+                                    <h2 className="mb-3 theme-color-dark">Amidst Nature</h2>
+                                    <span className="fs-4 theme-color-dark">
+                                        Crafted by Earth. Designed by EARA Group.
+                                    </span>
+                                    <p className="mt-4 theme-color-dark">
+                                        <strong>
+                                            Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green
+                                            mornings, golden silence, and grounded luxury.
+                                        </strong>
+                                        <br />
+                                        Spread across 15 lush acres in Kaggalipura, just off Kanakapura
+                                        Road, this premium plotted development invites you to design your
+                                        forever home in a place where the city fades and nature speaks.
+                                        Thoughtfully approved by BMRDA and connected to every urban
+                                        convenience, this is more than a plot - it&rsquo;s a path back to
+                                        balance.
+                                    </p>
 
-                                {/* CTA Button */}
-                                <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
-                                    Explore Microsite
-                                </Link>
+                                    {/* CTA Button */}
+                                    <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
+                                        Explore Microsite
+                                    </Link>
                                 </div>
                             </div>
 
@@ -75,7 +75,7 @@ export default function Project() {
                                 <Image
                                     width={400}
                                     height={400}
-                                    src="https://placehold.co/700x700?text=Project"
+                                    src="/images/project-img.webp"
                                     loading="lazy"
                                     alt="Amidst Nature Project"
                                     className="home-masterplan_img img-fluid rounded shadow"
