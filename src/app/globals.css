@@ -19171,7 +19171,7 @@ footer button:hover {
   padding: 130px;
 }
 
-.blog {
+.blog-section {
   position: relative;
   background: url('/images/Line_2-8.png');
   color: #fff;
@@ -19179,7 +19179,7 @@ footer button:hover {
   background-size: 100% 75%;
   background-position: center 80%;
   background-repeat: no-repeat;
-  padding: 130px;
+ 
 }
 
 

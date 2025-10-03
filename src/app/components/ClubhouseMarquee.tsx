@@ -19,7 +19,7 @@ export default function Clubhouse() {
     return (
         <div className="mb-3">
             <div className="container text-center">
-                <div className="row row-cols-5 mb-md-4">
+                <div className="row row-cols-2 row-cols-md-5 mb-md-4">
                     {images.map((item, idx) => (
                         <div key={idx} className="col mb-4">
                             <div className="p-3 border rounded-3 shadow-sm bg-white h-100 d-flex flex-column align-items-center justify-content-center amenity-card theme-bg-light">

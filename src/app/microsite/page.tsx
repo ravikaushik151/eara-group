@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 //import './style.css';
+import "./../microsite.css";
 import Link from "next/link";
 
 import Image from "next/image";
@@ -270,7 +271,7 @@ export default function Home() {
                     <Image
                       width={500}
                       height={900}
-                      src="https://placehold.co/700x700?text=Master+Plan"
+                      src="/images/project-img.webp"
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid"
