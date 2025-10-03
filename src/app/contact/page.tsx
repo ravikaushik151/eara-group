@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import ContactForm from "../../app/components/ContactForm";
 export default function Contact() {
   return (
     <>
@@ -52,36 +52,10 @@ export default function Contact() {
                         Feel free to contact us any time. We will get back to
                         you as soon as we can!
                       </p>
-                      <form id="contact-form">
-                        <input
-                          type="text"
-                          className="form-control form-group mb-2"
-                          placeholder="Name"
-                        />
-                        <input
-                          type="email"
-                          className="form-control form-group mb-2"
-                          placeholder="Email"
-                        />
-                        <input
-                          type="tel"
-                          className="form-control form-group mb-2"
-                          placeholder="Mobile"
-                        />
-                        <textarea
-                          className="form-control form-group mb-2"
-                          placeholder="Message"
-                        ></textarea>
-                        <div className="text-center">
-                          <button
-                            className="contact_form_submit mb-3 btn btn-dark  theme-bg-light  theme-color-dark"
-                            id="contact-button"
-                            type="submit"
-                          >
-                            Submit
-                          </button>
-                        </div>
-                      </form>
+                      <ContactForm
+                        inputClass="form-control mb-2"
+                        buttonClass="btn theme-bg-light px-4"
+                      />
                     </div>
                   </div>
                 </div>

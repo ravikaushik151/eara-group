@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import ContactForm from "../../app/components/ContactForm";
 import Link from "next/link";
 
 export default function Footer() {
@@ -111,28 +111,12 @@ export default function Footer() {
           {/* Get In Touch Form */}
           <div className="col-md-3">
             <h4 className="footer-heading m-center">GET IN TOUCH</h4>
-            <form className="footer-form">
-              <input
-                type="text"
-                placeholder="Name"
-                className="footer-input rounded-0"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="footer-input rounded-0"
-              />
-              <input
-                type="tel"
-                placeholder="Contact Number"
-                className="footer-input rounded-0"
-              />
-              <div className="m-center">
-                <button type="submit" className="btn theme-bg-light text-dark mb-3">
-                  SUBMIT
-                </button>
-              </div>
-            </form>
+            <ContactForm
+              inputClass="footer-input rounded-0"
+              buttonClass="btn theme-bg-light text-dark mb-3"
+              hideMessageField={true} // hides textarea
+              defaultMessage="Interested in this project"
+            />
           </div>
         </div>
       </div>
