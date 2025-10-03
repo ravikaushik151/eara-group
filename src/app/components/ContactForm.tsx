@@ -21,7 +21,7 @@ export default function ContactForm({
   inputClass = "form-control mb-2",
   buttonClass = "btn btn-primary",
   hideMessageField = false,
-  defaultMessage = "Interested in this project",
+  defaultMessage = "",
 }: ContactFormProps) {
   const [form, setForm] = useState<FormData>({
     name: "",

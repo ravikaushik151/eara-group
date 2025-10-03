@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaCheckCircle } from 'react-icons/fa';
-
+import "./../career.css";
 export default function Career() {
   const [formData, setFormData] = useState({
     name: '',
@@ -137,7 +137,7 @@ export default function Career() {
                         className="form-control mb-3 py-2"
                         onChange={handleChange}
                       >
-                        <option value="Fresher">Fresher</option>
+                        <option value="">Designation</option>
                         <option value="1-2 Years">1-2 Years</option>
                         <option value="2-5 Years">2-5 Years</option>
                         <option value="5-7 Years">5-7 Years</option>
@@ -151,7 +151,7 @@ export default function Career() {
                         className="form-control mb-3 py-2"
                         onChange={handleChange}
                         required
-                        placeholder="Message"
+                        placeholder="Description"
                       ></textarea>
                     </div>
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../../app/components/ContactForm";
+import "./../contact.css";
 export default function Contact() {
   return (
     <>
@@ -46,7 +47,7 @@ export default function Contact() {
               <div className="row">
                 {/* Contact Form */}
                 <div className="col-md-7">
-                  <div className="contact_form_inner px-md-5 px-3">
+                  <div className="contact_form_inner px-md-5 px-3 mb-4">
                     <div className="contact_field">
                       <p className="text-main  theme-color-light mb-3">
                         Feel free to contact us any time. We will get back to

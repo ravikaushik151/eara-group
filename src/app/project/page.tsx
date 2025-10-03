@@ -46,11 +46,11 @@ export default function Project() {
                         <section className="section-1 p-0 row align-items-center">
                             <div className="content col-md-6 page-project  ">
                                 <div className="mb-md-5">
-                                    <h2 className="mb-3 theme-color-dark">Amidst Nature</h2>
-                                    <span className="fs-4 theme-color-dark">
+                                    <h2 className="mb-3 theme-color-dark text-center">Amidst Nature</h2>
+                                    <p className="fs-4 theme-color-dark text-center">
                                         Crafted by Earth. Designed by EARA Group.
-                                    </span>
-                                    <p className="mt-4 theme-color-dark">
+                                    </p>
+                                    <p className="mt-4 theme-color-dark text-center ">
                                         <strong>
                                             Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green
                                             mornings, golden silence, and grounded luxury.
@@ -64,10 +64,11 @@ export default function Project() {
                                         balance.
                                     </p>
 
-                                    {/* CTA Button */}
+                                    <div className="text-center">
                                     <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
-                                        Explore Microsite
+                                      Know More
                                     </Link>
+                                    </div>
                                 </div>
                             </div>
 
