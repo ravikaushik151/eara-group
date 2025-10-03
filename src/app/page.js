@@ -276,13 +276,13 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left ">
-                        <h4 className="text-black mb-2 fs-4 theme-color-light">
+                        <h4 className="text-black mb-2 fs-4 theme-color-light fw-bold m-center">
                           Ultra Premium Plotted Development
                         </h4>
-                        <p className="">
-                          <span className="theme-color-light">
+                        <p className="m-center">
+                          <span className="theme-color-light  m-center">
 
-                            <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 theme-color-light" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" /></svg>
+                            <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 theme-color-light m-center" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" /></svg>
                             Kaggalipura, Off Kanakapura Road
                           </span>
                         </p>
@@ -294,8 +294,8 @@ export default function Home() {
                       </div>
                       <div className="row align-items-start mb-3 mt-4 mob-center">
                         <div className="col-12 text-black">
-                          <h5 className="mb-3 theme-color-light fs-4">Key Highlights of the Project:</h5>
-                          <ul className="text-black ps-3 theme-color-light">
+                          <h5 className="mb-3 theme-color-light fs-4  m-center">Key Highlights of the Project:</h5>
+                          <ul className="text-black ps-3 theme-color-light  m-center">
                             <li>Plot sizes ranging from 1500 – 3300 sq ft.</li>
                             <li>7,000 sq.ft. clubhouse with gym, pool, yoga room, café & library</li>
                             <li>Indoor and outdoor party zones</li>
@@ -323,9 +323,14 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="lifestyle-section">
+          <section className="lifestyle-section section">
             <div className="container">
-              <h2 className="theme-color-dark"> {/*Ethos of */} EARA Group</h2>
+            <div className="row">
+                  <div className="title text-center mb-3">
+                    <h2 className="text-black mb-4 theme-color-dark fw-bold">Eara Group Core Values</h2>
+                  </div>
+                </div>
+            
               {/* <div className="lifestyle-grid">
                 <div className="flip-card rounded-tl">
                   <div className="flip-inner">

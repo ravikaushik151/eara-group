@@ -19310,3 +19310,8 @@ footer button:hover {
   background-size: 20% 45%;
   background-position: inherit;
 }
+@media only screen and (max-width:768px) {
+  .blog-main-page {background-size: 15% 30% !important;}
+  .m-center {text-align: center !important; }
+  ul li{list-style: none;}
+}
