@@ -19168,7 +19168,7 @@ footer button:hover {
   background-size: 100% 100%;
   background-position: center 100%;
   background-repeat: no-repeat;
- 
+
 }
 
 .blog-section {
@@ -19331,6 +19331,7 @@ section h2 {
   section {
     padding: 50px 0px;
   }
+
   .section-2 h2,
   section h2 {
     font-size: 2rem !important;
@@ -19360,4 +19361,33 @@ footer textarea::placeholder {
   color: white;
   opacity: 1;
   /* make sure placeholder is fully visible */
+}
+
+.custom-file-input {
+  color: transparent;
+  /* default "No file selected" hide */
+}
+
+.custom-file-input::file-selector-button {
+  background-color: #007bff;
+  /* Button color */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.custom-file-input::file-selector-button:hover {
+  background-color: #0056b3;
+}
+
+.custom-file-input::before {
+  content: "Resume";
+  color: black;
+  margin-right: 10px;
+}
+
+.swiper-backface-hidden {
+  padding: 10px !important;
 }

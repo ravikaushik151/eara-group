@@ -82,8 +82,8 @@ export default function Home() {
               <div className="row  px-md-5">
                 <div className="col-md-6 d-flex align-items-center" >
                   <div className=" ">
-                    <h2 className="mb-0 theme-color-dark">Amidst Nature</h2>
-                    <span className="fs-5 theme-color-dark">Crafted by Earth. Designed by EARA Group.</span>
+                    <h2 className="mb-0 theme-color-dark text-center">Amidst Nature</h2>
+                    <span className="fs-5 theme-color-dark text-center d-block">Crafted by Earth. Designed by EARA Group.</span>
                     <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
                     </p>

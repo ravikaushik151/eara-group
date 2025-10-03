@@ -7,6 +7,7 @@ import Preloader from "./components/Preloader";
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
+import CoreValuesSlider from "./components/CoreValuesSlider";
 
 export default function Home() {
   useEffect(() => {
@@ -323,147 +324,7 @@ export default function Home() {
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <section className="lifestyle-section section">
-            <div className="container">
-            <div className="row">
-                  <div className="title text-center mb-3">
-                    <h2 className="text-black mb-4 theme-color-dark fw-bold">Eara Group Core Values</h2>
-                  </div>
-                </div>
-            
-              {/* <div className="lifestyle-grid">
-                <div className="flip-card rounded-tl">
-                  <div className="flip-inner">
-                    <div className="flip-front">
-                      <img
-                        src="/images/Ethos-Sustainablity.jpg"
-                        alt="Entry"
-                        width={600}
-                        height={250}
-                      />
-                    </div>
-                    <div className="flip-back">
-                      <div className="overlay-text">Sutainablity</div>
-                      <p className="mt-5 w-75">Creating future-ready communities that respect the land and restore balance with nature.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flip-card rounded-tr">
-                  <div className="flip-inner">
-                    <div className="flip-front">
-                      <img
-                        src="/images/Ethos-Innovation.jpg"
-                        alt="Entry"
-                        width={600}
-                        height={250}
-                      />
-                    </div>
-                    <div className="flip-back">
-                      <div className="overlay-text">Innovation</div>
-                      <p className="mt-5 w-75">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flip-card rounded-bl">
-                  <div className="flip-inner">
-                    <div className="flip-front">
-                      <img
-                        src="/images/Ethos-Intergrity.jpg"
-                        alt="Entry"
-                        width={600}
-                        height={250}
-                      />
-                    </div>
-                    <div className="flip-back">
-                      <div className="overlay-text">Intergrity</div>
-                      <p className="mt-5 w-75">Rooted in transparency and trust — every decision guided by what’s right and reliable.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flip-card rounded-br">
-                  <div className="flip-inner">
-                    <div className="flip-front">
-                      <img
-                        src="/images/Ethos-Quality.jpg"
-                        alt="Entry"
-                        width={600}
-                        height={250}
-                      />
-                    </div>
-                    <div className="flip-back">
-                      <div className="overlay-text">Quality</div>
-                      <p className="mt-5 w-75">Delivering excellence in every detail, from foundation to finish.</p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-
-              <div className="row">
-                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
-                  <div className=" row  shadow  ">
-                    <div className="col-md-6">
-                      <img src="/images/Sutainablity.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
-                    </div>
-                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
-                      <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Sustainability</h5>
-                        <p className="theme-color-dark text-start small m-center">Creating future-ready communities that respect the land and restore balance with nature.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
-                  <div className=" row  shadow  ">
-                    <div className="col-md-6">
-                      <img src="/images/Innovation_2.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
-                    </div>
-                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
-                      <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Innovation</h5>
-                        <p className="theme-color-dark text-start small m-center">Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div className="row">
-                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
-                  <div className=" row  shadow  ">
-                    <div className="col-md-6">
-                      <img src="/images/Intergrity.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
-                    </div>
-                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
-                      <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Intergrity</h5>
-                        <p className="theme-color-dark text-start small m-center">Rooted in transparency and trust — every decision guided by what’s right and reliable.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-5 offset-md-1 mx-auto p-0 d-flex justify-content-start mb-4 mb-3 ">
-                  <div className=" row  shadow  ">
-                    <div className="col-md-6">
-                      <img src="/images/Quality.png" alt="Sustainability" className=" img-fluid p-md-5 p-2 eimg" />
-                    </div>
-                    <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
-                      <div>
-                        <h5 className="theme-color-dark text-start fw-bold m-center fs-4">Quality</h5>
-                        <p className="theme-color-dark text-start small m-center">Delivering excellence in every detail, from foundation to finish.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </section>
+          <CoreValuesSlider />
           <TestimonialSlider />
           {/* Section 4: Blog Section */}
           <LatestBlogs />
