@@ -269,6 +269,7 @@
 
 .home-highlights_text {text-align: left;}
 @media only screen and (max-width:768px) {
+  .mobileoverview {margin-top: -30px !important;}
   .section-small {background-size:20% !important}
   .section-small::before {background-size: 20% !important}
   .lifestyle-section {background-size :30% 35% !important}
