@@ -267,13 +267,29 @@
  background-position: inherit;
 }
 
+.home-about {
+  background: "url('/images/Line_2-8.png')";
+  background-size: 75% 82%;
+  background-position: 183% 300%;
+  color: "#fff";
+  background-repeat: "no-repeat"; 
+}
+.up-coming {
+  background: "url('/images/Flower_Wara.png')";
+  background-size: "25% 50%";
+  background-position: "right 99%";
+  color: "#fff";
+  background-repeat: "no-repeat";
+}
+
 .home-highlights_text {text-align: left;}
 @media only screen and (max-width:768px) {
   .mobileoverview {margin-top: -30px !important;}
   .section-small {background-size:20% !important}
+  .up-coming  {background-size:35% !important}
   .section-small::before {background-size: 20% !important}
-  .lifestyle-section {background-size :30% 35% !important}
-  .lifestyle-section::before {background-size :30% 35% !important}
+  .lifestyle-section {background-size :28% 8% !important}
+  .lifestyle-section::before {background-size :28% 8% !important}
   .page-about-mv  {background-size :50% 35% !important}
   .page-about-mv::before  {background-size :50% 35% !important}
   .page-project-amidst {background-size :20% 15% !important;background-position:100% 100%}
