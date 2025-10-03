@@ -57,7 +57,7 @@ export default function Career() {
     <>
       {/* Banner */}
 
-      <div id="carouselExampleDark" className="header-section">
+      <div id="carouselExampleDark" className="header-section ">
         <div className='row'>
           <div className='col-md-12'>
             <div className="image-container">
@@ -76,7 +76,7 @@ export default function Career() {
       </div>
 
       {/* Career Section */}
-      <section className="bg-light py-5 theme-bg-light carrer">
+      <section className="bg-light py-5 theme-bg-light carrer section">
         <div className="container">
           <div className="text-center mb-5 theme-color-dark">
             <h2 className="mb-2">Build the Future with EARA Group</h2>
@@ -88,10 +88,10 @@ export default function Career() {
           <div className="row align-items-center">
             {/* Why Join */}
             <div className="col-lg-6 mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4  theme-color-dark">
-                Why Join <span className="text-color-accent">EARA</span> Group?
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4  theme-color-dark m-center">
+                Why Join <span className="text-color-accent m-center">EARA</span> Group?
               </h2>
-              <p className="mb-4  theme-color-dark">
+              <p className="mb-4  theme-color-dark m-center">
                 At EARA Group, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
               </p>
 
@@ -106,7 +106,7 @@ export default function Career() {
             </div>
 
             {/* Job Form */}
-            <div className="col-lg-6 ">
+            <div className="col-lg-6 mb-5">
               <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
                 <h5 className="text-uppercase mb-4 theme-color-dark " style={{ color: '#282563' }}>
                   APPLY FOR YOUR JOB

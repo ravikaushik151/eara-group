@@ -4,7 +4,7 @@ import TestimonialSlider from "../components/Home/TestimonialSlider";
 export default function About() {
   return (
     <>
-      <div id="carouselExampleDark" className="header-section">
+      <div id="carouselExampleDark" className="header-section ">
         <div className="row">
           <div className="col-md-12">
             <div className="image-container">
@@ -39,20 +39,20 @@ export default function About() {
         </div>
       </div>
 
-      <section id="TOP" className="section_amenities-hero theme-bg-light page-about" >
+      <section id="TOP" className="section_amenities-hero theme-bg-light page-about section" >
         <div className="padding-global">
           <div className="container-large">
             <div className="amenities-hero_components">
               <div className="amenities-hero_content-wrapper">
                 <div className="amenities-hero_heading-wrapper">
                   <div className="text-color-dark-rainforest">
-                    <h1
+                    <h2
                       data-animate={2}
                       className="heading-style-h2 text-center theme-color-dark"
                     >
                       Welcome to <strong>Eara Group</strong>, where vision meets
                       reality.
-                    </h1>
+                    </h2>
                   </div>
                 </div>
                 <div className="amenities-hero_text-head text-center">
@@ -92,7 +92,7 @@ export default function About() {
         </div>
       </section>
 
-      <section id="" className="section_amenities-hero theme-bg-dark page-about-mv">
+      <section id="" className="section_amenities-hero theme-bg-dark page-about-mv section">
         <div className="padding-global">
           <div className="container-large">
 
