@@ -19315,3 +19315,8 @@ footer button:hover {
   .m-center {text-align: center !important; }
   ul li{list-style: none;}
 }
+footer input::placeholder, footer
+textarea::placeholder {
+  color: white;
+  opacity: 1; /* make sure placeholder is fully visible */
+}
