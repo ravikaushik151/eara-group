@@ -110,7 +110,7 @@ export default function Home() {
               <div className="container position-relative z-1">
                 <div className="d-flex my-md-0 my-5 py-md-0 py-4">
                   <div>
-                    <h1 className="display-3 fw-bold mb-3 w-100 text-center">Luxury reimagined in green. <br />Welcome to EARA Group</h1>
+                    <h1 className="display-4 fw-bold mb-3 w-100 text-center">Luxury reimagined in green. <br />Welcome to EARA Group</h1>
 
                     <h4 className="mb-3 fw-light">{``}</h4>
 

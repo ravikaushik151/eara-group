@@ -15852,7 +15852,7 @@ footer button:hover {
 }
 
 .home-highlights_legend-grid {
-  grid-column-gap: 2.75rem;
+  grid-column-gap: 0.75rem;
   grid-row-gap: 2.75rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -19199,7 +19199,7 @@ footer button:hover {
 
 
 
-.page-project-amidst{
+.page-project-amidst {
   position: relative;
   z-index: 1;
   background-color: var(--theme-bg-light);
@@ -19219,11 +19219,11 @@ footer button:hover {
   position: absolute;
   inset: 0;
   background: url('/images/Flower_Wara.png') right 100% / 100% 80% no-repeat;
-  transform: scaleY( -1);
+  transform: scaleY(-1);
   pointer-events: none;
   z-index: 0;
   background-size: 12.5%;
-  background-position:  0% 100%;
+  background-position: 0% 100%;
 }
 
 .blog-main-page {
