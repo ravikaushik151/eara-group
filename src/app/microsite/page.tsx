@@ -397,9 +397,6 @@ export default function Home() {
                             Multipurpose Lawn
                           </div>
                         </div>
-
-                      </div>
-                      <div className="home-highlights_points-grid last">
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">16</div>
@@ -408,6 +405,9 @@ export default function Home() {
                             Senior Citizen Park
                           </div>
                         </div>
+                      </div>
+                      <div className="home-highlights_points-grid last">
+
                         <div className="home-highlights_points">
                           <div className="home-highlights_point-circle">
                             <div className="home-highlights_point-text">17</div>
