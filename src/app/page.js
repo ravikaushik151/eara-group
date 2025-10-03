@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-
+import "./homepage.css";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
 // import HomeHeroSlider from "./components/Home/HeroSlider";
@@ -126,13 +126,7 @@ export default function Home() {
           </div>
         </div>
         <div id="scroll-more">
-          <section className="section-1 px-md-5 px-3 theme-bg-light" style={{
-            backgroundImage: "url('/images/Line_2-8.png')",
-            backgroundSize: "75% 82%",   // ✅ width 100%, height 80%
-            backgroundPosition: "183% 300%", // ✅ right aligned, center vertically
-            color: "#fff",
-            backgroundRepeat: "no-repeat",   // ✅ fixed
-          }}>
+          <section className="section-1 px-md-5 px-3 theme-bg-light home-about" >
             <div className="content">
               <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
               <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
@@ -249,7 +243,7 @@ export default function Home() {
             </div>
           </section> */}
 
-          <section className="same-gap position-relative bg-light theme-bg-dark" style={{
+          <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
             backgroundImage: "url('/images/Flower_Wara.png')",
             backgroundSize: "25% 50%",   // ✅ width 100%, height 80%
             backgroundPosition: "right 99%", // ✅ right aligned, center vertically
