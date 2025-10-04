@@ -245,7 +245,7 @@ export default function Home() {
           </section> */}
 
           <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
-            backgroundImage: "url('/images/Flower_Wara.png')",
+            backgroundImage: "url('/images/Flower_Cream.png')",
             backgroundSize: "25% 50%",   // ✅ width 100%, height 80%
             backgroundPosition: "right 99%", // ✅ right aligned, center vertically
             color: "#fff",
