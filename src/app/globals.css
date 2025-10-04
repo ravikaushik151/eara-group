@@ -19045,7 +19045,7 @@ footer button:hover {
 
 .lifestyle-section {
   position: relative;
-  background: url('/images/FLower 3 -8.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flowe_3_Brown.png') right 50% / 100% 80% no-repeat;
   color: #fff;
   overflow: hidden;
   background-size: 10% 30%;
@@ -19058,7 +19058,7 @@ footer button:hover {
   position: absolute;
   inset: 0;
   /* top, right, bottom, left = 0 */
-  background: url('/images/FLower 3 -8.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flowe_3_Brown.png') right 50% / 100% 80% no-repeat;
   transform: scaleX(-1);
   /* ✅ sirf image invert hogi */
   /* optional transparency */
@@ -19082,7 +19082,7 @@ footer button:hover {
 
 .page-about-mv {
   position: relative;
-  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
   color: #fff;
   overflow: hidden;
 
@@ -19096,7 +19096,7 @@ footer button:hover {
   position: absolute;
   inset: 0;
   /* top, right, bottom, left = 0 */
-  background: url('/images/Flower_Wara.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
   transform: scale(-1, -1);
   /* ✅ sirf image invert hogi */
   /* optional transparency */
@@ -19114,7 +19114,7 @@ footer button:hover {
 }
 
 .page-about {
-  background-image: url("/images/Line-8.png");
+  background-image: url("/images/Line-8Brown.png");
   background-size: 100% 80%;
   background-position: 100% 200%;
   color: rgb(255, 255, 255);
@@ -19123,7 +19123,7 @@ footer button:hover {
 }
 
 .section-line {
-  background-image: url("/images/Line_2-8.png");
+  background-image: url("/images/Line-8Brown.png");
   background-size: 100% 80%;
   background-position: 100% 200%;
   color: rgb(255, 255, 255);
@@ -19162,7 +19162,7 @@ footer button:hover {
 
 .testimonials {
   position: relative;
-  background: url('/images/Line-8.png');
+  background: url('/images/Line-8Brown.png');
   color: #fff;
   overflow: hidden;
   background-size: 100% 100%;
@@ -19173,7 +19173,7 @@ footer button:hover {
 
 .blog-section {
   position: relative;
-  background: url('/images/Line_2-8.png');
+  background: url('/images/Line-8Brown.png');
   color: #fff;
   overflow: hidden;
   background-size: 100% 75%;
@@ -19189,7 +19189,7 @@ footer button:hover {
 }
 
 .page-project {
-  background-image: url("/images/Flower_Wara.png");
+  background-image: url("/images/Flower_Brown.png");
   background-size: 25%;
   background-position: 100% 100%;
   color: rgb(255, 255, 255);
