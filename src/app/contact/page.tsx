@@ -105,7 +105,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      <section className="p-0">
+      <section className="p-0 d-none">
         <div className="contanter-fuild">
           <div className="row">
             <div className="col-md-12">
