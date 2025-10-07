@@ -5,8 +5,8 @@ import Image from 'next/image';
 const amenities = [
     { icon: '/icons/Landscape Greenery.png', title: 'Acupressure walkway' },
     { icon: '/icons/Half Basketball Court.png', title: 'Half Basketball Court' },
-    { icon: '/icons/track.webp', title: 'CCTV surveillance' },
-    { icon: '/icons/Visitor parking.png', title: 'Landscaped Gardens' },
+    { icon: '/icons/CCTV surveillance.png', title: 'CCTV surveillance' },
+    { icon: '/icons/Landscaped Gardens.png', title: 'Landscaped Gardens' },
     { icon: '/icons/Multi-Purpose Court.webp', title: 'Multi purpose Lawn' },
     { icon: '/icons/pool.webp', title: 'Swimming Pool' },
     { icon: '/icons/Amphitheater.png', title: 'Amphitheater' },
@@ -19,11 +19,11 @@ const amenities = [
     { icon: '/icons/Butterfly Garden.png', title: 'Butterfly Garden' },
     { icon: '/icons/Community Park & Space.png', title: 'Community Park & Space' },
     { icon: '/icons/Clubhouse.png', title: 'Clubhouse' },
-    { icon: '/icons/Clubhouse.png', title: '24/7 security' },
-    { icon: '/icons/Clubhouse.png', title: 'Devine place' },
-    { icon: '/icons/Clubhouse.png', title: 'Pickle ball court' },
+    { icon: '/icons/247 security.png', title: '24/7 security' },
+    { icon: '/icons/Devine place.png', title: 'Devine place' },
+    { icon: '/icons/Pickle ball court.png', title: 'Pickle ball court' },
     { icon: '/icons/cricketpractice-pitch.webp', title: 'Cricket Pitch' },
-    { icon: '/icons/Clubhouse.png', title: 'Half through ball court' },
+    { icon: '/icons/Half through ball court.png', title: 'Half through ball court' },
     { icon: '/icons/Gym.png', title: 'Outdoor Gym' },
 ];
 
