@@ -3,24 +3,28 @@
 import Image from 'next/image';
 
 const amenities = [
-    { icon: '/icons/Landscape Greenery.png', title: 'Pathway Canopied with Trees' },
+    { icon: '/icons/Landscape Greenery.png', title: 'Acupressure walkway' },
     { icon: '/icons/Half Basketball Court.png', title: 'Half Basketball Court' },
-    { icon: '/icons/Gym.png', title: 'Outdoor Gym' },
-    { icon: '/icons/track.webp', title: 'Pedestrian Walkways' },
-    { icon: '/icons/Visitor parking.png', title: 'Ample Parking Space' },
+    { icon: '/icons/CCTV surveillance.png', title: 'CCTV surveillance' },
+    { icon: '/icons/Landscaped Gardens.png', title: 'Landscaped Gardens' },
     { icon: '/icons/Multi-Purpose Court.webp', title: 'Multi purpose Lawn' },
     { icon: '/icons/pool.webp', title: 'Swimming Pool' },
     { icon: '/icons/Amphitheater.png', title: 'Amphitheater' },
     { icon: '/icons/Seating Area.png', title: 'Sitting area with Pavillion' },
     { icon: '/icons/Play Area for Kids.png', title: 'Play Area for Kids' },
     { icon: '/icons/elder_s corner.png', title: "Elder's Corner" },
-    { icon: '/icons/cricketpractice-pitch.webp', title: 'Cricket Pitch' },
-    { icon: '/icons/Water Feature.png', title: 'Water Feature' },
+    { icon: '/icons/Water Feature.png', title: 'Gazebos' },
     { icon: '/icons/Event Lawn.png', title: 'Event Lawn' },
     { icon: '/icons/Jogging track.png', title: 'Jogging Tracks' },
     { icon: '/icons/Butterfly Garden.png', title: 'Butterfly Garden' },
     { icon: '/icons/Community Park & Space.png', title: 'Community Park & Space' },
     { icon: '/icons/Clubhouse.png', title: 'Clubhouse' },
+    { icon: '/icons/247 security.png', title: '24/7 security' },
+    { icon: '/icons/Devine place.png', title: 'Devine place' },
+    { icon: '/icons/Pickle ball court.png', title: 'Pickle ball court' },
+    { icon: '/icons/cricketpractice-pitch.webp', title: 'Cricket Pitch' },
+    { icon: '/icons/Half through ball court.png', title: 'Half through ball court' },
+    { icon: '/icons/Gym.png', title: 'Outdoor Gym' },
 ];
 
 export default function AmenitiesSection() {
@@ -36,7 +40,7 @@ export default function AmenitiesSection() {
                             </div>
                         </div>
                     ))}
-                     {/* <Image
+                    {/* <Image
                       width={800}
                       height={200}
                       src="/images/page-2.png"

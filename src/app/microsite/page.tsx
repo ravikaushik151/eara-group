@@ -52,23 +52,23 @@ export default function Home() {
               <div className="row text-center text-white">
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Project Size</h6>
-                  <p className="mb-0 fs-2 fw-light theme-color-light">15 Acres</p>
+                  <span className="mb-0 fs-2 fw-light theme-color-light">15 Acres</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved</h6>
-                  <p className="mb-0 fs-2 fw-light theme-color-light">BMRDA</p>
+                  <span className="mb-0 fs-2 fw-light theme-color-light">BMRDA</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light mt-4 mt-md-0">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3  theme-color-light">
                     Possession
                   </h6>
-                  <p className="mb-0 fs-2 fw-light theme-color-light">12 Months</p>
+                  <span className="mb-0 fs-2 fw-light theme-color-light">12 Months</span>
                 </div>
                 <div className="col-6 col-md-3 mt-4 mt-md-0">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">
                     Plot Sizes
                   </h6>
-                  <p className="mb-0 fs-2 fw-light theme-color-light">1500 - 3300 sq.ft.</p>
+                  <span className="mb-0 fs-2 fw-light theme-color-light">1500 - 3300 sq.ft.</span>
                 </div>
               </div>
             </div>
@@ -278,193 +278,34 @@ export default function Home() {
                     />
                   </div>
                   <div className="home-masterplan_legend position-relative"  >
-                    <div className="home-highlights_legend-grid ">
-
-                      <div
-                        id="w-node-_5bcfc565-769c-8295-15b8-0bc64774afab-ac1b3e9a"
-                        className="home-highlights_points-grid"
-                      >
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">1</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Entry/Exit</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">2</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Entrace Archway
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">3</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Roundabout</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">4</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Pet Park</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">5</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Tennis Court
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">6</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Multipurpose Court
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">7</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Open Park</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">8</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Kids Play Area
-                          </div>
+                    <div className="master-plan-section text-center py-5">
+                      <div className="container">
+                        <div className="row justify-content-center">
+                          {[
+                            "Grand entrance gate",
+                            "Concrete roads",
+                            "Fruit bearing trees on streets",
+                            "Street light",
+                            "Underground storm water drains",
+                            "Water connections to every plot",
+                            "Sewage connection to every plot",
+                            "Electricity connection to every plot",
+                            "Rain water recharge pits at every 40 feet on both sides of the road",
+                            "Sewage treatment plant",
+                          ].map((item, index) => (
+                            <div key={index} className="col-md-6 col-12 mb-4 d-flex align-items-start">
+                              <div className="home-highlights_point-circle me-3">
+                                <div className="home-highlights_point-text"></div>
+                              </div>
+                              <div className="home-highlights_text text-start theme-color-dark">
+                                {item}
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
-                      <div
-                        id="w-node-be4663ad-c0a0-253c-f46e-d6c640bbbb11-ac1b3e9a"
-                        className="home-highlights_points-grid"
-                      >
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">9</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">Clubhouse</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">10</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
-                            Community Seating
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">11</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark  theme-color-dark">
-                            Box Cricket
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">12</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">Parking</div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">13</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Bird Watching Zone
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">14</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Amphitheatre
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">15</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Multipurpose Lawn
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">16</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Senior Citizen Park
-                          </div>
-                        </div>
-                      </div>
-                      <div className="home-highlights_points-grid last">
-
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">17</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
-                            Padel Tennis
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">18</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
-                            Garden Pavilion
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">19</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
-                            Leisure Park
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">20</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
-                            Miyawaki Forest
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">21</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark theme-color-dark">
-                            Avenue Plantation
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">22</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">
-                            Outdoor Gym
-                          </div>
-                        </div>
-                        <div className="home-highlights_points">
-                          <div className="home-highlights_point-circle">
-                            <div className="home-highlights_point-text">23</div>
-                          </div>
-                          <div className=" home-highlights_text theme-color-dark">Services</div>
-                        </div>
-                      </div>
-
                     </div>
+
                     {/* <Image
                       width={800}
                       height={200}
