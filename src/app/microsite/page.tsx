@@ -52,7 +52,7 @@ export default function Home() {
               <div className="row text-center text-white">
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Project Size</h6>
-                  <span className="mb-0 fs-2 fw-light theme-color-light">15 Acres</span>
+                  <span className="mb-0 fs-2 fw-light theme-color-light">18+ Acres</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved</h6>
