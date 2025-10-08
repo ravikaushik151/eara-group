@@ -10,7 +10,7 @@ export default function Contact() {
           <div className="col-md-12">
             <div className="image-container position-relative">
               <Image
-                src="/images/contact-us-page-header.jpg"
+                src="/images/contact-us-page-header.webp"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece rounded-4"
