@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Project Info */}
           <div className="col-md-3 ps-md-4 ps-0  py-3 py-md-0">
             <h4 className="footer-title m-center">Office Address</h4>
-            <p className="m-center">MM-201, 2nd Floor,<br /> 'MANYA MANSION' #11,<br /> Blue Bells Street, 7th Main,<br /> 7th Cross, Rajeevgandhinagar, <br />Bangalore-560097
+            <p className="m-center">MM-201, 2nd Floor,<br /> MANYA MANSION #11,<br /> Blue Bells Street, 7th Main,<br /> 7th Cross, Rajeevgandhinagar, <br />Bangalore-560097
             </p>
             <p className="pt-3 mb-2 fw-bold fs-6 text-start m-center">
               Follow Us
