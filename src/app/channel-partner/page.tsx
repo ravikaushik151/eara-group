@@ -46,7 +46,7 @@ export default function ChannelPartner() {
                     <div className="col-md-12">
                         <div className="image-container">
                             <Image
-                                src="/images/career-page-header.jpg"
+                                src="/images/Channel partner.webp"
                                 height={2880}
                                 width={1920}
                                 className="img-fluid masterpiece rounded-4"
