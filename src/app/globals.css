@@ -15839,7 +15839,8 @@ footer button:hover {
 }
 
 .home-masterplan_right {
-  width: 100%;
+  /*width: 100%;*/
+  width: 460px;
 }
 
 .home-masterplan_img {

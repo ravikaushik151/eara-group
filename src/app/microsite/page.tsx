@@ -335,7 +335,7 @@ export default function Home() {
                 </div>
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4787.257738518856!2d77.5177901!3d12.8046657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e1!3m2!1sen!2sin!4v1759475323862!5m2!1sen!2sin" width="100%" height="500" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.187708608875!2d77.51706043914793!3d12.804854316360881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1759994801277!5m2!1sen!2sin" width="100%" height="500" loading="lazy"></iframe>
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"
