@@ -271,7 +271,7 @@ export default function Home() {
                     <Image
                       width={500}
                       height={900}
-                      src="/images/Master.jpg"
+                      src="/images/Eara_masterplan.webp"
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid"
