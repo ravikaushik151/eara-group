@@ -83,7 +83,7 @@ export default function About() {
                   width={648}
                   height={338}
                   className="img-fluid"
-                  src="/images/Eara webimage.webp"
+                  src="/images/ABout_Us_Eara.jpg"
                 />
               </div>
             </section>

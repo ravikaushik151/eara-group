@@ -144,7 +144,7 @@ export default function Home() {
             <div>
               <Image
                 alt="Project"
-                src="/images/UpcomingProject.avif"
+                src="/images/Eara webimage.webp"
                 width={1000}
                 height={750}
                 className="img-fluid  mb-3 w-100 rounded-4"
