@@ -1,19 +1,20 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req: Request) {
+export async function POST(request) {
   try {
-    const { name, email, phone, message } = await req.json();
+    const { name, email, phone, message } = await request.json();
 
-    // ✅ Environment variables (make sure they match your .env.local)
+    // ✅ Check environment variables
     const EMAIL_USER = process.env.EMAIL_USER;
     const EMAIL_PASS = process.env.EMAIL_PASS;
-    const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+    const ADMIN_EMAIL =
+      process.env.MAIL_RECEIVER || process.env.ADMIN_EMAIL || EMAIL_USER;
 
-    if (!EMAIL_USER || !EMAIL_PASS || !ADMIN_EMAIL) {
-      console.error("Missing email environment variables");
+    if (!EMAIL_USER || !EMAIL_PASS) {
+      console.error(" Missing EMAIL_USER or EMAIL_PASS in environment variables");
       return NextResponse.json(
-        { success: false, message: "SMTP credentials not configured." },
+        { success: false, message: "Email credentials not configured." },
         { status: 500 }
       );
     }
@@ -26,21 +27,21 @@ export async function POST(req: Request) {
         pass: EMAIL_PASS,
       },
       tls: {
-        rejectUnauthorized: false, //  Ignore self-signed certificate
+        rejectUnauthorized: false,
       },
     });
 
-    // Optional: verify connection
+    // Optional: verify SMTP connection
     await transporter.verify();
 
-    // ✅ Prepare email
+    // ✅ Prepare the email
     const mailOptions = {
       from: `"EARA Group" <${EMAIL_USER}>`,
       to: ADMIN_EMAIL,
       replyTo: email,
-      subject: "Enquire from EARA Group website",
+      subject: "New Channel Partner Enquiry",
       html: `
-        <h2> Enquire from EARA Group website</h2>
+        <h2>New Channel Partner Request</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
@@ -50,17 +51,17 @@ export async function POST(req: Request) {
       `,
     };
 
-    //  Send mail
+    // ✅ Send the email
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({
       success: true,
-      message: "Thank you! Your request has been submitted successfully.",
+      message: "✅ Thank you! Your request has been submitted successfully.",
     });
   } catch (error) {
-    console.error("Email send error:", error);
+    console.error(" Error sending email:", error);
     return NextResponse.json(
-      { success: false, message: "Failed to send email. Please try again later." },
+      { success: false, message: "Failed to send message. Please try again later." },
       { status: 500 }
     );
   }
