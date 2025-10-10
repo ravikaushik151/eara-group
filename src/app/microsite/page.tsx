@@ -52,7 +52,7 @@ export default function Home() {
               <div className="row text-center text-white">
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Project Size</h6>
-                  <span className="mb-0 fs-2 fw-light theme-color-light">15 Acres</span>
+                  <span className="mb-0 fs-2 fw-light theme-color-light">18+  Acres</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
                   <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved</h6>
@@ -85,7 +85,7 @@ export default function Home() {
                     <h2 className="mb-0 theme-color-dark text-center">Amidst Nature</h2>
                     <span className="fs-5 theme-color-dark text-center d-block">Crafted by Earth. Designed by EARA Group.</span>
                     <p className="mt-4  theme-color-dark">
-                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
+                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 18+ lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
                     </p>
                   </div>
                 </div>
@@ -271,7 +271,7 @@ export default function Home() {
                     <Image
                       width={500}
                       height={900}
-                      src="/images/Master.jpg"
+                      src="/images/Eara_masterplan.webp"
                       loading="lazy"
                       alt=""
                       className="home-masterplan_img img-fluid"
@@ -335,7 +335,7 @@ export default function Home() {
                 </div>
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4787.257738518856!2d77.5177901!3d12.8046657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e1!3m2!1sen!2sin!4v1759475323862!5m2!1sen!2sin" width="100%" height="500" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.187708608875!2d77.51706043914793!3d12.804854316360881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1759994801277!5m2!1sen!2sin" width="100%" height="500" loading="lazy"></iframe>
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"
@@ -360,86 +360,81 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className="home-connectivity_distance-wrapper" >
-                      <div
-                        id="w-node-_9441ef5f-b995-4318-be5b-df8ccce3289b-ac1b3e9a"
-                        className="home-connectivity_distance m-center"
-                      >
-
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">Art of Living International Center</div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">7 mins</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_2e82b6e9-e071-cd09-e477-4c91b9a4b018-ac1b3e9a"
-                        className="home-connectivity_distance m-center"
-                      >
-
+                    <div className="home-connectivity_distance-wrapper">
+                      <div className="home-connectivity_distance m-center">
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
                             <div className="text-size-large theme-color-light m-center">
-                              Vajarahalli Metro Station
+                              • Art of Living International Center
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">15 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;7 mins</div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        id="w-node-_681bb572-5097-8f68-667c-d8add2d0c9a1-ac1b3e9a"
-                        className="home-connectivity_distance m-center"
-                      >
 
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">NICE Road Junction</div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">10 mins</div>
-                          </div>
-                        </div>
-                      </div>
                       <div className="home-connectivity_distance m-center">
-
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large  theme-color-light m-center">
-                              Kumarans School
+                            <div className="text-size-large theme-color-light m-center">
+                              • Vajarahalli Metro Station
                             </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">10–15 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;15 mins</div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        id="w-node-_681bb572-5097-8f68-667c-d8add2d0c9a1-ac1b3e9a"
-                        className="home-connectivity_distance m-center"
-                      >
 
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">Metro Cash & Carry</div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">20–25 mins</div>
-                          </div>
-                        </div>
-                      </div>
                       <div className="home-connectivity_distance m-center">
-
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center"> Global Village Tech Park</div>
+                            <div className="text-size-large theme-color-light m-center">
+                              • NICE Road Junction
+                            </div>
                           </div>
                           <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">20–25 mins</div>
+                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;10 mins</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="home-connectivity_distance m-center">
+                        <div className="home-connectivity_distance-text">
+                          <div className="text-color-offwhite">
+                            <div className="text-size-large theme-color-light m-center">
+                              • Kumarans School
+                            </div>
+                          </div>
+                          <div className="text-color-silvermist">
+                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;10–15 mins</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="home-connectivity_distance m-center">
+                        <div className="home-connectivity_distance-text">
+                          <div className="text-color-offwhite">
+                            <div className="text-size-large theme-color-light m-center">
+                              • Metro Cash & Carry
+                            </div>
+                          </div>
+                          <div className="text-color-silvermist">
+                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;20–25 mins</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="home-connectivity_distance m-center">
+                        <div className="home-connectivity_distance-text">
+                          <div className="text-color-offwhite">
+                            <div className="text-size-large theme-color-light m-center">
+                              • Global Village Tech Park
+                            </div>
+                          </div>
+                          <div className="text-color-silvermist">
+                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;20–25 mins</div>
                           </div>
                         </div>
                       </div>

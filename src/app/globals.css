@@ -14511,8 +14511,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  background-color: #583a2c8a;
+  /* background-color: rgba(0, 0, 0, 0.5); 
+  background-color: #583a2c8a;*/
   color: white;
   /* Text color */
   display: flex;
@@ -15263,7 +15263,7 @@ h2 {
 .lifestyle-section {
   background: #fdf3e9;
   padding: 60px 20px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-display: swap;
   text-align: center;
   position: relative;
@@ -15839,7 +15839,8 @@ footer button:hover {
 }
 
 .home-masterplan_right {
-  width: 100%;
+  /*width: 100%;*/
+  width: 460px;
 }
 
 .home-masterplan_img {
@@ -15884,9 +15885,9 @@ footer button:hover {
   flex: none;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  padding: .9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: .1rem;
   display: flex;
 }
 
@@ -15916,7 +15917,7 @@ footer button:hover {
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
-  max-width: 24rem;
+  max-width: 30rem;
 }
 
 #w-node-e6931fed-39f2-146d-5a1b-cb17ad89f5a5-ac1b3e9a,
@@ -15993,7 +15994,7 @@ footer button:hover {
 .text-size-large {
   letter-spacing: -.16px;
   font-family: "Twklausanne 450", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.1;
 }

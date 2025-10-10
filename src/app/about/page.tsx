@@ -9,7 +9,7 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/Earan.jpeg.jpg"
+                src="/images/About_new.webp"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"
@@ -104,7 +104,7 @@ export default function About() {
                   <div className="col-md-12 mb-3">
                     <div className=" text-center ">
                       <h2 className="mb-3 theme-color-light">Our Mission &amp; Vision</h2>
-                      <p className="theme-color-light fs-4 mb-0">What drives us forward and what we aim to achieve</p>
+                      <span className="theme-color-light fs-4 mb-0">What drives us forward and what we aim to achieve</span>
                     </div>
                   </div>
                 </div>

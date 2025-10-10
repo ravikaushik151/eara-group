@@ -11,7 +11,7 @@ export default function Project() {
                     <div className="col-md-12">
                         <div className="image-container">
                             <Image
-                                src="/images/project header.webp"
+                                src="/images/Project Header New.webp"
                                 height={2880}
                                 width={1920}
                                 className="img-fluid masterpiece"
@@ -56,7 +56,7 @@ export default function Project() {
                                             mornings, golden silence, and grounded luxury.
                                         </strong>
                                         <br />
-                                        Spread across 15 lush acres in Kaggalipura, just off Kanakapura
+                                        Spread across 18+ lush acres in Kaggalipura, just off Kanakapura
                                         Road, this premium plotted development invites you to design your
                                         forever home in a place where the city fades and nature speaks.
                                         Thoughtfully approved by BMRDA and connected to every urban
@@ -65,9 +65,9 @@ export default function Project() {
                                     </p>
 
                                     <div className="text-center">
-                                    <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
-                                      Know More
-                                    </Link>
+                                        <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
+                                            Know More
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
