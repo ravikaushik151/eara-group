@@ -21,6 +21,8 @@ export const metadata = {
   description: 'Eara Group',
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-wf-page="123456">
