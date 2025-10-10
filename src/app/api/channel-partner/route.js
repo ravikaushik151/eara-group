@@ -20,7 +20,7 @@ export async function POST(request) {
         // ✅ Prepare the email content
         const mailOptions = {
             from: `"EARA Group" <${process.env.MAIL_USER}>`,
-            to: process.env.MAIL_RECEIVER || process.env.MAIL_USER, // where you want to receive submissions
+            to: process.env.MAIL_RECEIVER || process.env.ADMIN_EMAIL, // where you want to receive submissions
             subject: "New Channel Partner Enquiry",
             html: `
         <h2>New Channel Partner Request</h2>
