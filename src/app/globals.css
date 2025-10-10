@@ -19393,3 +19393,7 @@ footer textarea::placeholder {
 .swiper-backface-hidden {
   padding: 10px !important;
 }
+
+.amenity-text {
+  min-height: 35px;
+}

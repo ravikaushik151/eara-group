@@ -8,6 +8,7 @@ import Image from "next/image";
 import AmenitiesMarquee from "../components/AmenitiesMarquee";
 import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
+import MasterPlanSection from "../components/Microsite/MasterPlanSection";
 
 export default function Home() {
   useEffect(() => {
@@ -248,78 +249,7 @@ export default function Home() {
           </section>
 
 
-          <section
-            data-w-id="8905ac58-eaf7-356f-bf47-4ad8001e257f"
-            className="section_home-masterplan theme-bg-light lifestyle-section"
-            id="master-plan"
-          >
-            <div className="padding-global">
-              <div className="container-large">
-                <div className="home-masterplan_component ">
-                  <div className="home-masterplan_left ">
-                    <h2
-                      data-animate={1}
-                      className=" text-color-dark-rainforest theme-color-dark m-center mb-0"
-                    >
-                      Master Plan
-                    </h2>
-                  </div>
-                  <div
-                    id="w-node-_0c32365e-28ce-9e1d-b95e-bd08d9997641-ac1b3e9a"
-                    className="home-masterplan_right"
-                  >
-                    <Image
-                      width={500}
-                      height={900}
-                      src="/images/Eara_masterplan.webp"
-                      loading="lazy"
-                      alt=""
-                      className="home-masterplan_img img-fluid"
-                    />
-                  </div>
-                  <div className="home-masterplan_legend position-relative"  >
-                    <div className="master-plan-section text-center py-5">
-                      <div className="container">
-                        <div className="row justify-content-center">
-                          {[
-                            "Grand entrance gate",
-                            "Concrete roads",
-                            "Fruit bearing trees on streets",
-                            "Street light",
-                            "Underground storm water drains",
-                            "Water connections to every plot",
-                            "Sewage connection to every plot",
-                            "Electricity connection to every plot",
-                            "Rain water recharge pits at every 40 feet on both sides of the road",
-                            "Sewage treatment plant",
-                          ].map((item, index) => (
-                            <div key={index} className="col-md-6 col-12 mb-4 d-flex align-items-start">
-                              <div className="home-highlights_point-circle me-3">
-                                <div className="home-highlights_point-text"></div>
-                              </div>
-                              <div className="home-highlights_text text-start theme-color-dark">
-                                {item}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* <Image
-                      width={800}
-                      height={200}
-                      src="/images/page-5.png"
-                      loading="lazy"
-                      alt=""
-                      className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{ top: "80px", maxHeight: "750px", objectFit: "cover", objectPosition: "center", position: "absolute", opacity: ".2" }}
-                    /> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <MasterPlanSection />
           <section className="section_home-connectivity theme-bg-dark page-about-mv" id="location">
             <div className="padding-global">
               <div className="container-large">
