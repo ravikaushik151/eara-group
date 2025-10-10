@@ -12,8 +12,11 @@ interface ContactFormProps {
   showMessage?: boolean;
   inputClass?: string;
   buttonClass?: string;
-  hideMessageField?: boolean; // New prop to hide textarea
-  defaultMessage?: string;    // New prop for default message value
+  hideMessageField?: boolean; // hide textarea
+  defaultMessage?: string; // default message
+  redirectUrl?: string; // optional redirect
+  autoDownloadPdf?: string; // optional PDF download URL
+  phpEndpoint?: string; // default "mail.php"
 }
 
 export default function ContactForm({
@@ -22,15 +25,20 @@ export default function ContactForm({
   buttonClass = "btn btn-primary",
   hideMessageField = false,
   defaultMessage = "",
+  redirectUrl,
+  autoDownloadPdf,
+  phpEndpoint = "mail.php",
 }: ContactFormProps) {
   const [form, setForm] = useState<FormData>({
     name: "",
     email: "",
     mobile: "",
-    message: defaultMessage, // default value
+    message: defaultMessage,
   });
+
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [note, setNote] = useState("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -40,25 +48,64 @@ export default function ContactForm({
     e.preventDefault();
     setLoading(true);
     setSuccess(false);
+    setNote("");
+
+    // Basic validation
+    if (!form.name || !form.email || !form.mobile) {
+      setNote("All fields are required!");
+      setLoading(false);
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      setNote("Enter a valid email address!");
+      setLoading(false);
+      return;
+    }
 
     try {
-      const res = await fetch("/api/send-email", {
+      // Prepare form data for PHP endpoint
+      const formData = new FormData();
+      formData.append("name", form.name);
+      formData.append("email", form.email);
+      formData.append("phone", form.mobile);
+      formData.append("message", form.message);
+
+      const response = await fetch(phpEndpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: formData,
       });
 
-      const data = await res.json();
+      const resultText = await response.text();
 
-      if (res.ok && data.success) {
+      if (response.ok && resultText.includes("success")) {
         setSuccess(true);
         setForm({ name: "", email: "", mobile: "", message: defaultMessage });
+        setNote("");
+
+        // Auto-download PDF if provided
+        if (autoDownloadPdf) {
+          const link = document.createElement("a");
+          link.href = autoDownloadPdf;
+          link.download = autoDownloadPdf.split("/").pop() || "download.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+
+        // Optional redirect
+        if (redirectUrl) {
+          setTimeout(() => {
+            window.location.href = redirectUrl;
+          }, 2000);
+        }
       } else {
-        alert(data.message || "Something went wrong, please try again.");
+        setNote("Error sending email. Please try again.");
       }
     } catch (err) {
       console.error("Submit error:", err);
-      alert("Network error, try again later.");
+      setNote("Network error. Try again later.");
     }
 
     setLoading(false);
@@ -110,6 +157,8 @@ export default function ContactForm({
           {loading ? "Sending..." : "Submit"}
         </button>
       </div>
+
+      {note && <p className="text-danger mt-2">{note}</p>}
 
       {success && showMessage && (
         <div className="text-center">

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import "./../career.css";
@@ -13,7 +13,11 @@ export default function ChannelPartner() {
         message: '',
     });
 
-    const handleChange = (e) => {
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [note, setNote] = useState('');
+
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
             ...prev,
@@ -21,21 +25,65 @@ export default function ChannelPartner() {
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
+        setLoading(true);
+        setSuccess(false);
+        setNote('');
+
+        // Basic validation
+        if (!formData.name || !formData.email || !formData.phone) {
+            setNote('All fields are required!');
+            setLoading(false);
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setNote('Enter a valid email address!');
+            setLoading(false);
+            return;
+        }
 
         try {
-            const response = await fetch('/api/channel-partner', {
+            const data = new FormData();
+            data.append('name', formData.name);
+            data.append('email', formData.email);
+            data.append('phone', formData.phone);
+            data.append('message', formData.message);
+
+            const response = await fetch('/cmail.php', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
+                body: data,
             });
 
-            const result = await response.json();
-            alert(result.message || 'Form submitted successfully!');
+            const resultText = await response.text();
+
+            if (response.ok && resultText.toLowerCase().includes('success')) {
+                setSuccess(true);
+                setFormData({ name: '', email: '', phone: '', message: '' });
+                setNote('');
+
+                // Optional: PDF download (if needed)
+                // const pdfUrl = '/assets/sample.pdf';
+                // const link = document.createElement('a');
+                // link.href = pdfUrl;
+                // link.download = pdfUrl.split('/').pop() || 'download.pdf';
+                // document.body.appendChild(link);
+                // link.click();
+                // document.body.removeChild(link);
+
+                // Optional redirect
+                // setTimeout(() => window.location.href = '/thank-you', 2000);
+            } else {
+                setNote('Error sending email. Please try again.');
+            }
         } catch (err) {
-            alert('Error submitting form. Please try again.');
+            console.error(err);
+            setNote('Network error. Please try again later.');
         }
+
+        setLoading(false);
     };
 
     return (
@@ -90,6 +138,7 @@ export default function ChannelPartner() {
                                             className="form-control py-2"
                                             placeholder="Name"
                                             required
+                                            value={formData.name}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -101,6 +150,7 @@ export default function ChannelPartner() {
                                             className="form-control py-2"
                                             placeholder="Email"
                                             required
+                                            value={formData.email}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -112,6 +162,7 @@ export default function ChannelPartner() {
                                             className="form-control py-2"
                                             placeholder="Phone Number"
                                             required
+                                            value={formData.phone}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -123,6 +174,7 @@ export default function ChannelPartner() {
                                             placeholder="Message"
                                             rows={4}
                                             required
+                                            value={formData.message}
                                             onChange={handleChange}
                                         ></textarea>
                                     </div>
@@ -131,10 +183,14 @@ export default function ChannelPartner() {
                                         <button
                                             type="submit"
                                             className="btn theme-bg-dark text-white py-2 px-4 mt-2"
+                                            disabled={loading}
                                         >
-                                            Submit
+                                            {loading ? "Sending..." : "Submit"}
                                         </button>
                                     </div>
+
+                                    {note && <p className="text-danger mt-2 text-center">{note}</p>}
+                                    {success && <p className="text-success mt-2 text-center">✅ Thank you! We’ll get back to you soon.</p>}
                                 </form>
 
                             </div>
