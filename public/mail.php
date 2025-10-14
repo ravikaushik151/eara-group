@@ -1,11 +1,11 @@
 <?php
 header('Content-Type: text/plain');
 
-// Replace with your recipient email
-$adminEmail = "lokesh@imsolutions.mobi";
+// Main recipient
+$adminEmail = "info@imsolutions.mobi";  
 
-// Optional additional recipients
-$additionalRecipients = ['ravi.k@imsolutions.mobi']; 
+// Additional recipients (each will get their own mail)
+$additionalRecipients = ['ravi.k@imsolutions.mobi','lokesh@imsolutions.mobi']; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Email subject and headers
+    // Email subject and body
     $subject = "Enquiry from EARA Group Website";
     $body = "
         <h2>New Contact Request</h2>
@@ -38,21 +38,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p>This message was sent via the contact form on your website.</p>
     ";
 
+    // Common headers
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: noreply <noreply@earagroup.com>" . "\r\n";
 
-    // Add additional recipients if any
-    $to = $adminEmail;
-    if (!empty($additionalRecipients)) {
-        $to .= ',' . implode(',', $additionalRecipients);
+    // Prepare all recipients in one array
+    $recipients = array_merge([$adminEmail], $additionalRecipients);
+    $successCount = 0;
+
+    // Send separate email to each recipient
+    foreach ($recipients as $recipient) {
+        if (mail($recipient, $subject, $body, $headers, "-fnoreply@earagroup.com")) {
+            $successCount++;
+        }
     }
 
-    // Send email
-    if (mail($to, $subject, $body, $headers, "-fnoreply@earagroup.com")) {
-        echo "Email sent successfully";
+    // Final response
+    if ($successCount === count($recipients)) {
+        echo "Email sent successfully to all recipients";
     } else {
-        echo "Error sending email";
+        echo "Error: Some emails could not be sent ($successCount of " . count($recipients) . ")";
     }
 
 } else {

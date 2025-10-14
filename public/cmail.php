@@ -2,13 +2,9 @@
 header('Content-Type: text/plain');
 
 // ====== CONFIG ======
-// Your main recipient email
-$adminEmail = "lokesh@imsolutions.mobi";  
-
-// Optional additional recipients
-$additionalRecipients = ['ravi.k@imsolutions.mobi']; 
-
-// ===================
+$adminEmail = "info@imsolutions.mobi";  // Main recipient
+$additionalRecipients = ['ravi.k@imsolutions.mobi','lokesh@imsolutions.mobi']; // Others who should also get a copy
+// ====================
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -41,22 +37,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p>This message was sent via the Channel Partner form on your website.</p>
     ";
 
-    // Email headers
+    // Common headers
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: noreply <noreply@earagroup.com>" . "\r\n";
 
-    // Add additional recipients
-    $to = $adminEmail;
-    if (!empty($additionalRecipients)) {
-        $to .= ',' . implode(',', $additionalRecipients);
+    // Merge all recipients
+    $recipients = array_merge([$adminEmail], $additionalRecipients);
+    $sentCount = 0;
+
+    // Send separate mail to each recipient
+    foreach ($recipients as $recipient) {
+        if (mail($recipient, $subject, $body, $headers, "-fnoreply@earagroup.com")) {
+            $sentCount++;
+        }
     }
 
-    // Send email
-    if (mail($to, $subject, $body, $headers, "-fnoreply@earagroup.com")) {
-        echo "Email sent successfully";
+    // Response
+    if ($sentCount === count($recipients)) {
+        echo "Email sent successfully to all recipients";
     } else {
-        echo "Error sending email";
+        echo "Error: Some emails could not be sent ($sentCount of " . count($recipients) . ")";
     }
 
 } else {

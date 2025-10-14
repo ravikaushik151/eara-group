@@ -94,7 +94,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/privacy-policy"
                   className="text-decoration-none text-white"
                 >
                   Privacy Policy
