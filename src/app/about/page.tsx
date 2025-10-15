@@ -40,7 +40,7 @@ export default function About() {
         </div>
       </div>
 
-      <section id="TOP" className="section_amenities-hero theme-bg-light page-about section" >
+      <section id="TOP" className="section_amenities-hero theme-bg-light aboutabout  section" >
         <div className="padding-global">
           <div className="container-large">
             <div className="amenities-hero_components">
@@ -67,7 +67,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <section className="section-1 ">
+            {/* <section className="section-1 ">
               <div className="content">
                 <h2 className="mb-3 theme-color-dark fs-2 text-center">About Us</h2>
                 <p className="mb-2 theme-color-dark">
@@ -87,39 +87,39 @@ export default function About() {
                   src="/images/ABout_Us_Eara.jpg"
                 />
               </div>
-            </section>
+            </section> */}
+            <section className="section-1  ">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-6 offset-md-6">
+                    <h2 className="mb-3 theme-color-dark fs-2 text-center">About Us</h2>
+                    <p className="mb-2 theme-color-dark">
+                      At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
+                    </p>
+                    <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
+                    </p>
+                    <p className="mb-2 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
+                  </div>
+
+                </div>
+
+              </div>
+              <Image
+                alt="Luxury interior"
+                width={648}
+                height={338}
+                className="img-fluid w-100 m-0 d-md-none"
+                src="/images/about-about.png"
+                style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-33% !important" }}
+              />
+            </section>
           </div>
         </div>
       </section>
 
 
-      {/* <section className="section-1 aboutabout theme-bg-light">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6 offset-md-6">
-              <h2 className="mb-3 theme-color-dark fs-2 text-center">About Us</h2>
-              <p className="mb-2 theme-color-dark">
-                At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
-              </p>
-              <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
-              </p>
-              <p className="mb-2 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
-            </div>
-
-          </div>
-
-        </div>
-        <Image
-          alt="Luxury interior"
-          width={648}
-          height={338}
-          className="img-fluid w-100 m-0 d-md-none"
-          src="/images/about-about.png"
-          style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-33% !important" }}
-        />
-      </section> */}
       <section id="" className="section_amenities-hero theme-bg-dark page-about-mv section">
         <div className="padding-global">
           <div className="container-large">
