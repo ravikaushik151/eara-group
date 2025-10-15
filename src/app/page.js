@@ -127,50 +127,45 @@ export default function Home() {
           </div>
         </div>
         <div id="scroll-more">
-          <section className="section-1 px-md-5 px-3 theme-bg-light home-about" >
-            <div className="content">
-              <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
-              <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
-              <p className="mt-4 theme-color-dark">
-                At EARA Group, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
-                Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
-              </p>
-              <Link
-                href="/about"
-                className="btn theme-bg-dark text-white border mt-4"
-              > Read More
-              </Link>
-            </div>
-            <div>
-              <Image
-                alt="Project"
-                src="/images/Eara webimage.webp"
-                width={1000}
-                height={750}
-                className="img-fluid  mb-3 w-100 rounded-4"
-                priority
-                fetchPriority="high" style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "bottom center" }}
-              />
-              {/* <picture>
-                <source
-                  media="(max-width: 576px)"
-                  srcSet="/images/UpcomingProject.avif"
-                />
-                <source
-                  media="(min-width: 577px)"
-                  srcSet="/images/UpcomingProject.avif"
-                />
-                <img
-                  src="/images/UpcomingProject.avif"
-                  alt="About us"
-                  width="997"
-                  height="578"
-                  className="img-fluid rounded-2"
-                  loading="lazy"
-                />
-              </picture> */}
+          <section className="section-1 px-md-5 px-3 theme-bg-light homehome"  >
+            <div className="container">
+              <div className="row">
+                <div className="col-md-5 offset-md-7 py-lg-5">
+                  <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
+                  <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
+                  <p className="mt-4 theme-color-dark">
+                    At EARA Group, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                    Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
+                  </p>
+                  <div className="text-center">
+                    <Link
+                      href="/about"
+                      className="btn theme-bg-dark text-white border mt-4"
+                    > Read More
+                    </Link>
+                  </div>
+
+                </div>
+                <div className="col-md-6 d-md-none ">
+                  <div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
 
             </div>
+            <Image
+              alt="Project"
+              src="/images/home-about.png"
+              width={1000}
+              height={750}
+              className="img-fluid w-100 d-md-none p-0 mb-0 mt-3"
+              priority
+              fetchPriority="high"
+            />
           </section>
 
           {/* <section className="same-gap postion-relative bg-light d-none">
@@ -246,7 +241,7 @@ export default function Home() {
 
           <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
             backgroundImage: "url('/images/Flower_Cream.png')",
-            backgroundSize: "25% 50%",   // ✅ width 100%, height 80%
+            backgroundSize: "15% 35%",   // ✅ width 100%, height 80%
             backgroundPosition: "right 99%", // ✅ right aligned, center vertically
             color: "#fff",
             backgroundRepeat: "no-repeat",   // ✅ fixed
@@ -259,19 +254,19 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="row align-items-center">
-                  <div className="col-md-6 text-center">
+                  <div className="col-md-6 px-md-0 text-center">
                     <Image
                       alt="Project"
-                      src="/images/UpcomingProject.avif"
+                      src="/images/upcoming-projects.png"
                       width={500}
                       height={750}
-                      className="img-fluid  mb-3"
+                      className="img-fluid p-0 mb-3"
                       priority
-                      fetchPriority="high" style={{ maxHeight: "65vh", objectFit: "cover", objectPosition: "bottom center" }}
+                      fetchPriority="high" style={{ maxHeight: "75vh", objectFit: "cover", objectPosition: "bottom center" }}
                     />
                   </div>
                   <div
-                    className="col-md-5"
+                    className="col-md-6 d-flex align-items-center"
                     data-aos="fade-left"
                     data-aos-duration={1500}
                   >
