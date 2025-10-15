@@ -97,7 +97,7 @@ export default function ChannelPartner() {
                                 src="/images/Channel partner.webp"
                                 height={2880}
                                 width={1920}
-                                className="img-fluid masterpiece rounded-4"
+                                className="img-fluid masterpiece "
                                 alt="Channel Partner"
                             />
                             <div className="overlay2">

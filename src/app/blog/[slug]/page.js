@@ -24,10 +24,10 @@ export default async function BlogPost({ params }) {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/About-About-us.jpg"
+                src="/images/blog-page-header.jpg"
                 height={2880}
                 width={1920}
-                className="img-fluid masterpiece rounded-4"
+                className="img-fluid masterpiece "
                 alt="masterpiece"
               />
               <div className="overlay2">

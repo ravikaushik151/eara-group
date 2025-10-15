@@ -14,7 +14,7 @@ export default function Contact() {
         src="/images/contact-us-page-header.webp"
         height={2880}
         width={1920}
-        className="img-fluid masterpiece rounded-4"
+        className="img-fluid masterpiece "
         alt="masterpiece"
        />
        <div className="overlay2 position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
