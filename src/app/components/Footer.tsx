@@ -20,7 +20,7 @@ export default function Footer() {
                 />
               </Link>
               <p className="pt-3 text-center">
-                RERA No. : PRM/KA/RERA/1251/309/PR/280324/006745
+                RERA No. : PRM/KA/RERA/1251/310/PR/220223/005733
               </p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-white" target="_blank">IM Solutions</Link></p>
+        <p className="text-center">© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-white" target="_blank">IM Solutions</Link></p>
       </div>
     </footer>
   );

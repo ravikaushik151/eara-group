@@ -12,7 +12,7 @@ export default function Project() {
                     <div className="col-md-12">
                         <div className="image-container">
                             <Image
-                                src="/images/project-header.png"
+                                src="/images/project-header.webp"
                                 height={2880}
                                 width={1920}
                                 className="img-fluid masterpiece"
