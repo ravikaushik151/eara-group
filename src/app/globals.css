@@ -19397,3 +19397,9 @@ footer textarea::placeholder {
 .amenity-text {
   min-height: 35px;
 }
+.bg-transarent {background: transparent !important;}
+.border-none {border:none !important;}
+
+
+.accordion-button,.accordion-button:not(.collapsed)::after {filter: brightness(0) saturate(100%) invert(93%) sepia(3%) saturate(3307%) hue-rotate(325deg) brightness(102%) contrast(94%);}
+.border-theme {border:1px solid #f7e1cb !important}

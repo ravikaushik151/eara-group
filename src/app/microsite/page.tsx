@@ -9,8 +9,40 @@ import AmenitiesMarquee from "../components/AmenitiesMarquee";
 import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
 import MasterPlanSection from "../components/Microsite/MasterPlanSection";
-
+import MyAccordion from "../components/MyAccordion";
 export default function Home() {
+  const faqItems = [
+    {
+      id: 1, title: 'SCHOOLS & COLLEGES', content: `  <ul dir="ltr">
+    <li>DELHI PUBLIC SCHOOL (DPS) SOUTH 20 MINS</li>
+    <li>THE VALLEY SCHOOL (KRISHNAMURTI FOUNDATION) 14 MINS</li>
+    <li>SRI KUMARAN PUBLIC SCHOOL 10 MINS&nbsp;</li>
+    <li>DAYANANDA SAGAR BUSINESS ACADEMY 06 MINS</li>
+    <li>JAIN UNIVERSITY (GLOBAL CAMPUS) 48 MINS</li>
+    <li>DAYANANDA SAGAR MEDICAL COLLEGE 30 MINS</li>
+    <li>RASHTROTTHANA SCHOOL, KANAKAPURA ROAD 10 MINS</li>
+  </ul>
+` },
+    {
+      id: 2, title: 'HOSPITALS', content: `<ul dir="ltr">
+    <li>SRI SRI HOSPITAL 12 MINS</li>
+    <li>MANIPAL HOSPITALS KANAKPURA ROAD 20 MINS</li>
+    <li>ASTER RV HOSPITAL 26 MINS</li>
+    <li>BGS HOSPITAL 26 MINS</li>
+    <li>APOLLO HOSPITALS, BANNERGHATTA 28 MINS</li>
+  </ul>` },
+    {
+      id: 3, title: 'LEISURE & HOTSPOTS', content: `<ul dir="ltr">
+    <li>ART OF LIVING INTERNATIONAL CENTRE 07 MINS</li>
+    <li>TURAHALLI FOREST &amp; CYCLING TRAILS 15 MINS</li>
+    <li>VAISHANVI PALACE 07 MINS</li>
+    <li>GUHANTRA 12 MINS</li>
+    <li>METRO STATION (UPCOMING) 15 MINS</li>
+    <li>FORUM MALL SOUTH 18 MINS</li>
+    <li>BIRDS OF PARADISE 14 MINS</li>
+  </ul>
+  ` },
+  ];
   useEffect(() => {
 
     const form = document.getElementById(
@@ -265,7 +297,7 @@ export default function Home() {
                 </div>
                 <div className="home-connectivity_components">
                   <div className="home-connectivity_image-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.187708608875!2d77.51706043914793!3d12.804854316360881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1759994801277!5m2!1sen!2sin" width="100%" height="500" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.187708608875!2d77.51706043914793!3d12.804854316360881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1759994801277!5m2!1sen!2sin" width="100%" height="680" loading="lazy"></iframe>
                   </div>
                   <div
                     id="w-node-ae28a13d-3673-7d72-6c93-35ac2b8ff216-ac1b3e9a"
@@ -290,7 +322,13 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <div className="home-connectivity_distance-wrapper">
+                    <div className="row">
+                      <div className="col-md-10">
+                        <MyAccordion items={faqItems} />
+                      </div>
+                    
+                    </div>
+                    {/* <div className="home-connectivity_distance-wrapper">
                       <div className="home-connectivity_distance m-center">
                         <div className="home-connectivity_distance-text">
                           <div className="text-color-offwhite">
@@ -368,7 +406,7 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                     {/* <Image
                       width={800}
                       height={200}
