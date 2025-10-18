@@ -10,6 +10,7 @@ import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
 import MasterPlanSection from "../components/Microsite/MasterPlanSection";
 import MyAccordion from "../components/MyAccordion";
+import Gallery from "../components/Gallery";
 export default function Home() {
   const faqItems = [
     {
@@ -282,6 +283,7 @@ export default function Home() {
 
 
           <MasterPlanSection />
+          <Gallery />
           <section className="section_home-connectivity theme-bg-dark page-about-mv" id="location">
             <div className="padding-global">
               <div className="container-large">

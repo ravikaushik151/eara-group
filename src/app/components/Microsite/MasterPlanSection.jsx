@@ -42,36 +42,38 @@ export default function MasterPlanSection() {
                             src="/images/Eara_masterplan.webp"
                             loading="lazy"
                             alt="Eara Master Plan"
-                            className="w-100 rounded-3 shadow-sm"
+                            className="w-100 rounded-3 shadow-sm img-fluid"
                         />
                     </div>
                     {/* Right Column - Amenities */}
                     <div className="col-md-6">
-                        <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-center">
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 justify-content-center ">
                             {amenities.map((item, index) => (
                                 <div
                                     key={index}
-                                    className="col mb-4 d-flex flex-column align-items-center text-center"
+                                    className="col mb-4 d-flex align-items-start ps-md-5 mb-md-5 ps-3 mb-3 m-center"
                                 >
-                                    <div
-                                        className="amenity-icon mb-2 border rounded-3 shadow-sm bg-white d-flex align-items-center justify-content-center p-3 w-100"
-                                        style={{ maxWidth: '120px' }}
-                                    >
-                                        <Image
-                                            src={item.icon}
-                                            alt={item.text}
-                                            width={100}
-                                            height={100}
-                                            className="img-fluid"
-                                        />
-                                    </div>
-                                    <div className="amenity-text theme-color-dark fw-semibold mt-2">
-                                        {item.text}
+                                    <div className="d-flex align-items-center">
+                                        {/* Number Circle */}
+                                        <span
+                                            className="theme-bg-dark theme-color-light rounded-circle d-flex align-items-center justify-content-center me-3"
+                                            style={{
+                                                width: "34px",
+                                                height: "34px",
+                                                fontSize: "14px",
+                                                flexShrink: 0,
+                                            }}
+                                        >
+                                            {index + 1}
+                                        </span>
+                                        {/* Amenity Text */}
+                                        <div className="amenity-text theme-color-dark fw-semibold d-flex align-items-center">
+                                         <p className='mb-0 lh-sm'>{item.text}</p>   
+                                        </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
-
                     </div>
                 </div>
             </div>
