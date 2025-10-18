@@ -116,7 +116,7 @@ export default function MasterPlanSection() {
                                     <Image
                                         width={633}
                                         height={444}
-                                        src="/images/MasterPlan__08.png"
+                                        src="/images/MasterPlan_.png"
                                         loading="lazy"
                                         alt="Eara Master Plan"
                                         className="w-100  img-fluid mt-md-4"
