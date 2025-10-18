@@ -19403,3 +19403,5 @@ footer textarea::placeholder {
 
 .accordion-button,.accordion-button:not(.collapsed)::after {filter: brightness(0) saturate(100%) invert(93%) sepia(3%) saturate(3307%) hue-rotate(325deg) brightness(102%) contrast(94%);}
 .border-theme {border:1px solid #f7e1cb !important}
+.gallery .swiper-button-prev::after,.gallery .swiper-button-next::after {color:#352822 !important }
+.construction .swiper-button-prev::after,.construction .swiper-button-next::after {color:#FBE5CE !important }

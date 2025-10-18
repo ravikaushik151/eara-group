@@ -14,17 +14,17 @@ const slides = Array.from({ length: 5 }, (_, i) => ({
   alt: `Gallery Image ${i + 1}`,
 }));
 
-export default function Gallery() {
+export default function Construction() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
 
   return (
     <section
-      className="gallery-section same-gap gallery theme-bg-dark"
+      className="gallery-section same-gap construction theme-bg-light"
       id="gallery"
     >
       <div className="container">
         <div className="title text-center mb-4">
-          <h2 className="theme-color-light">Gallery</h2>
+          <h2 className="theme-color-dark">Project Updates</h2>
         </div>
 
         <div className="position-relative">
@@ -70,9 +70,9 @@ export default function Gallery() {
 
           {/* Swiper navigation buttons */}
           <div
-            className="swiper-button-prev  theme-bg-light"
+            className="swiper-button-prev theme-bg-darl"
             style={{
-              color: '#352822 !important',
+              color: '#000',
               left: '-10px',
               zIndex: 10,
               top: '60% !important',
@@ -80,9 +80,9 @@ export default function Gallery() {
             }}
           ></div>
           <div
-            className="swiper-button-next  theme-bg-light"
+            className="swiper-button-next theme-bg-darl"
             style={{
-              color: '#352822 !important',
+              color: '#000',
               right: '-10px',
               zIndex: 10,
               top: '60% !important',
