@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/thumbs'; // Important for thumbnail control
+import 'swiper/css/thumbs';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
 // Import required Swiper modules
-import { Autoplay, Navigation, Thumbs, EffectCoverflow, Controller } from 'swiper/modules';
+import { Autoplay, Navigation, Thumbs, EffectCoverflow, Controller, Mousewheel } from 'swiper/modules';
 import Image from 'next/image';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
@@ -18,11 +18,25 @@ const slides = Array.from({ length: 5 }, (_, i) => ({
 
 export default function Gallery() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
-  const [thumbsSwiper, setThumbsSwiper] = useState(null); // State for the thumbnail Swiper instance
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+  // NEW: State to hold the main Swiper instance
+  const [mainSwiper, setMainSwiper] = useState<any>(null); 
+
+  // Function to handle slide click and update
+  const handleSlideClick = (slideSrc: string, index: number) => {
+    // 1. Open the popup
+    setPopupImage(slideSrc);
+
+    // 2. Programmatically slide the main Swiper to the clicked slide
+    if (mainSwiper) {
+        // use slideToLoop for Swipers with loop: true
+        mainSwiper.slideToLoop(index, 500); 
+    }
+  };
 
   return (
     <section
-      className="gallery-section same-gap gallery theme-bg-dark"
+      className="gallery-section same-gap gallery theme-bg-dark py-5"
       id="gallery"
     >
       <div className="container">
@@ -36,6 +50,8 @@ export default function Gallery() {
           {/* === 1. Main Swiper (col-md-8) === */}
           <div className="col-md-8 position-relative pe-md-4 d-flex align-items-center">
             <Swiper
+              // NEW: Get the main Swiper instance
+              onSwiper={setMainSwiper} 
               modules={[Autoplay, Navigation, EffectCoverflow, Thumbs, Controller]}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               effect={'coverflow'}
@@ -54,8 +70,8 @@ export default function Gallery() {
                 nextEl: '.swiper-button-next-main',
                 prevEl: '.swiper-button-prev-main',
               }}
-              thumbs={{ swiper: thumbsSwiper }} // Link to the thumbnail Swiper instance
-              className="rounded-xl overflow-hidden main-gallery-swiper"
+              thumbs={{ swiper: thumbsSwiper }}
+              className="rounded-xl overflow-hidden main-gallery-swiper w-100"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index} className="relative">
@@ -66,8 +82,9 @@ export default function Gallery() {
                     height={1080}
                     className="img-fluid rounded-3"
                     loading="lazy"
-                    style={{ cursor: 'zoom-in' }}
-                    onClick={() => setPopupImage(slide.src)}
+                    style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
+                    // UPDATED: Call the new handler
+                    onClick={() => handleSlideClick(slide.src, index)}
                   />
                 </SwiperSlide>
               ))}
@@ -75,53 +92,56 @@ export default function Gallery() {
               {/* Swiper navigation buttons for the Main Slider */}
               <div
                 className="swiper-button-prev swiper-button-prev-main theme-bg-light"
-                style={{
-                  color: '#352822',
-                  left: '0',
-                  zIndex: 10,
-                }}
+                style={{ color: '#352822', left: '0', zIndex: 10 }}
               ></div>
               <div
                 className="swiper-button-next swiper-button-next-main theme-bg-light"
-                style={{
-                  color: '#352822',
-                  right: '0',
-                  zIndex: 10,
-                }}
+                style={{ color: '#352822', right: '0', zIndex: 10 }}
               ></div>
             </Swiper>
           </div>
 
           {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
-          <div className="col-md-4   mt-md-0 d-none d-md-block">
+          <div className="col-md-4 px-md-3 my-md-4 d-none d-md-block position-relative thumbnail-wrapper">
             <Swiper
-              onSwiper={setThumbsSwiper} // Save the Swiper instance to state
-              direction={'vertical'} // Key change: vertical scrolling
+              modules={[Navigation, Thumbs, Mousewheel]} 
+              onSwiper={setThumbsSwiper} 
+              direction={'vertical'}
               spaceBetween={10}
-              slidesPerView={2} // Display 4 thumbnails at a time
+              slidesPerView={2} 
               freeMode={true}
               watchSlidesProgress={true}
               loop={true}
-              className="mySwiper-thumbs" // Use h-100 to fill the height of the column
+              mousewheel={true} 
+              // navigation={{
+              //   nextEl: '.swiper-button-next-thumbs', 
+              //   prevEl: '.swiper-button-prev-thumbs', 
+              // }}
+              className="mySwiper-thumbs"
             >
               {slides.map((slide, index) => (
-                <SwiperSlide key={index} className="relative">
+                <SwiperSlide key={index} className="relative" style={{ height: 'auto' }}>
                   <Image
                     src={slide.src}
                     alt={slide.alt}
                     width={412}
                     height={185}
-                    className="img-fluid rounded-2 swiper-thumb-image img-fluid"
+                    className="img-fluid rounded-2 swiper-thumb-image"
                     loading="lazy"
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
+            
+            {/* The Thumbnail Navigation Buttons - outside the Swiper component */}
+            {/* <div className="swiper-button-prev swiper-button-prev-thumbs theme-bg-light"></div>
+            <div className="swiper-button-next swiper-button-next-thumbs theme-bg-light"></div> */}
+            
           </div>
         </div>
       </div>
 
-      {/* === Image Popup Modal (Same as before) === */}
+      {/* === Image Popup Modal (Lightbox) === */}
       {popupImage && (
         <div
           className="popup-overlay"
@@ -168,29 +188,62 @@ export default function Gallery() {
         </div>
       )}
 
-      {/* === Custom Styling for Thumbnails === */}
+      {/* --- Custom Styling --- */}
       <style jsx global>{`
-        /* Match the height of the main slider */
+        /* Global height control for the thumbnail area */
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 412px; /* You might need to adjust this value */
+          max-height: 320px; 
         }
-        /* Style the image within the slide */
+        
+        /* Thumbnails styling */
         .swiper-thumb-image {
           transition: transform 0.3s, opacity 0.3s;
           opacity: 0.6;
           cursor: pointer;
         }
-        /* Style for the active thumbnail slide */
         .mySwiper-thumbs .swiper-slide-thumb-active .swiper-thumb-image {
           opacity: 1;
           transform: scale(1.05);
-          border: 3px solid var(--theme-color-light, #fff); /* Example border for active state */
+          border: 3px solid var(--theme-color-light, #fff); 
         }
-        /* Fix Swiper button positioning for the main slider */
+
+        /* --- Main Slider Navigation (Horizontal) --- */
         .swiper-button-prev-main, .swiper-button-next-main {
             top: 50% !important;
             transform: translateY(-50%) !important;
+        }
+
+        /* --- Thumbnail Navigation FIX (Vertical & Centered) --- */
+        .swiper-button-prev-thumbs, 
+        .swiper-button-next-thumbs {
+            position: absolute !important;
+            left: 50% !important; 
+            transform: translateX(-50%); 
+            z-index: 10; 
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 !important;
+            color: #352822 !important; 
+            background-color: var(--theme-bg-light, #fff) !important;
+        }
+        .swiper-button-prev-thumbs {
+            top: 0px !important; 
+            bottom: auto !important;
+        }
+        .swiper-button-next-thumbs {
+            bottom: 0px !important;
+            top: auto !important; 
+        }
+        .swiper-button-prev-thumbs::after {
+            content: '\u2191'; 
+            font-size: 1.2rem;
+        }
+        .swiper-button-next-thumbs::after {
+            content: '\u2193'; 
+            font-size: 1.2rem;
         }
       `}</style>
     </section>

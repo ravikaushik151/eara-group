@@ -89,12 +89,12 @@ export default function MasterPlanSection() {
                             <div className="col-md-6 px-md-4 d-flex align-items-center">
                                 <div>
                                     <div className="text-center m-center  ps-md-3">
-                                        <h2 className="text-color-dark-rainforest theme-color-dark mb-5">
+                                        <h2 className="text-color-dark-rainforest theme-color-dark mb-0">
                                             Master Plan
                                         </h2>
                                     </div>
 
-                                    <div className="row justify-content-center text-start">
+                                    <div className="row justify-content-center text-start d-none">
                                         {/* Column 1: Items 1-8 */}
                                         {renderAmenityColumn(col1, 1)}
 
