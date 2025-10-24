@@ -13,7 +13,7 @@ import { Autoplay, Navigation, Thumbs, Controller, Mousewheel } from 'swiper/mod
 import Image from 'next/image';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
-  src: `/images/gallery/Image${String(i + 1)}.png`, // Ensure these paths are correct
+  src: `/images/progress/Image${String(i + 1)}.png`, // Ensure these paths are correct
   alt: `Construction Image ${i + 1}`,
 }));
 

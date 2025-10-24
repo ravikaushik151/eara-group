@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Explore Eara Group’s insights on smart living, eco-friendly architecture, and integrated townships. Stay updated on sustainable urban development trends.",
   keywords:
-    "Plots for Sale in Kanakapura Road Bangalore, Residential Plot in Kanakapura Road Bangalore for Sale, BMRDA Approved Sites in Kanakapura Road, BMRDA Plots For Sale in Kanakapura Road",
+    "Plots for Sale in Kanakapura Main Road Bangalore, Residential Plot in Kanakapura Main Road Bangalore for Sale, BMRDA Approved Sites in Kanakapura Main Road, BMRDA Plots For Sale in Kanakapura Main Road",
   alternates: {
     canonical: "https://earagroup.com/blog/",
   },

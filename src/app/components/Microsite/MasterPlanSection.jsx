@@ -1,7 +1,10 @@
 'use client';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function MasterPlanSection() {
+    const [isOpen, setIsOpen] = useState(false);
+
     const amenities = [
         { text: 'Entry/Exit', icon: '/icons/Ear Master Plan Icon-06.webp' },
         { text: 'Entrance Archway', icon: '/icons/Ear Master Plan Icon-07.webp' },
@@ -28,43 +31,23 @@ export default function MasterPlanSection() {
         { text: 'Services', icon: '/icons/Ear Master Plan Icon-07.webp' }
     ];
 
-    // Split the array into three columns to match the visual layout in the image
-    const col1 = amenities.slice(0, 6); // Items 1-8
-    const col2 = amenities.slice(8, 14); // Items 9-15
-    const col3 = amenities.slice(15, 21); // Items 16-23
+    const col1 = amenities.slice(0, 6);
+    const col2 = amenities.slice(8, 14);
+    const col3 = amenities.slice(15, 21);
 
-    // Combine into an array of columns for easier mapping
-    const columns = [col1, col2, col3];
-
-    /**
-     * Helper function to render a column of amenities.
-     * @param {Array} column - The array of amenities for the column.
-     * @param {number} startNumber - The starting number for the items in this column.
-     */
     const renderAmenityColumn = (column, startNumber) => (
         <div className="col-md-4">
             {column.map((item, index) => (
-                <div
-                    key={index}
-                    // Adjusted classes to better handle the item structure and spacing
-                    className="mb-4 d-flex align-items-center m-center  ps-0 ps-md-3"
-                >
-                    <div className="d-flex align-items-center justify-content-center ">
-                        {/* Number Circle */}
+                <div key={index} className="mb-4 d-flex align-items-center m-center ps-0 ps-md-3">
+                    <div className="d-flex align-items-center justify-content-center">
                         <span
                             className="accent-bg theme-color-light rounded-circle d-flex align-items-center justify-content-center me-3"
-                            style={{
-                                width: "34px",
-                                height: "34px",
-                                fontSize: "14px",
-                                flexShrink: 0,
-                            }}
+                            style={{ width: "34px", height: "34px", fontSize: "14px", flexShrink: 0 }}
                         >
-                            {startNumber + index} {/* Correct numbering for each column */}
+                            {startNumber + index}
                         </span>
-                        {/* Amenity Text */}
                         <div className="amenity-text theme-color-dark fw-semibold d-flex align-items-center justify-content-center">
-                            <p className='mb-0 lh-sm text-start m-center'>{item.text}</p>
+                            <p className="mb-0 lh-sm text-start m-center">{item.text}</p>
                         </div>
                     </div>
                 </div>
@@ -73,64 +56,74 @@ export default function MasterPlanSection() {
     );
 
     return (
-        <section
-            data-w-id="8905ac58-eaf7-356f-bf47-4ad8001e257f"
-            className="section_home-masterplan theme-bg-light lifestyle-section py-5"
-            id="master-plan"
-        >
+        <section className="section_home-masterplan theme-bg-light lifestyle-section py-5" id="master-plan">
             <div className="container">
                 <div className="row align-items-center">
-
-                    {/* Right Column - Amenities (Now taking more space for the 3 columns) */}
-                    <div className="col-md-12  d-block mx-auto">
-
+                    <div className="col-md-12 d-block mx-auto">
                         <div className="row">
-
-                            <div className="col-md-6 px-md-4 d-flex align-items-center">
-                                <div>
-                                    <div className="text-center m-center  ps-md-3">
-                                        <h2 className="text-color-dark-rainforest theme-color-dark mb-md-0 mb-5 m-center d-none d-md-block">
-                                            Master Plan
-                                        </h2>
+                            <div className="col-md-12 mb-5 d-flex align-items-center">
+                                <div className="text-center">
+                                    <h2 className="text-color-dark-rainforest theme-color-dark mb-md-0 mb-5 m-center">
+                                        Master Plan
+                                    </h2>
+                                    {/* Masterplan Image with Clickable Popup */}
+                                    <div
+                                        className="position-relative cursor-pointer"
+                                        onClick={() => setIsOpen(true)}
+                                    >
+                                        <Image
+                                            width={633}
+                                            height={444}
+                                            src="/images/Master-Plan_New.png"
+                                            loading="lazy"
+                                            alt="Eara Master Plan"
+                                            className="w-100 img-fluid mt-md-4"
+                                        />
                                     </div>
+                                </div>
+                            </div>
 
+                            {/* Hidden Columns (optional) */}
+                            <div className="col-md-12 px-md-4 d-none">
+                                <div>
                                     <div className="row justify-content-center text-start d-none">
-                                        {/* Column 1: Items 1-8 */}
                                         {renderAmenityColumn(col1, 1)}
-
-                                        {/* Column 2: Items 9-15 */}
                                         {renderAmenityColumn(col2, 9)}
-
-                                        {/* Column 3: Items 16-23 */}
                                         {renderAmenityColumn(col3, 16)}
                                     </div>
                                 </div>
-
-
-
-                            </div>
-                            {/* Left Column - Masterplan Image (Reduced width to make space for the amenity columns) */}
-                            <div className="col-md-6 mb-5 d-flex align-items-center ">
-                                <div>
-                                <h2 className="text-color-dark-rainforest theme-color-dark mb-md-0 mb-5 m-center d-md-none">
-                                            Master Plan
-                                        </h2>
-                                    <Image
-                                        width={633}
-                                        height={444}
-                                        src="/images/MasterPlan_.webp"
-                                        loading="lazy"
-                                        alt="Eara Master Plan"
-                                        className="w-100  img-fluid mt-md-4"
-                                    />
-                                </div>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            {/* Popup / Modal */}
+            {isOpen && (
+                <div
+                    className="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                    style={{ backgroundColor: 'rgba(0,0,0,0.8)', zIndex: 2000 }}
+                    onClick={() => setIsOpen(false)}
+                >
+                    <div className="position-relative">
+                        <Image
+                            src="/images/Master-Plan_New.png"
+                            width={900}
+                            height={700}
+                            alt="Master Plan Popup"
+                            className="img-fluid rounded"
+                            style={{cursor:"pointer !important"}}
+                        />
+                        <button
+                            className="position-absolute top-0 end-0 btn btn-sm btn-light"
+                            style={{ fontWeight: 'bold' }}
+                            onClick={() => setIsOpen(false)}
+                        >
+                            ×
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }

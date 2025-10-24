@@ -6303,9 +6303,10 @@ fieldset:disabled .btn {
   opacity: 0
 }
 
-.modal-backdrop.show {
-  opacity: var(--bs-backdrop-opacity)
-}
+/* .modal-backdrop.show {
+  opacity: 0 !important;
+  z-index: 9999999999999999 !important;
+} */
 
 .modal-header {
   display: flex;
@@ -19405,3 +19406,6 @@ footer textarea::placeholder {
 .border-theme {border:1px solid #f7e1cb !important}
 .gallery .swiper-button-prev::after,.gallery .swiper-button-next::after {color:#352822 !important }
 .construction .swiper-button-prev::after,.construction .swiper-button-next::after {color:#FBE5CE !important }
+.theme-logo {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(1674%) hue-rotate(335deg) brightness(102%) contrast(83%);
+}

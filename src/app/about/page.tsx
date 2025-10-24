@@ -3,9 +3,9 @@ import Link from "next/link";
 import "./../about.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
 export const metadata = {
-  title: 'Premium Residential Plots for Sale in Kanakapura Road: Eara Group',
-  description: 'Discover Premium Villa Plots in Kanakapura Road by Eara Group. Invest in spacious, well-planned plots with excellent connectivity and modern amenities.',
-  keywords : 'BMRDA Residential Plot in Kanakapura Road, Premium Villa Plots in Kanakapura Road, Premium Residential Plots in Kanakapura Road, Plots for Sale in Kanakapura Road',
+  title: 'Premium Residential Plots for Sale in Kanakapura Main Road: Eara Group',
+  description: 'Discover Premium Villa Plots in Kanakapura Main Road by Eara Group. Invest in spacious, well-planned plots with excellent connectivity and modern amenities.',
+  keywords : 'BMRDA Residential Plot in Kanakapura Main Road, Premium Villa Plots in Kanakapura Main Road, Premium Residential Plots in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road',
   alternates: {
     canonical: 'https://earagroup.com/about/',
   },
@@ -19,7 +19,7 @@ export default function About() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/About_new-new.webp"
+                src="/images/About_new copy_Eara.webp"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"

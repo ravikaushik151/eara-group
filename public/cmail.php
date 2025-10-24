@@ -1,10 +1,14 @@
 <?php
-header('Content-Type: text/plain');
+header('Content-Type: text/plain'); // Ensure the response is plain text
 
-// ====== CONFIG ======
-$adminEmail = "info@imsolutions.mobi";  // Main recipient
-$additionalRecipients = ['ravi.k@imsolutions.mobi','lokesh@imsolutions.mobi']; // Others who should also get a copy
-// ====================
+// --- Configuration ---
+// Main recipient
+$adminEmail = "lokesh@imsolutions.mobi";  
+// Additional recipients
+$additionalRecipients = ['ravi.k@imsolutions.mobi', 'lokesh@imsolutions.mobi']; 
+// MUST be a verified, existing email on your domain for best delivery and spam prevention.
+$fromEmail = "noreply@earagroup.com"; 
+// ---------------------
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -15,52 +19,55 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
 
     // Basic validation
-    if (empty($name) || empty($email) || empty($phone)) {
-        echo "Error: All fields are required";
-        exit;
-    }
-
-    if (!$email) {
-        echo "Error: Invalid email address";
+    if (empty($name) || !$email || empty($phone)) {
+        echo "Error: Name, email, and phone are required.";
         exit;
     }
 
     // Email subject and body
-    $subject = "New Channel Partner Request";
+    $subject = "Enquiry from EARA Group Website";
     $body = "
-        <h2>New Channel Partner Request</h2>
+        <h2>New Contact Request</h2>
         <p><strong>Name:</strong> $name</p>
         <p><strong>Email:</strong> $email</p>
         <p><strong>Phone:</strong> $phone</p>
         <p><strong>Message:</strong> $message</p>
         <hr />
-        <p>This message was sent via the Channel Partner form on your website.</p>
+        <p>This message was sent via the contact form on your website.</p>
     ";
 
-    // Common headers
+    // Common headers - Using Reply-To for the user's email
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: noreply <noreply@earagroup.com>" . "\r\n";
+    // Sender is a non-monitored, internal address (Use Reply-To to respond to the user)
+    $headers .= "From: EARA Group Contact Form <$fromEmail>" . "\r\n"; 
+    // This allows the recipient to hit 'Reply' and send a message back to the user
+    $headers .= "Reply-To: $name <$email>" . "\r\n"; 
 
-    // Merge all recipients
-    $recipients = array_merge([$adminEmail], $additionalRecipients);
-    $sentCount = 0;
+    // Prepare all recipients in one array and remove duplicates
+    $recipients = array_unique(array_filter(array_merge([$adminEmail], $additionalRecipients)));
+    $successCount = 0;
+    
+    // Use the fifth parameter to set the envelope sender, which helps prevent spam
+    $safe_sender_param = "-f$fromEmail"; 
 
-    // Send separate mail to each recipient
+    // Send separate email to each recipient
     foreach ($recipients as $recipient) {
-        if (mail($recipient, $subject, $body, $headers, "-fnoreply@earagroup.com")) {
-            $sentCount++;
+        // Use the optional fifth parameter for better mail delivery
+        if (mail($recipient, $subject, $body, $headers, $safe_sender_param)) {
+            $successCount++;
         }
     }
 
-    // Response
-    if ($sentCount === count($recipients)) {
-        echo "Email sent successfully to all recipients";
+    // Final response for the client (React component)
+    if ($successCount === count($recipients)) {
+        echo "success"; // ECHO ONLY 'success' for the client to read
     } else {
-        echo "Error: Some emails could not be sent ($sentCount of " . count($recipients) . ")";
+        // Detailed error message if some mails failed
+        echo "Error: Partial failure - Only $successCount of " . count($recipients) . " emails were sent successfully. Check mail server logs.";
     }
 
 } else {
-    echo "Invalid request";
+    echo "Invalid request method";
 }
 ?>

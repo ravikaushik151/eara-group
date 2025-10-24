@@ -1,5 +1,5 @@
-"use client";
-import { useState, ChangeEvent, FormEvent } from "react";
+'use client';
+import { useState, ChangeEvent, FormEvent } from 'react';
 
 interface FormData {
   name: string;
@@ -9,36 +9,28 @@ interface FormData {
 }
 
 interface ContactFormProps {
-  showMessage?: boolean;
   inputClass?: string;
   buttonClass?: string;
-  hideMessageField?: boolean; // hide textarea
-  defaultMessage?: string; // default message
-  redirectUrl?: string; // optional redirect
-  autoDownloadPdf?: string; // optional PDF download URL
-  phpEndpoint?: string; // default "mail.php"
+  hideMessageField?: boolean;
+  defaultMessage?: string;
 }
 
 export default function ContactForm({
-  showMessage = true,
-  inputClass = "form-control mb-2",
-  buttonClass = "btn btn-primary",
+  inputClass = 'footer-input rounded-0 mb-2',
+  buttonClass = 'btn theme-bg-light text-dark mb-3',
   hideMessageField = false,
-  defaultMessage = "",
-  redirectUrl,
-  autoDownloadPdf,
-  phpEndpoint = "mail.php",
+  defaultMessage = '',
 }: ContactFormProps) {
   const [form, setForm] = useState<FormData>({
-    name: "",
-    email: "",
-    mobile: "",
+    name: '',
+    email: '',
+    mobile: '',
     message: defaultMessage,
   });
 
   const [loading, setLoading] = useState(false);
+  const [note, setNote] = useState('');
   const [success, setSuccess] = useState(false);
-  const [note, setNote] = useState("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -46,69 +38,64 @@ export default function ContactForm({
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setSuccess(false);
-    setNote("");
 
-    // Basic validation
+    // Validation
     if (!form.name || !form.email || !form.mobile) {
-      setNote("All fields are required!");
-      setLoading(false);
+      setNote('All fields are required!');
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(form.email)) {
-      setNote("Enter a valid email address!");
-      setLoading(false);
+      setNote('Enter a valid email address!');
       return;
     }
 
-    try {
-      // Prepare form data for PHP endpoint
-      const formData = new FormData();
-      formData.append("name", form.name);
-      formData.append("email", form.email);
-      formData.append("phone", form.mobile);
-      formData.append("message", form.message);
-
-      const response = await fetch(phpEndpoint, {
-        method: "POST",
-        body: formData,
-      });
-
-      const resultText = await response.text();
-
-      if (response.ok && resultText.includes("success")) {
-        setSuccess(true);
-        setForm({ name: "", email: "", mobile: "", message: defaultMessage });
-        setNote("");
-
-        // Auto-download PDF if provided
-        if (autoDownloadPdf) {
-          const link = document.createElement("a");
-          link.href = autoDownloadPdf;
-          link.download = autoDownloadPdf.split("/").pop() || "download.pdf";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        }
-
-        // Optional redirect
-        if (redirectUrl) {
-          setTimeout(() => {
-            window.location.href = redirectUrl;
-          }, 2000);
-        }
-      } else {
-        setNote("Error sending email. Please try again.");
-      }
-    } catch (err) {
-      console.error("Submit error:", err);
-      setNote("Network error. Try again later.");
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(form.mobile)) {
+      setNote('Phone number must be 10 digits!');
+      return;
     }
 
-    setLoading(false);
+    setLoading(true);
+    setNote('Please wait...');
+    setSuccess(false);
+
+    const payload = {
+      name: form.name,
+      email: form.email,
+      phone: form.mobile,
+      message: form.message || 'interested',
+      subject: 'Eara Group - Website',
+      form_source: 'Eara Group - Website',
+      additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
+    };
+
+    try {
+      const res = await fetch(
+        'https://us-central1-email-js-1a09b.cloudfunctions.net/emailjs/submit-form',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const text = await res.text();
+
+      if (text.trim() === 'Email sent successfully') {
+        setSuccess(true);
+        setNote('Email sent successfully!');
+        setForm({ name: '', email: '', mobile: '', message: defaultMessage });
+      } else {
+        setNote(text || 'Error sending email.');
+      }
+    } catch (err) {
+      console.error(err);
+      setNote('Network error. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -117,55 +104,49 @@ export default function ContactForm({
         type="text"
         name="name"
         placeholder="Name"
-        required
         value={form.name}
         onChange={handleChange}
         className={inputClass}
+        required
       />
       <input
         type="email"
         name="email"
         placeholder="Email"
-        required
         value={form.email}
         onChange={handleChange}
         className={inputClass}
+        required
       />
       <input
         type="tel"
         name="mobile"
         placeholder="Mobile"
-        required
         value={form.mobile}
         onChange={handleChange}
         className={inputClass}
+        required
       />
-
       {!hideMessageField && (
         <textarea
           name="message"
           placeholder="Message"
-          required
           value={form.message}
           onChange={handleChange}
           className={inputClass}
         />
       )}
 
-      <div className="text-start">
-        <button type="submit" disabled={loading} className={buttonClass}>
-          {loading ? "Sending..." : "Submit"}
+      <div className="text-center">
+        <button type="submit" className={buttonClass} disabled={loading}>
+          {loading ? 'Sending...' : 'Submit'}
         </button>
       </div>
 
-      {note && <p className="text-danger mt-2">{note}</p>}
-
-      {success && showMessage && (
-        <div className="text-center">
-          <p className="text-success mt-2">
-            ✅ Thank you! We’ll get back to you soon.
-          </p>
-        </div>
+      {note && (
+        <p className={`my-2 ${success ? 'text-success' : 'text-danger'}`} style={{ fontWeight: 600 }}>
+          {note}
+        </p>
       )}
     </form>
   );

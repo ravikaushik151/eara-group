@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Connect with EARA Group for real estate queries. Visit our contact page for office details, email, and more—we’re always ready to guide and assist you.",
   keywords:
-    "Plots near Kanakapura Road, Villa plots in kanakapura road, Plots in kanakapura road, Sites in kanakapura road",
+    "Plots near Kanakapura Main Road, Villa plots in Kanakapura Main Road, Plots in Kanakapura Main Road, Sites in Kanakapura Main Road",
   alternates: {
     canonical: "https://earagroup.com/contact/",
   },

@@ -3,9 +3,9 @@ import Link from "next/link";
 import "./../project.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
 export const metadata = {
-    title: 'Amidst Nature Location: Luxury Living on Kanakapura Road',
-    description: 'Discover serenity at Amidst Nature, Kanakapura Road. Enjoy lush greenery, peaceful surroundings, and modern comforts in this beautiful, tranquil location.',
-    keywords : 'Amidst Nature Address, Amidst Nature Reviews, Amidst Nature Price, Amidst Nature Kanakapura Road',
+    title: 'Amidst Nature Location: Luxury Living on Kanakapura Main Road',
+    description: 'Discover serenity at Amidst Nature, Kanakapura Main Road. Enjoy lush greenery, peaceful surroundings, and modern comforts in this beautiful, tranquil location.',
+    keywords : 'Amidst Nature Address, Amidst Nature Reviews, Amidst Nature Price, Amidst Nature Kanakapura Main Road',
     alternates: {
       canonical: 'https://earagroup.com/project/',
     },
@@ -54,7 +54,7 @@ export default function Project() {
                             <div className="mb-md-0">
                                 <h2 className="mb-3 theme-color-dark text-center">Amidst Nature</h2>
                                 <p className="fs-4 theme-color-dark text-center">
-                                    Crafted by Earth. Designed by EARA Group.
+                                Where <span className="text-success">Green</span> is the New <span style={{color:"#a18f5c !important"}}>Gold</span>
                                 </p>
                                 <p className="mt-4 theme-color-dark text-center ">
                                     <strong>
@@ -62,7 +62,7 @@ export default function Project() {
                                         mornings, golden silence, and grounded luxury.
                                     </strong>
                                     <br />
-                                    Spread across 18+ lush acres in Kaggalipura, just off Kanakapura
+                                    Spread across 18+ lush acres in Kaggalipura, just off Kanakapura Main
                                     Road, this premium plotted development invites you to design your
                                     forever home in a place where the city fades and nature speaks.
                                     Thoughtfully approved by BMRDA and connected to every urban
@@ -72,7 +72,7 @@ export default function Project() {
 
                                 <div className="text-center">
                                     <Link href="/amidstnature" className="btn theme-bg-dark text-light mt-4  mb-md-5">
-                                        Know More
+                                        Explore More
                                     </Link>
                                 </div>
                             </div>

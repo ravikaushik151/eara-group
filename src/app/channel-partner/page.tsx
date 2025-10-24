@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Invest in Eara Group luxury villa plots near Kaggalipura. Enjoy a prime location, serene surroundings, and premium amenities for your perfect dream home.",
   keywords:
-    "Premium Villa Plots in Kaggalipura, Luxury Villa Plots for Sale near Kaggalipura, Villa Plots in Kaggalipura, Plots for sale near Kanakapura Road",
+    "Premium Villa Plots in Kaggalipura, Luxury Villa Plots for Sale near Kaggalipura, Villa Plots in Kaggalipura, Plots for sale near Kanakapura Main Road",
   alternates: {
     canonical: "https://earagroup.com/channel-partner/",
   },

@@ -209,7 +209,7 @@ export default function Home() {
                       </div>
                       <div className="noclass">
                         <p className="text-justify m-center lh text-black mt-3">
-                          Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot — it’s a path back to balance.
+                          Spread across 15 lush acres in Kaggalipura, just Off Kanakapura Main  Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot — it’s a path back to balance.
                         </p>
                       </div>
                       <div className="row align-items-center mb-3 mt-4 mob-center">
@@ -284,13 +284,13 @@ export default function Home() {
                           <span className="theme-color-light  m-center">
 
                             <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 theme-color-light m-center" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" /></svg>
-                            Kaggalipura, Off Kanakapura Road
+                            Kaggalipura, Off Kanakapura Main  Road
                           </span>
                         </p>
                       </div>
                       <div className="noclass">
                         <p className="text-justify m-center lh text-black mt-3 theme-color-light">
-                          The project is nestled just off Kanakapura Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.
+                          The project is nestled just Off Kanakapura Main  Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.
                         </p>
                       </div>
                       <div className="row align-items-start mb-3 mt-4 mob-center">
@@ -313,7 +313,7 @@ export default function Home() {
                           href="/amidstnature"
                           className="btn theme-bg-light"
                         >
-                          More Details
+                          Explore More
                         </a>
                       </p>
                     </div>

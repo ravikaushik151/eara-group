@@ -1,11 +1,12 @@
 <?php
 header('Content-Type: text/plain');
 
-// Main recipient
-$adminEmail = "info@imsolutions.mobi";  
-
-// Additional recipients (each will get their own mail)
-$additionalRecipients = ['ravi.k@imsolutions.mobi','lokesh@imsolutions.mobi']; 
+// --- Configuration ---
+$adminEmail = "lokesh@imsolutions.mobi"; 
+$additionalRecipients = ['ravi.k@imsolutions.mobi', 'lokesh@imsolutions.mobi']; 
+// CRUCIAL: Must be a verified, existing email on your server's domain for reliability
+$fromEmail = "noreply@earagroup.com"; 
+// ---------------------
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
@@ -16,13 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
 
     // Basic validation
-    if (empty($name) || empty($email) || empty($phone)) {
-        echo "Error: All fields are required";
-        exit;
-    }
-
-    if (!$email) {
-        echo "Error: Invalid email address";
+    if (empty($name) || !$email || empty($phone)) {
+        echo "Error: Name, valid email, and phone are required."; // Updated error message
         exit;
     }
 
@@ -38,27 +34,36 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p>This message was sent via the contact form on your website.</p>
     ";
 
-    // Common headers
+    // Common headers - Ensure the From header is clean
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: noreply <noreply@earagroup.com>" . "\r\n";
+    // Sender is set using the variable
+    $headers .= "From: EARA Group Contact Form <" . $fromEmail . ">" . "\r\n"; 
+    // This allows the recipient to hit 'Reply' and send a message back to the user
+    $headers .= "Reply-To: " . $name . " <" . $email . ">" . "\r\n"; 
 
-    // Prepare all recipients in one array
-    $recipients = array_merge([$adminEmail], $additionalRecipients);
+    // Prepare all unique recipients
+    $recipients = array_unique(array_filter(array_merge([$adminEmail], $additionalRecipients)));
     $successCount = 0;
+    
+    // Add an extra parameter to the mail function to prevent being marked as spam
+    // This sets the envelope sender, which is crucial for deliverability.
+    $safe_sender_param = "-f" . $fromEmail; 
 
-    // Send separate email to each recipient
+    // Send separate email to each recipient (This is already correct)
     foreach ($recipients as $recipient) {
-        if (mail($recipient, $subject, $body, $headers, "-fnoreply@earagroup.com")) {
+        // Use the fifth parameter for the safe sender envelope address
+        if (mail($recipient, $subject, $body, $headers, $safe_sender_param)) {
             $successCount++;
         }
     }
 
-    // Final response
+    // Final response for the client (React component)
     if ($successCount === count($recipients)) {
-        echo "Email sent successfully to all recipients";
+        echo "success"; // SUCCESS must be the exact response text for the React component
     } else {
-        echo "Error: Some emails could not be sent ($successCount of " . count($recipients) . ")";
+        // This response triggers the client's "Error sending email..." message
+        echo "Error: Mail function failed to send to all recipients. Check server logs.";
     }
 
 } else {

@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 import AmenitiesMarquee from "../components/AmenitiesMarquee";
+import FooterModalForm from "../components/FooterModalForm";
 import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
 import MasterPlanSection from "../components/Microsite/MasterPlanSection";
@@ -23,7 +24,7 @@ export default function Home() {
     <li>DAYANANDA SAGAR BUSINESS ACADEMY 06 MINS</li>
     <li>JAIN UNIVERSITY (GLOBAL CAMPUS) 48 MINS</li>
     <li>DAYANANDA SAGAR MEDICAL COLLEGE 30 MINS</li>
-    <li>RASHTROTTHANA SCHOOL, KANAKAPURA ROAD 10 MINS</li>
+    <li>RASHTROTTHANA SCHOOL, KANAKAPURA MAIN ROAD 10 MINS</li>
   </ul>
 ` },
     {
@@ -38,13 +39,28 @@ export default function Home() {
       id: 3, title: 'LEISURE & HOTSPOTS', content: `<ul dir="ltr">
     <li>ART OF LIVING INTERNATIONAL CENTRE 07 MINS</li>
     <li>TURAHALLI FOREST &amp; CYCLING TRAILS 15 MINS</li>
-    <li>VAISHANVI PALACE 07 MINS</li>
+
     <li>GUHANTRA 12 MINS</li>
-    <li>METRO STATION (UPCOMING) 15 MINS</li>
+    <li>METRO STATION (UPCOMING) 5 MINS</li>
     <li>FORUM MALL SOUTH 18 MINS</li>
     <li>BIRDS OF PARADISE 14 MINS</li>
   </ul>
   ` },
+    {
+      id: 4, title: 'WORKPLACE AND CONNECTIVITY ', content: `<ul dir="ltr">
+        <li>WHITEFIELD: 45 MINUTES</li>
+        <li>ELECTRONIC CITY: 30 MINUTES</li>
+        <li> HAROHALLI INDUSTRIAL AREA: 20 MINUTES</li>
+  
+      </ul>
+    ` },
+    {
+      id: 5, title: 'SUPERIOR CONNECTIVITY', content: `<ul dir="ltr">
+          <li>PROJECT IS 200 METERS FROM PROPOSED PRR 2.</li>
+          <li>10 MINUTES FROM NICE ROAD JUNCTION.</li>
+         
+      </ul>
+    ` },
   ];
   useEffect(() => {
 
@@ -91,7 +107,7 @@ export default function Home() {
                   <span className="mb-0 fs-2 fw-light theme-color-light">18+  Acres</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved</h6>
+                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved By</h6>
                   <span className="mb-0 fs-2 fw-light theme-color-light">BMRDA</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light mt-4 mt-md-0">
@@ -119,10 +135,12 @@ export default function Home() {
                 <div className="col-md-6 d-flex align-items-center" >
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark text-center">Amidst Nature</h2>
-                    <span className="fs-5 theme-color-dark text-center d-block">Where Green is the New Gold” across the website</span>
+                    <span className="fs-5 theme-color-dark text-center d-block">Where <span className="text-success">Green</span> is the New <span style={{ color: "#a18f5c !important" }}>Gold</span></span>
                     <p className="mt-4  theme-color-dark">
-                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong><strong><br /></strong>Spread across 18+ lush acres in Kaggalipura, just off Kanakapura Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot - it&rsquo;s a path back to balance.
+                      <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong></p>
+                    <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
                     </p>
+                    <div className="text-center  my-4"> <a href="#" className="theme-bg-dark theme-color-light px-3 py-2 text-decoration-none rounded-2 ">Download Brochure</a></div>
                   </div>
                 </div>
                 <div className="col-md-6 ">
@@ -319,12 +337,12 @@ export default function Home() {
                           <span className="text-white">
                             Kaggalipura,
                           </span>{" "}
-                          Off Kanakapura Road, Bengaluru.
+                          Off Kanakapura Main  Road, Bengaluru.
                         </h3>
                       </div>
                       <div className="w-100">
                         <div className="text-size-regular text-color-offwhite theme-color-light m-center">
-                          Surrounded by serene greenery and nestled along the city’s fast-developing Kanakapura stretch, Kaggalipura is a peaceful retreat that’s seamlessly connected to Bengaluru’s most prominent hubs. With wide roads, clean air, and spiritual landmarks nearby, it’s not just a location — it’s a lifestyle.
+                          Surrounded by serene greenery and nestled along the city&rsquo;s fast-developing Kanakapura stretch, Amidst Nature in Kaggalipura is a peaceful retreat that&rsquo;s seamlessly connected to Bengaluru&rsquo;s most prominent hubs. With wide roads, clean air, and spiritual landmarks nearby, it&rsquo;s not just a location - it&rsquo;s a lifestyle.
                         </div>
                       </div>
                     </div>
@@ -427,8 +445,55 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </div>
-      </main>
+
+          <section className="section_home-masterplan theme-bg-light lifestyle-section py-5" id="master-plan">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-12 d-block mx-auto">
+                  <div className="row">
+                    <div className="col-md-12 mb-5">
+                      <div className="text-center">
+                        <h2 className="text-color-dark-rainforest theme-color-dark mb-md-4 mb-4 m-center text-center">
+                          About the Developer
+                        </h2>
+                        {/* Masterplan Image with Clickable Popup */}
+                        <div
+
+                        >
+                          <Image
+                            src="/images/logo-dark.webp"
+                            alt="logo"
+                            width={150}
+                            height={66}
+                            className="logo theme-logo mb-3 d-block mx-auto"
+                          />
+
+                          <p className="theme-color-dark text-center">We don&#39;t chase trends - we grow value.<br />
+                            With every project, we honour land and its legacy.<br />
+                            We build for those who think deeper.</p>
+
+                          <p className="theme-color-dark text-center">At EARA Group, we&#39;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                            Backed by 20 years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living&nbsp;at&nbsp;its&nbsp;core.</p>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Hidden Columns (optional) */}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </section>
+          
+          <FooterModalForm autoShowTime={5000} />
+        </div >
+      </main >
+      
     </>
   );
 }
