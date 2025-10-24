@@ -21,14 +21,14 @@ export default function Construction() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); // Use <any> for Swiper instance state
   // NEW: State to hold the main Swiper instance
-  const [mainSwiper, setMainSwiper] = useState<any>(null); 
+  const [mainSwiper, setMainSwiper] = useState<any>(null);
 
   // Function to handle slide click and update main swiper
   const handleSlideClick = (slideSrc: string, index: number) => {
     // 1. Programmatically slide the main Swiper to the clicked slide
     if (mainSwiper) {
-        // use slideToLoop for Swipers with loop: true
-        mainSwiper.slideToLoop(index, 500); 
+      // use slideToLoop for Swipers with loop: true
+      mainSwiper.slideToLoop(index, 500);
     }
     // 2. Open the popup
     setPopupImage(slideSrc);
@@ -36,11 +36,11 @@ export default function Construction() {
 
   // NEW: Handler to sync main Swiper when thumbnail Swiper scrolls/changes
   const handleThumbScroll = (swiper: any) => {
-      if (mainSwiper && !swiper.params.cssMode) {
-          // Get the real index to handle looping correctly
-          const newIndex = swiper.realIndex;
-          mainSwiper.slideToLoop(newIndex, 0); // Slide immediately (0ms transition)
-      }
+    if (mainSwiper && !swiper.params.cssMode) {
+      // Get the real index to handle looping correctly
+      const newIndex = swiper.realIndex;
+      mainSwiper.slideToLoop(newIndex, 0); // Slide immediately (0ms transition)
+    }
   };
 
   return (
@@ -55,58 +55,14 @@ export default function Construction() {
 
         {/* === Main Content Area: Row with Columns === */}
         <div className="row">
-            
-          {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
-          {/* IMPORTANT: Added position-relative to anchor the custom navigation buttons */}
-          <div className="col-md-4 mt-md-0 d-none d-md-block position-relative thumbnail-wrapper-construction"> 
-            <Swiper
-              // NOTE: Added Mousewheel module here
-              modules={[Navigation, Thumbs, Mousewheel]} 
-              onSwiper={setThumbsSwiper} 
-              direction={'vertical'} 
-              spaceBetween={10}
-              slidesPerView={2} // Adjusted to 3 for better vertical look
-              freeMode={true}
-              watchSlidesProgress={true}
-              loop={true}
-              // NEW: Enable Mousewheel control
-              mousewheel={true} 
-              // NEW: Use onSlideChangeTransitionEnd to sync main slider
-              onSlideChangeTransitionEnd={handleThumbScroll}
-              // Set up navigation for custom buttons
-              navigation={{
-                nextEl: '.swiper-button-next-thumbs-construction', 
-                prevEl: '.swiper-button-prev-thumbs-construction', 
-              }}
-              className="mySwiper-thumbs-construction h-100"
-            >
-              {slides.map((slide, index) => (
-                <SwiperSlide key={index} className="relative">
-                  <Image
-                    src={slide.src}
-                    alt={slide.alt}
-                    width={350}
-                    height={155}
-                    className="img-fluid rounded-2 swiper-thumb-image-construction"
-                    loading="lazy"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            
-            {/* Custom Navigation Buttons (outside the Swiper) */}
-            {/* <div className="swiper-button-prev swiper-button-prev-thumbs-construction theme-bg-light"></div>
-            <div className="swiper-button-next swiper-button-next-thumbs-construction theme-bg-light"></div> */}
-          </div>
-          
           {/* === 1. Main Swiper (col-md-8) === */}
-          <div className="col-md-8 position-relative pe-md-4"> 
+          <div className="col-md-8 position-relative d-flex align-items-center">
             <Swiper
               onSwiper={setMainSwiper} // Get the main Swiper instance
               modules={[Autoplay, Navigation, Thumbs, Controller]}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               loop={true}
-              spaceBetween={10}
+              spaceBetween={15}
               slidesPerView={1}
               navigation={{
                 nextEl: '.swiper-button-next-main-construction',
@@ -122,6 +78,7 @@ export default function Construction() {
                     alt={slide.alt}
                     width={1920}
                     height={1080}
+                    
                     className="img-fluid rounded-xl"
                     loading="lazy"
                     style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
@@ -129,18 +86,62 @@ export default function Construction() {
                   />
                 </SwiperSlide>
               ))}
-              
+
               {/* Swiper navigation buttons for the Main Slider */}
-              {/* <div
-                className="swiper-button-prev swiper-button-prev-main-construction theme-bg-dark"
+              <div
+                className="swiper-button-prev swiper-button-prev-main-construction theme-bg-dark d-md-none"
                 style={{ color: '#fff', left: '0', zIndex: 10 }}
               ></div>
               <div
-                className="swiper-button-next swiper-button-next-main-construction theme-bg-dark"
+                className="swiper-button-next swiper-button-next-main-construction theme-bg-dark d-md-none"
                 style={{ color: '#fff', right: '0', zIndex: 10 }}
-              ></div> */}
+              ></div>
             </Swiper>
           </div>
+          {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
+          {/* IMPORTANT: Added position-relative to anchor the custom navigation buttons */}
+          <div className="col-md-4 mt-md-0 d-none d-md-block position-relative thumbnail-wrapper-construction">
+            <Swiper
+              // NOTE: Added Mousewheel module here
+              modules={[Navigation, Thumbs, Mousewheel]}
+              onSwiper={setThumbsSwiper}
+              direction={'vertical'}
+              spaceBetween={10}
+              slidesPerView={2} // Adjusted to 3 for better vertical look
+              freeMode={true}
+              watchSlidesProgress={true}
+              loop={true}
+              // NEW: Enable Mousewheel control
+              mousewheel={true}
+              // NEW: Use onSlideChangeTransitionEnd to sync main slider
+              onSlideChangeTransitionEnd={handleThumbScroll}
+              // Set up navigation for custom buttons
+              navigation={{
+                nextEl: '.swiper-button-next-thumbs-construction',
+                prevEl: '.swiper-button-prev-thumbs-construction',
+              }}
+              className="mySwiper-thumbs-construction h-100"
+            >
+              {slides.map((slide, index) => (
+                <SwiperSlide key={index} className="relative ">
+                  <Image
+                    src={slide.src}
+                    alt={slide.alt}
+                    width={350}
+                    height={155}
+                    className="img-fluid rounded-2  swiper-thumb-image-construction"
+                    loading="lazy"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* Custom Navigation Buttons (outside the Swiper) */}
+            {/* <div className="swiper-button-prev swiper-button-prev-thumbs-construction theme-bg-light"></div>
+            <div className="swiper-button-next swiper-button-next-thumbs-construction theme-bg-light"></div> */}
+          </div>
+
+
         </div>
       </div>
 
@@ -262,11 +263,10 @@ export default function Construction() {
             font-size: 1.2rem;
         }
 
-        /* Ensure theme classes have colors for clarity */
-        .theme-bg-dark { background-color: #352822 !important; }
-        .theme-color-dark { color: #352822 !important; }
-        .theme-bg-light { background-color: #fff !important; }
-        .theme-color-light { color: #fff !important; }
+        .swiper-button-next-main-construction {right:10px !important;}
+        .swiper-button-prev-main-construction {left:10px !important}
+      
+       
 
       `}</style>
     </section>

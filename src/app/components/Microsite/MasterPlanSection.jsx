@@ -89,7 +89,7 @@ export default function MasterPlanSection() {
                             <div className="col-md-6 px-md-4 d-flex align-items-center">
                                 <div>
                                     <div className="text-center m-center  ps-md-3">
-                                        <h2 className="text-color-dark-rainforest theme-color-dark mb-0">
+                                        <h2 className="text-color-dark-rainforest theme-color-dark mb-md-0 mb-5 m-center d-none d-md-block">
                                             Master Plan
                                         </h2>
                                     </div>
@@ -112,7 +112,9 @@ export default function MasterPlanSection() {
                             {/* Left Column - Masterplan Image (Reduced width to make space for the amenity columns) */}
                             <div className="col-md-6 mb-5 d-flex align-items-center ">
                                 <div>
-                                    <p className='py-4 d-md-block d-none'> &nbsp;</p>
+                                <h2 className="text-color-dark-rainforest theme-color-dark mb-md-0 mb-5 m-center d-md-none">
+                                            Master Plan
+                                        </h2>
                                     <Image
                                         width={633}
                                         height={444}

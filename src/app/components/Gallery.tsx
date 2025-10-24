@@ -44,7 +44,7 @@ export default function Gallery() {
 
   return (
     <section
-      className="gallery-section same-gap gallery theme-bg-dark py-5"
+      className="gallery-section same-gap gallery theme-bg-dark py-5 "
       id="gallery"
     >
       <div className="container">
@@ -56,29 +56,30 @@ export default function Gallery() {
         <div className="row">
 
           {/* === 1. Main Swiper (col-md-8) === */}
-          <div className="col-md-8 position-relative pe-md-4 d-flex align-items-center">
+          <div className="col-md-8 position-relative   d-flex align-items-center">
             <Swiper
               onSwiper={setMainSwiper} 
               modules={[Autoplay, Navigation, EffectCoverflow, Thumbs, Controller]}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
-              effect={'coverflow'}
-              grabCursor={true}
-              centeredSlides={true}
+              spaceBetween={30}
+              // effect={'coverflow'}
+              // grabCursor={true}
+              // centeredSlides={true}
               slidesPerView={1}
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 1,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false,
-              }}
+              // coverflowEffect={{
+              //   rotate: 0,
+              //   stretch: 1,
+              //   depth: 100,
+              //   modifier: 1,
+              //   slideShadows: false,
+              // }}
               loop={true}
               navigation={{
                 nextEl: '.swiper-button-next-main',
                 prevEl: '.swiper-button-prev-main',
               }}
               thumbs={{ swiper: thumbsSwiper }}
-              className="rounded-xl overflow-hidden main-gallery-swiper w-100"
+              className="rounded-xl overflow-hidden main-gallery-swiper  "
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index} className="relative">
@@ -97,11 +98,11 @@ export default function Gallery() {
 
               {/* Swiper navigation buttons for the Main Slider */}
               <div
-                className="swiper-button-prev swiper-button-prev-main theme-bg-light"
+                className="swiper-button-prev swiper-button-prev-main theme-bg-light d-md-none"
                 style={{ color: '#352822', left: '0', zIndex: 10 }}
               ></div>
               <div
-                className="swiper-button-next swiper-button-next-main theme-bg-light"
+                className="swiper-button-next swiper-button-next-main theme-bg-light d-md-none"
                 style={{ color: '#352822', right: '0', zIndex: 10 }}
               ></div>
             </Swiper>
@@ -223,6 +224,7 @@ export default function Gallery() {
         .swiper-button-prev-main, .swiper-button-next-main {
             top: 50% !important;
             transform: translateY(-50%) !important;
+            
         }
 
         /* --- Thumbnail Navigation FIX (Vertical & Centered) --- */
@@ -256,6 +258,8 @@ export default function Gallery() {
             content: '\u2193'; 
             font-size: 1.2rem;
         }
+        .swiper-button-next-main {right:10px !important;}
+        .swiper-button-prev-main {left:10px !important}
       `}</style>
     </section>
   );

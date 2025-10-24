@@ -99,6 +99,7 @@ export default function ChannelPartner() {
                                 width={1920}
                                 className="img-fluid masterpiece "
                                 alt="Channel Partner"
+                                
                             />
                             <div className="overlay2">
                                 <div className="text-white d-block">

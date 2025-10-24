@@ -129,7 +129,7 @@ export default function Home() {
                   <div className="px-md-5">
                     <Image
                       alt="Project"
-                      src="/images/UpcomingProject.avif"
+                      src="/images/Amidstnature_project-pg.png"
                       width={5500}
                       height={750}
                       className="img-fluid  mb-3  rounded-4"

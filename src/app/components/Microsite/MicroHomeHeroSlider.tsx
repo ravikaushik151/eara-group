@@ -12,7 +12,7 @@ const slides = [
     desc: '',
     button: '',
     href: '',
-    desktopImg: '/images/hero-image-edit-9.jpg',
+    desktopImg: '/images/Eara_banner image.webp',
     mobileImg: '/images/Mob_banner_Eara.jpeg.jpg', // ← Mobile banner
   },
   // add more slides if needed

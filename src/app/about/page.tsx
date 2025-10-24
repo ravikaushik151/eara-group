@@ -24,6 +24,7 @@ export default function About() {
                 width={1920}
                 className="img-fluid masterpiece"
                 alt="masterpiece"
+                style={{objectPosition:"top"}}
               />
               <div className="overlay2 ">
                 <div className="text-white d-block">
