@@ -19,20 +19,28 @@ const slides = Array.from({ length: 5 }, (_, i) => ({
 export default function Gallery() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
-  // NEW: State to hold the main Swiper instance
   const [mainSwiper, setMainSwiper] = useState<any>(null); 
 
   // Function to handle slide click and update
   const handleSlideClick = (slideSrc: string, index: number) => {
-    // 1. Open the popup
-    setPopupImage(slideSrc);
-
-    // 2. Programmatically slide the main Swiper to the clicked slide
+    // 1. Programmatically slide the main Swiper to the clicked slide
     if (mainSwiper) {
         // use slideToLoop for Swipers with loop: true
         mainSwiper.slideToLoop(index, 500); 
     }
+    // 2. Open the popup
+    setPopupImage(slideSrc);
   };
+
+  // NEW: Handler to sync main Swiper when thumbnail Swiper scrolls/changes
+  const handleThumbScroll = (swiper: any) => {
+      if (mainSwiper && !swiper.params.cssMode) {
+          // Get the real index to handle looping correctly
+          const newIndex = swiper.realIndex;
+          mainSwiper.slideToLoop(newIndex, 0); // Slide immediately (0ms transition)
+      }
+  };
+
 
   return (
     <section
@@ -50,7 +58,6 @@ export default function Gallery() {
           {/* === 1. Main Swiper (col-md-8) === */}
           <div className="col-md-8 position-relative pe-md-4 d-flex align-items-center">
             <Swiper
-              // NEW: Get the main Swiper instance
               onSwiper={setMainSwiper} 
               modules={[Autoplay, Navigation, EffectCoverflow, Thumbs, Controller]}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -83,7 +90,6 @@ export default function Gallery() {
                     className="img-fluid rounded-3"
                     loading="lazy"
                     style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
-                    // UPDATED: Call the new handler
                     onClick={() => handleSlideClick(slide.src, index)}
                   />
                 </SwiperSlide>
@@ -102,7 +108,7 @@ export default function Gallery() {
           </div>
 
           {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
-          <div className="col-md-4 px-md-3 my-md-4 d-none d-md-block position-relative thumbnail-wrapper">
+          <div className="col-md-4 my-md-4 d-none d-md-block position-relative thumbnail-wrapper">
             <Swiper
               modules={[Navigation, Thumbs, Mousewheel]} 
               onSwiper={setThumbsSwiper} 
@@ -113,10 +119,15 @@ export default function Gallery() {
               watchSlidesProgress={true}
               loop={true}
               mousewheel={true} 
-              // navigation={{
-              //   nextEl: '.swiper-button-next-thumbs', 
-              //   prevEl: '.swiper-button-prev-thumbs', 
-              // }}
+              
+              // NEW: Use onSlideChangeTransitionEnd to sync main slider
+              onSlideChangeTransitionEnd={handleThumbScroll}
+              
+              navigation={{
+                nextEl: '.swiper-button-next-thumbs', 
+                prevEl: '.swiper-button-prev-thumbs', 
+              }}
+              
               className="mySwiper-thumbs"
             >
               {slides.map((slide, index) => (
@@ -124,8 +135,8 @@ export default function Gallery() {
                   <Image
                     src={slide.src}
                     alt={slide.alt}
-                    width={412}
-                    height={185}
+                    width={350}
+                    height={155}
                     className="img-fluid rounded-2 swiper-thumb-image"
                     loading="lazy"
                   />
@@ -135,8 +146,8 @@ export default function Gallery() {
             
             {/* The Thumbnail Navigation Buttons - outside the Swiper component */}
             {/* <div className="swiper-button-prev swiper-button-prev-thumbs theme-bg-light"></div>
-            <div className="swiper-button-next swiper-button-next-thumbs theme-bg-light"></div> */}
-            
+            <div className="swiper-button-next swiper-button-next-thumbs theme-bg-light"></div>
+             */}
           </div>
         </div>
       </div>
@@ -193,7 +204,7 @@ export default function Gallery() {
         /* Global height control for the thumbnail area */
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 320px; 
+          max-height: 350px; 
         }
         
         /* Thumbnails styling */

@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/thumbs'; // Important for thumbnail control
+import 'swiper/css/thumbs';
 import 'swiper/css/navigation';
-// No need for 'effect-coverflow' if you're not using it here
 
 // Import required Swiper modules
-import { Autoplay, Navigation, Thumbs, Controller } from 'swiper/modules';
+// NOTE: Added Mousewheel module here!
+import { Autoplay, Navigation, Thumbs, Controller, Mousewheel } from 'swiper/modules';
 import Image from 'next/image';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
@@ -19,60 +19,100 @@ const slides = Array.from({ length: 5 }, (_, i) => ({
 
 export default function Construction() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
-  const [thumbsSwiper, setThumbsSwiper] = useState(null); // State for the thumbnail Swiper instance
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); // Use <any> for Swiper instance state
+  // NEW: State to hold the main Swiper instance
+  const [mainSwiper, setMainSwiper] = useState<any>(null); 
+
+  // Function to handle slide click and update main swiper
+  const handleSlideClick = (slideSrc: string, index: number) => {
+    // 1. Programmatically slide the main Swiper to the clicked slide
+    if (mainSwiper) {
+        // use slideToLoop for Swipers with loop: true
+        mainSwiper.slideToLoop(index, 500); 
+    }
+    // 2. Open the popup
+    setPopupImage(slideSrc);
+  };
+
+  // NEW: Handler to sync main Swiper when thumbnail Swiper scrolls/changes
+  const handleThumbScroll = (swiper: any) => {
+      if (mainSwiper && !swiper.params.cssMode) {
+          // Get the real index to handle looping correctly
+          const newIndex = swiper.realIndex;
+          mainSwiper.slideToLoop(newIndex, 0); // Slide immediately (0ms transition)
+      }
+  };
 
   return (
     <section
-      className="gallery-section same-gap construction theme-bg-light py-5" // Added py-5 for consistent padding
+      className="gallery-section same-gap construction theme-bg-light py-5"
       id="gallery"
     >
       <div className="container">
         <div className="title text-center mb-4">
-          <h2 className="theme-color-dark">Project Progress</h2> {/* Corrected typo: Progress */}
+          <h2 className="theme-color-dark">Project Progress</h2>
         </div>
 
         {/* === Main Content Area: Row with Columns === */}
         <div className="row">
-
-           {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
-           <div className="col-md-4  mt-md-0 d-none d-md-block"> {/* Hide on small screens */}
+            
+          {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
+          {/* IMPORTANT: Added position-relative to anchor the custom navigation buttons */}
+          <div className="col-md-4 mt-md-0 d-none d-md-block position-relative thumbnail-wrapper-construction"> 
             <Swiper
-              onSwiper={setThumbsSwiper} // Save the Swiper instance to state
-              direction={'vertical'} // Key change: vertical scrolling
+              // NOTE: Added Mousewheel module here
+              modules={[Navigation, Thumbs, Mousewheel]} 
+              onSwiper={setThumbsSwiper} 
+              direction={'vertical'} 
               spaceBetween={10}
-              slidesPerView={2} // Display 4 thumbnails at a time
+              slidesPerView={2} // Adjusted to 3 for better vertical look
               freeMode={true}
               watchSlidesProgress={true}
               loop={true}
-              className="mySwiper-thumbs-construction h-100" // Use h-100
+              // NEW: Enable Mousewheel control
+              mousewheel={true} 
+              // NEW: Use onSlideChangeTransitionEnd to sync main slider
+              onSlideChangeTransitionEnd={handleThumbScroll}
+              // Set up navigation for custom buttons
+              navigation={{
+                nextEl: '.swiper-button-next-thumbs-construction', 
+                prevEl: '.swiper-button-prev-thumbs-construction', 
+              }}
+              className="mySwiper-thumbs-construction h-100"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index} className="relative">
                   <Image
                     src={slide.src}
                     alt={slide.alt}
-                    width={500}
-                    height={300}
+                    width={350}
+                    height={155}
                     className="img-fluid rounded-2 swiper-thumb-image-construction"
                     loading="lazy"
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
+            
+            {/* Custom Navigation Buttons (outside the Swiper) */}
+            {/* <div className="swiper-button-prev swiper-button-prev-thumbs-construction theme-bg-light"></div>
+            <div className="swiper-button-next swiper-button-next-thumbs-construction theme-bg-light"></div> */}
           </div>
+          
           {/* === 1. Main Swiper (col-md-8) === */}
-          <div className="col-md-8 position-relative pe-md-4"> {/* Added pe-md-4 for spacing */}
+          <div className="col-md-8 position-relative pe-md-4"> 
             <Swiper
-              modules={[Autoplay, Navigation, Thumbs, Controller]} // Added Thumbs, Controller
+              onSwiper={setMainSwiper} // Get the main Swiper instance
+              modules={[Autoplay, Navigation, Thumbs, Controller]}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               loop={true}
-              spaceBetween={10} // Reduced spaceBetween for main slider
+              spaceBetween={10}
               slidesPerView={1}
               navigation={{
-                nextEl: '.swiper-button-next-main-construction', // Unique class for this component
-                prevEl: '.swiper-button-prev-main-construction', // Unique class for this component
+                nextEl: '.swiper-button-next-main-construction',
+                prevEl: '.swiper-button-prev-main-construction',
               }}
-              thumbs={{ swiper: thumbsSwiper }} // Link to the thumbnail Swiper instance
+              thumbs={{ swiper: thumbsSwiper }}
               className="rounded-xl overflow-hidden main-construction-swiper"
             >
               {slides.map((slide, index) => (
@@ -82,39 +122,29 @@ export default function Construction() {
                     alt={slide.alt}
                     width={1920}
                     height={1080}
-                    className="img-fluid rounded-xl" // Removed mb-3 from here
+                    className="img-fluid rounded-xl"
                     loading="lazy"
-                    style={{ cursor: 'zoom-in' }}
-                    onClick={() => setPopupImage(slide.src)}
+                    style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
+                    onClick={() => handleSlideClick(slide.src, index)}
                   />
                 </SwiperSlide>
               ))}
               
               {/* Swiper navigation buttons for the Main Slider */}
-              <div
-                className="swiper-button-prev swiper-button-prev-main-construction theme-bg-dark" // Ensure correct theme class
-                style={{
-                  color: '#fff', // Changed color for dark background button
-                  left: '0',
-                  zIndex: 10,
-                }}
+              {/* <div
+                className="swiper-button-prev swiper-button-prev-main-construction theme-bg-dark"
+                style={{ color: '#fff', left: '0', zIndex: 10 }}
               ></div>
               <div
-                className="swiper-button-next swiper-button-next-main-construction theme-bg-dark" // Ensure correct theme class
-                style={{
-                  color: '#fff', // Changed color for dark background button
-                  right: '0',
-                  zIndex: 10,
-                }}
-              ></div>
+                className="swiper-button-next swiper-button-next-main-construction theme-bg-dark"
+                style={{ color: '#fff', right: '0', zIndex: 10 }}
+              ></div> */}
             </Swiper>
           </div>
-
-         
         </div>
       </div>
 
-      {/* === Image Popup Modal (Same as before) === */}
+      {/* === Image Popup Modal (Lightbox) === */}
       {popupImage && (
         <div
           className="popup-overlay"
@@ -155,57 +185,89 @@ export default function Construction() {
                 cursor: 'pointer',
               }}
             >
-            ✕
+              ✕
             </button>
           </div>
         </div>
       )}
 
-      {/* === Custom Styling for Thumbnails === */}
+      {/* --- Custom Styling for Thumbnails and Navigation --- */}
       <style jsx global>{`
-        /* Match the height of the main slider for Construction gallery */
-        .main-construction-swiper {
-            height: auto; /* Allow content to dictate height, or set a fixed height */
-            /* max-height: 500px; Remove if not needed */
-        }
+        /* Global height control for the thumbnail area */
         .mySwiper-thumbs-construction {
           height: 100%;
-          max-height: 360px; /* Adjust this value to match your main slider's height */
+          max-height: 350px; /* Aligned with main slider height */
         }
-        /* Style the image within the slide */
+        
+        /* Thumbnails styling */
         .swiper-thumb-image-construction {
           transition: transform 0.3s, opacity 0.3s;
           opacity: 0.6;
           cursor: pointer;
         }
-        /* Style for the active thumbnail slide */
         .mySwiper-thumbs-construction .swiper-slide-thumb-active .swiper-thumb-image-construction {
           opacity: 1;
           transform: scale(1.05);
-          border: 3px solid var(--theme-color-dark, #000); /* Example border for active state */
+          border: 3px solid var(--theme-color-dark, #000); 
         }
-        /* Fix Swiper button positioning for the main slider */
+
+        /* --- Main Slider Navigation (Horizontal) --- */
         .swiper-button-prev-main-construction, .swiper-button-next-main-construction {
             top: 50% !important;
             transform: translateY(-50%) !important;
-            width: 40px; /* Adjust button size */
-            height: 40px; /* Adjust button size */
-            border-radius: 50%; /* Make them round */
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .swiper-button-prev-main-construction::after, .swiper-button-next-main-construction::after {
-            font-size: 1rem; /* Adjust icon size */
+            font-size: 1rem; 
         }
 
-        /* Ensure theme-bg-dark buttons for dark theme */
-        .theme-bg-dark {
-          background-color: #352822 !important; /* Example dark color */
+        /* --- Thumbnail Navigation FIX (Vertical & Centered) --- */
+        /* General styling and horizontal centering */
+        .swiper-button-prev-thumbs-construction, 
+        .swiper-button-next-thumbs-construction {
+            position: absolute !important;
+            left: 50% !important; 
+            transform: translateX(-50%); 
+            z-index: 10; 
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 !important;
+            color: #352822 !important; 
+            background-color: var(--theme-bg-light, #fff) !important;
         }
-        .theme-color-dark {
-          color: #352822 !important; /* Example dark color */
+        /* Position PREV/UP button */
+        .swiper-button-prev-thumbs-construction {
+            top: 0px !important; 
+            bottom: auto !important;
         }
+        /* Position NEXT/DOWN button */
+        .swiper-button-next-thumbs-construction {
+            bottom: 0px !important;
+            top: auto !important; 
+        }
+        /* Apply vertical arrows correctly */
+        .swiper-button-prev-thumbs-construction::after {
+            content: '\u2191'; /* Unicode for Up Arrow */
+            font-size: 1.2rem;
+        }
+        .swiper-button-next-thumbs-construction::after {
+            content: '\u2193'; /* Unicode for Down Arrow */
+            font-size: 1.2rem;
+        }
+
+        /* Ensure theme classes have colors for clarity */
+        .theme-bg-dark { background-color: #352822 !important; }
+        .theme-color-dark { color: #352822 !important; }
+        .theme-bg-light { background-color: #fff !important; }
+        .theme-color-light { color: #fff !important; }
+
       `}</style>
     </section>
   );
