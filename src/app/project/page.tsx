@@ -64,7 +64,7 @@ export default function Project() {
                                 </p>
 
                                 <div className="text-center">
-                                    <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
+                                    <Link href="/amidstnature" className="btn theme-bg-dark text-light mt-4  mb-md-5">
                                         Know More
                                     </Link>
                                 </div>
@@ -110,7 +110,7 @@ export default function Project() {
                                     </p>
 
                                     <div className="text-center">
-                                        <Link href="/microsite" className="btn theme-bg-dark text-light mt-4  mb-md-5">
+                                        <Link href="/amidstnature" className="btn theme-bg-dark text-light mt-4  mb-md-5">
                                             Know More
                                         </Link>
                                     </div>

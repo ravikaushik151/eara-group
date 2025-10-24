@@ -230,7 +230,7 @@ export default function Home() {
 
                       <p className="m-center py-md-0 py-3">
                         <a
-                          href="/microsite"
+                          href="/amidstnature"
                           className="btn btn-dark text-white border"
                           style={{ fontSize: "15px !important" }}
                         >
@@ -310,7 +310,7 @@ export default function Home() {
                       </div>
                       <p className="m-center py-md-0 py-3">
                         <a
-                          href="/microsite"
+                          href="/amidstnature"
                           className="btn theme-bg-light"
                         >
                           More Details

@@ -135,7 +135,7 @@ export default function Home() {
                   <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
                   <p className="mt-4 theme-color-dark">
                     At EARA Group, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
-                    Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
+                    Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialise in developing real estate projects designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
                   </p>
                   <div className="text-center">
                     <Link
@@ -225,7 +225,7 @@ export default function Home() {
 
                       <p className="m-center py-md-0 py-3">
                         <a
-                          href="/microsite"
+                          href="/amidstnature"
                           className="btn btn-dark text-white border"
                           style={{ fontSize: "15px !important" }}
                         >
@@ -293,7 +293,7 @@ export default function Home() {
                           <h5 className="mb-3 theme-color-light fs-4  m-center">Key Highlights of the Project:</h5>
                           <ul className="text-black ps-3 theme-color-light  m-center">
                             <li>Plot sizes ranging from 1500 – 3300 sq ft.</li>
-                            <li>7,000 sq.ft. clubhouse with gym, pool, yoga room, café & library</li>
+                            <li>7,000 sqft → 11,000 sqft. clubhouse with gym, pool, yoga room, café & library</li>
                             <li>Indoor and outdoor party zones</li>
                             <li>Ganesha temple, amphitheatre, elders’ park, children’s play area</li>
                             <li>Cricket pitch & pickleball court</li>
@@ -305,7 +305,7 @@ export default function Home() {
                       </div>
                       <p className="m-center py-md-0 py-3">
                         <a
-                          href="/microsite"
+                          href="/amidstnature"
                           className="btn theme-bg-light"
                         >
                           More Details
