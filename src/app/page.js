@@ -1,5 +1,5 @@
-"use client";
-import { useEffect } from "react";
+//"use client";
+//import { useEffect } from "react";
 import "./homepage.css";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
@@ -8,9 +8,17 @@ import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
 import CoreValuesSlider from "./components/CoreValuesSlider";
+export const metadata = {
+  title: 'Discover Eara Group&rsquo;s luxury villa plots for sale in Kanakapura Road. Build your dream home amidst nature with premium amenities and great connectivity.',
+  description: 'Discover Eara Group&rsquo;s luxury villa plots for sale in Kanakapura Road. Build your dream home amidst nature with premium amenities and great connectivity.',
+  keywords : 'Eara Group, Luxury villa plots for sale in Kanakapura Road, Plots for Sale in Kanakapura Road, Villa plots sale near Kanakapura Road, Premium villa plots for sale in Kaggalipura',
+  alternates: {
+    canonical: 'https://earagroup.com/',
+  },
+};
 
 export default function Home() {
-  useEffect(() => {
+/*  useEffect(() => {
     if (typeof window !== "undefined" && window.Lenis) {
       const lenis = new window.Lenis({
         duration: 1.2,
@@ -86,7 +94,7 @@ export default function Home() {
           .catch((err) => console.error("Submission error:", err));
       });
     }
-  }, []);
+  }, []); */
 
   return (
     <>
@@ -115,7 +123,7 @@ export default function Home() {
 
                     <h4 className="mb-3 fw-light">{``}</h4>
 
-                    <p className="mb-4 lead text-center w-100 text-success">In a home kissed by trees and wrapped in serenity, <br /> you don’t just live - you thrive</p>
+                    <p className="mb-4 lead text-center w-100 text-success">In a home kissed by trees and wrapped in serenity, <br /> you don&rsquo;t just live - you thrive</p>
                   </div>
                   <Link href='#' className="btn btn-outline-light px-4 py-2 d-none  text-center">
                     Explore More
@@ -132,9 +140,9 @@ export default function Home() {
               <div className="row">
                 <div className="col-md-5 offset-md-7 py-lg-5">
                   <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
-                  <span className="fs-4 theme-color-dark">Because true luxury is not loud. It’s peaceful.</span>
+                  <span className="fs-4 theme-color-dark">Because true luxury is not loud. It&rsquo;s peaceful.</span>
                   <p className="mt-4 theme-color-dark">
-                    At EARA Group, we’re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                    At EARA Group, we&rsquo;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
                     Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialise in developing real estate projects designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
                   </p>
                   <div className="text-center">
@@ -204,7 +212,7 @@ export default function Home() {
                       </div>
                       <div className="noclass">
                         <p className="text-justify m-center lh text-black mt-3">
-                          Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot — it’s a path back to balance.
+                          Spread across 15 lush acres in Kaggalipura, just off Kanakapura Road, this premium plotted development invites you to design your forever home in a place where the city fades and nature speaks. Thoughtfully approved by BMRDA and connected to every urban convenience, this is more than a plot — it&rsquo;s a path back to balance.
                         </p>
                       </div>
                       <div className="row align-items-center mb-3 mt-4 mob-center">
@@ -293,9 +301,9 @@ export default function Home() {
                           <h5 className="mb-3 theme-color-light fs-4  m-center">Key Highlights of the Project:</h5>
                           <ul className="text-black ps-3 theme-color-light  m-center">
                             <li>Plot sizes ranging from 1500 – 3300 sq ft.</li>
-                            <li>7,000 sqft → 11,000 sqft. clubhouse with gym, pool, yoga room, café & library</li>
+                            <li>7,000 sqft → 11,000 sqft. clubhouse with gym, pool, yoga room, caf&eacute; & library</li>
                             <li>Indoor and outdoor party zones</li>
-                            <li>Ganesha temple, amphitheatre, elders’ park, children’s play area</li>
+                            <li>Ganesha temple, amphitheatre, elders&rsquo; park, children&rsquo;s play area</li>
                             <li>Cricket pitch & pickleball court</li>
                             <li>Underground electrical cabling & LED streetlights</li>
                             <li>Rainwater harvesting & sewage treatment plant</li>

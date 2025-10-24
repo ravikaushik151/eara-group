@@ -2,6 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../../app/components/ContactForm";
 import "./../contact.css";
+export const metadata = {
+  title: "Contact EARA Group - Reach Out to Us for Real Estate Inquiries",
+  description:
+    "Connect with EARA Group for real estate queries. Visit our contact page for office details, email, and more—we’re always ready to guide and assist you.",
+  keywords:
+    "Plots near Kanakapura Road, Villa plots in kanakapura road, Plots in kanakapura road, Sites in kanakapura road",
+  alternates: {
+    canonical: "https://earagroup.com/contact/",
+  },
+ 
+};
 export default function Contact() {
   return (
     <>

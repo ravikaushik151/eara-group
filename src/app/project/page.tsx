@@ -2,7 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./../project.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
-
+export const metadata = {
+    title: 'Amidst Nature Location: Luxury Living on Kanakapura Road',
+    description: 'Discover serenity at Amidst Nature, Kanakapura Road. Enjoy lush greenery, peaceful surroundings, and modern comforts in this beautiful, tranquil location.',
+    keywords : 'Amidst Nature Address, Amidst Nature Reviews, Amidst Nature Price, Amidst Nature Kanakapura Road',
+    alternates: {
+      canonical: 'https://earagroup.com/project/',
+    },
+  };
 export default function Project() {
     return (
         <>
