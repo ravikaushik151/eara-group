@@ -497,7 +497,7 @@ export default function Home() {
 
           </section>
 
-          <FooterModalForm autoShowTime={12000} />
+          <FooterModalForm autoShowTime={15000} />
         </div >
       </main >
 

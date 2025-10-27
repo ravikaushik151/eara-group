@@ -9,7 +9,7 @@ import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
 import CoreValuesSlider from "./components/CoreValuesSlider";
 export const metadata = {
-  title: 'Discover Eara Group&rsquo;s luxury villa plots for sale in Kanakapura Main Road. Build your dream home amidst nature with premium amenities and great connectivity.',
+  title: 'Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.',
   description: 'Discover Eara Group&rsquo;s luxury villa plots for sale in Kanakapura Main Road. Build your dream home amidst nature with premium amenities and great connectivity.',
   keywords : 'Eara Group, Luxury villa plots for sale in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road, Villa plots sale near Kanakapura Main Road, Premium villa plots for sale in Kaggalipura',
   alternates: {
@@ -292,7 +292,7 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="noclass">
-                        <p className="text-justify m-center lh text-black mt-3 theme-color-light">
+                        <p className="text-justify m-center lh text-black mt-3 theme-color-light w-md-50">
                           The project is nestled just Off Kanakapura Main  Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.
                         </p>
                       </div>

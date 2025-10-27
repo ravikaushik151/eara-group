@@ -14513,7 +14513,7 @@ p {
   right: 0;
   bottom: 0;
   /* background-color: rgba(0, 0, 0, 0.5); 
-  background-color: #583a2c8a;*/
+ background-color: #583a2c8a;*/
   color: white;
   /* Text color */
   display: flex;
@@ -19409,3 +19409,4 @@ footer textarea::placeholder {
 .theme-logo {
   filter: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(1674%) hue-rotate(335deg) brightness(102%) contrast(83%);
 }
+.text-brown {color: #583a2c !important;}

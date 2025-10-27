@@ -13,7 +13,7 @@ const slides = [
     button: '',
     href: '',
     desktopImg: '/images/Eara_banner image.webp',
-    mobileImg: '/images/Mob_banner_Eara.jpeg.jpg', // ← Mobile banner
+    mobileImg: '/images/Eara_banner image.webp', // ← Mobile banner
   },
   // add more slides if needed
 ];

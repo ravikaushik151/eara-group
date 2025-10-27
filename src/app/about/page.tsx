@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./../about.css";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
 export const metadata = {
-  title: 'Premium Residential Plots for Sale in Kanakapura Main Road: Eara Group',
+  title: 'Premium Residential Plots in Kanakapura Main Road - Eara Group',
   description: 'Discover Premium Villa Plots in Kanakapura Main Road by Eara Group. Invest in spacious, well-planned plots with excellent connectivity and modern amenities.',
   keywords : 'BMRDA Residential Plot in Kanakapura Main Road, Premium Villa Plots in Kanakapura Main Road, Premium Residential Plots in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road',
   alternates: {
@@ -27,7 +27,7 @@ export default function About() {
                 style={{objectPosition:"top"}}
               />
               <div className="overlay2 ">
-                <div className="text-white d-block">
+                <div className="text-white d-block text-brown">
                   {" "}
                   <p className="text-center d-block fs-1 mb-3 text-uppercase">
                     {" "}
@@ -35,7 +35,7 @@ export default function About() {
                   </p>
                   <p className="text-center d-block fs-6 ">
                     <Link
-                      className="text-white text-decoration-none"
+                      className="text-white text-decoration-none text-brown"
                       href={"./"}
                     >
                       {" "}
@@ -59,7 +59,7 @@ export default function About() {
                   <div className="text-color-dark-rainforest">
                     <h2
                       data-animate={2}
-                      className="heading-style-h2 text-center theme-color-dark"
+                      className="heading-style-h2 mb-2 text-center theme-color-dark"
                     >
                       Welcome to <strong>Eara Group</strong>, where vision meets
                       reality.

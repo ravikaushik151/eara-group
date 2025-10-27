@@ -63,7 +63,7 @@ export default function Project() {
                                     </strong>
                                     </p>
                                    
-                                <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
+                                <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
                                 </p>
                                    
                                 

@@ -37,21 +37,20 @@ export default function Header() {
     <>
       {/* ✅ Mobile Navbar */}
       <nav
-        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${
-          isVisible
-            ? "navbar-visible bg-white accent-bg navbar-dark"
-            : "navbar-hidden"
-        }`}
+        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${isVisible
+          ? "navbar-visible bg-white accent-bg navbar-dark"
+          : "navbar-hidden"
+          }`}
         style={{ zIndex: 999 }}
       >
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
             <Image
-             src={
-              pathname?.replace(/\/$/, "").startsWith("/amidstnature")
-                ? "/images/logo-dark.webp"
-                : "/images/logo-dark.webp"
-            }
+              src={
+                pathname?.replace(/\/$/, "").startsWith("/amidstnature")
+                  ? "/images/logo-dark.webp"
+                  : "/images/logo-dark.webp"
+              }
               alt="logo"
               width={120}
               height={66}
@@ -59,8 +58,8 @@ export default function Header() {
                 pathname?.replace(/\/$/, "").startsWith("/amidstnature")
                   ? "white-png logo img-fluid" // removed white-png
                   : lastScrollY < 100
-                  ? "white-png logo img-fluid"
-                  : "white-png logo img-fluid"
+                    ? "white-png logo img-fluid"
+                    : "white-png logo img-fluid"
               }
               priority
               fetchPriority="high"
@@ -103,12 +102,11 @@ export default function Header() {
 
       {/* ✅ Desktop Navbar */}
       <div
-        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${
-          isVisible ? "navbar-visible bg-white " : "navbar-hidden"
-        } ${lastScrollY < 100 ? "bg-transparent" : "accent-bg"}`}
+        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${isVisible ? "navbar-visible bg-white " : "navbar-hidden"
+          } ${lastScrollY < 100 ? "bg-transparent" : "accent-bg"}`}
         style={{ zIndex: 999 }}
       >
-        <div className="container py-3 d-flex justify-content-between align-items-center">
+        <div className="container py-2 d-flex justify-content-between align-items-center">
           <Link href="/">
             <Image
               src={
@@ -123,14 +121,14 @@ export default function Header() {
                 pathname?.replace(/\/$/, "").startsWith("/amidstnature")
                   ? "white-png logo img-fluid" // removed white-png
                   : lastScrollY < 100
-                  ? "white-png logo img-fluid"
-                  : "white-png logo img-fluid"
+                    ? "white-png logo img-fluid"
+                    : "white-png logo img-fluid"
               }
               priority
               fetchPriority="high"
             />
           </Link>
-          <nav className="d-flex gap-4">
+          <nav className="d-flex gap-4 justify-content-center">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -143,17 +141,30 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-decoration-none d-flex align-items-center gap-2 mx-2 ${
-                  lastScrollY < 100 ? "text-white" : "text-white"
-                }`}
+                className={`text-decoration-none d-flex align-items-center gap-2 mx-2 ${lastScrollY < 100 ? "text-white" : "text-white"
+                  }`}
               >
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                {/* <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
                   <circle cx="4" cy="4" r="4" fill="#fff" />
-                </svg>
+                </svg> */}
                 <span>{link.label}</span>
               </Link>
             ))}
           </nav>
+          <div className="d-flex align-items-center">
+            {!pathname?.includes('/amidstnature') && (<p style={{ minWidth: "120px" }}></p>)}
+            {pathname?.includes('/amidstnature') && (
+              <Image
+                src="/images/Amidst-Nature-Logo.png"
+                alt="logo"
+                width={120}
+                height={66}
+                className="bg-transparent logo img-fluid"
+                priority
+                fetchPriority="high"
+              />
+            )}
+          </div>
         </div>
       </div>
     </>
