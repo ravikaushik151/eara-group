@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AmenitiesMarquee from "../components/AmenitiesMarquee";
 import FooterModalForm from "../components/FooterModalForm";
+import ContactFormPopup from "../components/ContactFormPopup";
 import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
 import MasterPlanSection from "../components/Microsite/MasterPlanSection";
@@ -140,7 +141,13 @@ export default function Home() {
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong></p>
                     <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
                     </p>
-                    <div className="text-center  my-4"> <a href="#" className="theme-bg-dark theme-color-light px-3 py-2 text-decoration-none rounded-2 ">Download Brochure</a></div>
+                    <div className="text-center  my-4">
+                      <ContactFormPopup
+                        buttonText="Download Brochure"
+                        buttonClassName="theme-bg-dark theme-color-light px-3 py-2 text-decoration-none rounded-2 "
+                        redirectUrl="/download-page"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="col-md-6 ">
@@ -489,11 +496,11 @@ export default function Home() {
 
 
           </section>
-          
-          <FooterModalForm autoShowTime={5000} />
+
+          <FooterModalForm autoShowTime={12000} />
         </div >
       </main >
-      
+
     </>
   );
 }

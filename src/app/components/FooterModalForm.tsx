@@ -15,7 +15,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
 
  // Auto popup modal
  useEffect(() => {
-  const timer = setTimeout(() => setShow(true), autoShowTime);
+  const timer = setInterval(() => setShow(true), autoShowTime);
   return () => clearTimeout(timer);
  }, [autoShowTime]);
 
@@ -61,7 +61,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
    email: formData.email,
    phone: formData.phone,
    message: formData.message || 'interested',
-   subject: 'Eara Group - Website',
+   subject: 'Enquire From Eara Group - Website',
    form_source: 'Eara Group - Website',
 
    additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
@@ -69,7 +69,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
 
   try {
    const res = await fetch(
-    'https://us-central1-email-js-1a09b.cloudfunctions.net/emailjs/submit-form',
+    'https://earagroup.com/emailer.php',
     {
      method: 'POST',
      headers: { 'Content-Type': 'application/json' },
@@ -78,7 +78,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
    );
    const msg = await res.text();
 
-   if (msg === 'Email sent successfully') {
+   if (msg === 'OK') {
     setNote('Email Sent Successfully!');
     setFormData({ name: '', email: '', phone: '', message: '' });
     if (redirectUrl) {
@@ -96,9 +96,9 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
 
  return (
   <>
-   <button className="btn btn-primary" onClick={() => setShow(true)}>
+   {/* <button className="btn btn-primary" onClick={() => setShow(true)}>
     Contact Us
-   </button>
+   </button> */}
 
    {show && (
     <div
@@ -111,7 +111,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
       <div className="modal-content theme-bg-dark">
        <div className="modal-header">
         <h5 className="modal-title theme-color-light">Get in Touch</h5>
-        <button type="button" className="btn-close" onClick={handleClose}></button>
+        <button type="button" className="btn-close theme-bg-light" onClick={handleClose}></button>
        </div>
        <div className="modal-body">
         {note && <p style={{ color: note.includes('Error') ? 'red' : 'green', fontWeight: 600 }}>{note}</p>}

@@ -5,19 +5,37 @@ import Image from 'next/image';
 import Link from 'next/link';
 import "./../career.css";
 
+// Define a type for the form data to improve type safety
+interface ChannelPartnerFormData {
+    cpFirmName: string;
+    cpFirmEmail: string;
+    cpFirmMobile: string;
+    cpAgencyReraNumber: string;
+    prospectName: string;
+    prospectEmail: string;
+    prospectMobileNumber: string;
+    projectInterestedIn: string;
+    message: string; // Hidden message/default
+}
+
 export default function ChannelPartner() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        phone: '',
-        message: '', // hidden message default
+    const [formData, setFormData] = useState<ChannelPartnerFormData>({
+        cpFirmName: '',
+        cpFirmEmail: '',
+        cpFirmMobile: '',
+        cpAgencyReraNumber: '',
+        prospectName: '',
+        prospectEmail: '',
+        prospectMobileNumber: '',
+        projectInterestedIn: '',
+        message: 'Interested in Channel Partnership Referral', // Updated default message
     });
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [note, setNote] = useState('');
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
@@ -28,40 +46,54 @@ export default function ChannelPartner() {
         setSuccess(false);
         setNote('');
 
-        // Validation
-        if (!formData.name || !formData.email || !formData.phone) {
-            setNote('All fields are required!');
+        // --- Validation ---
+        // Basic required fields (assuming all top fields are mandatory for submission)
+        if (!formData.cpFirmName || !formData.cpFirmEmail || !formData.cpFirmMobile || !formData.prospectName || !formData.prospectEmail || !formData.prospectMobileNumber) {
+            setNote('Please fill in all required fields (CP/Firm and Prospect details).');
             setLoading(false);
             return;
         }
-
+        
+        // Email validation for both CP and Prospect
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
-            setNote('Enter a valid email address!');
+        if (!emailRegex.test(formData.cpFirmEmail) || !emailRegex.test(formData.prospectEmail)) {
+            setNote('Enter a valid email address for both Channel Partner and Prospect!');
             setLoading(false);
             return;
         }
 
+        // Phone validation (assuming CP/Firm Mobile is a 10-digit Indian number as per original logic)
+        // Prospect mobile is often handled with country code in UI, but simple 10-digit check for CP mobile is retained.
         const phoneRegex = /^\d{10}$/;
-        if (!phoneRegex.test(formData.phone)) {
-            setNote('Phone number must be 10 digits!');
+        if (!phoneRegex.test(formData.cpFirmMobile)) {
+            setNote('Channel Partner Mobile number must be 10 digits!');
             setLoading(false);
             return;
         }
 
+        // --- Submission Logic ---
         try {
             const payload = {
-                name: formData.name,
-                email: formData.email,
-                phone: formData.phone,
-                message: formData.message || 'interested',
-                subject: 'Eara Group - Channel Partner',
-                form_source: 'Eara Group - Channel Partner',
+                // Channel Partner / Firm Details
+                name: formData.cpFirmName,
+                email: formData.cpFirmEmail,
+                phone: formData.cpFirmMobile,
+                cpAgencyReraNumber: formData.cpAgencyReraNumber,
+                // Prospect Details
+                prospectName: formData.prospectName,
+                prospectEmail: formData.prospectEmail,
+                prospectMobileNumber: formData.prospectMobileNumber,
+                projectInterestedIn: formData.projectInterestedIn,
+
+                // Standard fields
+               // message: `CP RERA: ${formData.cpAgencyReraNumber}. Prospect Project Interest: ${formData.projectInterestedIn}.`, // Combine non-input fields into message
+                subject: 'Eara Group - New Channel Partner Referral',
+                form_source: 'Eara Group - Channel Partner Referral Form',
                 additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
             };
 
             const response = await fetch(
-                'https://us-central1-email-js-1a09b.cloudfunctions.net/emailjs/submit-form',
+                'https://earagroup.com/emailer.php',
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -71,12 +103,23 @@ export default function ChannelPartner() {
 
             const resultText = await response.text();
 
-            if (resultText.trim().toLowerCase() === 'email sent successfully') {
+            if (resultText.trim().toLowerCase() === 'ok') {
                 setSuccess(true);
-                setFormData({ name: '', email: '', phone: '', message: 'interested' });
-                setNote('Email sent successfully!');
+                // Clear all form data fields
+                setFormData({ 
+                    cpFirmName: '', 
+                    cpFirmEmail: '', 
+                    cpFirmMobile: '', 
+                    cpAgencyReraNumber: '', 
+                    prospectName: '', 
+                    prospectEmail: '', 
+                    prospectMobileNumber: '', 
+                    projectInterestedIn: '', 
+                    message: 'Interested in Channel Partnership Referral' 
+                });
+                setNote('Referral submitted successfully!');
             } else {
-                setNote(resultText || 'Error sending email. Please try again.');
+                setNote(resultText || 'Error submitting referral. Please try again.');
             }
         } catch (err) {
             console.error(err);
@@ -88,30 +131,42 @@ export default function ChannelPartner() {
 
     return (
         <>
-            {/* Banner Section */}
-            <div className="header-section">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="image-container">
-                            <Image
-                                src="/images/Channel partner.webp"
-                                height={2880}
-                                width={1920}
-                                className="img-fluid masterpiece"
-                                alt="Channel Partner"
-                            />
-                            <div className="overlay2">
-                                <div className="text-white d-block">
-                                    <p className="text-center fs-1 mb-3 text-uppercase">Channel Partner</p>
-                                    <p className="text-center fs-6">
-                                        <Link className="text-white text-decoration-none" href={'./'}>Home</Link> / Channel Partner
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            {/* Banner Section (omitted for brevity, assume it remains the same) */}
+            <div id="carouselExampleDark" className="header-section ">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="image-container">
+              <Image
+                src="/images/Channel-partner.webp"
+                height={2880}
+                width={1920}
+                className="img-fluid masterpiece"
+                alt="masterpiece"
+                style={{objectPosition:"top"}}
+              />
+              <div className="overlay2 ">
+                <div className="text-white d-block">
+                  {" "}
+                  <p className="text-center d-block fs-1 mb-3 text-uppercase">
+                    {" "}
+                    Channel Partner
+                  </p>
+                  <p className="text-center d-block fs-6 ">
+                    <Link
+                      className="text-white text-decoration-none"
+                      href={"./"}
+                    >
+                      {" "}
+                      Home
+                    </Link>{" "}
+                    / Channel Partner{" "}
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
             {/* Form Section */}
             <section className="bg-light py-5 theme-bg-light carrer section">
@@ -136,50 +191,145 @@ export default function ChannelPartner() {
                                 </h5>
 
                                 <form onSubmit={handleSubmit}>
-                                    <div className="form-group mb-2">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            className="form-control py-2"
-                                            placeholder="Name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            required
-                                        />
-                                    </div>
+                                    <div className="row">
+                                        {/* CP/Firm Details */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="cpFirmName" className="form-label visually-hidden">CP/Firm Name</label>
+                                            <input
+                                                type="text"
+                                                name="cpFirmName"
+                                                id="cpFirmName"
+                                                className="form-control py-2"
+                                                placeholder="CP/Firm Name"
+                                                value={formData.cpFirmName}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                        {/* Prospect Name */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="prospectName" className="form-label visually-hidden">Prospect Name</label>
+                                            <input
+                                                type="text"
+                                                name="prospectName"
+                                                id="prospectName"
+                                                className="form-control py-2"
+                                                placeholder="Prospect Name"
+                                                value={formData.prospectName}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
 
-                                    <div className="form-group mb-2">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            className="form-control py-2"
-                                            placeholder="Email"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                            required
-                                        />
-                                    </div>
+                                        {/* CP/Firm Email */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="cpFirmEmail" className="form-label visually-hidden">CP/Firm Email</label>
+                                            <input
+                                                type="email"
+                                                name="cpFirmEmail"
+                                                id="cpFirmEmail"
+                                                className="form-control py-2"
+                                                placeholder="CP/Firm Email"
+                                                value={formData.cpFirmEmail}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
+                                        {/* Prospect Email */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="prospectEmail" className="form-label visually-hidden">Prospect Email</label>
+                                            <input
+                                                type="email"
+                                                name="prospectEmail"
+                                                id="prospectEmail"
+                                                className="form-control py-2"
+                                                placeholder="Prospect Email"
+                                                value={formData.prospectEmail}
+                                                onChange={handleChange}
+                                                required
+                                            />
+                                        </div>
 
-                                    <div className="form-group mb-2">
-                                        <input
-                                            type="text"
-                                            name="phone"
-                                            className="form-control py-2"
-                                            placeholder="Phone Number"
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            required
-                                        />
-                                    </div>
+                                        {/* CP/Firm Mobile */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="cpFirmMobile" className="form-label visually-hidden">CP/Firm Mobile</label>
+                                            <input
+                                                type="text"
+                                                name="cpFirmMobile"
+                                                id="cpFirmMobile"
+                                                className="form-control py-2"
+                                                placeholder="CP/Firm Mobile"
+                                                value={formData.cpFirmMobile}
+                                                onChange={handleChange}
+                                                required
+                                                // Pattern for 10-digit number
+                                                pattern="\d{10}" 
+                                                title="Must be a 10-digit number"
+                                            />
+                                        </div>
+                                        {/* Prospect Mobile Number (with country code placeholder/styling from image) */}
+                                        <div className="col-md-6 form-group mb-3 d-flex">
+                                            {/* Simplified country code representation from image */}
+                                            <div className="input-group">
+                                                <span className="input-group-text py-2" style={{ backgroundColor: '#f8f9fa', borderRight: 'none' }}>+91</span>
+                                                <label htmlFor="prospectMobileNumber" className="form-label visually-hidden">Prospect Mobile Number</label>
+                                                <input
+                                                    type="text"
+                                                    name="prospectMobileNumber"
+                                                    id="prospectMobileNumber"
+                                                    className="form-control py-2"
+                                                    placeholder="Prospect Mobile Number"
+                                                    value={formData.prospectMobileNumber}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
 
-                                    {/* Hidden message field is optional */}
-                                    <textarea
-                                        name="message"
-                                        className="form-control "
-                                        placeholder="Message"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                    ></textarea>
+                                        {/* CP Agency Rera Number */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="cpAgencyReraNumber" className="form-label visually-hidden">CP Agency Rera Number</label>
+                                            <input
+                                                type="text"
+                                                name="cpAgencyReraNumber"
+                                                id="cpAgencyReraNumber"
+                                                className="form-control py-2"
+                                                placeholder="CP Agency Rera Number"
+                                                value={formData.cpAgencyReraNumber}
+                                                onChange={handleChange}
+                                            />
+                                        </div>
+                                        {/* Project Interested In (Dropdown) */}
+                                        <div className="col-md-6 form-group mb-3">
+                                            <label htmlFor="projectInterestedIn" className="form-label visually-hidden">Project Interested In</label>
+                                            <select
+                                                name="projectInterestedIn"
+                                                id="projectInterestedIn"
+                                                className="form-select py-2"
+                                                value={formData.projectInterestedIn}
+                                                onChange={handleChange}
+                                            >
+                                                <option value="" disabled>Project Interested In</option>
+                                                <option value="Amidst Nature">Amidst Nature</option>
+                                              
+                                            </select>
+                                        </div>
+
+                                        {/* The original text area is now effectively used for the hidden/default message 
+                                            but can be left here as an optional message field if desired, or removed. */}
+                                        {/* <div className="col-12 form-group mb-3">
+                                            <label htmlFor="message" className="form-label visually-hidden">Message</label>
+                                            <textarea
+                                                name="message"
+                                                id="message"
+                                                className="form-control"
+                                                placeholder="Additional Notes (Optional)"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                            ></textarea>
+                                        </div> */}
+
+                                    </div>
 
                                     <div className="text-center">
                                         <button
@@ -187,12 +337,12 @@ export default function ChannelPartner() {
                                             className="btn theme-bg-dark text-white py-2 px-4 mt-2"
                                             disabled={loading}
                                         >
-                                            {loading ? "Sending..." : "Submit"}
+                                            {loading ? "Submitting..." : "Submit Referral"}
                                         </button>
                                     </div>
 
                                     {note && <p className={`mt-2 text-center ${success ? 'text-success' : 'text-danger'}`} style={{ fontWeight: 600 }}>{note}</p>}
-                                    {success && <p className="text-success mt-2 text-center">✅ Thank you! We’ll get back to you soon.</p>}
+                                    {success && <p className="text-success mt-2 text-center">✅ Thank you! Your referral has been submitted.</p>}
                                 </form>
 
                             </div>

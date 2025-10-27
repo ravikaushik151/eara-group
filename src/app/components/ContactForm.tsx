@@ -66,14 +66,14 @@ export default function ContactForm({
       email: form.email,
       phone: form.mobile,
       message: form.message || 'interested',
-      subject: 'Eara Group - Website',
+      subject: 'Enquire From Eara Group - Website',
       form_source: 'Eara Group - Website',
       additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
     };
 
     try {
       const res = await fetch(
-        'https://us-central1-email-js-1a09b.cloudfunctions.net/emailjs/submit-form',
+        'https://earagroup.com/emailer.php',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -83,7 +83,7 @@ export default function ContactForm({
 
       const text = await res.text();
 
-      if (text.trim() === 'Email sent successfully') {
+      if (text.trim() === 'OK') {
         setSuccess(true);
         setNote('Email sent successfully!');
         setForm({ name: '', email: '', mobile: '', message: defaultMessage });

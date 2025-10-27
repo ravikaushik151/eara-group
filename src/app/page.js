@@ -303,7 +303,7 @@ export default function Home() {
                             <li>Plot sizes ranging from 1500 - 3300 sq ft.</li>
                             <li>11,000 sqft. clubhouse with gym, pool, yoga room, caf&eacute; & library</li>
                             <li>Indoor and outdoor party zones</li>
-                            <li>Ganesha temple, amphitheatre, elders&rsquo; park, children&rsquo;s play area</li>
+                            <li>Sacred space, amphitheatre, elders&rsquo; park, children&rsquo;s play area</li>
                             <li>Cricket pitch & pickleball court</li>
                             <li>Underground electrical cabling & LED streetlights</li>
                             <li>Rainwater harvesting & sewage treatment plant</li>

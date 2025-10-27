@@ -14153,7 +14153,7 @@ h1 {
 .nav-logo-link {
   color: inherit;
 }
-
+.swiper {padding:0 !important}
 @media (min-width: 992px) {
   .nav-logo-link {
     color: #f3f4ef;

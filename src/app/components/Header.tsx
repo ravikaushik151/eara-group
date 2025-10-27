@@ -49,7 +49,7 @@ export default function Header() {
             <Image
              src={
               pathname?.replace(/\/$/, "").startsWith("/amidstnature")
-                ? "/images/Amidst-Nature-Logo.png"
+                ? "/images/logo-dark.webp"
                 : "/images/logo-dark.webp"
             }
               alt="logo"
@@ -57,10 +57,10 @@ export default function Header() {
               height={66}
               className={
                 pathname?.replace(/\/$/, "").startsWith("/amidstnature")
-                  ? "logo img-fluid" // removed white-png
+                  ? "white-png logo img-fluid" // removed white-png
                   : lastScrollY < 100
                   ? "white-png logo img-fluid"
-                  : "white-png"
+                  : "white-png logo img-fluid"
               }
               priority
               fetchPriority="high"
@@ -113,7 +113,7 @@ export default function Header() {
             <Image
               src={
                 pathname?.replace(/\/$/, "").startsWith("/amidstnature")
-                  ? "/images/Amidst-Nature-Logo.png"
+                  ? "/images/logo-dark.webp"
                   : "/images/logo-dark.webp"
               }
               alt="logo"
@@ -121,10 +121,10 @@ export default function Header() {
               height={66}
               className={
                 pathname?.replace(/\/$/, "").startsWith("/amidstnature")
-                  ? "logo img-fluid" // removed white-png
+                  ? "white-png logo img-fluid" // removed white-png
                   : lastScrollY < 100
                   ? "white-png logo img-fluid"
-                  : "white-png"
+                  : "white-png logo img-fluid"
               }
               priority
               fetchPriority="high"
