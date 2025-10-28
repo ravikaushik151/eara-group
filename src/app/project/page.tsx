@@ -88,14 +88,23 @@ export default function Project() {
             </div>
 
             {/* Intro Section */}
-            <section className="section-1 aboutproject theme-bg-light" id="TOP" >
-                <div className="container">
-                    <div className="row">
-
-                        <div className="col-md-4 offset-md-8  ps-md-3 d-flex align-items-center">
+            <section className="py-5 aboutproject theme-bg-light" id="TOP" >
+                <div className="container pt-4">
+                    <div className="row py-md-4">
+                        {/* <div className="col-md-6">
+                            <Image
+                                alt="Luxury interior"
+                                width={648}
+                                height={338}
+                                className="img-fluid w-100 d-none rounded-2"
+                                src="/images/Our-Project-Section.png"
+                                style={{ objectFit: "cover", marginTop: "0% !important", }}
+                            />
+                        </div> */}
+                        <div className="col-md-5 ps-lg-4  offset-md-7  d-flex align-items-center">
                             <div className="mb-md-0">
                                 <h2 className=" theme-color-dark text-center mb-1">Amidst Nature</h2>
-                                <p className="fs-5 theme-color-dark text-center mb-2">
+                                <p className="fs-5 theme-color-dark text-center mb-1">
                                     Where <span className="text-success">Green</span> is the New <span style={{ color: "#a18f5c !important" }}>Gold</span>
                                 </p>
                                 <p className="mt-3 theme-color-dark text-center mb-2 ">
@@ -105,29 +114,20 @@ export default function Project() {
                                     </strong>
                                 </p>
 
-                                <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
+                                <p className=" theme-color-dark text-center"><strong></strong>Spread across 18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
                                 </p>
 
 
 
                                 <div className="text-center">
-                                    <Link href="/amidstnature" className="btn theme-bg-dark text-light my-3  ">
+                                    <Link href="/amidstnature" className="btn theme-bg-dark text-light my-1  ">
                                         Explore More
                                     </Link>
                                 </div>
 
                             </div>
                         </div>
-                        <div className="col-md-6">
-                        <Image
-                            alt="Luxury interior"
-                            width={648}
-                            height={338}
-                            className="img-fluid w-100  d-none"
-                            src="/images/Our-Project-Section.png"
-                            style={{ objectFit: "cover", marginTop: "0% !important", }}
-                        />
-                        </div>
+
                     </div>
 
                 </div>
