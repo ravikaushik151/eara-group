@@ -138,7 +138,7 @@ export default function Home() {
           <section className="section-1 px-md-5 px-3 theme-bg-light homehome"  >
             <div className="container">
               <div className="row">
-                <div className="col-md-5 offset-md-7 py-lg-5">
+                <div className="col-md-5 offset-md-6 py-lg-5">
                   <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
                   <span className="fs-4 theme-color-dark">Because true luxury is not loud. It&rsquo;s peaceful.</span>
                   <p className="mt-4 theme-color-dark">
