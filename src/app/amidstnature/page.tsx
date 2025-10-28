@@ -108,19 +108,19 @@ export default function Home() {
                   <span className="mb-0 fs-2 fw-light theme-color-light">18+  Acres</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved By</h6>
+                  <h4 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">Approved By</h4>
                   <span className="mb-0 fs-2 fw-light theme-color-light">BMRDA</span>
                 </div>
                 <div className="col-6 col-md-3 border-end border-light mt-4 mt-md-0">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3  theme-color-light">
+                  <h4 className="fw-bold text-uppercase fs-5 mb-3  theme-color-light">
                     Possession
-                  </h6>
+                  </h4>
                   <span className="mb-0 fs-2 fw-light theme-color-light">18 Months</span>
                 </div>
                 <div className="col-6 col-md-3 mt-4 mt-md-0">
-                  <h6 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">
+                  <h4 className="fw-bold text-uppercase fs-5 mb-3 theme-color-light">
                     Plot Sizes
-                  </h6>
+                  </h4>
                   <span className="mb-0 fs-2 fw-light theme-color-light">1500 - 3300 sq.ft.</span>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
                     <span className="fs-5 theme-color-dark text-center d-block">Where <span className="text-success">Green</span> is the New <span style={{ color: "#a18f5c !important" }}>Gold</span></span>
                     <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong></p>
-                    <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
+                    <p className=" theme-color-dark"><strong></strong>Spread across  18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
                     </p>
                     <div className="text-center  my-4">
                       <ContactFormPopup

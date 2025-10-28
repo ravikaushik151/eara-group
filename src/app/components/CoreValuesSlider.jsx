@@ -30,7 +30,7 @@ const coreValues = [
 
 export default function CoreValuesSlider() {
     return (
-        <section className="lifestyle-section section">
+        <section className="lifestyle-section section theme-bg-light">
             <div className="container">
                 <div className="row">
                     <div className="title text-center mb-3">
@@ -54,23 +54,25 @@ export default function CoreValuesSlider() {
                 >
                     {coreValues.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className="row shadow">
+                            <div className="mb-5 theme-bg-dark shadow p-3">
+                                <div className="row">
                                 <div className="col-md-6">
                                     <img
                                         src={item.img}
                                         alt={item.title}
-                                        className="img-fluid p-md-5 p-2 eimg"
+                                        className="img-fluid p-md-5 p-2 eimg theme-png-light"
                                     />
                                 </div>
                                 <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                                     <div>
-                                        <h5 className="theme-color-dark text-start fw-bold fs-4">
+                                        <h5 className="theme-color-light text-start fw-bold fs-4">
                                             {item.title}
                                         </h5>
-                                        <p className="theme-color-dark text-start small">
+                                        <p className="theme-color-light text-start small">
                                             {item.text}
                                         </p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </SwiperSlide>

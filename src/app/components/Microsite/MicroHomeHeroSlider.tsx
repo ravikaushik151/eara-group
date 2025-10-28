@@ -12,8 +12,8 @@ const slides = [
     desc: '',
     button: '',
     href: '',
-    desktopImg: '/images/Eara_banner image.webp',
-    mobileImg: '/images/Eara_banner image.webp', // ← Mobile banner
+    desktopImg: '/images/Eara_banner-image.webp',
+    mobileImg: '/images/Eara_banner-image.webp', // ← Mobile banner
   },
   // add more slides if needed
 ];

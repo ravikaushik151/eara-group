@@ -27,13 +27,13 @@ export default function Project() {
                             />
                             <div className="overlay2">
                                 <div className="text-white d-block">
-                                    <p className="text-center d-block fs-1 mb-3 text-uppercase">
+                                    <h1 className="text-center d-block fs-1 mb-3 text-uppercase">
                                         Our Projects
-                                    </p>
+                                    </h1>
                                     <p className="text-center d-block fs-6">
                                         <Link
                                             className="text-white text-decoration-none"
-                                            href={"./"}
+                                            href="/"
                                         >
                                             Home
                                         </Link>{" "}

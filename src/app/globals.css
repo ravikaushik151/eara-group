@@ -14512,8 +14512,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0, 0, 0, 0.5); 
- background-color: #583a2c8a;*/
+ background-color: rgba(0, 0, 0, 0.15); 
+  /* background-color: #583a2c8a;*/
   color: white;
   /* Text color */
   display: flex;
@@ -14614,8 +14614,10 @@ p {
   font-display: swap;
 }
 
+
 .eimg {
   max-width: 223px !important;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -15685,6 +15687,8 @@ footer button:hover {
     left: -100%;
   }
 }
+
+.theme-png-light {filter: brightness(0) saturate(100%) invert(100%) sepia(33%) saturate(1613%) hue-rotate(305deg) brightness(100%) contrast(98%) !important;}
 
 .theme-bg-light {
   background-color: var(--primary-color) !important;
@@ -19085,7 +19089,7 @@ footer button:hover {
 
 .page-about-mv {
   position: relative;
-  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flower_Cream.avif') right 50% / 100% 80% no-repeat;
   color: #fff;
   overflow: hidden;
 
@@ -19099,7 +19103,7 @@ footer button:hover {
   position: absolute;
   inset: 0;
   /* top, right, bottom, left = 0 */
-  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flower_Cream.avif') right 50% / 100% 80% no-repeat;
   transform: scale(-1, -1);
   /* ✅ sirf image invert hogi */
   /* optional transparency */
@@ -19166,6 +19170,16 @@ footer button:hover {
 .testimonials {
   position: relative;
   background: url('/images/Line-8Brown.png');
+  color: #fff;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+
+}
+.testimonials-light {
+  position: relative;
+  background: url('/images/Line-8_Cream.png');
   color: #fff;
   overflow: hidden;
   background-size: 100% 100%;
@@ -19409,4 +19423,3 @@ footer textarea::placeholder {
 .theme-logo {
   filter: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(1674%) hue-rotate(335deg) brightness(102%) contrast(83%);
 }
-.text-brown {color: #583a2c !important;}

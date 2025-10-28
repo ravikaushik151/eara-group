@@ -38,7 +38,7 @@
 
 .page-about-mv {
   position: relative;
-  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flower_Cream.avif') right 50% / 100% 80% no-repeat;
   color: #fff;
   overflow: hidden;
 
@@ -52,7 +52,7 @@
   position: absolute;
   inset: 0;
   /* top, right, bottom, left = 0 */
-  background: url('/images/Flower_Cream.png') right 50% / 100% 80% no-repeat;
+  background: url('/images/Flower_Cream.avif') right 50% / 100% 80% no-repeat;
   transform: scale(-1, -1);
   /* ✅ sirf image invert hogi */
   /* optional transparency */

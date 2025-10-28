@@ -5,13 +5,13 @@ import TestimonialSlider from "../components/Home/TestimonialSlider";
 export const metadata = {
   title: 'Premium Residential Plots in Kanakapura Main Road - Eara Group',
   description: 'Discover Premium Villa Plots in Kanakapura Main Road by Eara Group. Invest in spacious, well-planned plots with excellent connectivity and modern amenities.',
-  keywords : 'BMRDA Residential Plot in Kanakapura Main Road, Premium Villa Plots in Kanakapura Main Road, Premium Residential Plots in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road',
+  keywords: 'BMRDA Residential Plot in Kanakapura Main Road, Premium Villa Plots in Kanakapura Main Road, Premium Residential Plots in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road',
   alternates: {
     canonical: 'https://earagroup.com/about/',
   },
 };
 export default function About() {
-  
+
   return (
     <>
       <div id="carouselExampleDark" className="header-section ">
@@ -24,19 +24,19 @@ export default function About() {
                 width={1920}
                 className="img-fluid masterpiece"
                 alt="masterpiece"
-                style={{objectPosition:"top"}}
+                style={{ objectPosition: "top" }}
               />
               <div className="overlay2 ">
                 <div className="text-white d-block text-brown">
                   {" "}
-                  <p className="text-center d-block fs-1 mb-3 text-uppercase">
+                  <h1 className="text-center d-block fs-1 mb-3 text-uppercase">
                     {" "}
                     About us
-                  </p>
+                  </h1>
                   <p className="text-center d-block fs-6 ">
                     <Link
                       className="text-white text-decoration-none text-brown"
-                      href={"./"}
+                      href="/"
                     >
                       {" "}
                       Home
@@ -177,7 +177,13 @@ export default function About() {
 
 
 
-      <TestimonialSlider />
+      <TestimonialSlider
+        sectionClass="px-md-5 px-3 bg-light theme-bg-light testimonials"
+        headingClass="text-center mb-4 fw-bold theme-color-dark"
+        cardClass="info-box p-4 bg-white theme-bg-dark shadow-sm h-100 rounded d-flex flex-column justify-content-between"
+        textClass="theme-color-light mb-3"
+        nameClass="text-center fw-bold theme-color-light fw-bold mt-auto"
+      />
 
 
     </>

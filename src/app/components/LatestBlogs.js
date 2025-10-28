@@ -7,11 +7,11 @@ export default function LatestBlogs() {
     const topPosts = posts.slice(0, 3);
 
     return (
-        <section className="px-md-5 px-3 theme-bg-dark blog">
-            <h2 className="text-center theme-color-light">LATEST BLOGS</h2>
+        <section className="px-md-5 px-3 theme-bg-light blog">
+            <h2 className="text-center theme-color-dark">LATEST BLOGS</h2>
             <div className="blog-grid">
                 {topPosts.map((post) => (
-                    <div key={post.slug} className="blog-card theme-bg-light">
+                    <div key={post.slug} className="blog-card theme-bg-dark">
                         <Image
                             src={post.image}
                             alt={post.title}
@@ -24,11 +24,11 @@ export default function LatestBlogs() {
                         <div className="content">
                             {/* Agar detail page banana ho to Link use karo */}
                             <Link href={`/blog/${post.slug}`} className="text-decoration-none">
-                                <h4 className="theme-color-dark text-center cursor-pointer fs-4" style={{ fontWeight: "600" }}>
+                                <h4 className="theme-color-light text-center cursor-pointer fs-4" style={{ fontWeight: "600" }}>
                                     {post.title}
                                 </h4>
                             </Link>
-                            <p className="theme-color-dark">{post.excerpt}</p>
+                            <p className="theme-color-light">{post.excerpt}</p>
                         </div>
                     </div>
                 ))}

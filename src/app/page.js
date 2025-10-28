@@ -149,7 +149,7 @@ export default function Home() {
                     <Link
                       href="/about"
                       className="btn theme-bg-dark text-white border mt-4"
-                    > Read More
+                    > Explore More
                     </Link>
                   </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
             <Image
               alt="Project"
-              src="/images/home-about.png"
+              src="/images/home-about.avif"
               width={1000}
               height={750}
               className="img-fluid w-100 d-md-none p-0 mb-0 mt-3"
@@ -248,7 +248,7 @@ export default function Home() {
           </section> */}
 
           <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
-            backgroundImage: "url('/images/Flower_Cream.png')",
+            backgroundImage: "url('/images/Flower_Cream.avif')",
             backgroundSize: "15% 35%",   // ✅ width 100%, height 80%
             backgroundPosition: "right 99%", // ✅ right aligned, center vertically
             color: "#fff",
@@ -265,7 +265,7 @@ export default function Home() {
                   <div className="col-md-6 px-md-0 text-center">
                     <Image
                       alt="Project"
-                      src="/images/upcoming-projects.png"
+                      src="/images/upcoming-projects.avif"
                       width={500}
                       height={750}
                       className="img-fluid p-0 mb-3"
@@ -292,8 +292,8 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="noclass">
-                        <p className="text-justify m-center lh text-black mt-3 theme-color-light w-md-50">
-                          The project is nestled just Off Kanakapura Main  Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.
+                        <p className="text-justify m-center lh text-black mt-3 theme-color-light ">
+                          The project is nestled just Off Kanakapura Main  Road, <br/> thoughtfully designed to offer a blend of serene living and modern infrastructure.
                         </p>
                       </div>
                       <div className="row align-items-start mb-3 mt-4 mob-center">
