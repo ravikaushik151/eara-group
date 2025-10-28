@@ -5,16 +5,16 @@ import TestimonialSlider from "../components/Home/TestimonialSlider";
 export const metadata = {
     title: 'Amidst Nature Location: Luxury Living on Kanakapura Main Road',
     description: 'Discover serenity at Amidst Nature, Kanakapura Main Road. Enjoy lush greenery, peaceful surroundings, and modern comforts in this beautiful, tranquil location.',
-    keywords : 'Amidst Nature Address, Amidst Nature Reviews, Amidst Nature Price, Amidst Nature Kanakapura Main Road',
+    keywords: 'Amidst Nature Address, Amidst Nature Reviews, Amidst Nature Price, Amidst Nature Kanakapura Main Road',
     alternates: {
-      canonical: 'https://earagroup.com/project/',
+        canonical: 'https://earagroup.com/project/',
     },
-  };
+};
 export default function Project() {
     return (
         <>
             {/* Header Section */}
-            <div id="carouselExampleDark" className="header-section">
+            {/* <div id="carouselExampleDark" className="header-section">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="image-container">
@@ -44,6 +44,47 @@ export default function Project() {
                         </div>
                     </div>
                 </div>
+            </div> */}
+
+            <div id="carouselExampleDark" className="header-section position-relative">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="video-container position-relative">
+                            {/* ✅ Background video */}
+                            <video
+                                className="w-100 h-100 object-fit-cover"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="auto"
+                                poster="/images/project-header.webp" // fallback image before video loads
+                                style={{
+                                    objectFit: "cover",
+                                    height: "100%",
+                                    width: "100%",
+                                }}
+                            >
+                                <source src="/images/Our-Project_1.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+
+                            {/* ✅ Overlay */}
+                            <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
+                                <h1 className="text-center fs-1 mb-3 text-uppercase">Projects</h1>
+                                <p className="text-center fs-6">
+                                    <Link
+                                        className="text-white text-decoration-none text-brown"
+                                        href="/"
+                                    >
+                                        Home
+                                    </Link>{" "}
+                                    / Projects
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Intro Section */}
@@ -54,19 +95,19 @@ export default function Project() {
                             <div className="mb-md-0">
                                 <h2 className=" theme-color-dark text-center mb-1">Amidst Nature</h2>
                                 <p className="fs-5 theme-color-dark text-center mb-2">
-                                Where <span className="text-success">Green</span> is the New <span style={{color:"#a18f5c !important"}}>Gold</span>
+                                    Where <span className="text-success">Green</span> is the New <span style={{ color: "#a18f5c !important" }}>Gold</span>
                                 </p>
                                 <p className="mt-3 theme-color-dark text-center mb-2 ">
                                     <strong>
                                         Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green
                                         mornings, golden silence, and grounded luxury.
                                     </strong>
-                                    </p>
-                                   
+                                </p>
+
                                 <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
                                 </p>
-                                   
-                                
+
+
 
                                 <div className="text-center">
                                     <Link href="/amidstnature" className="btn theme-bg-dark text-light mt-4  mb-md-5">

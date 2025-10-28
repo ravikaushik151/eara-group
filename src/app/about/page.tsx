@@ -50,48 +50,48 @@ export default function About() {
         </div>
       </div> */}
       <div id="carouselExampleDark" className="header-section position-relative">
-  <div className="row">
-    <div className="col-md-12">
-      <div className="video-container position-relative">
-        {/* ✅ Background video */}
-        <video
-          className="w-100 h-100 object-fit-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/images/About_new copy_Eara.webp" // fallback image before video loads
-          style={{
-            objectFit: "cover",
-            height: "100%",
-            width: "100%",
-          }}
-        >
-          <source src="/images/ABout-us-Video-Size.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="video-container position-relative">
+              {/* ✅ Background video */}
+              <video
+                className="w-100 h-100 object-fit-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                poster="/images/About_new copy_Eara.webp" // fallback image before video loads
+                style={{
+                  objectFit: "cover",
+                  height: "100%",
+                  width: "100%",
+                }}
+              >
+                <source src="/images/ABout-us-Video-Size.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
 
-        {/* ✅ Overlay */}
-        <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
-          <h1 className="text-center fs-1 mb-3 text-uppercase">About Us</h1>
-          <p className="text-center fs-6">
-            <Link
-              className="text-white text-decoration-none text-brown"
-              href="/"
-            >
-              Home
-            </Link>{" "}
-            / About Us
-          </p>
+              {/* ✅ Overlay */}
+              <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
+                <h1 className="text-center fs-1 mb-3 text-uppercase">About Us</h1>
+                <p className="text-center fs-6">
+                  <Link
+                    className="text-white text-decoration-none text-brown"
+                    href="/"
+                  >
+                    Home
+                  </Link>{" "}
+                  / About Us
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
 
-      <section id="TOP" className="section_amenities-hero theme-bg-light aboutabout  section" >
+      <section id="TOP" className="section_amenities-hero theme-bg-light pb-0  section" >
         <div className="padding-global">
           <div className="container-large">
             <div className="amenities-hero_components">
@@ -100,7 +100,7 @@ export default function About() {
                   <div className="text-color-dark-rainforest">
                     <h2
                       data-animate={2}
-                      className="heading-style-h2 mb-2 text-center theme-color-dark"
+                      className="heading-style-h2 mb-1 text-center theme-color-dark"
                     >
                       Welcome to <strong>Eara Group</strong>, where vision meets
                       reality.
@@ -118,6 +118,7 @@ export default function About() {
                 </div>
               </div>
             </div>
+
             {/* <section className="section-1 ">
               <div className="content">
                 <h2 className="mb-3 theme-color-dark fs-2 text-center">About Us</h2>
@@ -139,36 +140,37 @@ export default function About() {
                 />
               </div>
             </section> */}
-            <section className="section-1  ">
-              <div className="container-fluid">
-                <div className="row">
-                  <div className="col-md-6 offset-md-6">
-                    <h2 className="mb-3 theme-color-dark fs-2 text-center">About Us</h2>
-                    <p className="mb-2 theme-color-dark">
-                      At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
-                    </p>
-                    <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
-                    </p>
-                    <p className="mb-2 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
-                  </div>
-
-                </div>
-
-              </div>
-              <Image
-                alt="Luxury interior"
-                width={648}
-                height={338}
-                className="img-fluid w-100 m-0 d-md-none"
-                src="/images/about-about.png"
-                style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-33% !important" }}
-              />
-            </section>
           </div>
         </div>
       </section>
+      <section className=" aboutabout theme-bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 offset-md-6 pt-4 py-5 d-flex align-items-center">
+              <div>
+                <h2 className="mb-2 theme-color-dark fs-2 text-center">About Us</h2>
+                <p className="mb-2 theme-color-dark">
+                  At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
+                </p>
+                <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
+                </p>
+                <p className="mb-2 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <Image
+          alt="Luxury interior"
+          width={648}
+          height={338}
+          className="img-fluid  m-0 d-md-none"
+          src="/images/about-about.png"
+          style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-33% !important" }}
+        />
+      </section>
 
 
       <section id="" className="section_amenities-hero theme-bg-dark page-about-mv section">
