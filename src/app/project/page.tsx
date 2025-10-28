@@ -91,8 +91,8 @@ export default function Project() {
             <section className="section-1 aboutproject theme-bg-light" id="TOP" >
                 <div className="container">
                     <div className="row">
-                  
-                        <div className="col-md-5 offset-md-7  ps-md-3 d-flex align-items-center">
+
+                        <div className="col-md-4 offset-md-8  ps-md-3 d-flex align-items-center">
                             <div className="mb-md-0">
                                 <h2 className=" theme-color-dark text-center mb-1">Amidst Nature</h2>
                                 <p className="fs-5 theme-color-dark text-center mb-2">
@@ -115,20 +115,23 @@ export default function Project() {
                                         Explore More
                                     </Link>
                                 </div>
+
                             </div>
                         </div>
-
+                        <div className="col-md-6">
+                        <Image
+                            alt="Luxury interior"
+                            width={648}
+                            height={338}
+                            className="img-fluid w-100  d-none"
+                            src="/images/Our-Project-Section.png"
+                            style={{ objectFit: "cover", marginTop: "0% !important", }}
+                        />
+                        </div>
                     </div>
 
                 </div>
-                <Image
-                    alt="Luxury interior"
-                    width={648}
-                    height={338}
-                    className="img-fluid w-100 mt-3 d-md-none"
-                    src="/images/admist-bg.png"
-                    style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-25% !important" }}
-                />
+
             </section>
 
             {/* <section id="TOP" className="section_amenities-hero theme-bg-light ">
