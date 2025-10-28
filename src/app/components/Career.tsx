@@ -61,7 +61,7 @@ export default function Career() {
         <div className='row'>
           <div className='col-md-12'>
             <div className="image-container">
-              <Image src="/images/career.png" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" />
+              <Image src="/images/Career-Page.png" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" />
               <div className="overlay2 ">
                 <div className="text-white d-block">
                   <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Career</h1>
