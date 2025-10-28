@@ -1,9 +1,9 @@
 
 .aboutproject {
   
- background-image: url('/images/Project_EARA.png') !important;
+ background-image: url('/images/Our-Project-Section.png') !important;
  background-size: cover;
- background-position: left bottom !important;
+ background-position: center !important;
  background-repeat: no-repeat;
 }
 @media only screen and (max-width:768px) {

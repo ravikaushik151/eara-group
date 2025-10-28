@@ -88,10 +88,11 @@ export default function Project() {
             </div>
 
             {/* Intro Section */}
-            <section className="section-1 aboutproject " id="TOP" >
+            <section className="section-1 aboutproject theme-bg-light" id="TOP" >
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6 offset-md-5 ps-md-3">
+                  
+                        <div className="col-md-5 offset-md-7  ps-md-3 d-flex align-items-center">
                             <div className="mb-md-0">
                                 <h2 className=" theme-color-dark text-center mb-1">Amidst Nature</h2>
                                 <p className="fs-5 theme-color-dark text-center mb-2">
