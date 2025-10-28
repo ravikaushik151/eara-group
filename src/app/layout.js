@@ -4,11 +4,16 @@ import Script from "next/script";
 import ClientWrapper from './components/ClientWrapper';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import { Poppins } from 'next/font/google';
 export const metadata = {
   title: 'Eara Group',
   description: 'Eara Group',
 };
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'], // Add weights as needed
+  variable: '--font-poppins', // Optional CSS variable
+});
 
 export default function RootLayout({ children }) {
   const schemaData = {
@@ -121,7 +126,7 @@ export default function RootLayout({ children }) {
     ]
   };
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <head>
         <link rel="icon" type="image/png" href="/fevicon.png" />
         <link rel="shortcut icon" type="image/png" href="/fevicon.png" />

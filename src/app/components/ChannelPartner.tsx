@@ -142,16 +142,16 @@ export default function ChannelPartner() {
                 width={1920}
                 className="img-fluid masterpiece"
                 alt="masterpiece"
-                style={{objectPosition:"bottom"}}
+                // style={{objectPosition:"center"}}
               />
               <div className="overlay2 ">
-                <div className="text-white d-block">
+                <div className="text-white d-block"  style={{marginTop:"-120px"}}>
                   {" "}
                   <h1 className="text-center d-block fs-1 mb-3 text-uppercase">
                     {" "}
                     Channel Partner
                   </h1>
-                  <p className="text-center d-block fs-6 ">
+                  {/* <p className="text-center d-block fs-6 ">
                     <Link
                       className="text-white text-decoration-none"
                       href="/"
@@ -160,7 +160,7 @@ export default function ChannelPartner() {
                       Home
                     </Link>{" "}
                     / Channel Partner{" "}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

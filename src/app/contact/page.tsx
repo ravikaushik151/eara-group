@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="col-md-12">
             <div className="image-container position-relative">
               <Image
-                src="/images/Contact-Page.png"
+                src="/images/Banner_New_Contact_header.png"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece "

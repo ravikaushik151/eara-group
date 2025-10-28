@@ -62,12 +62,12 @@ export default function Career() {
           <div className='col-md-12'>
             <div className="image-container">
               <Image src="/images/Career-Page.png" height={2880} width={1920} className='img-fluid masterpiece ' alt="masterpiece" />
-              <div className="overlay2 ">
+              <div className="overlay2 " style={{marginTop:"-120px"}}>
                 <div className="text-white d-block">
                   <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Career</h1>
-                  <p className="text-center d-block fs-6 ">
+                  {/* <p className="text-center d-block fs-6 ">
                     <Link className="text-white text-decoration-none" href='/'> Home</Link> / Career
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

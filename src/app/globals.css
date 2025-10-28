@@ -9383,7 +9383,7 @@ fieldset:disabled .btn {
 }
 
 .fw-bold {
-  font-weight: 700 !important
+  font-weight: 600 !important
 }
 
 .fw-bolder {
@@ -13947,7 +13947,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-family: Times New Roman, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
   font-size: 16px !important;
 }
@@ -13960,7 +13960,7 @@ input[type="file"]:focus-visible {
 }
 
 h1 {
-  font-family: Times New Roman, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
 }
 
@@ -14216,7 +14216,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Times New Roman, sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 25px;
@@ -15033,7 +15033,7 @@ section {
 
 h2 {
   margin-bottom: 40px;
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
 }
 
@@ -15231,7 +15231,7 @@ h2 {
 
   h2 {
     font-size: 24px;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-display: swap;
   }
 
@@ -15259,14 +15259,14 @@ h2 {
 
 .content h2 {
   line-height: 50px;
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
 }
 
 .lifestyle-section {
   background: #fdf3e9;
   padding: 60px 20px;
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
   text-align: center;
   position: relative;
@@ -15402,7 +15402,7 @@ h2 {
 @media (max-width: 768px) {
   .lifestyle-section h2 {
     font-size: 24px;
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-display: swap;
   }
 
@@ -15549,9 +15549,9 @@ h2 {
 .section-2 h2,
 section h2 {
   font-size: 2.5rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   text-transform: uppercase;
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
   margin-bottom: 40px;
   line-height: 1.25 !important;
@@ -15569,7 +15569,7 @@ section h2 {
 h5 {
   font-size: 20px !important;
   font-weight: 600 !important;
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
 }
 
@@ -19335,9 +19335,9 @@ section {
 .section-2 h2,
 section h2 {
   font-size: 2.5rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   text-transform: uppercase !important;
-  font-family: "Times New Roman", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-display: swap !important;
   margin-bottom: 40px !important;
   line-height: 1.25 !important;
@@ -19352,9 +19352,9 @@ section h2 {
   .section-2 h2,
   section h2 {
     font-size: 2rem !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     text-transform: uppercase !important;
-    font-family: "Times New Roman", sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-display: swap !important;
     margin-bottom: 40px !important;
     line-height: 1.25 !important;
