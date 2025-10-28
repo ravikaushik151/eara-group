@@ -142,7 +142,7 @@ export default function ChannelPartner() {
                 width={1920}
                 className="img-fluid masterpiece"
                 alt="masterpiece"
-                style={{objectPosition:"top"}}
+                style={{objectPosition:"bottom"}}
               />
               <div className="overlay2 ">
                 <div className="text-white d-block">
