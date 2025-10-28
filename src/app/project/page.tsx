@@ -111,7 +111,7 @@ export default function Project() {
 
 
                                 <div className="text-center">
-                                    <Link href="/amidstnature" className="btn theme-bg-dark text-light mt-4  mb-md-5">
+                                    <Link href="/amidstnature" className="btn theme-bg-dark text-light my-3  ">
                                         Explore More
                                     </Link>
                                 </div>
