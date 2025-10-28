@@ -145,7 +145,7 @@ export default function Home() {
                     At EARA Group, we&rsquo;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
                     Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialise in developing real estate projects designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
                   </p>
-                  <div className="text-center">
+                  <div className="text-start m-center">
                     <Link
                       href="/about"
                       className="btn theme-bg-dark text-white border mt-4"
