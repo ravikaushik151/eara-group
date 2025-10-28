@@ -72,7 +72,7 @@ export default function Project() {
                             {/* ✅ Overlay */}
                             <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
                                 <h1 className="text-center fs-1 mb-3 text-uppercase">Projects</h1>
-                                <p className="text-center fs-6">
+                                {/* <p className="text-center fs-6">
                                     <Link
                                         className="text-white text-decoration-none text-brown"
                                         href="/"
@@ -80,7 +80,7 @@ export default function Project() {
                                         Home
                                     </Link>{" "}
                                     / Projects
-                                </p>
+                                </p> */}
                             </div>
                         </div>
                     </div>

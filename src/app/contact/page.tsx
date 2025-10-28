@@ -30,12 +30,12 @@ export default function Contact() {
               <div className="overlay2 position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                 <div className="text-white d-block text-center">
                   <h1 className="fs-1 mb-3 text-uppercase">Contact Us</h1>
-                  <p className="fs-6 text-center">
+                  {/* <p className="fs-6 text-center">
                     <Link className="text-white text-decoration-none " href="/">
                       Home
                     </Link>{" "}
                     / Contact Us
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
