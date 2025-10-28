@@ -11,96 +11,96 @@ import CoreValuesSlider from "./components/CoreValuesSlider";
 export const metadata = {
   title: 'Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.',
   description: 'Discover Eara Group&rsquo;s luxury villa plots for sale in Kanakapura Main Road. Build your dream home amidst nature with premium amenities and great connectivity.',
-  keywords : 'Eara Group, Luxury villa plots for sale in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road, Villa plots sale near Kanakapura Main Road, Premium villa plots for sale in Kaggalipura',
+  keywords: 'Eara Group, Luxury villa plots for sale in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road, Villa plots sale near Kanakapura Main Road, Premium villa plots for sale in Kaggalipura',
   alternates: {
     canonical: 'https://earagroup.com/',
   },
 };
 
 export default function Home() {
-/*  useEffect(() => {
-    if (typeof window !== "undefined" && window.Lenis) {
-      const lenis = new window.Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: "vertical",
-        gestureDirection: "vertical",
-        smooth: true,
-        mouseMultiplier: 1,
-        smoothTouch: false,
-        touchMultiplier: 2,
-        infinite: false,
-      });
-
-      const getCurrentPath = () => window.location.pathname;
-      const setLerp = () => {
-        lenis.options.lerp =
-          getCurrentPath() === "/being-here-at-studio" ? 0.1 : undefined;
-        console.log("lerp applied:", lenis.options.lerp);
-        console.log("Current Path:", getCurrentPath());
-      };
-
-      setTimeout(setLerp, 100);
-
-      function raf(time) {
-        lenis.raf(time);
+  /*  useEffect(() => {
+      if (typeof window !== "undefined" && window.Lenis) {
+        const lenis = new window.Lenis({
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          direction: "vertical",
+          gestureDirection: "vertical",
+          smooth: true,
+          mouseMultiplier: 1,
+          smoothTouch: false,
+          touchMultiplier: 2,
+          infinite: false,
+        });
+  
+        const getCurrentPath = () => window.location.pathname;
+        const setLerp = () => {
+          lenis.options.lerp =
+            getCurrentPath() === "/being-here-at-studio" ? 0.1 : undefined;
+          console.log("lerp applied:", lenis.options.lerp);
+          console.log("Current Path:", getCurrentPath());
+        };
+  
+        setTimeout(setLerp, 100);
+  
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
         requestAnimationFrame(raf);
       }
-      requestAnimationFrame(raf);
-    }
-
-    const form = document.getElementById(
-      "wf-form-Melodies-of-Life-Contact-Form"
-    );
-    const trigger = document.getElementById("brochure-download-trigger");
-    const popup = document.getElementById("popup-form");
-    const thankYou = document.getElementById("popup-thankyou");
-    const sourceInput = document.getElementById("SourceURL");
-
-    if (sourceInput) {
-      sourceInput.value = window.location.href;
-    }
-
-    if (trigger && popup) {
-      trigger.addEventListener("click", (e) => {
-        e.preventDefault();
-        popup.style.display = "flex";
-      });
-    }
-
-    const closePopup = () => {
-      if (popup) popup.style.display = "none";
-      if (thankYou) thankYou.style.display = "none";
-    };
-
-    if (form) {
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(form.action, {
-          method: form.method,
-          body: new FormData(form),
-        })
-          .then((res) => {
-            if (res.ok) {
-              closePopup();
-              document.getElementById("brochure-download-link")?.click();
-              if (thankYou) thankYou.style.display = "flex";
-            } else {
-              alert(
-                "There was an issue with your submission. Please try again."
-              );
-            }
+  
+      const form = document.getElementById(
+        "wf-form-Melodies-of-Life-Contact-Form"
+      );
+      const trigger = document.getElementById("brochure-download-trigger");
+      const popup = document.getElementById("popup-form");
+      const thankYou = document.getElementById("popup-thankyou");
+      const sourceInput = document.getElementById("SourceURL");
+  
+      if (sourceInput) {
+        sourceInput.value = window.location.href;
+      }
+  
+      if (trigger && popup) {
+        trigger.addEventListener("click", (e) => {
+          e.preventDefault();
+          popup.style.display = "flex";
+        });
+      }
+  
+      const closePopup = () => {
+        if (popup) popup.style.display = "none";
+        if (thankYou) thankYou.style.display = "none";
+      };
+  
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
           })
-          .catch((err) => console.error("Submission error:", err));
-      });
-    }
-  }, []); */
+            .then((res) => {
+              if (res.ok) {
+                closePopup();
+                document.getElementById("brochure-download-link")?.click();
+                if (thankYou) thankYou.style.display = "flex";
+              } else {
+                alert(
+                  "There was an issue with your submission. Please try again."
+                );
+              }
+            })
+            .catch((err) => console.error("Submission error:", err));
+        });
+      }
+    }, []); */
 
   return (
     <>
       <main className="main-wrapper">
-        <div className="overflow-clip">
-          {/* <HomeHeroSlider /> */}
+        {/* <div className="overflow-clip">
+
           <div className="overflow-hidden position-relative">
             <div className="position-relative text-white d-flex align-items-md-center align-items-end" style={{ height: '100vh' }}>
 
@@ -133,6 +133,37 @@ export default function Home() {
 
             </div>
           </div>
+        </div> */}
+        <div className="overflow-clip" id="main-slider">
+          <div id="carouselExampleDark" className="header-section position-relative">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="video-container position-relative " style={{ lineHeight: "0 !important" }}>
+                  {/* ✅ Background video */}
+                  <video
+                    className="w-100 h-100 object-fit-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    poster="/images/hero-image-edit-4-new.avif" // fallback image before video loads
+                    style={{
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <source src="/images/home-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <MicroHomeHeroSlider /> */}
         </div>
         <div id="scroll-more">
           <section className="section-1 px-md-5 px-3 theme-bg-light homehome"  >
@@ -143,7 +174,7 @@ export default function Home() {
                   <span className="fs-4 theme-color-dark">Because true luxury is not loud. It&rsquo;s peaceful.</span>
                   <p className="mt-3 theme-color-dark">
                     At EARA Group, we&rsquo;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.</p>
-                    <p>
+                  <p>
                     Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialise in developing real estate projects designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
                   </p>
                   <div className="text-start m-center">
@@ -271,7 +302,7 @@ export default function Home() {
                       height={750}
                       className="img-fluid p-0 mb-3 w-100"
                       priority
-                      fetchPriority="high" style={{  objectFit: "cover", objectPosition: "bottom center" }}
+                      fetchPriority="high" style={{ objectFit: "cover", objectPosition: "bottom center" }}
                     />
                   </div>
                   <div
@@ -282,7 +313,7 @@ export default function Home() {
                     <div>
                       <div className="title text-left ">
                         <h4 className="text-black mb-2 fs-4 theme-color-light fw-bold m-center">
-                          Ultra Luxury Plotted Development 
+                          Ultra Luxury Plotted Development
                         </h4>
                         <p className="m-center">
                           <span className="theme-color-light  m-center">
@@ -294,7 +325,7 @@ export default function Home() {
                       </div>
                       <div className="noclass">
                         <p className="text-justify m-center lh text-black mt-3 theme-color-light ">
-                          The project is nestled just Off Kanakapura Main  Road, <br/> thoughtfully designed to offer a blend of serene living and modern infrastructure.
+                          The project is nestled just Off Kanakapura Main  Road, <br /> thoughtfully designed to offer a blend of serene living and modern infrastructure.
                         </p>
                       </div>
                       <div className="row align-items-start mb-3 mt-4 mob-center">
