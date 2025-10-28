@@ -141,14 +141,15 @@ export default function Home() {
                 <div className="col-md-5 offset-md-6 py-lg-5">
                   <h2 className="mb-0 theme-color-dark">Green Thinking. Luxurious Living.</h2>
                   <span className="fs-4 theme-color-dark">Because true luxury is not loud. It&rsquo;s peaceful.</span>
-                  <p className="mt-4 theme-color-dark">
-                    At EARA Group, we&rsquo;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
+                  <p className="mt-3 theme-color-dark">
+                    At EARA Group, we&rsquo;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.</p>
+                    <p>
                     Backed by 20+ years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialise in developing real estate projects designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.
                   </p>
                   <div className="text-start m-center">
                     <Link
                       href="/about"
-                      className="btn theme-bg-dark text-white border mt-4"
+                      className="btn theme-bg-dark text-white border mt-1"
                     > Explore More
                     </Link>
                   </div>
@@ -254,7 +255,7 @@ export default function Home() {
             color: "#fff",
             backgroundRepeat: "no-repeat",   // ✅ fixed
           }}>
-            <div className="container-fluid">
+            <div className="container">
               <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
                   <div className="title text-center mb-3">
@@ -268,13 +269,13 @@ export default function Home() {
                       src="/images/upcoming-projects.avif"
                       width={500}
                       height={750}
-                      className="img-fluid p-0 mb-3"
+                      className="img-fluid p-0 mb-3 w-100"
                       priority
-                      fetchPriority="high" style={{ maxHeight: "75vh", objectFit: "cover", objectPosition: "bottom center" }}
+                      fetchPriority="high" style={{  objectFit: "cover", objectPosition: "bottom center" }}
                     />
                   </div>
                   <div
-                    className="col-md-6 d-flex align-items-center"
+                    className="col-md-6 px-md-5 d-flex align-items-center"
                     data-aos="fade-left"
                     data-aos-duration={1500}
                   >
@@ -311,7 +312,7 @@ export default function Home() {
                           </ul>
                         </div>
                       </div>
-                      <p className="m-center py-md-0 py-3">
+                      <p className="m-center py-md-0 py-1">
                         <a
                           href="/amidstnature"
                           className="btn theme-bg-light"
