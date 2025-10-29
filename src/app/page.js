@@ -4,6 +4,7 @@ import "./homepage.css";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
 // import HomeHeroSlider from "./components/Home/HeroSlider";
+import ResponsiveVideoPoster from "@/components/ResponsiveVideoPoster";
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
@@ -140,27 +141,13 @@ export default function Home() {
               <div className="col-md-12">
                 <div className="video-container position-relative " style={{ lineHeight: "0 !important" }}>
                   {/* ✅ Background video */}
-                  <video
-                    className="w-100 h-100 object-fit-cover"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    poster="/images/hero-image-edit-4-new.avif" // fallback image before video loads
-                    style={{
-                      objectFit: "cover",
-                      height: "100%",
-                      width: "100%",
-                    }}
-                  >
-                    <source src="/images/home-video.mp4"  style={{
-                      objectFit: "cover",
-                      height: "100vh",
-                      width: "100%",
-                    }} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  <ResponsiveVideoPoster
+                    videoSrc="/videos/home-video.mp4"
+                    desktopPoster="/images/hero-image-edit-4-new.avif"
+                    mobilePoster="/images/mobile-image.avif"
+                    className="rounded-0"
+                  />
+                 
 
 
                 </div>
@@ -191,7 +178,7 @@ export default function Home() {
 
                 </div>
                 <div className="col-md-6 d-md-none ">
-                  <div className="" style={{minHeight:"100px"}}>
+                  <div className="" style={{ minHeight: "100px" }}>
                     <p></p>
                   </div>
 
@@ -201,7 +188,7 @@ export default function Home() {
 
 
             </div>
-            
+
           </section>
 
           {/* <section className="same-gap postion-relative bg-light d-none">
