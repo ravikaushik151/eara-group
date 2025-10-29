@@ -66,11 +66,12 @@
   }
 
   .carrer {
-
+    background: none;
     background-size: 24% !important
   }
 
   .carrer::before {
+    background: none;
     background-size: 60% !important
   }
 
