@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="col-md-12">
             <div className="image-container position-relative">
               <Image
-                src="/images/Banner_New_Contact_header.png"
+                src="/images/ContactUsHeader.png"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece "
@@ -29,7 +29,7 @@ export default function Contact() {
               />
               <div className="overlay2 position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                 <div className="text-white d-block text-center">
-                  <h1 className="fs-1 mb-3 text-uppercase">Contact Us</h1>
+                  <h1 className="fs-1 mb-3 text-uppercase" style={{marginTop:"-50px"}}>Contact Us</h1>
                   {/* <p className="fs-6 text-center">
                     <Link className="text-white text-decoration-none " href="/">
                       Home
