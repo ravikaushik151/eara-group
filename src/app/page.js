@@ -33,7 +33,7 @@ export default function Home() {
                   {/* ✅ Background video */}
                 
                   <video
-                    className="w-100 h-100 object-fit-cover"
+                    className="w-100 h-100 object-fit-cover d-none d-md-block"
                     autoPlay
                     muted
                     loop
@@ -54,7 +54,27 @@ export default function Home() {
                     Your browser does not support the video tag.
                   </video>
 
-
+                  <video
+                    className="w-100 h-100 object-fit-cover d-md-none"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    poster="/images/mobile-img.avif" // fallback image before video loads
+                    style={{
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <source src="/images/mobileHomePage.mp4" style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                      width: "100%",
+                    }} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>

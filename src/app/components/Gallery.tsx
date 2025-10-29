@@ -1,12 +1,12 @@
 'use client';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import 'swiper/swiper-bundle.css';
 // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/thumbs';
-// import 'swiper/css/navigation';
-// import 'swiper/css/effect-coverflow';
+import 'swiper/css';
+import 'swiper/css/thumbs';
+import 'swiper/css/navigation';
+//import 'swiper/css/effect-coverflow';
 
 // Import required Swiper modules
 import { Autoplay, Navigation, Thumbs, EffectCoverflow, Controller, Mousewheel } from 'swiper/modules';
@@ -20,14 +20,14 @@ const slides = Array.from({ length: 5 }, (_, i) => ({
 export default function Gallery() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
-  const [mainSwiper, setMainSwiper] = useState<any>(null); 
+  const [mainSwiper, setMainSwiper] = useState<any>(null);
 
   // Function to handle slide click and update
   const handleSlideClick = (slideSrc: string, index: number) => {
     // 1. Programmatically slide the main Swiper to the clicked slide
     if (mainSwiper) {
-        // use slideToLoop for Swipers with loop: true
-        mainSwiper.slideToLoop(index, 500); 
+      // use slideToLoop for Swipers with loop: true
+      mainSwiper.slideToLoop(index, 500);
     }
     // 2. Open the popup
     setPopupImage(slideSrc);
@@ -35,11 +35,11 @@ export default function Gallery() {
 
   // NEW: Handler to sync main Swiper when thumbnail Swiper scrolls/changes
   const handleThumbScroll = (swiper: any) => {
-      if (mainSwiper && !swiper.params.cssMode) {
-          // Get the real index to handle looping correctly
-          const newIndex = swiper.realIndex;
-          mainSwiper.slideToLoop(newIndex, 0); // Slide immediately (0ms transition)
-      }
+    if (mainSwiper && !swiper.params.cssMode) {
+      // Get the real index to handle looping correctly
+      const newIndex = swiper.realIndex;
+      mainSwiper.slideToLoop(newIndex, 0); // Slide immediately (0ms transition)
+    }
   };
 
 
@@ -59,7 +59,7 @@ export default function Gallery() {
           {/* === 1. Main Swiper (col-md-8) === */}
           <div className="col-md-8 position-relative   d-flex align-items-center">
             <Swiper
-              onSwiper={setMainSwiper} 
+              onSwiper={setMainSwiper}
               modules={[Autoplay, Navigation, EffectCoverflow, Thumbs, Controller]}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               spaceBetween={30}
@@ -112,24 +112,24 @@ export default function Gallery() {
           {/* === 2. Vertical Thumbnails Swiper (col-md-4) === */}
           <div className="col-md-4 my-md-4 d-none d-md-block position-relative thumbnail-wrapper">
             <Swiper
-              modules={[Navigation, Thumbs, Mousewheel]} 
-              onSwiper={setThumbsSwiper} 
+              modules={[Navigation, Thumbs, Mousewheel]}
+              onSwiper={setThumbsSwiper}
               direction={'vertical'}
               spaceBetween={10}
-              slidesPerView={2} 
+              slidesPerView={2}
               freeMode={true}
               watchSlidesProgress={true}
               loop={true}
-              mousewheel={true} 
-              
+              mousewheel={true}
+
               // NEW: Use onSlideChangeTransitionEnd to sync main slider
               onSlideChangeTransitionEnd={handleThumbScroll}
-              
+
               navigation={{
-                nextEl: '.swiper-button-next-thumbs', 
-                prevEl: '.swiper-button-prev-thumbs', 
+                nextEl: '.swiper-button-next-thumbs',
+                prevEl: '.swiper-button-prev-thumbs',
               }}
-              
+
               className="mySwiper-thumbs"
             >
               {slides.map((slide, index) => (
@@ -145,7 +145,7 @@ export default function Gallery() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            
+
             {/* The Thumbnail Navigation Buttons - outside the Swiper component */}
             {/* <div className="swiper-button-prev swiper-button-prev-thumbs theme-bg-light"></div>
             <div className="swiper-button-next swiper-button-next-thumbs theme-bg-light"></div>

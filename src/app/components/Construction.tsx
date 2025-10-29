@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/thumbs';
-// import 'swiper/css/navigation';
+ import 'swiper/css';
+ import 'swiper/css/thumbs';
+ import 'swiper/css/navigation';
 
 // Import required Swiper modules
 // NOTE: Added Mousewheel module here!
