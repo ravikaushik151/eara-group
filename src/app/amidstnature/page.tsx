@@ -19,46 +19,46 @@ export default function Home() {
   const faqItems = [
     {
       id: 1, title: 'SCHOOLS & COLLEGES', content: `  <ul dir="ltr">
-    <li>Delhi public school (dps) south 20 mins</li>
-    <li>The valley school (Krishnamurti Foundation) 14 mins</li>
-    <li>Sri kumaran public school 10 mins&nbsp;</li>
-    <li>Dayananda sagar business academy 06 mins</li>
-    <li>Jain university (global campus) 48 mins</li>
-    <li>Dayananda sagar medical college 30 mins</li>
-    <li>Rashtrotthana school, kanakapura main road 10 mins</li>
+    <li>Delhi Public School (DPS) south 20 mins</li>
+    <li>The Valley School (Krishnamurti Foundation) 14 mins</li>
+    <li>Sri Kumaran Public School 10 mins&nbsp;</li>
+    <li>Dayananda Sagar Business Academy 06 mins</li>
+    <li>Jain University (Global Campus) 48 mins</li>
+    <li>Dayananda Sagar Medical College 30 mins</li>
+    <li>Rashtrotthana School, Kanakapura main road 10 mins</li>
   </ul>
 ` },
     {
       id: 2, title: 'HOSPITALS', content: `<ul dir="ltr">
-    <li>Sri Sri hospital 12 mins</li>
-    <li>Manipal hospitals kanakpura road 20 mins</li>
-    <li>Aster rv hospital 26 mins</li>
-    <li>BGS hospital 26 mins</li>
-    <li>Apollo hospitals, bannerghatta 28 mins</li>
+    <li>Sri Sri Hospital 12 mins</li>
+    <li>Manipal Hospitals Kanakpura road 20 mins</li>
+    <li>Aster RV Hospital 26 mins</li>
+    <li>BGS Hospital 26 mins</li>
+    <li>Apollo Hospitals, Bannerghatta 28 mins</li>
   </ul>` },
     {
       id: 3, title: 'LEISURE & HOTSPOTS', content: `<ul dir="ltr">
-    <li>Art of Living international centre 07 mins</li>
-    <li>Turahalli forest cycling trails 15 mins</li>
+    <li>Art of Living International Centre 07 mins</li>
+    <li>Turahalli Forest Cycling Trails 15 mins</li>
 
     <li>Cuhantra 12 mins</li>
-    <li>Metro station (upcoming) 5 mins</li>
-    <li>Forum mall south 18 mins</li>
-    <li>Birds of paradise 14 mins</li>
+    <li>Metro Station (upcoming) 5 mins</li>
+    <li>Forum Mall South 18 mins</li>
+    <li>Birds of Paradise 14 mins</li>
   </ul>
   ` },
     {
       id: 4, title: 'WORKPLACE AND CONNECTIVITY ', content: `<ul dir="ltr">
-        <li>whitefield: 45 minutes</li>
-        <li>Electronic city: 30 minutes</li>
-        <li> Harohalli industrial area: 20 minutes</li>
+        <li>Whitefield: 45 minutes</li>
+        <li>Electronic City: 30 minutes</li>
+        <li> Harohalli Industrial Area: 20 minutes</li>
   
       </ul>
     ` },
     {
       id: 5, title: 'SUPERIOR CONNECTIVITY', content: `<ul dir="ltr">
-          <li>Project is 200 meters from proposed prr 2.</li>
-          <li>10 minutes from nice road junction.</li>
+          <li>Project is 200 meters from Proposed PRR 2.</li>
+          <li>10 minutes from Nice Road Junction.</li>
          
       </ul>
     ` },
@@ -537,7 +537,7 @@ export default function Home() {
 
           </section>
 
-          <FooterModalForm autoShowTime={15000} />
+          <FooterModalForm autoShowTime={45000} />
         </div >
       </main >
 
