@@ -191,8 +191,8 @@ export default function Home() {
 
                 </div>
                 <div className="col-md-6 d-md-none ">
-                  <div>
-
+                  <div className="" style={{minHeight:"100px"}}>
+                    <p></p>
                   </div>
 
                 </div>
@@ -201,15 +201,7 @@ export default function Home() {
 
 
             </div>
-            <Image
-              alt="Project"
-              src="/images/Green-thinking-2.avif"
-              width={1000}
-              height={750}
-              className="img-fluid w-100 rounded-1 d-md-none p-0 mb-0 mt-3"
-              priority
-              fetchPriority="high"
-            />
+            
           </section>
 
           {/* <section className="same-gap postion-relative bg-light d-none">

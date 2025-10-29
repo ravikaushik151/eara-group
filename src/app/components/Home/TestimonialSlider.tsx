@@ -36,7 +36,7 @@ const testimonials = [
 const TestimonialSlider = ({
   sectionClass = "px-md-5 px-3 bg-light theme-bg-dark testimonials-light",
   headingClass = "text-center mb-4 fw-bold theme-color-light",
-  cardClass = "info-box p-4 bg-white theme-bg-light shadow-sm h-100 rounded d-flex flex-column justify-content-between",
+  cardClass = "info-box p-4 bg-white theme-bg-light shadow-sm h-100 rounded d-flex flex-column justify-content-between mb-md-4",
   textClass = "theme-color-dark mb-3",
   nameClass = "text-center fw-bold theme-color-dark fw-bold mt-auto",
 }) => {
@@ -54,7 +54,7 @@ const TestimonialSlider = ({
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="mb-3"
+        className=""
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>

@@ -54,7 +54,7 @@ export default function CoreValuesSlider() {
                 >
                     {coreValues.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <div className="mb-5 theme-bg-dark shadow p-3">
+                            <div className="mb-3 theme-bg-dark shadow p-3">
                                 <div className="row">
                                 <div className="col-md-6">
                                     <img

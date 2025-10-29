@@ -287,24 +287,28 @@
 }
 
 .homehome {
-  
   background-image: url('/images/Green-thinking-2.avif') !important;
-  background-size: 100% 100% !important;
-  background-position: center  !important;
- 
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
-.w-md-50 {width: 50% !important;}
+
+.w-md-50 {
+  width: 50% !important;
+}
+
 @media only screen and (max-width:768px) {
-  .w-md-50 {width: 100% !important;}
-  .homehome {
-  
-    background-image: none !important;
-    background-size: 50% 100% !important;
-    background-position: center  !important;
-   
-    background-repeat: no-repeat;
+  .lifestyle-section .swiper-button-prev ,.lifestyle-section .swiper-button-next  {display: none;}
+  .w-md-50 {
+    width: 100% !important;
   }
+
+  .homehome {
+    background-repeat: no-repeat;
+    background-position: 100% 100% !important;
+    background-size: 100%;
+  }
+
   .mobileoverview {
     margin-top: -30px !important;
   }

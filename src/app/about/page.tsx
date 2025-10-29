@@ -188,8 +188,8 @@ export default function About() {
       <TestimonialSlider
         sectionClass="px-md-5 px-3 bg-light theme-bg-light testimonials"
         headingClass="text-center mb-4 fw-bold theme-color-dark"
-        cardClass="info-box p-4 bg-white theme-bg-dark shadow-sm h-100 rounded d-flex flex-column justify-content-between"
-        textClass="theme-color-light mb-3"
+        cardClass="info-box p-4 bg-white theme-bg-dark shadow-sm h-100 rounded d-flex flex-column justify-content-between mb-4"
+        textClass="theme-color-light "
         nameClass="text-center fw-bold theme-color-light fw-bold mt-auto"
       />
 
