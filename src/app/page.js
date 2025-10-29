@@ -327,15 +327,15 @@ export default function Home() {
                       <div className="row align-items-start mb-3 mt-4 mob-center">
                         <div className="col-12 text-black">
                           <h5 className="mb-3 theme-color-light fs-4  m-center">Key Highlights of the Project:</h5>
-                          <ul className="text-black ps-3 theme-color-light  m-center">
-                            <li>Plot sizes ranging from 1500 - 3300 sq ft.</li>
-                            <li>11,000 sqft. clubhouse with gym, pool, yoga room, caf&eacute; & library</li>
-                            <li>Indoor and outdoor party zones</li>
-                            <li>Sacred space, amphitheatre, elders&rsquo; park, children&rsquo;s play area</li>
-                            <li>Cricket pitch & pickleball court</li>
-                            <li>Underground electrical cabling & LED streetlights</li>
-                            <li>Rainwater harvesting & sewage treatment plant</li>
-                            <li>Avenue plantation & landscaped green zones</li>
+                          <ul className="text-black ps-3 theme-color-light  ps-md-3 ps-5 px-md-0 px-4 homeHighlights">
+                            <li className="">Plot sizes ranging from 1500 - 3300 sq ft.</li>
+                            <li className="">11,000 sqft. clubhouse with gym, pool, yoga room, caf&eacute; & library</li>
+                            <li className="">Indoor and outdoor party zones</li>
+                            <li className="">Sacred space, amphitheatre, elders&rsquo; park, children&rsquo;s play area</li>
+                            <li className="">Cricket pitch & pickleball court</li>
+                            <li className="">Underground electrical cabling & LED streetlights</li>
+                            <li className="">Rainwater harvesting & sewage treatment plant</li>
+                            <li className="">Avenue plantation & landscaped green zones</li>
                           </ul>
                         </div>
                       </div>

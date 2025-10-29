@@ -19372,10 +19372,7 @@ section h2 {
     text-align: center !important;
   }
 
-  ul li {
-    list-style: none;
-    margin-bottom: 10px;
-  }
+ 
 }
 
 footer input::placeholder,
