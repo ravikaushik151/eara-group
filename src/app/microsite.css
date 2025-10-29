@@ -274,16 +274,19 @@
 }
 
 @media only screen and (max-width:768px) {
+  .lifestyle-section, .lifestyle-section::before {background-size: 26% 8% !important;background: none;}
   .mobileoverview {
     margin-top: -30px !important;
   }
 
   .section-small {
-    background-size: 20% !important
+    background-size: 20% !important;
+    background: none ;
   }
 
   .section-small::before {
-    background-size: 20% !important
+    background-size: 20% !important;
+    background: none ;
   }
 
   .lifestyle-section {
@@ -299,7 +302,7 @@
   }
 
   .page-about-mv::before {
-    background-size: 35% 20% !important
+    background-size: 20% 12% !important
   }
 
   .page-project-amidst {
