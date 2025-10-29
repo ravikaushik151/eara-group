@@ -4,7 +4,7 @@ import "./homepage.css";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
 // import HomeHeroSlider from "./components/Home/HeroSlider";
-import ResponsiveVideoPoster from "@/components/ResponsiveVideoPoster";
+
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
@@ -19,24 +19,41 @@ export const metadata = {
 };
 
 export default function Home() {
-
+ 
 
   return (
     <>
       <main className="main-wrapper">
-
+       
         <div className="overflow-clip" id="main-slider">
           <div id="carouselExampleDark" className="header-section position-relative">
             <div className="row">
               <div className="col-md-12">
                 <div className="video-container position-relative " style={{ lineHeight: "0 !important" }}>
                   {/* ✅ Background video */}
-                  <ResponsiveVideoPoster
-                    videoSrc="/videos/home-video.mp4"
-                    desktopPoster="/images/hero-image-edit-4-new.avif"
-                    mobilePoster="/images/mobile-image.avif"
-                    className="rounded-0"
-                  />
+                
+                  <video
+                    className="w-100 h-100 object-fit-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    poster="/images/hero-image-edit-4-new.avif" // fallback image before video loads
+                    style={{
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <source src="/images/home-video.mp4" style={{
+                      objectFit: "cover",
+                      height: "100vh",
+                      width: "100%",
+                    }} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
 
                 </div>
               </div>
@@ -71,12 +88,15 @@ export default function Home() {
                   </div>
 
                 </div>
+
               </div>
+
+
             </div>
 
           </section>
 
-
+         
 
           <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
             backgroundImage: "url('/images/Flower_Cream.avif')",
