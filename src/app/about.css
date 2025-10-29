@@ -7,7 +7,7 @@
  
  background-repeat: no-repeat;
 }
-.w-50 {width: 50% !important;}
+.w-50 {width: 75% !important;}
 @media only screen and (max-width:768px) {
  .aboutabout {
  
@@ -17,4 +17,5 @@
   
    background-repeat: no-repeat;
  }
+ .w-75 {width: 100% !important;}
 }
