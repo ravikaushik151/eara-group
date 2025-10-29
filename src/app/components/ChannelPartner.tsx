@@ -169,7 +169,7 @@ export default function ChannelPartner() {
       </div>
 
             {/* Form Section */}
-            <section className="bg-light py-5 theme-bg-light carrer section">
+            <section className="bg-light py-5 theme-bg-light channel section">
                 <div className="container">
                     <div className="text-center mb-5 theme-color-dark">
                         <h2 className="mb-2">Become Our Channel Partner</h2>

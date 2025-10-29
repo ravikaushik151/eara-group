@@ -167,7 +167,7 @@ export default function About() {
           width={648}
           height={338}
           className="img-fluid  m-0 d-md-none"
-          src="/images/about-about.png"
+          src="/images/About-us-Section.png"
           style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-33% !important" }}
         />
       </section>

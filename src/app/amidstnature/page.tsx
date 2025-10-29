@@ -19,46 +19,46 @@ export default function Home() {
   const faqItems = [
     {
       id: 1, title: 'SCHOOLS & COLLEGES', content: `  <ul dir="ltr">
-    <li>DELHI PUBLIC SCHOOL (DPS) SOUTH 20 MINS</li>
-    <li>THE VALLEY SCHOOL (KRISHNAMURTI FOUNDATION) 14 MINS</li>
-    <li>SRI KUMARAN PUBLIC SCHOOL 10 MINS&nbsp;</li>
-    <li>DAYANANDA SAGAR BUSINESS ACADEMY 06 MINS</li>
-    <li>JAIN UNIVERSITY (GLOBAL CAMPUS) 48 MINS</li>
-    <li>DAYANANDA SAGAR MEDICAL COLLEGE 30 MINS</li>
-    <li>RASHTROTTHANA SCHOOL, KANAKAPURA MAIN ROAD 10 MINS</li>
+    <li>Delhi public school (dps) south 20 mins</li>
+    <li>The valley school (Krishnamurti Foundation) 14 mins</li>
+    <li>Sri kumaran public school 10 mins&nbsp;</li>
+    <li>Dayananda sagar business academy 06 mins</li>
+    <li>Jain university (global campus) 48 mins</li>
+    <li>Dayananda sagar medical college 30 mins</li>
+    <li>Rashtrotthana school, kanakapura main road 10 mins</li>
   </ul>
 ` },
     {
       id: 2, title: 'HOSPITALS', content: `<ul dir="ltr">
-    <li>SRI SRI HOSPITAL 12 MINS</li>
-    <li>MANIPAL HOSPITALS KANAKPURA ROAD 20 MINS</li>
-    <li>ASTER RV HOSPITAL 26 MINS</li>
-    <li>BGS HOSPITAL 26 MINS</li>
-    <li>APOLLO HOSPITALS, BANNERGHATTA 28 MINS</li>
+    <li>Sri Sri hospital 12 mins</li>
+    <li>Manipal hospitals kanakpura road 20 mins</li>
+    <li>Aster rv hospital 26 mins</li>
+    <li>BGS hospital 26 mins</li>
+    <li>Apollo hospitals, bannerghatta 28 mins</li>
   </ul>` },
     {
       id: 3, title: 'LEISURE & HOTSPOTS', content: `<ul dir="ltr">
-    <li>ART OF LIVING INTERNATIONAL CENTRE 07 MINS</li>
-    <li>TURAHALLI FOREST &amp; CYCLING TRAILS 15 MINS</li>
+    <li>Art of Living international centre 07 mins</li>
+    <li>Turahalli forest cycling trails 15 mins</li>
 
-    <li>GUHANTRA 12 MINS</li>
-    <li>METRO STATION (UPCOMING) 5 MINS</li>
-    <li>FORUM MALL SOUTH 18 MINS</li>
-    <li>BIRDS OF PARADISE 14 MINS</li>
+    <li>Cuhantra 12 mins</li>
+    <li>Metro station (upcoming) 5 mins</li>
+    <li>Forum mall south 18 mins</li>
+    <li>Birds of paradise 14 mins</li>
   </ul>
   ` },
     {
       id: 4, title: 'WORKPLACE AND CONNECTIVITY ', content: `<ul dir="ltr">
-        <li>WHITEFIELD: 45 MINUTES</li>
-        <li>ELECTRONIC CITY: 30 MINUTES</li>
-        <li> HAROHALLI INDUSTRIAL AREA: 20 MINUTES</li>
+        <li>whitefield: 45 minutes</li>
+        <li>Electronic city: 30 minutes</li>
+        <li> Harohalli industrial area: 20 minutes</li>
   
       </ul>
     ` },
     {
       id: 5, title: 'SUPERIOR CONNECTIVITY', content: `<ul dir="ltr">
-          <li>PROJECT IS 200 METERS FROM PROPOSED PRR 2.</li>
-          <li>10 MINUTES FROM NICE ROAD JUNCTION.</li>
+          <li>Project is 200 meters from proposed prr 2.</li>
+          <li>10 minutes from nice road junction.</li>
          
       </ul>
     ` },
@@ -176,7 +176,7 @@ export default function Home() {
                 <div className="col-md-6 d-flex align-items-center" >
                   <div className=" ">
                     <h2 className="mb-0 theme-color-dark text-center">Amidst Nature</h2>
-                    <span className="fs-5 theme-color-dark text-center d-block">Where <span className="text-success">Green</span> is the New <span style={{ color: "#a18f5c !important" }}>Gold</span></span>
+                    <span className="fs-5 theme-color-dark text-center d-block">Where <span className="text-success">Green</span> is the New <span className="text-gold">Gold</span></span>
                     <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong></p>
                     <p className=" theme-color-dark"><strong></strong>Spread across  18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.

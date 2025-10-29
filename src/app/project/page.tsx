@@ -105,7 +105,7 @@ export default function Project() {
                             <div className="mb-md-0">
                                 <h2 className=" theme-color-dark text-center mb-1">Amidst Nature</h2>
                                 <p className="fs-5 theme-color-dark text-center mb-1">
-                                    Where <span className="text-success">Green</span> is the New <span style={{ color: "#a18f5c !important" }}>Gold</span>
+                                    Where <span className="text-success">Green</span> is the New <span className="text-gold">Gold</span>
                                 </p>
                                 <p className="mt-3 theme-color-dark text-center mb-2 ">
                                     <strong>

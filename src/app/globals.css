@@ -14621,6 +14621,7 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+  #carouselExampleDark {margin-top: 77px;}
   .eimg {
     max-width: 200px !important;
   }
@@ -19423,3 +19424,4 @@ footer textarea::placeholder {
 .theme-logo {
   filter: brightness(0) saturate(100%) invert(10%) sepia(12%) saturate(1674%) hue-rotate(335deg) brightness(102%) contrast(83%);
 }
+.text-gold {color:#a18f5c !important}

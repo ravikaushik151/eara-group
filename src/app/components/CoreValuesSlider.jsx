@@ -65,10 +65,10 @@ export default function CoreValuesSlider() {
                                 </div>
                                 <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
                                     <div>
-                                        <h5 className="theme-color-light text-start fw-bold fs-4">
+                                        <h5 className="theme-color-light text-start m-center fw-bold fs-4">
                                             {item.title}
                                         </h5>
-                                        <p className="theme-color-light text-start small">
+                                        <p className="theme-color-light text-start m-center small">
                                             {item.text}
                                         </p>
                                     </div>

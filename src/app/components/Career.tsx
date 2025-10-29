@@ -97,9 +97,13 @@ export default function Career() {
 
               <div className="row">
                 {reasons.map((reason) => (
-                  <div key={reason} className="col-6 d-flex align-items-start mb-3">
-                    <FaCheckCircle className="text-color-accentme-2 mt-1" />
-                    <span className="text-dark  theme-color-dark">&nbsp; {reason} </span>
+                  <div key={reason} className="col-6  px-2 mb-3">
+                    <div className="row px-1 ">
+                      <div className="col-md-2 col-2  ">  <FaCheckCircle className="text-color-accentme-2 " /></div>
+                      <div className="col-md-10 col-10 px-0">  <span className="text-dark  theme-color-dark"> {reason} </span> </div>
+                    </div>
+                  
+                  
                   </div>
                 ))}
               </div>
