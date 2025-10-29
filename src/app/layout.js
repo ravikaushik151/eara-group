@@ -72,8 +72,8 @@ export default function RootLayout({ children }) {
           "Amidst Nature is an 18+ acre RERA-approved plotted development in Kaggalipura, off Kanakapura Main Road, Bengaluru, offering plots from 1,500 to 3,300 sq ft with luxury amenities and lush greenery.",
         "datePosted": "2025-10-27",
         "image": [
-          "https://earagroup.com/images/gallery/Image1.png",
-          "https://earagroup.com/images/gallery/Image2.png"
+          "https://earagroup.com/images/gallery/Image1.avif",
+          "https://earagroup.com/images/gallery/Image2.avif"
         ],
         "address": {
           "@type": "PostalAddress",

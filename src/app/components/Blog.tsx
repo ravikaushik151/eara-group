@@ -57,7 +57,7 @@ export default function Blog() {
                     <div className='col-md-12'>
                         <div className="image-container">
                             <Image 
-                                src="/images/blog-header.jpg" 
+                                src="/images/blog-header.avif" 
                                 height={2880} 
                                 width={1920} 
                                 className='img-fluid masterpiece ' 

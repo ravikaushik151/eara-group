@@ -19,29 +19,30 @@ export default async function BlogPost({ params }) {
 
   return (
     <>
-      <div id="carouselExampleDark" className="header-section">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="image-container">
-              <Image
-                src="/images/blog-header.jpg"
-                height={2880}
-                width={1920}
-                className="img-fluid masterpiece "
-                alt="masterpiece"
-              />
-              <div className="overlay2">
-                <div className="text-white d-block">
-                  <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</h1>
-                  {/* <p className="text-center d-block fs-6 ">
-                    <Link className="text-white text-decoration-none" href="/"> Home</Link> / Blog
-                  </p> */}
+         <div id="carouselExampleDark" className="header-section">
+                <div className='row'>
+                    <div className='col-md-12'>
+                        <div className="image-container">
+                            <Image 
+                                src="/images/blog-header.avif" 
+                                height={2880} 
+                                width={1920} 
+                                className='img-fluid masterpiece ' 
+                                alt="masterpiece" 
+                                style={{ objectPosition: '15% 100%' }} 
+                            />
+                            <div className="overlay2 ">
+                                <div className="text-white d-block">
+                                    <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</h1>
+                                    {/* <p className="text-center d-block fs-6 ">
+                                        <Link className="text-white text-decoration-none" href='/'> Home</Link> / Blog
+                                    </p> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
 
       <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
@@ -51,7 +52,7 @@ export default async function BlogPost({ params }) {
               <div>
 
                 <div>
-                  <Image src={post.image} className="w-100" alt={post.title} width={1296} height={607} />
+                  <Image src={post.image} className="w-100 img-fluid" alt={post.title} width={1296} height={607} />
                 </div>
                 <div className="title text-left">
                   <h2 className="text-main fs-2 fw-bold my-4 theme-color-dark">{post.title}</h2>
