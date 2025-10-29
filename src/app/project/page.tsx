@@ -52,7 +52,7 @@ export default function Project() {
                         <div className="video-container position-relative">
                             {/* ✅ Background video */}
                             <video
-                                className="w-100 h-100 object-fit-cover"
+                                className="w-100 h-100 object-fit-cover d-md-block d-none"
                                 autoPlay
                                 muted
                                 loop
@@ -66,6 +66,23 @@ export default function Project() {
                                 }}
                             >
                                 <source src="/images/Our-Project_1.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <video
+                                className="w-100 h-100 object-fit-cover  d-md-none"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                preload="auto"
+                                poster="/images/project-header.avif" // fallback image before video loads
+                                style={{
+                                    objectFit: "cover",
+                                    height: "100%",
+                                    width: "100%",
+                                }}
+                            >
+                                <source src="/images/mobileOurProjects.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
 
