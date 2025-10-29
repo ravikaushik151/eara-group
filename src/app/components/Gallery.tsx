@@ -79,7 +79,7 @@ export default function Gallery() {
                 prevEl: '.swiper-button-prev-main',
               }}
               thumbs={{ swiper: thumbsSwiper }}
-              className="rounded-xl overflow-hidden main-gallery-swiper  "
+              className="rounded-xl overflow-hidden main-gallery-swiper mb-0"
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index} className="relative">
@@ -88,7 +88,7 @@ export default function Gallery() {
                     alt={slide.alt}
                     width={1920}
                     height={1080}
-                    className="img-fluid rounded-3"
+                    className="img-fluid rounded-3 mb-3"
                     loading="lazy"
                     style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
                     onClick={() => handleSlideClick(slide.src, index)}
