@@ -61,7 +61,7 @@ export default function About() {
                 loop
                 playsInline
                 preload="auto"
-                poster="/images/About_new copy_Eara.webp" // fallback image before video loads
+                poster="/images/About_new copy_Eara.avif" // fallback image before video loads
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -102,9 +102,7 @@ export default function About() {
                   Welcome to <strong >Eara Group</strong>, where vision meets
                   reality.
                 </h2>
-                <p className="theme-color-dark text-size-regular theme-color-dark fs-5 mb-0 w-75 d-block mx-auto text-center"> Join us on our journey as we continue to shape the
-                      skylines of tomorrow and create spaces where dreams
-                      thrive.</p>
+                <p className="theme-color-dark text-size-regular theme-color-dark fs-5 mb-0 w-75 d-block mx-auto text-center">Join us on our journey as we continue to shape the landscapes of tomorrow and create spaces where dreams thrive.</p>
               </div>
             </div>
           </div>
@@ -134,7 +132,7 @@ export default function About() {
           width={648}
           height={338}
           className="img-fluid  m-0 d-md-none"
-          src="/images/About-us-Section.png"
+          src="/images/About-us-Section.avif"
           style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-20% !important" }}
         />
       </section>

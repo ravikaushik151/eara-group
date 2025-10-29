@@ -74,7 +74,7 @@ export default function MasterPlanSection() {
                                         <Image
                                             width={633}
                                             height={444}
-                                            src="/images/Master-Plan_New.png"
+                                            src="/images/Master-Plan_New.avif"
                                             loading="lazy"
                                             alt="Eara Master Plan"
                                             className="w-100 img-fluid mt-md-4"
@@ -107,7 +107,7 @@ export default function MasterPlanSection() {
                 >
                     <div className="position-relative">
                         <Image
-                            src="/images/Master-Plan_New.png"
+                            src="/images/Master-Plan_New.avif"
                             width={900}
                             height={700}
                             alt="Master Plan Popup"

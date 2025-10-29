@@ -12,7 +12,7 @@ import { Autoplay, Navigation, Thumbs, EffectCoverflow, Controller, Mousewheel }
 import Image from 'next/image';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
-  src: `/images/gallery/Image${String(i + 1)}.png`,
+  src: `/images/gallery/Image${String(i + 1)}.avif`,
   alt: `Gallery Image ${i + 1}`,
 }));
 

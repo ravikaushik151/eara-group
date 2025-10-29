@@ -137,7 +137,7 @@ export default function ChannelPartner() {
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/Channel-Partner.png"
+                src="/images/Channel-Partner.avif"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"

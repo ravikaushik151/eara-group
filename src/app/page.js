@@ -203,10 +203,10 @@ export default function Home() {
             </div>
             <Image
               alt="Project"
-              src="/images/home-about.avif"
+              src="/images/Green-thinking-2.avif"
               width={1000}
               height={750}
-              className="img-fluid w-100 d-md-none p-0 mb-0 mt-3"
+              className="img-fluid w-100 rounded-1 d-md-none p-0 mb-0 mt-3"
               priority
               fetchPriority="high"
             />

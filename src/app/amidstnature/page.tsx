@@ -106,7 +106,7 @@ export default function Home() {
                 loop
                 playsInline
                 preload="auto"
-                poster="/images/Eara_banner-image.webp" // fallback image before video loads
+                poster="/images/Eara_banner-image.avif" // fallback image before video loads
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -194,7 +194,7 @@ export default function Home() {
                   <div className="px-md-5">
                     <Image
                       alt="Project"
-                      src="/images/Amidstnature_project-pg.png"
+                      src="/images/Amidstnature_project-pg.avif"
                       width={5500}
                       height={750}
                       className="img-fluid  mb-3  rounded-4"
