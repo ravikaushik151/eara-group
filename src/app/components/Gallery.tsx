@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+
 // Import Swiper styles
 // import 'swiper/css';
 // import 'swiper/css/thumbs';
@@ -45,7 +45,7 @@ export default function Gallery() {
 
   return (
     <section
-      className="gallery-section same-gap gallery theme-bg-dark py-5 "
+      className="gallery-section same-gap gallery theme-bg-dark py-5 new01"
       id="gallery"
     >
       <div className="container">
