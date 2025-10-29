@@ -73,7 +73,7 @@ export default function Contact() {
                 </div>
 
                 {/* Contact Info */}
-                <div className="col-md-5 d-flex align-items-center">
+                <div className="col-md-5 d-flex align-items-center justify-content-center">
                   <div className="contact_info_sec text-bg-dark px-md-5 py-md-5 px-4 py-4 text-white shadow  theme-bg-light">
                     <div className="py-md-4">
                       <h4 className="text-white mb-3 theme-color-dark ">Contact Info</h4>
