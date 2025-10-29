@@ -19346,6 +19346,9 @@ section h2 {
 
 
 @media only screen and (max-width:768px) {
+  #carouselExampleDark video {
+    height: 100vh !important;
+  }
   section {
     padding: 50px 0px !important;
   }
