@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./../about.css";
+import Head from "next/head";
 import TestimonialSlider from "../components/Home/TestimonialSlider";
 export const metadata = {
   title: 'Premium Residential Plots in Kanakapura Main Road - Eara Group',
@@ -49,6 +50,14 @@ export default function About() {
           </div>
         </div>
       </div> */}
+       <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/About_new copy_Eara.avif"
+          type="image/avif"
+        />
+      </Head>
       <div id="carouselExampleDark" className="header-section position-relative">
         <div className="row">
           <div className="col-md-12">
