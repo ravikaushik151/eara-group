@@ -182,9 +182,11 @@ export default function Gallery() {
         }
         .swiper-button-next-main {
           right: 10px !important;
+          top:55% !important;
         }
         .swiper-button-prev-main {
           left: 10px !important;
+          top:55% !important;
         }
       `}</style>
     </section>
