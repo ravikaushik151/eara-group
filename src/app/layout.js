@@ -1,18 +1,20 @@
 import './globals.css';
 import 'swiper/swiper-bundle.css';
-import Script from "next/script"; 
+import Script from "next/script";
 import ClientWrapper from './components/ClientWrapper';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Poppins } from 'next/font/google';
+
 export const metadata = {
   title: 'Eara Group',
   description: 'Eara Group',
 };
+
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'], // Add weights as needed
-  variable: '--font-poppins', // Optional CSS variable
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
 });
 
 export default function RootLayout({ children }) {
@@ -125,6 +127,7 @@ export default function RootLayout({ children }) {
       }
     ]
   };
+
   return (
     <html lang="en" className={poppins.className}>
       <head>
@@ -132,7 +135,15 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" type="image/png" href="/fevicon.png" />
         <link rel="apple-touch-icon" href="/fevicon.png" />
 
-        {/* ✅ Google Tag Manager (GTM) */}
+        {/* ✅ Schema.org JSON-LD */}
+        <Script
+          id="eara-schema"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+
+        {/* ✅ Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -143,9 +154,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* ✅ Google Analytics (GA4) */}
+        {/* ✅ Google Analytics */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-2069XCJV7Q"
           strategy="afterInteractive"
         />
@@ -157,14 +167,10 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-2069XCJV7Q');
           `}
         </Script>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
       </head>
 
       <body>
-        {/* ✅ Google Tag Manager (noscript) — required for tracking without JS */}
+        {/* ✅ GTM noscript fallback */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MMFKRDPB"

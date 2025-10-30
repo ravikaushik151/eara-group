@@ -70,7 +70,7 @@ export default function About() {
                   width: "100%",
                 }}
               >
-                <source src="/images/ABout-us-Video-Size.mp4" type="video/mp4" />
+                <source src="/images/Aboutus.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
