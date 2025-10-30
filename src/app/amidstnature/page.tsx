@@ -100,7 +100,7 @@ export default function Home() {
             <div className="video-container position-relative " style={{lineHeight:"0 !important"}}>
               {/* ✅ Background video */}
               <video
-                className="w-100 h-100 object-fit-cover"
+                className="w-100 h-100 object-fit-cover d-md-block d-none"
                 autoPlay
                 muted
                 loop
@@ -113,10 +113,26 @@ export default function Home() {
                   width: "100%",
                 }}
               >
-                <source src="/images/microsite01.mp4" type="video/mp4" />
+                <source src="/images/Project.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-
+              <video
+                className="w-100 h-100 object-fit-cover d-md-none"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                poster="/images/Eara_banner-image.avif" // fallback image before video loads
+                style={{
+                  objectFit: "cover",
+                  height: "100%",
+                  width: "100%",
+                }}
+              >
+                <source src="/images/Project-mobile.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               {/* ✅ Overlay */}
               {/* <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
                 <h1 className="text-center fs-1 mb-3 text-uppercase">About Us</h1>
