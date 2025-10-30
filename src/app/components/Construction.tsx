@@ -219,10 +219,12 @@ export default function Construction() {
           cursor: pointer;
         }
         .swiper-button-prev-main-construction {
-          left: 20px !important;
+          left: 10px !important;
+          top:55% !important;
         }
         .swiper-button-next-main-construction {
-          right: 20px !important;
+          right: 10px !important;
+          top:55% !important;
         }
       `}</style>
     </section>
