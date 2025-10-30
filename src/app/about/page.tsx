@@ -134,8 +134,8 @@ export default function About() {
           width={648}
           height={338}
           className="img-fluid  m-0 d-md-none"
-          src="/images/About-us-Section.avif"
-          style={{ objectFit: "cover", objectPosition: "05% 100%", minHeight: "350px", marginTop: "-20% !important" }}
+          src="/images/about-mobile-banner.png"
+          style={{ objectFit: "cover", objectPosition: "center", minHeight: "350px", marginTop: "-20% !important" }}
         />
       </section>
 
