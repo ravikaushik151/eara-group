@@ -13,6 +13,7 @@
   .page-about-mv {background-size: 12% 10%;}
  .aboutabout {
  
+  background-image: url('/images/aboutbanner.png') !important;
    background-image: none !important;
    background-size: 100% 100% !important;
    background-position: center  !important;
