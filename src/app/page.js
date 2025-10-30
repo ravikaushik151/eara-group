@@ -36,6 +36,12 @@ export default function Home() {
           href="/images/mobile-img.avif"
           type="image/avif"
         />
+         <link
+          rel="preload"
+          as="image"
+          href="/images/Green-thinking-2.avif"
+          type="image/avif"
+        />
       </Head>
       <main className="main-wrapper">
        
