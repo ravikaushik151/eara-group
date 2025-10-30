@@ -4,12 +4,12 @@ import { useState, useCallback, useMemo } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Thumbs, Mousewheel } from 'swiper/modules';
-//import 'swiper/css';
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
-  src: `/images/progress/Image${i + 1}.webp`,
+  src: `/images/progress/Images${i + 1}.webp`,
   alt: `Construction Image ${i + 1}`,
 }));
 

@@ -4,7 +4,7 @@ import { useState, useCallback, useMemo } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Thumbs, Mousewheel } from 'swiper/modules';
-//import 'swiper/css';
+import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
