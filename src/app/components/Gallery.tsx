@@ -9,7 +9,7 @@ import { Autoplay, Navigation, Thumbs, Mousewheel } from 'swiper/modules';
 //import 'swiper/css/thumbs';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
-  src: `/images/gallery/Image${i + 1}.avif`,
+  src: `/images/gallery/images${i + 1}.webp`,
   alt: `Gallery Image ${i + 1}`,
 }));
 
@@ -83,12 +83,12 @@ export default function Gallery() {
           </div>
 
           {/* Thumbnail Swiper */}
-          <div className="col-md-4 d-none d-md-block position-relative">
+          <div className="col-md-4  position-relative d-md-flex d-none align-items-center">
             <Swiper
               modules={[Navigation, Thumbs, Mousewheel]}
               onSwiper={setThumbsSwiper}
               direction="vertical"
-              spaceBetween={10}
+              spaceBetween={20}
               slidesPerView={2}
               loop
               mousewheel
@@ -102,7 +102,7 @@ export default function Gallery() {
                     src={slide.src}
                     alt={slide.alt}
                     width={350}
-                    height={155}
+                    height={186}
                     className="img-fluid rounded-2 swiper-thumb-image"
                     loading="lazy"
                   />
@@ -163,7 +163,7 @@ export default function Gallery() {
       <style jsx global>{`
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 350px;
+          max-height: 400px;
         }
         .swiper-thumb-image {
           opacity: 0.6;

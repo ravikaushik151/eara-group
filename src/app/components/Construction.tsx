@@ -9,7 +9,7 @@ import { Autoplay, Navigation, Thumbs, Mousewheel } from 'swiper/modules';
 //import 'swiper/css/thumbs';
 
 const slides = Array.from({ length: 5 }, (_, i) => ({
-  src: `/images/progress/Image${i + 1}.avif`,
+  src: `/images/progress/Image${i + 1}.webp`,
   alt: `Construction Image ${i + 1}`,
 }));
 
@@ -58,7 +58,7 @@ export default function Construction() {
   return (
     <section
       className="gallery-section same-gap construction theme-bg-light py-5"
-      id="gallery"
+      id="const"
     >
       <div className="container">
         <div className="title text-center mb-4">
@@ -91,12 +91,12 @@ export default function Construction() {
           </div>
 
           {/* Thumbnails Swiper */}
-          <div className="col-md-4 d-none d-md-block position-relative">
+          <div className="col-md-4 d-md-flex d-none align-items-center position-relative">
             <Swiper
               modules={[Navigation, Thumbs, Mousewheel]}
               onSwiper={setThumbsSwiper}
               direction="vertical"
-              spaceBetween={10}
+              spaceBetween={20}
               slidesPerView={2}
               freeMode
               watchSlidesProgress
@@ -115,7 +115,7 @@ export default function Construction() {
                     src={slide.src}
                     alt={slide.alt}
                     width={350}
-                    height={155}
+                    height={186}
                     className="img-fluid rounded-2 swiper-thumb-image-construction"
                     loading="lazy"
                   />
@@ -157,7 +157,7 @@ export default function Construction() {
         /* Thumbnails */
         .mySwiper-thumbs-construction {
           height: 100%;
-          max-height: 350px;
+          max-height: 400px;
         }
         .swiper-thumb-image-construction {
           transition: transform 0.3s, opacity 0.3s;
@@ -217,6 +217,12 @@ export default function Construction() {
           border: none;
           font-size: 2rem;
           cursor: pointer;
+        }
+        .swiper-button-prev-main-construction {
+          left: 20px !important;
+        }
+        .swiper-button-next-main-construction {
+          right: 20px !important;
         }
       `}</style>
     </section>
