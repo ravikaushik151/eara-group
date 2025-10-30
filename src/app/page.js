@@ -4,7 +4,6 @@ import "./homepage.css";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
 // import HomeHeroSlider from "./components/Home/HeroSlider";
-import Head from "next/head";
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
@@ -16,6 +15,13 @@ export const metadata = {
   alternates: {
     canonical: 'https://earagroup.com/',
   },
+  other: {
+    "link:preload": [
+      { rel: "preload", as: "image", href: "/images/hero-image-edit-4-new.avif", type: "image/avif" },
+      { rel: "preload", as: "image", href: "/images/mobile-img.avif", type: "image/avif" },
+      { rel: "preload", as: "image", href: "/images/Green-thinking-2.avif", type: "image/avif" },
+    ],
+  }
 };
 
 export default function Home() {
@@ -23,26 +29,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-image-edit-4-new.avif"
-          type="image/avif"
-        />
-         <link
-          rel="preload"
-          as="image"
-          href="/images/mobile-img.avif"
-          type="image/avif"
-        />
-         <link
-          rel="preload"
-          as="image"
-          href="/images/Green-thinking-2.avif"
-          type="image/avif"
-        />
-      </Head>
+      
       <main className="main-wrapper">
        
         <div className="overflow-clip" id="main-slider">
