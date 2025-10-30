@@ -9,6 +9,8 @@
 }
 .w-50 {width: 75% !important;}
 @media only screen and (max-width:768px) {
+  .page-about-mv::before {background-size: 12% 10%;}
+  .page-about-mv {background-size: 12% 10%;}
  .aboutabout {
  
    background-image: none !important;
