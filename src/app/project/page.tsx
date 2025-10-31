@@ -58,7 +58,7 @@ export default function Project() {
                                 loop
                                 playsInline
                                 preload="auto"
-                                poster="/images/project-header.avif" // fallback image before video loads
+                                // poster="/images/project-header.avif" 
                                 style={{
                                     objectFit: "cover",
                                     height: "100%",
@@ -75,7 +75,7 @@ export default function Project() {
                                 loop
                                 playsInline
                                 preload="auto"
-                                poster="/images/project-header.avif" // fallback image before video loads
+                                // poster="/images/project-header.avif" 
                                 style={{
                                     objectFit: "cover",
                                     height: "100%",

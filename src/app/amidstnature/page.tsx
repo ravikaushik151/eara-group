@@ -106,7 +106,7 @@ export default function Home() {
                 loop
                 playsInline
                 preload="auto"
-                poster="/images/Eara_banner-image.webp" // fallback image before video loads
+                // poster="/images/Eara_banner-image.webp" 
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -123,7 +123,7 @@ export default function Home() {
                 loop
                 playsInline
                 preload="auto"
-                poster="/images/Eara_banner-image.webp" // fallback image before video loads
+                // poster="/images/Eara_banner-image.webp"
                 style={{
                   objectFit: "cover",
                   height: "100%",

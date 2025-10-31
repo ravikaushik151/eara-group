@@ -63,7 +63,7 @@ export default function About() {
                 loop
                 playsInline
                 preload="auto"
-                poster="/images/About_new copy_Eara.avif" // fallback image before video loads
+                // poster="/images/About_new copy_Eara.avif" 
                 style={{
                   objectFit: "cover",
                   height: "100%",
