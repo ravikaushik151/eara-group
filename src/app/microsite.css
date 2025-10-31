@@ -274,6 +274,7 @@
 }
 
 @media only screen and (max-width:768px) {
+  .page-project-amidst {background: none;}
   .lifestyle-section, .lifestyle-section::before {background-size: 26% 8% !important;background: none;}
   .mobileoverview {
     margin-top: -30px !important;
