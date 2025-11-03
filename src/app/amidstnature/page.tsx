@@ -1,9 +1,16 @@
-"use client";
-import { useEffect } from "react";
+// "use client";
+// import { useEffect } from "react";
 //import './style.css';
 import "./../microsite.css";
 import Link from "next/link";
-
+export const metadata = {
+  title: 'Eara Group Amidst Nature BMRDA Villa Plots in Kanakapura Road',
+  description: 'Explore luxury BMRDA approved villa plots at Amidst Nature by Eara Group in Kanakapura Road. Enjoy lush greenery, modern amenities with Connectivity.',
+  keywords: 'Amidst Nature Kanakapura Road,  Amidst Nature Price,  BMRDA Approved Sites in Kanakapura Road,  BMRDA Plots For Sale in Kanakapura Road,  BMRDA Residential Plot in Kanakapura Road',
+  alternates: {
+    canonical: 'https://earagroup.com/amidstnature/',
+  },
+};
 import Image from "next/image";
 import AmenitiesMarquee from "../components/AmenitiesMarquee";
 import FooterModalForm from "../components/FooterModalForm";
@@ -63,6 +70,7 @@ export default function Home() {
       </ul>
     ` },
   ];
+  /*
   useEffect(() => {
 
     const form = document.getElementById(
@@ -89,6 +97,7 @@ export default function Home() {
 
 
   }, []);
+  */
 
   return (
     <>

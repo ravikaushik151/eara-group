@@ -10,7 +10,7 @@ import LatestBlogs from "./components/LatestBlogs";
 import CoreValuesSlider from "./components/CoreValuesSlider";
 export const metadata = {
   title: 'Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.',
-  description: 'Discover Eara Group&rsquo;s luxury villa plots for sale in Kanakapura Main Road. Build your dream home amidst nature with premium amenities and great connectivity.',
+  description: "Discover Eara Group's luxury villa plots for sale in Kanakapura Road. Build your dream home amidst nature with premium amenities & great connectivity.",
   keywords: 'Eara Group, Luxury villa plots for sale in Kanakapura Main Road, Plots for Sale in Kanakapura Main Road, Villa plots sale near Kanakapura Main Road, Premium villa plots for sale in Kaggalipura',
   alternates: {
     canonical: 'https://earagroup.com/',
