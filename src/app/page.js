@@ -25,20 +25,20 @@ export const metadata = {
 };
 
 export default function Home() {
- 
+
 
   return (
     <>
-      
+
       <main className="main-wrapper">
-       
+
         <div className="overflow-clip" id="main-slider">
           <div id="carouselExampleDark" className="header-section position-relative">
             <div className="row">
               <div className="col-md-12">
                 <div className="video-container position-relative " style={{ lineHeight: "0 !important" }}>
                   {/* ✅ Background video */}
-                
+
                   <video
                     className="w-100 h-100 object-fit-cover d-none d-md-block"
                     autoPlay
@@ -123,7 +123,7 @@ export default function Home() {
 
           </section>
 
-         
+
 
           <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
             backgroundImage: "url('/images/Flower_Cream.avif')",
@@ -202,6 +202,32 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </section>
+
+          <section className="quality-assurance-section bg-black vh-75">
+            {/* Image section with black background */}
+            <div className=" py-4">
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-lg-12 col-md-12 text-center">
+                    <div className="image-frame bg-black">
+                      <Image
+                        src="/images/Career-Page.avif"
+                        alt="Business professionals walking"
+                        width={1400}
+                        height={700}
+                        className="img-fluid shadow-lg"
+                        priority
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </section>
 
           {/* Section 2: 360 Lifestyle Cards */}

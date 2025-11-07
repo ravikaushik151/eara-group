@@ -43,12 +43,12 @@ export default function Contact() {
         </div>
       </div>
 
-      <section className="section-padding bg-white theme-bg-dark contact">
+      <section className="section-padding  theme-bg-light contact">
         <div className="container">
           <div className="row">
             <div className="col-md-12 mx-auto">
               <div className="heading">
-                <h2 className="text-center theme-color-light mt-md-0 mt-4 mb-0 mb-md-5">Contact Us</h2>
+                <h2 className="text-center theme-color-dark mt-md-0 mt-4 mb-0 mb-md-5">Contact Us</h2>
               </div>
             </div>
           </div>
@@ -60,13 +60,13 @@ export default function Contact() {
                 <div className="col-md-7">
                   <div className="contact_form_inner px-md-5 px-3 mb-4">
                     <div className="contact_field">
-                      <p className="text-main  theme-color-light mb-3">
+                      <p className="text-main  theme-color-dark mb-3">
                         Feel free to contact us any time. We will get back to
                         you as soon as we can!
                       </p>
                       <ContactForm
                         inputClass="form-control mb-2"
-                        buttonClass="btn theme-bg-light px-4"
+                        buttonClass="btn theme-bg-dark text-light px-4"
                       />
                     </div>
                   </div>
@@ -74,9 +74,9 @@ export default function Contact() {
 
                 {/* Contact Info */}
                 <div className="col-md-5 d-flex align-items-center justify-content-center">
-                  <div className="contact_info_sec text-bg-dark px-md-5 py-md-5 px-4 py-4 text-white shadow  theme-bg-light">
+                  <div className="contact_info_sec text-bg-dark px-md-5 py-md-5 px-4 py-4 text-white shadow  theme-bg-dark">
                     <div className="py-md-4">
-                      <h4 className="text-white mb-3 theme-color-dark ">Contact Info</h4>
+                      <h4 className="text-white mb-3 theme-color-light ">Contact Info</h4>
 
                       {/* <div className="d-flex info_single align-items-center pb-2">
                         <Link
@@ -91,9 +91,9 @@ export default function Contact() {
                       <div className="d-flex info_single align-items-center pb-2">
                         <Link
                           href="mailto:info@earagroup.com"
-                          className="text-white text-decoration-none theme-color-dark"
+                          className="text-white text-decoration-none theme-color-light"
                         >
-                          <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z" /></svg>
+                          <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z" /></svg>
 
                           <span> info@earagroup.com</span>
                         </Link>
@@ -101,8 +101,8 @@ export default function Contact() {
 
                       <div className="d-flex info_single pb-2">
 
-                        <svg style={{ width: "20px", height: "20px" }} className="w-10 h-10 text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M576 112C576 100.9 570.3 90.6 560.8 84.8C551.3 79 539.6 78.4 529.7 83.4L413.5 141.5L234.1 81.6C226 78.9 217.3 79.5 209.7 83.3L81.7 147.3C70.8 152.8 64 163.9 64 176L64 528C64 539.1 69.7 549.4 79.2 555.2C88.7 561 100.4 561.6 110.3 556.6L226.4 498.5L399.7 556.3C395.4 549.9 391.2 543.2 387.1 536.4C376.1 518.1 365.2 497.1 357.1 474.6L255.9 440.9L255.9 156.4L383.9 199.1L383.9 298.4C414.9 262.6 460.9 240 511.9 240C534.5 240 556.1 244.4 575.9 252.5L576 112zM512 288C445.7 288 392 340.8 392 405.9C392 474.8 456.1 556.3 490.6 595.2C502.2 608.2 521.9 608.2 533.5 595.2C568 556.3 632.1 474.8 632.1 405.9C632.1 340.8 578.4 288 512.1 288zM472 408C472 385.9 489.9 368 512 368C534.1 368 552 385.9 552 408C552 430.1 534.1 448 512 448C489.9 448 472 430.1 472 408z" /></svg>
-                        <span className="theme-color-dark">
+                        <svg style={{ width: "20px", height: "20px" }} className="w-10 h-10 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M576 112C576 100.9 570.3 90.6 560.8 84.8C551.3 79 539.6 78.4 529.7 83.4L413.5 141.5L234.1 81.6C226 78.9 217.3 79.5 209.7 83.3L81.7 147.3C70.8 152.8 64 163.9 64 176L64 528C64 539.1 69.7 549.4 79.2 555.2C88.7 561 100.4 561.6 110.3 556.6L226.4 498.5L399.7 556.3C395.4 549.9 391.2 543.2 387.1 536.4C376.1 518.1 365.2 497.1 357.1 474.6L255.9 440.9L255.9 156.4L383.9 199.1L383.9 298.4C414.9 262.6 460.9 240 511.9 240C534.5 240 556.1 244.4 575.9 252.5L576 112zM512 288C445.7 288 392 340.8 392 405.9C392 474.8 456.1 556.3 490.6 595.2C502.2 608.2 521.9 608.2 533.5 595.2C568 556.3 632.1 474.8 632.1 405.9C632.1 340.8 578.4 288 512.1 288zM472 408C472 385.9 489.9 368 512 368C534.1 368 552 385.9 552 408C552 430.1 534.1 448 512 448C489.9 448 472 430.1 472 408z" /></svg>
+                        <span className="theme-color-light">
                           <strong className="d-block mb-0">&nbsp;Office Address</strong>
                           MM-201, 2nd Floor,<br /> MANYA MANSION #11,<br /> Blue Bells Street, 7th Main,<br /> 7th Cross, Rajeevgandhinagar, <br />Bangalore-560097
                         </span>

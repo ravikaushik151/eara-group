@@ -60,7 +60,7 @@ export default function CoreValuesSlider() {
                                     <img
                                         src={item.img}
                                         alt={item.title}
-                                        className="img-fluid p-md-5 p-2 eimg theme-png-light"
+                                        className="img-fluid p-md-5 p-2 eimg white-png"
                                     />
                                 </div>
                                 <div className="mb-md-0 mb-3 col-md-6 px-3 d-flex flex-column justify-content-center">
