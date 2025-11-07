@@ -8,6 +8,7 @@ import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
 import CoreValuesSlider from "./components/CoreValuesSlider";
+import Ongoing from "./components/Ongoing";
 export const metadata = {
   title: 'Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.',
   description: "Discover Eara Group's luxury villa plots for sale in Kanakapura Road. Build your dream home amidst nature with premium amenities & great connectivity.",
@@ -141,7 +142,8 @@ export default function Home() {
                 </div>
                 <div className="row align-items-center">
                   <div className="col-md-6 px-md-0 text-center">
-                    <Image
+                    <Ongoing />
+                    {/* <Image
                       alt="Project"
                       src="/images/upcoming-projects.avif"
                       width={500}
@@ -149,7 +151,7 @@ export default function Home() {
                       className="img-fluid p-0 mb-3 w-100"
                       priority
                       fetchPriority="high" style={{ objectFit: "cover", objectPosition: "bottom center" }}
-                    />
+                    /> */}
                   </div>
                   <div
                     className="col-md-6 px-md-5 px-3 d-flex align-items-center"
@@ -203,7 +205,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-
+      
           <section className="quality-assurance-section bg-black vh-75">
             {/* Image section with black background */}
             <div className=" py-4">
@@ -229,6 +231,8 @@ export default function Home() {
 
 
           </section>
+
+        
 
           {/* Section 2: 360 Lifestyle Cards */}
           <CoreValuesSlider />
