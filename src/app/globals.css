@@ -19449,3 +19449,9 @@ footer textarea::placeholder {
 .swiper-pagination-bullet, .swiper-pagination-bullet  {
   background: #dededd !important;
 }
+footer {
+  
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), 
+    url('/images/Footer_2.png'); /* Original image */
+    background-size: cover;background-repeat: no-repeat;}
