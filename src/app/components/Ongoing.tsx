@@ -10,7 +10,7 @@ import { Autoplay, Scrollbar, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 
 const slides = [
- { src: "/images/upcoming-projects.avif", alt: "Gallery Image 1" },
+ { src: "/images/upcoming-projects.png", alt: "Gallery Image 1" },
  { src: "/images/upcoming-projects.avif", alt: "Gallery Image 2" },
 ];
 
