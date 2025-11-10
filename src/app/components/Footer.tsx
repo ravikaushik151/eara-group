@@ -7,14 +7,14 @@ export default function Footer() {
  return (
   <>
 
-   <footer className="footer accent-bg text-white py-3" >
-    <div className="site-footer__top bg-opacity-75" style={{ paddingTop: '2rem' }}>
+   <footer className="footer accent-bg text-white" >
+    <div className="site-footer__top bg-opacity-75" >
      <div className="container">
-      <div className="site-footer__top-inner pt-4 pb-3">
+      <div className="site-footer__top-inner  py-2">
        <div className="row g-4">
-        <div className="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="100ms">
-         <div className="footer-widget__column footer-widget__about">
-          <div className="footer-widget__about-text-box">
+        <div className="col-lg-3 col-md-3 pb-2" data-wow-delay="100ms">
+         <div className=" ">
+          <div className="">
            <Link href="/">
             <Image
              src="/images/logo-dark.webp"
@@ -30,20 +30,20 @@ export default function Footer() {
           </div>
          </div>
         </div>
-        <div className="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="200ms">
-         <div className="footer-widget__column footer-widget__Explore">
-          <div className="footer-widget__title-box mb-3">
-           <h4 className="footer-widget__title fs-5 fw-bold text-uppercase">OUR ADDRESS</h4>
+        <div className="col-lg-3 col-md-3" data-wow-delay="200ms">
+         <div className=" ">
+          <div className="">
+           <p className=" fs-6 small text-uppercase">OUR ADDRESS</p>
           </div>
-          <p className="footer-widget__find-text text-white mb-0">MM-201, 2nd Floor,<br /> MANYA MANSION #11,<br /> Blue Bells Street, 7th Main,<br /> 7th Cross, Rajeevgandhinagar, <br />Bangalore-560097</p>
+          <p className=" text-white mb-0">MM-201, 2nd Floor, MANYA MANSION #11, Blue Bells Street, 7th Main, 7th Cross, Rajeevgandhinagar, Bangalore-560097</p>
          </div>
         </div>
-        <div className="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="300ms">
-         <div className="footer-widget__column footer-widget__find">
-          <div className="footer-widget__title-box mb-3">
-           <h3 className="footer-widget__title fs-5 fw-bold text-uppercase">CALL US</h3>
+        <div className="col-lg-3 col-md-3" data-wow-delay="300ms">
+         <div className="">
+          <div className="">
+           <p className=" fs-6 text-uppercase small">CALL US</p>
           </div>
-          <ul className="footer-widget__Contact-list list-unstyled mb-0">
+          <ul className=" list-unstyled mb-0">
            <li className="d-flex align-items-center mb-2">
             <div className="icon me-3">
              <span className="fas fa-phone-alt text-primary" />
@@ -63,10 +63,10 @@ export default function Footer() {
           </ul>
          </div>
         </div>
-        <div className="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="400ms">
-         <div className="footer-widget__column footer-widget__Contact">
-          <div className="footer-widget__title-box mb-3">
-           <h3 className="footer-widget__title fs-5 fw-bold text-uppercase">CONNECT WITH US</h3>
+        <div className="col-lg-3 col-md-3" data-wow-delay="400ms">
+         <div className=" footer-widget__Contact">
+          <div className="">
+           <p className=" fs-6 text-uppercase">CONNECT WITH US</p>
           </div>
           <div className="site-footer__social d-flex flex-wrap gap-2">
            <Link href="https://www.facebook.com/profile.php?id=61577460860336" className="text-white " target="_blank">
@@ -95,14 +95,14 @@ export default function Footer() {
     </div>
    </footer>
    <div className="pt-3 bg-black" style={{ overflow: 'hidden' }}>
-    <div className="container-fluid">
+    <div className="container">
      <div className="row">
-      <div className="col-md-5">
+      <div className="col-md-6">
        <div className="site-footer__bottom-inner">
         <p className="text-center text-white">© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-white" target="_blank">IM Solutions</Link></p>
        </div>
       </div>
-      <div className="col-md-7 d-flex justify-content-end align-items-center"> {/* Adjusting column width and alignment */}
+      <div className="col-md-6 d-flex justify-content-end align-items-center"> {/* Adjusting column width and alignment */}
        <div className=" text-center m-center"> {/* Adding a class to align text to the right */}
 
 
