@@ -126,13 +126,7 @@ export default function Home() {
 
 
 
-          <section className="same-gap position-relative bg-light theme-bg-dark up-coming" style={{
-            backgroundImage: "url('/images/Flower_Cream.avif')",
-            backgroundSize: "15% 35%",   // ✅ width 100%, height 80%
-            backgroundPosition: "right 99%", // ✅ right aligned, center vertically
-            color: "#fff",
-            backgroundRepeat: "no-repeat",   // ✅ fixed
-          }}>
+          <section className="same-gap position-relative bg-light theme-bg-dark up-coming">
             <div className="container">
               <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
@@ -214,7 +208,7 @@ export default function Home() {
                   <div className="col-lg-12 col-md-12 text-center">
                     <div className="image-frame bg-black">
                       <Image
-                        src="/images/Career-Page.avif"
+                        src="/images/hero-image-edit-4-new.jpg"
                         alt="Business professionals walking"
                         width={1400}
                         height={700}

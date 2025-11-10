@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { posts } from './../data/posts';
-import "./../blog.css";
+//import "./../blog.css";
 
 // Assuming the structure of your post object looks something like this:
 interface Post {

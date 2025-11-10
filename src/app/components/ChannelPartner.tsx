@@ -3,7 +3,7 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import "./../career.css";
+//import "./../career.css";
 
 // Define a type for the form data to improve type safety
 interface ChannelPartnerFormData {
