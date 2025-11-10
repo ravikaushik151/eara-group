@@ -19448,5 +19448,5 @@ footer {
   
   background:
   linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), 
-    url('/images/Footer_2.png'); /* Original image */
-    background-size: cover;background-repeat: no-repeat;}
+    url('/images/Footer_2.png') !important; /* Original image */
+    background-size: cover !important;background-repeat: no-repeat !important;background-position: top center;}

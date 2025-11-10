@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../../app/components/ContactForm";
-import "./../contact.css";
+//import "./../contact.css";
 export const metadata = {
   title: "Contact EARA Group - Reach Out to Us for Real Estate Inquiries",
   description:
@@ -74,7 +74,7 @@ export default function Contact() {
 
                 {/* Contact Info */}
                 <div className="col-md-5 d-flex align-items-center justify-content-center">
-                  <div className="contact_info_sec text-bg-dark px-md-5 py-md-5 px-4 py-4 text-white shadow  theme-bg-dark">
+                  <div className="contact_info_sec text-bg-dark px-md-5 py-md-5 px-3 py-3 text-white shadow  theme-bg-dark">
                     <div className="py-md-4">
                       <h4 className="text-white mb-3 theme-color-light ">Contact Info</h4>
 
