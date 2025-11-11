@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="col-lg-3 col-md-3" data-wow-delay="200ms">
          <div className=" ">
           <div className="">
-           <p className=" fs-6 small text-uppercase">OUR ADDRESS</p>
+           <p className=" fs-6 small text-uppercase m-center">OUR ADDRESS</p>
           </div>
           <p className=" text-white mb-0">MM-201, 2nd Floor, MANYA MANSION #11, Blue Bells Street, 7th Main, 7th Cross, Rajeevgandhinagar, Bangalore-560097</p>
          </div>
@@ -41,10 +41,10 @@ export default function Footer() {
         <div className="col-lg-3 col-md-3" data-wow-delay="300ms">
          <div className="">
           <div className="">
-           <p className=" fs-6 text-uppercase small">CALL US</p>
+           <p className=" fs-6 text-uppercase small m-center ps-md-3">CALL US</p>
           </div>
-          <ul className=" list-unstyled mb-0">
-           <li className="d-flex align-items-center mb-2">
+          <ul className=" list-unstyled mb-0  m-center">
+           <li className="d-flex align-items-center mb-2  justify-content-md-start justify-content-center">
             <div className="icon me-3">
              <span className="fas fa-phone-alt text-primary" />
             </div>
@@ -52,7 +52,7 @@ export default function Footer() {
              <p className="mb-0"><a href="tel:+1234567890" className="text-white text-decoration-none"><svg  style={{ width: "20px", height: "20px" }} className="w-8 h-8 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/></svg>  +91 123 456 7890</a></p>
             </div>
            </li>
-           <li className="d-flex align-items-center">
+           <li className="d-flex align-items-center  justify-content-md-start justify-content-center">
             <div className="icon me-3">
              <span className="fas fa-envelope text-primary" />
             </div>
@@ -66,9 +66,9 @@ export default function Footer() {
         <div className="col-lg-3 col-md-3" data-wow-delay="400ms">
          <div className=" footer-widget__Contact">
           <div className="">
-           <p className=" fs-6 text-uppercase">CONNECT WITH US</p>
+           <p className=" fs-6 text-uppercase  m-center">CONNECT WITH US</p>
           </div>
-          <div className="site-footer__social d-flex flex-wrap gap-2">
+          <div className="site-footer__social d-flex flex-wrap gap-2 justify-content-md-start justify-content-center ">
            <Link href="https://www.facebook.com/profile.php?id=61577460860336" className="text-white " target="_blank">
             <svg style={{ width: "24px", height: "24px" }} className="w-8 h-8 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" /></svg>
 
