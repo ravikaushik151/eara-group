@@ -199,20 +199,19 @@ export default function Home() {
               </div>
             </div>
           </section>
-      
-          <section className="quality-assurance-section bg-black vh-75">
-            {/* Image section with black background */}
-            <div className=" py-4">
+
+          <section className="quality-assurance-section bg-black">
+            <div className="image-wrapper py-4">
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-lg-12 col-md-12 text-center">
-                    <div className="image-frame bg-black">
+                    <div className="image-frame">
                       <Image
                         src="/images/hero-image-edit-4-new.jpg"
                         alt="Business professionals walking"
                         width={1400}
                         height={700}
-                        className="img-fluid shadow-lg"
+                        className="img-fluid d-block mx-auto"
                         priority
                       />
                     </div>
@@ -220,13 +219,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-
-
-
           </section>
 
-        
+
+
 
           {/* Section 2: 360 Lifestyle Cards */}
           <CoreValuesSlider />
