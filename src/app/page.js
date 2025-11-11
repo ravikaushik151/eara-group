@@ -157,7 +157,7 @@ export default function Home() {
                   >
                     <div>
                       <div className="title text-left ">
-                        <h4 className="text-black mb-2 fs-4 theme-color-light fw-bold m-center">
+                        <h4 className="text-black my-2 fs-4 theme-color-light fw-bold m-center">
                           Ultra Luxury Plotted Development
                         </h4>
                         <p className="m-center">
