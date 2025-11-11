@@ -9,6 +9,7 @@ import TestimonialSlider from "./components/Home/TestimonialSlider";
 import LatestBlogs from "./components/LatestBlogs";
 import CoreValuesSlider from "./components/CoreValuesSlider";
 import Ongoing from "./components/Ongoing";
+import ImageCompare from "./components/ImageCompare";
 export const metadata = {
   title: 'Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.',
   description: "Discover Eara Group's luxury villa plots for sale in Kanakapura Road. Build your dream home amidst nature with premium amenities & great connectivity.",
@@ -136,7 +137,9 @@ export default function Home() {
                 </div>
                 <div className="row align-items-center">
                   <div className="col-md-6 px-md-0 text-center">
-                    <Ongoing />
+            
+                    <ImageCompare />
+                    {/* <Ongoing /> */}
                     {/* <Image
                       alt="Project"
                       src="/images/upcoming-projects.avif"
