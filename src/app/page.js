@@ -77,7 +77,7 @@ export default function Home() {
                       width: "100%",
                     }}
                   >
-                    <source src="/images/mobileHomePage.mp4" style={{
+                    <source src="/images/Eara-WebsiteHmeBannerMobileVersion.mp4" style={{
                       objectFit: "cover",
                       height: "100vh",
                       width: "100%",
