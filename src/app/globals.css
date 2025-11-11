@@ -19432,7 +19432,7 @@ footer textarea::placeholder {
 .quality-assurance-section {
   
   margin-top: 25%;
-  height: 75vh;
+  height: 50vh;
   
   overflow: visible; 
 }
@@ -19450,3 +19450,17 @@ footer {
   linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), 
     url('/images/Footer_2.png') !important; /* Original image */
     background-size: cover !important;background-repeat: no-repeat !important;background-position: bottom center !important;}
+    @media only screen and (max-width:768px) {
+      .quality-assurance-section {
+  
+        margin-top: 25%;
+        height: 30vh;
+        
+        overflow: visible; 
+      }
+      
+      .quality-assurance-section img {
+       margin-top: -35%;
+       
+      }
+    }
