@@ -19493,7 +19493,7 @@ footer {
 .quality-assurance-section {
 
   margin-top: 25%;
-  height: 50vh;
+  height: 55vh;
 
   overflow: visible;
 }
@@ -19501,6 +19501,21 @@ footer {
 .quality-assurance-section img {
   margin-top: -35%;
 
+}
+
+@media only screen and (max-width:1600px) and (min-width:1377px) {
+  .quality-assurance-section {
+
+    margin-top: 28%;
+    height: 78vh;
+
+    overflow: visible;
+  }
+
+  .quality-assurance-section img {
+    margin-top: -35%;
+
+  }
 }
 
 @media only screen and (max-width:768px) {
