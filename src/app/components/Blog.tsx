@@ -6,16 +6,14 @@ import { useState } from 'react';
 import { posts } from './../data/posts';
 //import "./../blog.css";
 
-// Assuming the structure of your post object looks something like this:
 interface Post {
     title: string;
-    date: string; // The date must be a string format recognized by new Date()
+    date: string;
     excerpt: string;
     slug: string;
     image: string;
 }
 
-// Cast the imported posts data to the correct type for safety
 const typedPosts: Post[] = posts as Post[];
 
 
@@ -36,11 +34,9 @@ export default function Blog() {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
         
-        // FIX: Convert Date objects to numeric timestamps using .getTime()
         const timeA = dateA.getTime();
         const timeB = dateB.getTime();
         
-        // This arithmetic subtraction (timeB - timeA) is now valid
         return sortBy === 'newest' ? timeB - timeA : timeA - timeB;
     });
 
@@ -67,10 +63,7 @@ export default function Blog() {
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
                                     <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</h1>
-                                    
-                                    {/* <p className="text-center d-block fs-6 ">
-                                        <Link className="text-white text-decoration-none" href='/'> Home</Link> / Blog
-                                    </p> */}
+                                    {/* Removed commented-out Link */}
                                 </div>
                             </div>
                         </div>
@@ -84,9 +77,10 @@ export default function Blog() {
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>
                             <h4 className="text-center">
-                             Explore real estate insights, trends, and lifestyle stories that shape smarter living.
+                              Explore real estate insights, trends, and lifestyle stories that shape smarter living.
                             </h4>
                         </div>
+                        {/* Search and Sort controls are currently hidden with d-none */}
                         <div className="col-md-2 d-none">
                             <input
                                 type="text"
@@ -103,10 +97,13 @@ export default function Blog() {
                             </select>
                         </div>
                     </div>
-                    <div className="row">
+                    {/* 🛑 FIX: Use d-flex and align-items-stretch on the row to make columns equal height */}
+                    <div className="row d-flex align-items-stretch"> 
                         {paginatedPosts.length > 0 ? paginatedPosts.map((post) => (
+                            // Use h-100 on the column to fill the row's stretched height
                             <div className="col-md-4 mb-3" key={post.slug}>
-                                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 theme-bg-dark">
+                                {/* 🛑 FIX: Use d-flex and flex-column to enable vertical stretching inside the card */}
+                                <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 theme-bg-dark d-flex flex-column h-100">
                                     <div className="services-thumb">
                                         <Link href={`/blog/${post.slug}`}>
                                             <Image
@@ -117,18 +114,20 @@ export default function Blog() {
                                                 height={500}
                                                 style={{ minHeight: "250px", objectFit: "cover" }}
                                             />
-
                                         </Link>
                                     </div>
-                                    <div className="services-content">
+                                    {/* 🛑 FIX: Use flex-grow-1 to make this content block take up all remaining vertical space */}
+                                    <div className="services-content flex-grow-1 d-flex flex-column"> 
                                         <h6 className="title my-3 text-center fw-bold">
                                             <Link className='text-dark fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`} style={{ fontWeight: "600" }}>
                                                 {post.title}
                                             </Link>
                                         </h6>
+                                        {/* The excerpt needs flex-grow to push the button down, or margin auto */}
                                         <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                                      
-                                        <div className="text-center py-3 my-3 small">
+                                        
+                                        {/* Use mt-auto on the button container to push it to the bottom */}
+                                        <div className="text-center py-3 my-3 small mt-auto">
                                             <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
                                         </div>
                                     </div>
@@ -152,7 +151,6 @@ export default function Blog() {
                                             className={`page-item mx-1 bg-black ${currentPage === i + 1 ? 'active' : ''}`}
                                             onClick={() => setCurrentPage(i + 1)}
                                         >
-                                            {/* Prevent default click behavior if using <li> onClick */}
                                             <button className="page-link btn text-light rounded-0 theme-bg-dark">{i + 1}</button>
                                         </li>
                                     ))}
