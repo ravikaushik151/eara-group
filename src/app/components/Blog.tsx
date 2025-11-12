@@ -83,9 +83,9 @@ export default function Blog() {
                 <div className="container">
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>
-                            <h2 className="text-center">
+                            <h4 className="text-center">
                              Explore real estate insights, trends, and lifestyle stories that shape smarter living.
-                            </h2>
+                            </h4>
                         </div>
                         <div className="col-md-2 d-none">
                             <input
