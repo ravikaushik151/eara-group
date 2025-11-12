@@ -88,8 +88,8 @@ export default function Project() {
 
                             {/* ✅ Overlay */}
                             <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
-                                <h1 className="text-center fs-1 mb-0 text-uppercase">OUr Projects</h1>
-                                <p>Discover exclusive residential plots by Eara Group - where nature and luxury coexist in harmony.</p>
+                                <h1 className="text-center fs-1 mb-0 text-uppercase">Our Projects</h1>
+                                <p className="px-md-0 px-3">Discover exclusive residential plots by Eara Group - where nature and luxury coexist in harmony.</p>
                                 {/* <p className="text-center fs-6">
                                     <Link
                                         className="text-white text-decoration-none text-brown"

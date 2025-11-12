@@ -66,7 +66,7 @@ export default function About() {
                 // poster="/images/About_new copy_Eara.avif" 
                 style={{
                   objectFit: "cover",
-                  height: "100%",
+                  height: "auto !important",
                   width: "100%",
                 }}
               >
