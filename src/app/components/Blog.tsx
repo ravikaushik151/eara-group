@@ -58,7 +58,7 @@ export default function Blog() {
                                 width={1920} 
                                 className='img-fluid masterpiece ' 
                                 alt="masterpiece" 
-                                style={{ objectPosition: '15% 100%' }} 
+                                style={{ objectPosition: '10% 100%' }} 
                             />
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
