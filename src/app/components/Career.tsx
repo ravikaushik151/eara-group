@@ -4,8 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaCheckCircle } from 'react-icons/fa';
-// Ensure this path is correct for your CSS file
-import "./../career.css"; 
+import './../career.css'; 
 
 export default function Career() {
   const [formData, setFormData] = useState({
@@ -13,11 +12,14 @@ export default function Career() {
     email: '',
     city: '',
     phone: '',
-    post1: 'Sales Manager', // Default value, corresponds to one of your form fields (though not visible in select)
-    experience: 'Fresher', // Default value for the experience select
+    post1: 'Sales Manager',
+    experience: 'Fresher',
     msg: '',
     fileatt: null,
   });
+
+  const [statusMessage, setStatusMessage] = useState(''); // ✅ To show response message
+  const [statusType, setStatusType] = useState<'success' | 'error' | ''>(''); // ✅ Success/Error state
 
   const reasons = [
     'Culture of Integrity',
@@ -26,81 +28,81 @@ export default function Career() {
     'Trusted Legacy',
   ];
 
-  const handleChange = (e) => {
-    const { name, value, files } = e.target;
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, files } = e.target as HTMLInputElement;
     setFormData((prev) => ({
       ...prev,
-      // Handle file input separately, using the first file object if files exist
       [name]: files ? files[0] : value,
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const form = new FormData();
-    // Populate FormData object from state
     Object.entries(formData).forEach(([key, value]) => {
-      // Append all fields, including the file object
-      if (value !== null) {
-        form.append(key, value);
-      }
+      if (value !== null) form.append(key, value);
     });
 
     try {
-      // 🚨 UPDATED: Targetting the PHP file in the public directory
       const response = await fetch('https://earagroup.com/career.php', {
         method: 'POST',
-        // Note: Do NOT set Content-Type header when sending FormData; 
-        // the browser sets the correct 'multipart/form-data' header automatically.
-        body: form, 
+        body: form,
       });
 
-      // Handle non-OK status codes (e.g., 500 from PHP)
       if (!response.ok) {
-        // Attempt to parse JSON error message if available
         const errorResult = await response.json().catch(() => ({ message: 'Server error occurred.' }));
         throw new Error(`Submission failed: ${response.status} - ${errorResult.message}`);
       }
 
       const result = await response.json();
-      alert(result.message || 'Form submitted successfully!');
-      
-      // Optional: Reset form fields after successful submission
-      // setFormData({
-      //   name: '', email: '', city: '', phone: '', post1: 'Sales Manager', 
-      //   experience: 'Fresher', msg: '', fileatt: null,
-      // }); 
-      
+
+      // ✅ Show success message
+      setStatusMessage(result.message || 'Form submitted successfully!');
+      setStatusType('success');
+
+      // ✅ Reset form fields
+      setFormData({
+        name: '',
+        email: '',
+        city: '',
+        phone: '',
+        post1: 'Sales Manager',
+        experience: 'Fresher',
+        msg: '',
+        fileatt: null,
+      });
+
+      // Optional: Hide message after few seconds
+      setTimeout(() => {
+        setStatusMessage('');
+        setStatusType('');
+      }, 5000);
     } catch (err) {
       console.error('Submission Error:', err);
-      // Provide a generic error message if parsing the server response failed
-      alert(`Error submitting form. Please check the console for details.`);
+      setStatusMessage('Error submitting form. Please try again later.');
+      setStatusType('error');
     }
   };
 
   return (
     <>
       {/* Banner */}
-      <div id="carouselExampleDark" className="header-section ">
-        <div className='row'>
-          <div className='col-md-12'>
+      <div id="carouselExampleDark" className="header-section">
+        <div className="row">
+          <div className="col-md-12">
             <div className="image-container">
-              {/* Image component with original paths and dimensions */}
               <Image 
                 src="/images/Career-header.avif" 
                 height={2880} 
                 width={1920} 
-                className='img-fluid masterpiece ' 
-                alt="masterpiece" 
+                className="img-fluid masterpiece" 
+                alt="Career Banner" 
               />
-              <div className="overlay2 " style={{ marginTop: "-120px" }}>
-                <div className="text-white d-block">
-                  <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Career</h1>
+              <div className="overlay2" style={{ marginTop: "-120px" }}>
+                <div className="text-white text-center">
+                  <h1 className="fs-1 mb-0 text-uppercase">Career</h1>
                   <p>Explore exciting job openings in Eara Group and become part of a purpose-driven future.</p>
-                  {/* <p className="text-center d-block fs-6 ">
-                    <Link className="text-white text-decoration-none" href='/'> Home</Link> / Career
-                  </p> */}
                 </div>
               </div>
             </div>
@@ -109,11 +111,11 @@ export default function Career() {
       </div>
 
       {/* Career Section */}
-      <section className="bg-light py-5 theme-bg-light carrer section">
+      <section className="bg-light py-5 theme-bg-light career-section">
         <div className="container">
           <div className="text-center mb-5 theme-color-dark">
             <h2 className="mb-2">Build the Future with EARA Group</h2>
-            <span className=' theme-color-dark'>
+            <span className="theme-color-dark">
               Be part of a mission where values lead, ideas thrive, and growth is a shared journey.
             </span>
           </div>
@@ -121,38 +123,44 @@ export default function Career() {
           <div className="row align-items-center">
             {/* Why Join */}
             <div className="col-lg-6 mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4  theme-color-dark m-center">
-                Why Join <span className="text-color-accent m-center">EARA</span> Group?
+              <h2 className="theme-color-dark mb-4">
+                Why Join <span className="text-color-accent">EARA</span> Group?
               </h2>
-
-
               <div className="row">
-                {/* Reasons List */}
                 {reasons.map((reason) => (
-                  <div key={reason} className="col-12  px-2 mb-3 ps-md-4 ps-5">
-                    <div className="row px-1 ">
+                  <div key={reason} className="col-12 px-2 mb-3 ps-md-4 ps-5">
+                    <div className="row px-1">
                       <div className="col-md-10 col-10 px-0">  
-                        <FaCheckCircle className="text-color-accentme-2 " /> 
-                        <span className="text-dark  theme-color-dark"> {reason} </span> 
+                        <FaCheckCircle className="text-color-accent me-2" /> 
+                        <span className="text-dark">{reason}</span> 
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="mb-4  theme-color-dark m-center px-md-1 px-1">
-                At EARA Group, we&rsquo;re building more than a brand - we&rsquo;re growing a culture rooted in purpose, innovation, and integrity. An Eara Group career is about more than just work; it&rsquo;s about shaping communities, driving progress, and creating lasting impact through every role.
+              <p className="mb-4 theme-color-dark">
+                At EARA Group, we’re building more than a brand — we’re growing a culture rooted in purpose, innovation, and integrity.
               </p>
             </div>
 
             {/* Job Form */}
             <div className="col-lg-6 mb-5">
               <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
-                <h5 className="text-uppercase mb-4 theme-color-dark " style={{ color: '#282563' }}>
-                  APPLY FOR YOUR JOB
-                </h5>
+                <h5 className="text-uppercase mb-3 theme-color-dark">APPLY FOR YOUR JOB</h5>
+
+                {/* ✅ Status Message */}
+                {statusMessage && (
+                  <div
+                    className={`alert ${
+                      statusType === 'success' ? 'alert-success' : 'alert-danger'
+                    } py-2`}
+                  >
+                    {statusMessage}
+                  </div>
+                )}
+
                 <form onSubmit={handleSubmit} encType="multipart/form-data">
                   <div className="row">
-                    {/* Text/Email/Phone Inputs */}
                     {[
                       ['name', 'Name', 'text', 'Name'],
                       ['email', 'Email address', 'email', 'Email'],
@@ -163,6 +171,7 @@ export default function Career() {
                         <input
                           type={type}
                           name={name}
+                          value={formData[name]}
                           className="form-control mb-3 py-2"
                           onChange={handleChange}
                           required
@@ -171,13 +180,12 @@ export default function Career() {
                       </div>
                     ))}
 
-                    {/* Experience Dropdown */}
                     <div className="form-group col-md-12">
                       <select
                         name="experience"
                         className="form-control mb-3 py-2"
                         onChange={handleChange}
-                        defaultValue={formData.experience} // Use defaultValue to manage state
+                        value={formData.experience}
                       >
                         <option value="Fresher">Fresher</option>
                         <option value="1-2 Years">1-2 Years</option>
@@ -187,10 +195,10 @@ export default function Career() {
                       </select>
                     </div>
 
-                    {/* Description Textarea */}
                     <div className="form-group col-md-12">
                       <textarea
                         name="msg"
+                        value={formData.msg}
                         className="form-control mb-3 py-2"
                         onChange={handleChange}
                         required
@@ -198,7 +206,6 @@ export default function Career() {
                       ></textarea>
                     </div>
 
-                    {/* File Attachment */}
                     <div className="form-group col-md-12">
                       <input
                         type="file"
@@ -210,7 +217,6 @@ export default function Career() {
                       />
                     </div>
 
-                    {/* Submit Button */}
                     <div className="text-center col-md-12">
                       <button type="submit" className="btn theme-bg-dark text-white py-2 px-4 mt-2">
                         Submit
