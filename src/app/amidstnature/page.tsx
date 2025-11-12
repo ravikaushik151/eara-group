@@ -104,8 +104,8 @@ export default function Home() {
       <main className="main-wrapper">
        
         <div className="overflow-clip" id="main-slider">
-        <MicroHomeHeroSlider />
-          {/* <div id="carouselExampleDark" className="header-section position-relative d-none">
+       
+           <div id="carouselExampleDark" className="header-section position-relative ">
             <div className="row">
               <div className="col-md-12">
                 <div className="video-container position-relative " style={{ lineHeight: "0 !important" }}>
@@ -144,11 +144,19 @@ export default function Home() {
                     <source src="/images/Project-mobile.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                 
+                  <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-0"></div>
+
+                  {/* ✅ Centered Text using Bootstrap 5.3 */}
+                  <div className="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white px-3 mt-md-5">
+                    <h1 className="display-4 fw-bold mt-md-5 mb-0">
+                    Luxury villa plots in Kaggalipura
+                    </h1>
+                    <p className="lead mb-0">Crafted for serene living and timeless value.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div> 
           {/* <MicroHomeHeroSlider /> */}
         </div>
         <div id="scroll-more">

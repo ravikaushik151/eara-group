@@ -13,11 +13,11 @@ const testimonials = [
   },
   {
     text: "Before I booked my plot, I spent time learning about Eara Group - their focus on sustainability, transparent process, and premium quality instantly stood out. Once I saw Amidst Nature, I knew it reflected everything they stand for: trust, design, and serenity.",
-    name: "Priya Mehta",
+    name: "Aishwarya Naidu",
   },
   {
     text: "I’ve read several Eara Group reviews online, and they truly live up to their reputation. The community at Amidst Nature is a perfect example - peaceful, green, and intelligently designed. You can feel the difference the moment you step in.    ",
-    name: "Arjun Verma",
+    name: "Suresh Murthy",
   },
   {
     text: "I've been waiting for a project that truly respects nature without compromising on modern living, EARA's Amidst Nature is exactly that. The moment I saw their plan, I knew this is where I want to build my forever home. A green, peaceful sanctuary that's still so well-connected to the city!",
