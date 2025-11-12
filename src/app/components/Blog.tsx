@@ -66,7 +66,8 @@ export default function Blog() {
                             />
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
-                                    <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</h1>
+                                    <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</h1>
+                                    <p> Explore real estate insights, trends, and lifestyle stories that shape smarter living.</p>
                                     {/* <p className="text-center d-block fs-6 ">
                                         <Link className="text-white text-decoration-none" href='/'> Home</Link> / Blog
                                     </p> */}
