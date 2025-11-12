@@ -67,7 +67,7 @@ export default function Blog() {
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
                                     <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</h1>
-                                    <p> Explore real estate insights, trends, and lifestyle stories that shape smarter living.</p>
+                                    
                                     {/* <p className="text-center d-block fs-6 ">
                                         <Link className="text-white text-decoration-none" href='/'> Home</Link> / Blog
                                     </p> */}
@@ -84,7 +84,7 @@ export default function Blog() {
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>
                             <h2 className="text-center">
-                                Blogs
+                             Explore real estate insights, trends, and lifestyle stories that shape smarter living.
                             </h2>
                         </div>
                         <div className="col-md-2 d-none">
