@@ -102,63 +102,53 @@ export default function Home() {
   return (
     <>
       <main className="main-wrapper">
+       
         <div className="overflow-clip" id="main-slider">
-        <div id="carouselExampleDark" className="header-section position-relative">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="video-container position-relative " style={{lineHeight:"0 !important"}}>
-              {/* ✅ Background video */}
-              <video
-                className="w-100 h-100 object-fit-cover d-md-block d-none"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                // poster="/images/Eara_banner-image.webp" 
-                style={{
-                  objectFit: "cover",
-                  height: "100%",
-                  width: "100%",
-                }}
-              >
-                <source src="/images/Project.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <video
-                className="w-100 h-100 object-fit-cover d-md-none"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                // poster="/images/Eara_banner-image.webp"
-                style={{
-                  objectFit: "cover",
-                  height: "100%",
-                  width: "100%",
-                }}
-              >
-                <source src="/images/Project-mobile.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              {/* ✅ Overlay */}
-              {/* <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
-                <h1 className="text-center fs-1 mb-3 text-uppercase">About Us</h1>
-                <p className="text-center fs-6">
-                  <Link
-                    className="text-white text-decoration-none text-brown"
-                    href="/"
+        <MicroHomeHeroSlider />
+          {/* <div id="carouselExampleDark" className="header-section position-relative d-none">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="video-container position-relative " style={{ lineHeight: "0 !important" }}>
+               
+                  <video
+                    className="w-100 h-100 object-fit-cover d-md-block d-none"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                   
+                    style={{
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                    }}
                   >
-                    Home
-                  </Link>{" "}
-                  / About Us
-                </p>
-              </div> */}
+                    <source src="/images/Project.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video
+                    className="w-100 h-100 object-fit-cover d-md-none"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    
+                    style={{
+                      objectFit: "cover",
+                      height: "100%",
+                      width: "100%",
+                    }}
+                  >
+                    <source src="/images/Project-mobile.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                 
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> */}
           {/* <MicroHomeHeroSlider /> */}
         </div>
         <div id="scroll-more">
@@ -204,7 +194,8 @@ export default function Home() {
                     <span className="fs-5 theme-color-dark text-center d-block">Where <span className="text-success">Green</span> is the New <span className="text-gold">Gold</span></span>
                     <p className="mt-4  theme-color-dark">
                       <strong>Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green mornings, golden silence, and grounded luxury.</strong></p>
-                    <p className=" theme-color-dark"><strong></strong>Spread across  18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
+                    <p className=" theme-color-dark"><strong></strong>Spread across 18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This BMRDA Approved Sites in Kanakapura Road is thoughtfully designed and well executed, blending nature&rsquo;s calm with modern comfort.
+
                     </p>
                     <div className="text-center  my-4">
                       <ContactFormPopup
@@ -413,8 +404,17 @@ export default function Home() {
                         </h3>
                       </div>
                       <div className="w-100">
-                        <div className="text-size-regular text-color-offwhite theme-color-light m-center">
-                          Surrounded by serene greenery and nestled along the city&rsquo;s fast-developing Kanakapura stretch, Amidst Nature in Kaggalipura is a peaceful retreat that&rsquo;s seamlessly connected to Bengaluru&rsquo;s most prominent hubs. With wide roads, clean air, and spiritual landmarks nearby, it&rsquo;s not just a location - it&rsquo;s a lifestyle.
+                        <div className="text-size-regular text-color-offwhite theme-color-light m-center lh">
+                          <p className="text-start">
+                            Surrounded by serene greenery and nestled along the city&rsquo;s fast-developing Kanakapura stretch, Amidst Nature is among the most sought-after premium villa plots in Kanakapura Road.
+                          </p>
+                          <p className="text-start">
+                            For those seeking villa plots in Kaggalipura, this address offers unmatched tranquility and long-term value -  perfectly placed for families and investors alike.
+                          </p>
+
+                          <br />
+
+
                         </div>
                       </div>
                     </div>
@@ -544,8 +544,9 @@ export default function Home() {
                             With every project, we honour land and its legacy.<br />
                             We build for those who think deeper.</p>
 
-                          <p className="theme-color-dark text-center">At EARA Group, we&#39;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility.<br />
-                            Backed by 20 years of industry experience, our foundation is rooted in sustainability and driven by innovation. We specialize in plotted developments and gated layouts designed to integrate seamlessly with nature. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living&nbsp;at&nbsp;its&nbsp;core.</p>
+                          <p className="theme-color-dark text-center">At EARA Group, we&#39;re redefining the future of real estate with a strong vision to build premium communities that balance modern living with environmental responsibility. Backed by 20 years of industry experience, our foundation is rooted in sustainability and driven by innovation.
+                            <br />
+                            We specialize in plotted developments and gated layouts that integrate seamlessly with nature - perfect for those looking for luxury villa plots in Kaggalipura or peaceful plots near Kanakapura Road. Every square foot is planned with precision, combining modern infrastructure, long-term value, and green living at its core.</p>
 
                         </div>
                       </div>

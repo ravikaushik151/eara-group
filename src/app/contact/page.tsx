@@ -5,7 +5,7 @@ import ContactForm from "../../app/components/ContactForm";
 export const metadata = {
   title: "Contact EARA Group - Reach Out to Us for Real Estate Inquiries",
   description:
-    "Connect with EARA Group for real estate queries. Visit our contact page for office details, email, and more—we’re always ready to guide and assist you.",
+    "Connect with EARA Group for real estate queries. Visit our contact page for office details, email, and more—we&rsquo;re always ready to guide and assist you.",
   keywords:
     "Plots near Kanakapura Main Road, Villa plots in Kanakapura Main Road, Plots in Kanakapura Main Road, Sites in Kanakapura Main Road",
   alternates: {
@@ -47,8 +47,9 @@ export default function Contact() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 mx-auto">
-              <div className="heading">
-                <h2 className="text-center theme-color-dark mt-md-0 mt-4 mb-0 mb-md-5">Contact Us</h2>
+              <div className="heading mb-md-5">
+                <h2 className="text-center theme-color-dark mt-md-0 mt-4 mb-0 ">Contact Us</h2>
+                <p className="fs-6 text-center">Get in touch through the official Eara Group contact page - we&rsquo;re here to help you</p>
               </div>
             </div>
           </div>
@@ -60,10 +61,12 @@ export default function Contact() {
                 <div className="col-md-7">
                   <div className="contact_form_inner px-md-5 px-3 mb-4">
                     <div className="contact_field">
-                      <p className="text-main  theme-color-dark mb-3">
-                        Feel free to contact us any time. We will get back to
-                        you as soon as we can!
+                      <p className="text-main  theme-color-dark mb-3 fw-semibold fs-6">
+                      Feel free to contact us any time. We will get back to you as soon as we can!
+
                       </p>
+                      <p>Visit the Eara Group location to experience our work firsthand, or reach out to our team for any inquiries about projects, partnerships, or collaborations.
+</p>
                       <ContactForm
                         inputClass="form-control mb-2"
                         buttonClass="btn theme-bg-dark text-light px-4"

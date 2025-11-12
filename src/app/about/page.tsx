@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./../about.css";
 
-import TestimonialSlider from "../components/Home/TestimonialSlider";
+import TestimonialSlider from "../components/Home/TestimonialSliderAbout";
 export const metadata = {
   title: 'Premium Residential Plots in Kanakapura Main Road - Eara Group',
   description: 'Discover Premium Villa Plots in Kanakapura Main Road by Eara Group. Invest in spacious, well-planned plots with excellent connectivity and modern amenities.',

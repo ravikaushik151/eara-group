@@ -104,7 +104,7 @@ export default function Blog() {
                     </div>
                     <div className="row">
                         {paginatedPosts.length > 0 ? paginatedPosts.map((post) => (
-                            <div className="col-md-4 py-3" key={post.slug}>
+                            <div className="col-md-4 mb-3" key={post.slug}>
                                 <div className="services-item shine-animate-item bg-white shadow-sm py-3 px-3 theme-bg-dark">
                                     <div className="services-thumb">
                                         <Link href={`/blog/${post.slug}`}>
@@ -125,7 +125,8 @@ export default function Blog() {
                                                 {post.title}
                                             </Link>
                                         </h6>
-                                        <p className='mb-0 theme-color-light'>{post.excerpt}</p>
+                                        <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                                      
                                         <div className="text-center py-3 my-3 small">
                                             <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
                                         </div>

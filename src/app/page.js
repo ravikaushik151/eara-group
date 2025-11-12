@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
                 <div className="row align-items-center">
                   <div className="col-md-6 px-md-0 text-center">
-            
+
                     <ImageCompare />
                     {/* <Ongoing /> */}
                     {/* <Image
@@ -231,7 +231,83 @@ export default function Home() {
           <CoreValuesSlider />
           <TestimonialSlider />
           {/* Section 4: Blog Section */}
-          <LatestBlogs />
+         
+
+          <section className="px-md-5 px-3 theme-bg-light blog">
+            <h2 className="text-center theme-color-dark">LATEST BLOGS</h2>
+            <div className="blog-grid">
+            
+                <div  className="blog-card theme-bg-dark">
+                  <Image
+                    src="/images/Blog-img1_eara.avif"
+                    alt=" Why Choose Integrated Townships?"
+                    loading="lazy"
+                    width={578}
+                    height={200}
+                    style={{ minHeight: "250px", objectFit: "cover" }}
+                    className="w-100 h-auto object-cover"
+                  />
+                  <div className="content">
+                    {/* Agar detail page banana ho to Link use karo */}
+                    <Link href={`/blog/why-choose-integrated-townships`} className="text-decoration-none">
+                      <h4 className="theme-color-light text-center cursor-pointer fs-4" style={{ fontWeight: "600" }}>
+                        Why Choose Integrated Townships?
+                      </h4>
+                    </Link>
+                    <p className="theme-color-light ">Discover how Eara Group’s location redefine urban living with modern infrastructure, green spaces, and smart connectivity.
+                    </p>
+                  </div>
+                </div>
+                <div  className="blog-card theme-bg-dark">
+                  <Image
+                    src="/images/Blog-img2_eara.avif"
+                    alt="Eco-Conscious Architecture"
+                    loading="lazy"
+                    width={578}
+                    height={200}
+                    style={{ minHeight: "250px", objectFit: "cover" }}
+                    className="w-100 h-auto object-cover"
+                  />
+                  <div className="content">
+                    {/* Agar detail page banana ho to Link use karo */}
+                    <Link href={`/blog/eco-conscious-architecture`} className="text-decoration-none">
+                      <h4 className="theme-color-light text-center cursor-pointer fs-4" style={{ fontWeight: "600" }}>
+                       Eco-Conscious Architecture
+                      </h4>
+                    </Link>
+                    <p className="theme-color-light ">Experience sustainable design where every Eara Group address blends nature, comfort, and innovation.
+
+                    </p>
+                  </div>
+                </div>
+            
+                <div  className="blog-card theme-bg-dark">
+                  <Image
+                    src="/images/Blog-img3_eara.avif"
+                    alt="The Future of Smart Living"
+                    loading="lazy"
+                    width={578}
+                    height={200}
+                    style={{ minHeight: "250px", objectFit: "cover" }}
+                    className="w-100 h-auto object-cover"
+                  />
+                  <div className="content">
+                    {/* Agar detail page banana ho to Link use karo */}
+                    <Link href={`/blog/the-future-of-smart-living`} className="text-decoration-none">
+                      <h4 className="theme-color-light text-center cursor-pointer fs-4" style={{ fontWeight: "600" }}>
+                      The Future of Smart Living
+
+                      </h4>
+                    </Link>
+                    <p className="theme-color-light ">Explore next-gen homes by Eara Group - where smart technology meets value and future-ready pricing.
+
+                    </p>
+                  </div>
+                </div>
+            
+            </div>
+          </section>
+
         </div>
       </main>
     </>

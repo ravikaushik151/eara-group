@@ -7,7 +7,7 @@ export const posts = [
     meta_title: "Benefits of Integrated Townships | 2025 Living Trends",
     description: "Explore how integrated townships redefine modern living with convenience, community, and connectivity.",
     image: "/images/Blog-img1_eara.avif",
-    excerpt: "From better infrastructure to enhanced quality of life, integrated townships are the future of urban development...",
+    excerpt: "From better infrastructure to enhanced quality of life, integrated townships are the future of urban development. Learn how Kanakapura Road property investment is becoming one of Bengaluru’s most promising growth opportunities..    ",
     content: `
       <p>Integrated townships are large-scale, self-sufficient communities that include residential, commercial, and recreational spaces. They are designed to offer a balanced lifestyle with everything you need close at hand.</p>
       <ul>
@@ -30,7 +30,7 @@ export const posts = [
     meta_title: "Eco-Friendly Balcony Garden Design Ideas | 2025 Guide",
     description: "Learn how eco-conscious architecture is transforming compact urban spaces like balconies into lush green retreats.",
     image: "/images/Blog-img2_eara.avif",
-    excerpt: "Transform your small balcony into an eco-friendly retreat with space-saving garden elements and sustainable design...",
+    excerpt: "Transform your small balcony into an eco-friendly retreat with space-saving garden elements and sustainable design. Perfect for those exploring residential plots in Bangalore who value harmony between nature and urban life..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ",
     content: `
       <p>Eco-conscious architecture emphasizes sustainability, even in compact living spaces like balconies. With thoughtful design, these small spaces can be transformed into functional green zones.</p>
       <ul>
@@ -48,12 +48,12 @@ export const posts = [
 
   {
     slug: "the-future-of-smart-living",
-    title: "The Future of Smart Living",
+    title: "The Future of Smart Living ",
     h1: "The Future of Smart Living",
     meta_title: "Smart Living Trends for 2025 | Bedroom Design & Automation",
     description: "Discover how smart living integrates comfort, technology, and style to redefine bedroom interiors in 2025.",
     image: "/images/Blog-img3_eara.avif",
-    excerpt: "From voice-controlled lighting to multifunctional furniture, smart living is shaping the way we design our bedrooms...",
+    excerpt: "From voice-controlled lighting to multifunctional furniture, smart living is shaping the way we design our bedrooms. Dive into the latest real estate insights that define modern comfort and convenience..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;",
     content: `
       <p>Smart living is not just about gadgets — it's a holistic approach to creating intuitive, efficient, and comfortable environments. In bedrooms, this translates to seamless tech and calming design.</p>
       <ul>

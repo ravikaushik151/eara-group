@@ -8,15 +8,15 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const testimonials = [
   {
-    text: "Nature is at the heart of this community, not just an afterthought. The preservation of trees, the native landscaping, and the peaceful ambiance make Amidst Nature feel like home even before I build. The thoughtful design and value offered truly justify the Eara Group Price for such a premium living experience.    ",
+    text: "Nature is at the heart of this community, not just an afterthought. The preservation of trees, the native landscaping, and the peaceful ambiance make Amidst Nature feel like home even before I build.",
     name: "Ravi Kaushik",
   },
   {
-    text: "What EARA is creating isn't just another plotted layout, it's a lifestyle upgrade. We were impressed by the thoughtful planning, open spaces, and how seamlessly nature is woven into every corner. Can't wait to build our home here and wake up to fresh air every day!",
+    text: "Before I booked my plot, I spent time learning about Eara Group - their focus on sustainability, transparent process, and premium quality instantly stood out. Once I saw Amidst Nature, I knew it reflected everything they stand for: trust, design, and serenity.",
     name: "Priya Mehta",
   },
   {
-    text: "I see Amidst Nature as the perfect escape from the hustle, not too far from the city, yet totally unplugged from the chaos. EARA has nailed the balance of lifestyle, nature, and investment potential. This is the future of premium living.",
+    text: "I’ve read several Eara Group reviews online, and they truly live up to their reputation. The community at Amidst Nature is a perfect example - peaceful, green, and intelligently designed. You can feel the difference the moment you step in.    ",
     name: "Arjun Verma",
   },
   {

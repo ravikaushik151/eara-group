@@ -88,7 +88,8 @@ export default function Project() {
 
                             {/* ✅ Overlay */}
                             <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
-                                <h1 className="text-center fs-1 mb-3 text-uppercase">Projects</h1>
+                                <h1 className="text-center fs-1 mb-0 text-uppercase">OUr Projects</h1>
+                                <p>Discover exclusive residential plots by Eara Group - where nature and luxury coexist in harmony.</p>
                                 {/* <p className="text-center fs-6">
                                     <Link
                                         className="text-white text-decoration-none text-brown"
@@ -126,14 +127,20 @@ export default function Project() {
                                 </p>
                                 <p className="mt-3 theme-color-dark text-center mb-2 ">
                                     <strong>
-                                        Every plot at &ldquo;Amidst Nature&rdquo; is a promise of green
-                                        mornings, golden silence, and grounded luxury.
+
+                                        Every plot at &ldquo;Amidst Naturev is a promise of green mornings, golden silence, and grounded luxury.
+
                                     </strong>
                                 </p>
 
                                 <p className=" theme-color-dark text-center"><strong></strong>Spread across 18+ lush green acres in Kaggalipura, just Off Kanakapura Main Road, this ultra-luxury plotted development invites you to design your forever home in a place where the city fades and nature speaks. This ultra-luxury plotted development is thoughtfully designed and well executed. Approved by BMRDA.
-                                </p>
+                                    
 
+                                </p>
+                                <p className=" theme-color-dark text-center"><strong></strong>
+                                    To know more about the Eara Group property details, our team ensures complete transparency and guidance for every homebuyer.
+
+                                </p>
 
 
                                 <div className="text-center">

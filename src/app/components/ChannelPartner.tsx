@@ -53,7 +53,7 @@ export default function ChannelPartner() {
             setLoading(false);
             return;
         }
-        
+
         // Email validation for both CP and Prospect
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(formData.cpFirmEmail) || !emailRegex.test(formData.prospectEmail)) {
@@ -86,7 +86,7 @@ export default function ChannelPartner() {
                 projectInterestedIn: formData.projectInterestedIn,
 
                 // Standard fields
-               // message: `CP RERA: ${formData.cpAgencyReraNumber}. Prospect Project Interest: ${formData.projectInterestedIn}.`, // Combine non-input fields into message
+                // message: `CP RERA: ${formData.cpAgencyReraNumber}. Prospect Project Interest: ${formData.projectInterestedIn}.`, // Combine non-input fields into message
                 subject: 'Eara Group - New Channel Partner Referral',
                 form_source: 'Eara Group - Channel Partner Referral Form',
                 additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
@@ -106,16 +106,16 @@ export default function ChannelPartner() {
             if (resultText.trim().toLowerCase() === 'ok') {
                 setSuccess(true);
                 // Clear all form data fields
-                setFormData({ 
-                    cpFirmName: '', 
-                    cpFirmEmail: '', 
-                    cpFirmMobile: '', 
-                    cpAgencyReraNumber: '', 
-                    prospectName: '', 
-                    prospectEmail: '', 
-                    prospectMobileNumber: '', 
-                    projectInterestedIn: '', 
-                    message: 'Interested in Channel Partnership Referral' 
+                setFormData({
+                    cpFirmName: '',
+                    cpFirmEmail: '',
+                    cpFirmMobile: '',
+                    cpAgencyReraNumber: '',
+                    prospectName: '',
+                    prospectEmail: '',
+                    prospectMobileNumber: '',
+                    projectInterestedIn: '',
+                    message: 'Interested in Channel Partnership Referral'
                 });
                 setNote('Referral submitted successfully!');
             } else {
@@ -133,25 +133,25 @@ export default function ChannelPartner() {
         <>
             {/* Banner Section (omitted for brevity, assume it remains the same) */}
             <div id="carouselExampleDark" className="header-section ">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="image-container">
-              <Image
-                src="/images/Channel-Partner.avif"
-                height={2880}
-                width={1920}
-                className="img-fluid masterpiece"
-                alt="masterpiece"
-                // style={{objectPosition:"center"}}
-              />
-              <div className="overlay2 ">
-                <div className="text-white d-block"  style={{marginTop:"-120px"}}>
-                  {" "}
-                  <h1 className="text-center d-block fs-1 mb-3 text-uppercase">
-                    {" "}
-                    Channel Partner
-                  </h1>
-                  {/* <p className="text-center d-block fs-6 ">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="image-container">
+                            <Image
+                                src="/images/Channel-Partner.avif"
+                                height={2880}
+                                width={1920}
+                                className="img-fluid masterpiece"
+                                alt="masterpiece"
+                            // style={{objectPosition:"center"}}
+                            />
+                            <div className="overlay2 ">
+                                <div className="text-white d-block" style={{ marginTop: "-120px" }}>
+                                    {" "}
+                                    <h1 className="text-center d-block fs-1 mb-3 text-uppercase">
+                                        {" "}
+                                        Channel Partner
+                                    </h1>
+                                    {/* <p className="text-center d-block fs-6 ">
                     <Link
                       className="text-white text-decoration-none"
                       href="/"
@@ -161,12 +161,12 @@ export default function ChannelPartner() {
                     </Link>{" "}
                     / Channel Partner{" "}
                   </p> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
             {/* Form Section */}
             <section className="bg-light py-5 theme-bg-light channel section">
@@ -180,9 +180,16 @@ export default function ChannelPartner() {
 
                     <div className="row justify-content-center">
                         <div className="col-lg-6 d-flex align-items-center">
+                            <div>
                             <p className='lh-lg'>
-                                At EARA Group, we believe that great collaborations build greater success stories. As a Channel Partner, you become an integral part of our vision - shaping communities, driving innovation, and redefining excellence in real estate. Together, we’ll unlock new opportunities, create lasting value, and grow stronger as one team with a shared purpose. Partner with us and be a part of a journey that’s truly transformative.
+                                At EARA Group, we believe that great collaborations build greater success stories. As an Eara Group Channel Partner, you become an integral part of our vision - shaping communities, driving innovation, and redefining excellence in real estate.   </p>
+                            <p className='lh-lg'> If you’re looking to grow as a trusted real estate channel partner in Bangalore, this is your opportunity to join a brand built on trust, transparency, and long-term value. Together, we’ll unlock new opportunities, create lasting value, and grow stronger as one team with a shared purpose. </p>
+                           
+                            <p className='lh-lg'>
+                                Partner with us and be a part of a journey that’s truly transformative.
+
                             </p>
+                            </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
@@ -263,7 +270,7 @@ export default function ChannelPartner() {
                                                 onChange={handleChange}
                                                 required
                                                 // Pattern for 10-digit number
-                                                pattern="\d{10}" 
+                                                pattern="\d{10}"
                                                 title="Must be a 10-digit number"
                                             />
                                         </div>
@@ -311,7 +318,7 @@ export default function ChannelPartner() {
                                             >
                                                 <option value="" disabled>Project Interested In</option>
                                                 <option value="Amidst Nature">Amidst Nature</option>
-                                              
+
                                             </select>
                                         </div>
 
@@ -334,7 +341,7 @@ export default function ChannelPartner() {
                                     <div className="text-center">
                                         <button
                                             type="submit"
-                                            className="btn theme-bg-dark text-white py-2 px-4 mt-2"
+                                            className="btn theme-bg-dark text-white py-2 px-4 mt-0"
                                             disabled={loading}
                                         >
                                             {loading ? "Submitting..." : "Submit Referral"}
