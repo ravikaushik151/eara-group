@@ -19525,6 +19525,7 @@ footer {
     height: 320px;
 }
 @media only screen and (max-width:768px) {
+  #blogheader {height:auto !important}
   .corevalue {
  
    
