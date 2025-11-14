@@ -45,7 +45,7 @@ export default function Career() {
     });
 
     try {
-      const response = await fetch('https://earagroup.com/send-application', {
+      const response = await fetch('https://earagroup.com/send-application/', {
         method: 'POST',
         body: form,
       });
