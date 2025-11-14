@@ -69,7 +69,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
 
   try {
    const res = await fetch(
-    'https://earagroup.com/emailer.php',
+    'https://earagroup.com/emailer',
     {
      method: 'POST',
      headers: { 'Content-Type': 'application/json' },
