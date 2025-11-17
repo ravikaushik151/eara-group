@@ -14685,11 +14685,16 @@ p {
   }
 
   .masterpiece {
-    height: 80vh;
+    max-height: 100vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
   }
+  .blogheadermobile {height:auto !important;max-height: 650px;}
+  #blogheader {margin-top: 77px;}
+  #blogheader h1 {margin-top: -100%;}
 }
+
 
 .our-amenities {
   padding: 60px 0;
@@ -19579,3 +19584,6 @@ footer {
   border-radius: 50%;
 }
 .micrositeslidertext {margin-top: 150px;}
+@media only screen and (min-width:1601px) and (max-width:2000px) {
+ .masterpiece {min-height: 750px !important;}
+}

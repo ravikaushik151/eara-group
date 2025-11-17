@@ -33,10 +33,10 @@ export default function Blog() {
     const sortedPosts = [...filteredPosts].sort((a, b) => {
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
-        
+
         const timeA = dateA.getTime();
         const timeB = dateB.getTime();
-        
+
         return sortBy === 'newest' ? timeB - timeA : timeA - timeB;
     });
 
@@ -48,19 +48,29 @@ export default function Blog() {
     return (
         <>
             {/* Banner Section */}
-            <div id="carouselExampleDark" className="header-section">
+            <div id="blogheader" className="header-section">
                 <div className='row'>
                     <div className='col-md-12'>
                         <div className="image-container">
-                            <Image 
-                                src="/images/blog-header.avif" 
-                                height={2880} 
-                                width={1920} 
-                                className='img-fluid masterpiece ' 
-                                alt="blog" 
+                            <Image
+                                src="/images/blog-header.avif"
+                                height={2880}
+                                width={1920}
+                                className='img-fluid masterpiece d-md-block d-none'
+                                alt="blog"
                                 id='blogheader'
-                                style={{ objectPosition: '10% 100%' }} 
+                                style={{ objectPosition: '100% 100%' }}
                             />
+                            <Image
+                                src="/images/Mobile_ban_Eara.webp"
+                                height={2880}
+                                width={1920}
+                                className='img-fluid  d-md-none'
+                                alt="blog"
+                                id='blogheadermobile'
+                                style={{ objectPosition: '100% 100%' }}
+                            />
+
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
                                     <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</h1>
@@ -78,7 +88,7 @@ export default function Blog() {
                     <div className="row justify-content-end mb-4">
                         <div className='col-md-12'>
                             <h4 className="text-center">
-                              Explore real estate insights, trends, and lifestyle stories that shape smarter living.
+                                Explore real estate insights, trends, and lifestyle stories that shape smarter living.
                             </h4>
                         </div>
                         {/* Search and Sort controls are currently hidden with d-none */}
@@ -99,7 +109,7 @@ export default function Blog() {
                         </div>
                     </div>
                     {/* 🛑 FIX: Use d-flex and align-items-stretch on the row to make columns equal height */}
-                    <div className="row d-flex align-items-stretch"> 
+                    <div className="row d-flex align-items-stretch">
                         {paginatedPosts.length > 0 ? paginatedPosts.map((post) => (
                             // Use h-100 on the column to fill the row's stretched height
                             <div className="col-md-4 mb-3" key={post.slug}>
@@ -118,7 +128,7 @@ export default function Blog() {
                                         </Link>
                                     </div>
                                     {/* 🛑 FIX: Use flex-grow-1 to make this content block take up all remaining vertical space */}
-                                    <div className="services-content flex-grow-1 d-flex flex-column"> 
+                                    <div className="services-content flex-grow-1 d-flex flex-column">
                                         <h6 className="title my-3 text-center fw-bold">
                                             <Link className='text-dark fw-bold text-decoration-none theme-color-light fs-4' href={`/blog/${post.slug}`} style={{ fontWeight: "600" }}>
                                                 {post.title}
@@ -126,7 +136,7 @@ export default function Blog() {
                                         </h6>
                                         {/* The excerpt needs flex-grow to push the button down, or margin auto */}
                                         <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                                        
+
                                         {/* Use mt-auto on the button container to push it to the bottom */}
                                         <div className="text-center py-3 my-3 small mt-auto">
                                             <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
