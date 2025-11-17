@@ -66,9 +66,9 @@ export default function Footer() {
         <div className="col-lg-3 col-md-3" data-wow-delay="400ms">
          <div className=" footer-widget__Contact">
           <div className="">
-           <p className=" fs-6 text-uppercase  m-center">CONNECT WITH US</p>
+           <p className=" fs-6 text-uppercase  m-center ">CONNECT WITH US</p>
           </div>
-          <div className="site-footer__social d-flex flex-wrap gap-2 justify-content-md-start justify-content-center ">
+          <div className="site-footer__social d-flex flex-wrap gap-2 justify-content-md-start justify-content-center mb-3 ">
            <Link href="https://www.facebook.com/profile.php?id=61577460860336" className="text-white " target="_blank">
             <svg style={{ width: "24px", height: "24px" }} className="w-8 h-8 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" /></svg>
 
@@ -102,11 +102,10 @@ export default function Footer() {
         <p className="text-center text-white">© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-white" target="_blank">IM Solutions</Link></p>
        </div>
       </div>
-      <div className="col-md-6 d-flex justify-content-end align-items-center"> {/* Adjusting column width and alignment */}
-       <div className=" text-center m-center"> {/* Adding a class to align text to the right */}
-
-
-        <p className=" text-center pe-md-4"  >
+     <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end px-3 px-md-0">
+        <p className="d-flex flex-wrap gap-2 justify-content-center justify-content-md-end text-center text-md-end w-100">
+     
+       
 
          <Link href="./" className="text-decoration-none text-white">
           Home
@@ -145,7 +144,7 @@ export default function Footer() {
           Privacy Policy
          </Link>
         </p>
-       </div>
+       
       </div>
      </div>
     </div>
