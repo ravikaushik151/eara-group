@@ -103,7 +103,7 @@ export default function Footer() {
        </div>
       </div>
      <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end px-3 px-md-0">
-        <p className="d-flex flex-wrap gap-2 justify-content-center justify-content-md-end text-center text-md-end w-100">
+        <p className="d-flex flex-wrap gap-1 justify-content-center justify-content-md-end text-center text-md-end ">
      
        
 
