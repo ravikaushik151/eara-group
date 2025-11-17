@@ -106,7 +106,7 @@ export default function Footer() {
        <div className=" text-center m-center"> {/* Adding a class to align text to the right */}
 
 
-        <p className=" text-center pe-4"  >
+        <p className=" text-center pe-md-4"  >
 
          <Link href="./" className="text-decoration-none text-white">
           Home
