@@ -128,7 +128,7 @@ export default function Project() {
                                 <p className="mt-3 theme-color-dark text-center mb-2 ">
                                     <strong>
 
-                                        Every plot at &ldquo;Amidst Naturev is a promise of green mornings, golden silence, and grounded luxury.
+                                        Every plot at &ldquo;Amidst Nature is a promise of green mornings, golden silence, and grounded luxury.
 
                                     </strong>
                                 </p>
