@@ -203,7 +203,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="quality-assurance-section bg-black">
+          {/* <section className="quality-assurance-section bg-black">
             <div className="image-wrapper py-4">
               <div className="container">
                 <div className="row justify-content-center">
@@ -222,7 +222,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
 
 
