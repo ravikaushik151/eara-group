@@ -13950,11 +13950,14 @@ html {
   --accent-color: #583a2c;
   --green-bg: #0C5F17;  
   */
-  /* mana black color : #212529*/
+  /*
+  #3c3c3c
+  #1e1e1e
+  mana black color : #212529*/
   --primary-color: #fff;
 
-  --secondary-color: #000000;
-  --accent-color: #000000;
+  --secondary-color: #3c3c3c;
+  --accent-color: #1e1e1e;
   --green-bg: #0C5F17;
 }
 

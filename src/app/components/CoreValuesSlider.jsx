@@ -69,7 +69,7 @@ export default function CoreValuesSlider() {
 
 
                                         {/* Text */}
-                                        <div className="col-lg-6 d-flex align-items-center bg-black py-md-3 py-4" data-aos="fade-left" data-aos-duration="1000">
+                                        <div className="col-lg-6 d-flex align-items-center theme-bg-dark py-md-3 py-4" data-aos="fade-left" data-aos-duration="1000">
                                             <div>
                                                 <h5 className="theme-color-light text-start m-center fw-bold fs-4 ps-md-4 pe-md-4">
                                                     {item.title}
