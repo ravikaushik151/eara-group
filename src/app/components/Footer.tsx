@@ -94,7 +94,7 @@ export default function Footer() {
      </div>
     </div>
    </footer>
-   <div className="pt-3 bg-black" style={{ overflow: 'hidden' }}>
+   <div className="pt-3 theme-bg-dark" style={{ overflow: 'hidden' }}>
     <div className="container">
      <div className="row">
       <div className="col-md-6">
