@@ -19608,12 +19608,9 @@ footer {
 
 .upcomingProjects .swiper-container {
     position: relative;
-    /* Add desired height for the slider, e.g. */
-    
+ 
 }
 
-/* 2. Swiper Buttons Container (.swiper-buttons) */
-/* This class achieves the 'absolute inset-0 flex justify-between items-center' layout */
 .upcomingProjects .swiper-buttons {
     position: absolute;
     top: 0;
@@ -19623,50 +19620,46 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1rem; /* px-4 equivalent */
-    padding-right: 1rem; /* px-4 equivalent */
+    padding-left: 1rem; 
+    padding-right: 1rem; 
     z-index: 40;
-    /* This makes the container transparent to mouse events */
+   
     pointer-events: none; 
 }
 
-/* 3. Individual Button Overrides */
-/* These buttons (or divs) need to be clickable */
 .upcomingProjects .swiper-button-prev,
 .upcomingProjects .swiper-button-next {
-    /* Re-enable mouse events for the buttons themselves */
+  
     pointer-events: auto;
-    /* Ensure no default button background */
+    
     background: transparent;
     border: none;
-    padding: 0; /* Remove default button padding */
+    padding: 0;
     cursor: pointer;
 }
 
-/* 4. SVG Styling */
-/* These styles are derived from your SVG code and set the colors */
 .upcomingProjects .swiper-button-prev svg rect,
 .upcomingProjects .swiper-button-next svg rect {
-    fill: #738E62; /* Background circle color */
+    fill: #738E62; 
 }
 
 .upcomingProjects .swiper-button-prev svg path,
 .upcomingProjects .swiper-button-next svg path {
-    fill: #F3F4EF; /* Arrow color */
+    fill: #F3F4EF;
 }
 
-/* 5. Swiper Scrollbar Styling */
+
 .upcomingProjects .swiper-scrollbar {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 40;
-    /* Adjust height and color as needed for your design */
+    
     height: 8px; 
-    background: rgba(115, 142, 98, 0.2); /* Light background for the track */
+    background: rgba(115, 142, 98, 0.2); 
 }
 
 .upcomingProjects .swiper-scrollbar-drag {
-    background: #738E62; /* Color of the draggable handle */
+    background: #738E62;
 }

@@ -134,12 +134,12 @@ export default function About() {
               <div>
                 <h2 className="mb-2 theme-color-dark fs-2 text-center">About Us</h2>
                 <p className="mb-2 theme-color-dark">
-                  At EARA Group, we believe real estate is more than land and infrastructure - it’s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
+                  At EARA Group, we believe real estate is more than land and infrastructure - it&rsquo;s about building communities that thrive. Our vision is to create premium, future-ready neighborhoods where modern lifestyles are nurtured within a framework of environmental responsibility.
 
                 </p>
                 <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
                 </p>
-                <p className="mb-5 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we’re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
+                <p className="mb-5 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we&rsquo;re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
               </div>
             </div>
           </div>

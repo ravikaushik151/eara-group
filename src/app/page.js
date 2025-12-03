@@ -38,9 +38,9 @@ const upcomingProjects = [
         description: "The project is nestled just Off Kanakapura Main Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.",
         highlights: [
             "Plot sizes ranging from 1500 - 3300 sq ft.",
-            "11,000 sqft. clubhouse with gym, pool, yoga room, café & library",
+            "11,000 sqft. clubhouse with gym, pool, yoga room, caf&eacute; & library",
            'Indoor and outdoor party zones',
-           'Sacred space, amphitheatre, elders’ park, children’s play area',
+           'Sacred space, amphitheatre, elders&rsquo; park, children&rsquo;s play area',
            'Cricket pitch & pickleball court',
            'Underground electrical cabling & LED streetlights',
            'Rainwater harvesting & sewage treatment plant',
@@ -59,9 +59,9 @@ const upcomingProjects = [
         description: "The project is nestled just Off Kanakapura Main Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.",
         highlights: [
             "Plot sizes ranging from 1500 - 3300 sq ft.",
-            "11,000 sqft. clubhouse with gym, pool, yoga room, café & library",
+            "11,000 sqft. clubhouse with gym, pool, yoga room, caf&eacute; & library",
            'Indoor and outdoor party zones',
-           'Sacred space, amphitheatre, elders’ park, children’s play area',
+           'Sacred space, amphitheatre, elders&rsquo; park, children&rsquo;s play area',
            'Cricket pitch & pickleball court',
            'Underground electrical cabling & LED streetlights',
            'Rainwater harvesting & sewage treatment plant',
@@ -308,7 +308,7 @@ const upcomingProjects = [
                         Why Choose Integrated Townships?
                       </h4>
                     </Link>
-                    <p className="theme-color-light ">Discover how Eara Group’s location redefine urban living with modern infrastructure, green spaces, and smart connectivity.
+                    <p className="theme-color-light ">Discover how Eara Group&rsquo;s location redefine urban living with modern infrastructure, green spaces, and smart connectivity.
                     </p>
                   </div>
                 </div>
