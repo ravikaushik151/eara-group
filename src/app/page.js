@@ -3,6 +3,7 @@
 import "./homepage.css";
 import Link from "next/link";
 import Preloader from "./components/Preloader";
+import UpcomingSlider from "./components/UpcomingSlider";
 // import HomeHeroSlider from "./components/Home/HeroSlider";
 import Image from "next/image";
 import TestimonialSlider from "./components/Home/TestimonialSlider";
@@ -27,6 +28,52 @@ export const metadata = {
 };
 
 export default function Home() {
+// In the page where you want to display the slider (e.g., HomePage.js)
+
+const upcomingProjects = [
+    {
+        id: 1,
+        title: "Ultra Luxury Plotted Development (Phase I)",
+        location: "Kaggalipura, Off Kanakapura Main Road",
+        description: "The project is nestled just Off Kanakapura Main Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.",
+        highlights: [
+            "Plot sizes ranging from 1500 - 3300 sq ft.",
+            "11,000 sqft. clubhouse with gym, pool, yoga room, café & library",
+           'Indoor and outdoor party zones',
+           'Sacred space, amphitheatre, elders’ park, children’s play area',
+           'Cricket pitch & pickleball court',
+           'Underground electrical cabling & LED streetlights',
+           'Rainwater harvesting & sewage treatment plant',
+           'Avenue plantation & landscaped green zones',
+          
+        ],
+        link: "#",
+        // Crucial image props for the ImageCompare component
+        beforeImg: "/images/upcoming-projects.png",
+        afterImg: "/images/upcoming-projects.avif",
+    },
+    {
+        id: 2,
+        title: "Ultra Luxury Plotted Development (Phase II)",
+        location: "Kaggalipura, Off Kanakapura Main Road",
+        description: "The project is nestled just Off Kanakapura Main Road, thoughtfully designed to offer a blend of serene living and modern infrastructure.",
+        highlights: [
+            "Plot sizes ranging from 1500 - 3300 sq ft.",
+            "11,000 sqft. clubhouse with gym, pool, yoga room, café & library",
+           'Indoor and outdoor party zones',
+           'Sacred space, amphitheatre, elders’ park, children’s play area',
+           'Cricket pitch & pickleball court',
+           'Underground electrical cabling & LED streetlights',
+           'Rainwater harvesting & sewage treatment plant',
+           'Avenue plantation & landscaped green zones',
+          
+        ],
+        link: "#",
+        // Crucial image props for the ImageCompare component
+        beforeImg: "/images/upcoming-projects.png",
+        afterImg: "/images/upcoming-projects.avif",
+    },
+];
 
 
   return (
@@ -127,7 +174,7 @@ export default function Home() {
 
 
 
-          <section className="same-gap position-relative bg-light theme-bg-dark up-coming">
+          <section className="same-gap position-relative bg-light theme-bg-dark up-coming d-none">
             <div className="container">
               <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
@@ -138,7 +185,8 @@ export default function Home() {
                 <div className="row align-items-center">
                   <div className="col-md-6 px-md-0 text-center">
 
-                    <ImageCompare />
+                    <ImageCompare beforeImg="/images/upcoming-projects.png"
+                afterImg="/images/upcoming-projects.avif" />
                     {/* <Ongoing /> */}
                     {/* <Image
                       alt="Project"
@@ -202,6 +250,12 @@ export default function Home() {
               </div>
             </div>
           </section>
+         
+<UpcomingSlider 
+    projects={upcomingProjects}
+    sectionTitle=" Upcoming Projects" // Dynamic title
+/>
+
 
           {/* <section className="quality-assurance-section bg-black">
             <div className="image-wrapper py-4">
