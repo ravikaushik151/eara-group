@@ -55,7 +55,7 @@ export default function About() {
         <div className="row">
           <div className="col-md-12">
             <div className="video-container position-relative">
-              {/* ✅ Background video */}
+           
               <video
                 className="w-100 h-100 object-fit-cover d-md-block d-none"
                 autoPlay
@@ -139,7 +139,7 @@ export default function About() {
                 </p>
                 <p className="mb-2 theme-color-dark">With 20+ years of expertise, our approach combines sustainability, design excellence, and innovation to craft plotted developments and gated layouts that feel less like projects and more like living ecosystems. Every square foot is planned to foster connection - with nature, with neighbors, and with a larger sense of belonging.
                 </p>
-                <p className="mb-5 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we&rsquo;re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
+                <p className="mb-5 theme-color-dark">For us, a home is not just an investment, but a foundation for community, well-being, and shared growth. At EARA Group, we&rsquo;re committed to shaping environments that inspire conscious living while ensuring comfort, convenience, and long-term value.</p>
               </div>
             </div>
           </div>
@@ -219,25 +219,25 @@ export default function About() {
         </div>
         <div className="container position-relative">
           <div className="row justify-content-center">
-            {/* ARROW LEFT */}
+         
             <div className="col-1 d-flex align-items-center justify-content-center">
 
             </div>
-            {/* PLAYER CARD */}
+   
             <div className="col-lg-10 d-flex shadow player-card p-0">
-              {/* LEFT IMAGE */}
+           
               <div className="col-lg-6 p-0">
-                <img src="https://placehold.co/400x450" className="img-fluid w-100 h-100 object-fit-cover" />
+                <img src="/images/upcoming-projects.avif" className="img-fluid w-100 h-100 object-fit-cover" />
               </div>
               {/* RIGHT INFO */}
               <div className="col-lg-6 theme-bg-dark p-4 position-relative d-flex align-items-center">
-                {/* Jersey Number */}
+          
                 <div>
 
 
 
                   <h5 className="fw-bold whtie mb-0 fs-3">Lorem ipsum </h5>
-                  <h6 className="text-white text-muted small">(Managing Director)</h6>
+                  <h6 className="text-white text-muted small">Managing Director</h6>
 
                   <p className="text-white small">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates
@@ -246,9 +246,9 @@ export default function About() {
                   <p className="text-white small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo nulla facilis impedit aperiam veniam blanditiis odit fugit recusandae nihil. Voluptas voluptatem, repellat ullam officia voluptate earum rem dolor ex.</p>
                   <h6 className="text-white fw-bold mt-4">Lorem ipsum </h6>
                   <ul className="small text-white">
-                    <li>France international Mathieu Debuchy</li>
-                    <li>18 in the Champions League</li>
-                    <li>Les Bleus' five games at the 2014 World Cup</li>
+                    <li>Lorem ipsum dolor sit amet </li>
+                    <li>Lorem ipsum dolor sit amet </li>
+                    <li>Lorem ipsum dolor sit amet </li>
                   </ul>
                 </div>
 
