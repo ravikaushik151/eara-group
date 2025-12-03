@@ -227,7 +227,7 @@ export default function About() {
             <div className="col-lg-10 d-flex shadow player-card p-0">
            
               <div className="col-lg-6 p-0">
-                <img src="/images/upcoming-projects.avif" className="img-fluid w-100 h-100 object-fit-cover" />
+                <img src="https://placehold.co/400x450" className="img-fluid w-100 h-100 object-fit-cover" />
               </div>
               {/* RIGHT INFO */}
               <div className="col-lg-6 theme-bg-dark p-4 position-relative d-flex align-items-center">
