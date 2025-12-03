@@ -174,7 +174,7 @@ const upcomingProjects = [
 
 
 
-          <section className="same-gap position-relative bg-light theme-bg-dark up-coming d-none">
+          <section className="same-gap position-relative bg-light theme-bg-dark up-coming ">
             <div className="container">
               <div id="upcoming-project" className="noclass" data-bs-ride="carousel">
                 <div className="row">
@@ -251,10 +251,10 @@ const upcomingProjects = [
             </div>
           </section>
          
-<UpcomingSlider 
+{/* <UpcomingSlider 
     projects={upcomingProjects}
     sectionTitle=" Upcoming Projects" // Dynamic title
-/>
+/> */}
 
 
           {/* <section className="quality-assurance-section bg-black">
