@@ -61,7 +61,7 @@ export default function DynamicProjectSlider({ projects, sectionTitle }: Dynamic
 
                         </div>
                         <div className=''>
-                        <div className="swiper-container relative row  ">
+                        <div className="swiper-container relative row px-md-5 ">
                             <Swiper
                                 ref={swiperRef}
                                 modules={[Autoplay,  Navigation]}
