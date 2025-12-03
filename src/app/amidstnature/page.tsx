@@ -334,6 +334,118 @@ export default function Home() {
               </div>
             </div>
           </section>
+          <section className="same-gap mysection visible theme-bg-dark" >
+            <div className="container-fluid">
+              <div className="row p-0">
+                <div className="col-md-4 d-flex justify-content-center align-items-center">
+                  <div className="p-3">
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div><div className="title text-center">
+                          <h2 className="mb-3 theme-color-light">Project Unique Selling Points (USPs)</h2>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-8 d-flex justify-content-center align-items-center">
+                  <div className="p-3">
+                    <div className="row">
+                      <div className="col-md-4 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            </h4>
+                            <p className="pb-4 ">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            </h4>
+                            <p className="pb-4 ">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                       <div className="col-md-4 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            </h4>
+                            <p className="pb-4 ">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                       <div className="col-md-4 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            </h4>
+                            <p className="pb-4 ">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                       <div className="col-md-4 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            </h4>
+                            <p className="pb-4 ">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                       <div className="col-md-4 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            </h4>
+                            <p className="pb-4 ">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Section 2: 360 Lifestyle Cards */}
           <section className="section_biodiversity-benefits py-5  theme-bg-light" id="amenities"  >

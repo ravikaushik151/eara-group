@@ -19590,3 +19590,16 @@ footer {
 @media only screen and (min-width:1601px) and (max-width:2000px) {
  .masterpiece {min-height: 750px !important;}
 }
+
+
+
+.player-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+}

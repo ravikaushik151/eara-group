@@ -84,6 +84,7 @@ export default function Header() {
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
                 { href: "/project", label: "Project" },
+                
                 { href: "/channel-partner", label: "Channel Partner" },
                 { href: "/blog", label: "Blogs" },
                 { href: "/career", label: "Career" },

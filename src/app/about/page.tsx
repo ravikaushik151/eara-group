@@ -50,7 +50,7 @@ export default function About() {
           </div>
         </div>
       </div> */}
-       
+
       <div id="carouselExampleDark" className="header-section position-relative">
         <div className="row">
           <div className="col-md-12">
@@ -108,7 +108,7 @@ export default function About() {
         </div>
       </div>
 
-      <section className="theme-bg-light section pb-0"  id="TOP">
+      <section className="theme-bg-light section pb-0" id="TOP">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -126,7 +126,7 @@ export default function About() {
           </div>
         </div>
       </section>
-     
+
       <section className="py-4 aboutabout theme-bg-light">
         <div className="container">
           <div className="row">
@@ -200,6 +200,70 @@ export default function About() {
           </div>
         </div>
       </section>
+      <section className="player-section py-5 text-white bg-black" style={{
+        backgroundImage: `
+         linear-gradient(to bottom, 
+             rgba(23, 23, 23, 0.65), 
+             rgba(23, 23, 23, 0.65)   
+        ), 
+         url('/images/Ethos-Innovation.avif')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+      }} >
+        <div className="container text-center mb-5">
+          <h2 className="fw-bold">
+            LEADERSHIP <span className="text-danger"></span>
+          </h2>
+
+        </div>
+        <div className="container position-relative">
+          <div className="row justify-content-center">
+            {/* ARROW LEFT */}
+            <div className="col-1 d-flex align-items-center justify-content-center">
+
+            </div>
+            {/* PLAYER CARD */}
+            <div className="col-lg-10 d-flex shadow player-card p-0">
+              {/* LEFT IMAGE */}
+              <div className="col-lg-6 p-0">
+                <img src="https://placehold.co/400x450" className="img-fluid w-100 h-100 object-fit-cover" />
+              </div>
+              {/* RIGHT INFO */}
+              <div className="col-lg-6 theme-bg-dark p-4 position-relative d-flex align-items-center">
+                {/* Jersey Number */}
+                <div>
+
+
+
+                  <h5 className="fw-bold whtie mb-0 fs-3">Lorem ipsum </h5>
+                  <h6 className="text-white text-muted small">(Managing Director)</h6>
+
+                  <p className="text-white small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates
+                    explicabo, doloremque expedita repudiandae provident sed illum.
+                  </p>
+                  <p className="text-white small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo nulla facilis impedit aperiam veniam blanditiis odit fugit recusandae nihil. Voluptas voluptatem, repellat ullam officia voluptate earum rem dolor ex.</p>
+                  <h6 className="text-white fw-bold mt-4">Lorem ipsum </h6>
+                  <ul className="small text-white">
+                    <li>France international Mathieu Debuchy</li>
+                    <li>18 in the Champions League</li>
+                    <li>Les Bleus' five games at the 2014 World Cup</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            {/* ARROW RIGHT */}
+            <div className="col-1 d-flex align-items-center justify-content-center">
+
+            </div>
+          </div>
+        </div>
+      </section >
+
+
+
 
 
 
