@@ -236,20 +236,15 @@ export default function About() {
 
 
 
-                  <h5 className="fw-bold whtie mb-0 fs-3">Lorem ipsum </h5>
-                  <h6 className="text-white text-muted small">Managing Director</h6>
+                  <h5 className="fw-bold whtie mb-0 fs-3">Mr. L. N Reddy</h5>
+                  <h6 className="text-white text-muted small"> Founder & CEO</h6>
 
                   <p className="text-white small">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptates
-                    explicabo, doloremque expedita repudiandae provident sed illum.
+                 <strong> Mr. L. N Reddy</strong>, Founder & CEO of EARA Group, brings over 16 years of rich experience in the real-estate sector. His expertise spans across product conceptualization, acquisition of strategically located land parcels, and regulatory liaison, all aligned toward delivering safe, high-quality, and value-driven developments that cater to the evolving aspirations of homebuyers and investors.
+
                   </p>
-                  <p className="text-white small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nemo nulla facilis impedit aperiam veniam blanditiis odit fugit recusandae nihil. Voluptas voluptatem, repellat ullam officia voluptate earum rem dolor ex.</p>
-                  <h6 className="text-white fw-bold mt-4">Lorem ipsum </h6>
-                  <ul className="small text-white">
-                    <li>Lorem ipsum dolor sit amet </li>
-                    <li>Lorem ipsum dolor sit amet </li>
-                    <li>Lorem ipsum dolor sit amet </li>
-                  </ul>
+                  <p className="text-white small">Under his visionary leadership, EARA Group is built on the pillars of transparency, timely delivery, and ethical business practices. Supported by a strong team comprising seasoned professionals and dynamic young talent, the company is committed to creating real-estate solutions that not only meet expectations but consistently exceed them, fostering trust, lasting relationships, and long-term customer satisfaction.</p>
+                  
                 </div>
 
               </div>
