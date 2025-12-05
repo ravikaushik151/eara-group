@@ -237,7 +237,7 @@ export default function About() {
 
 
                   <h5 className="fw-bold whtie mb-0 fs-3">Mr. L. N Reddy</h5>
-                  <h6 className="text-white text-muted small"> Founder & CEO</h6>
+                  <h6 className="text-white text-muted small"> (Founder & CEO)</h6>
 
                   <p className="text-white small">
                  <strong> Mr. L. N Reddy</strong>, Founder & CEO of EARA Group, brings over 16 years of rich experience in the real-estate sector. His expertise spans across product conceptualization, acquisition of strategically located land parcels, and regulatory liaison, all aligned toward delivering safe, high-quality, and value-driven developments that cater to the evolving aspirations of homebuyers and investors.
