@@ -55,7 +55,7 @@ export default function About() {
         <div className="row">
           <div className="col-md-12">
             <div className="video-container position-relative">
-           
+
               <video
                 className="w-100 h-100 object-fit-cover d-md-block d-none"
                 autoPlay
@@ -219,19 +219,19 @@ export default function About() {
         </div>
         <div className="container position-relative">
           <div className="row justify-content-center">
-         
+
             <div className="col-1 d-flex align-items-center justify-content-center">
 
             </div>
-   
+
             <div className="col-lg-10 d-flex shadow player-card p-0">
-           
-              <div className="col-lg-6 p-0">
+
+              <div className="col-lg-6 p-0 d-none">
                 <img src="https://placehold.co/400x450" className="img-fluid w-100 h-100 object-fit-cover" />
               </div>
               {/* RIGHT INFO */}
-              <div className="col-lg-6 theme-bg-dark p-4 position-relative d-flex align-items-center">
-          
+              <div className="col-lg-12 theme-bg-dark p-4 position-relative d-flex align-items-center">
+
                 <div>
 
 
@@ -240,11 +240,11 @@ export default function About() {
                   <h6 className="text-white text-muted small"> (Founder & CEO)</h6>
 
                   <p className="text-white small">
-                 <strong> Mr. L. N Reddy</strong>, Founder & CEO of EARA Group, brings over 16 years of rich experience in the real-estate sector. His expertise spans across product conceptualization, acquisition of strategically located land parcels, and regulatory liaison, all aligned toward delivering safe, high-quality, and value-driven developments that cater to the evolving aspirations of homebuyers and investors.
+                    <strong> Mr. L. N Reddy</strong>, Founder & CEO of EARA Group, brings more than 16 years of hands-on experience in the real-estate sector. Over the years, he has worked across product conceptualization, the acquisition of strategically located land parcels, and regulatory liaison - always with a clear focus on creating safe, high-quality, and value-driven developments that genuinely serve the evolving needs of homebuyers and investors.
 
                   </p>
-                  <p className="text-white small">Under his visionary leadership, EARA Group is built on the pillars of transparency, timely delivery, and ethical business practices. Supported by a strong team comprising seasoned professionals and dynamic young talent, the company is committed to creating real-estate solutions that not only meet expectations but consistently exceed them, fostering trust, lasting relationships, and long-term customer satisfaction.</p>
-                  
+                  <p className="text-white small">His approach to leadership is rooted in clarity, integrity, and a strong sense of responsibility. Under his guidance, EARA Group continues to grow on the foundation of transparency, timely delivery, and ethical business practices. With a dedicated team of seasoned professionals and young, passionate talent, the company strives to craft real-estate solutions that not only meet expectations but meaningfully exceed them - building trust, nurturing long-term relationships, and ensuring a rewarding experience for every customer.</p>
+
                 </div>
 
               </div>
