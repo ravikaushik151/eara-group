@@ -334,7 +334,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="same-gap mysection visible theme-bg-dark" >
+          <section className="same-gap mysection visible theme-bg-dark d-none" >
             <div className="container-fluid">
               <div className="row p-0">
                 <div className="col-md-4 d-flex justify-content-center align-items-center">
