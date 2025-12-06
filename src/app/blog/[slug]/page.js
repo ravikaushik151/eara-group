@@ -19,7 +19,7 @@ export default async function BlogPost({ params }) {
 
   return (
     <>
-         <div id="carouselExampleDark" className="header-section">
+         <div id="carouselExampleDark" className="header-section ">
                 <div className='row'>
                     <div className='col-md-12'>
                         <div className="image-container">
@@ -45,7 +45,7 @@ export default async function BlogPost({ params }) {
             </div>
 
 
-      <section className="section-padding theme-bg-light" style={{ marginTop: '0px' }}>
+      <section className="section-padding theme-bg-light blogs" style={{ marginTop: '0px' }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-3">

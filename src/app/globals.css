@@ -309,6 +309,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: justify;
+ 
 }
 
 abbr[title] {
@@ -19533,6 +19534,8 @@ footer {
     height: 320px;
 }
 @media only screen and (max-width:768px) {
+  p { text-align: center !important;}
+  .blogs p {text-align: justify !important;}
   #blogheader {height:auto !important}
   .corevalue {
  

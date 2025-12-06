@@ -99,7 +99,7 @@ if ($post_data) {
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     // --- Recipients List ---
-    $recipients = ['lokesh@imsolutions.mobi'];
+    $recipients = ['info@imsolutions.mobi'];
 
     // Handle additional recipients (guaranteed to be an array)
     if (!empty($additionalRecipients) && is_array($additionalRecipients)) {

@@ -528,10 +528,10 @@ export default function Home() {
                       </div>
                       <div className="w-100">
                         <div className="text-size-regular text-color-offwhite theme-color-light m-center lh">
-                          <p className="text-start">
+                          <p className="text-start m-center">
                             Surrounded by serene greenery and nestled along the city&rsquo;s fast-developing Kanakapura stretch, Amidst Nature is among the most sought-after premium villa plots in Kanakapura Road.
                           </p>
-                          <p className="text-start">
+                          <p className="text-start  m-center">
                             For those seeking villa plots in Kaggalipura, this address offers unmatched tranquility and long-term value -  perfectly placed for families and investors alike.
                           </p>
 
