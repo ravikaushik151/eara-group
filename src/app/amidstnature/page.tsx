@@ -334,7 +334,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="same-gap mysection visible theme-bg-dark d-none" >
+          <section className="same-gap mysection visible theme-bg-dark " >
             <div className="container-fluid">
               <div className="row p-0">
                 <div className="col-md-4 d-flex justify-content-center align-items-center">
@@ -352,87 +352,147 @@ export default function Home() {
                 <div className="col-md-8 d-flex justify-content-center align-items-center">
                   <div className="p-3">
                     <div className="row">
-                      <div className="col-md-4 ">
+                      <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
-                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Accessibility.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            <h4 className="title fs-6 mb-0 text-center py-3">Accessibility
                             </h4>
-                            <p className="pb-4 ">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            </p>
+                            
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-4 ">
+                      <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
-                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Comfort.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            <h4 className="title fs-6 mb-0 text-center py-3">Comfort
                             </h4>
-                            <p className="pb-4 ">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            </p>
+                            
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-4 ">
+                       <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
-                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Community.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            <h4 className="title fs-6 mb-0 text-center py-3">Community
                             </h4>
-                            <p className="pb-4 ">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            </p>
+                            
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-4 ">
+                       <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
-                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Freedom.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            <h4 className="title fs-6 mb-0 text-center py-3">Freedom
                             </h4>
-                            <p className="pb-4 ">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            </p>
+                            
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-4 ">
+                       <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
-                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Legacy.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            <h4 className="title fs-6 mb-0 text-center py-3">Legacy
                             </h4>
-                            <p className="pb-4 ">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            </p>
+                            
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-4 ">
+                       <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
-                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-3" src="https://placehold.co/600x400/000000/FFFFFF/png" />
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Open space.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-2 ">Lorem ipsum dolor sit
+                            <h4 className="title fs-6 mb-0 text-center py-3">Open space
                             </h4>
-                            <p className="pb-4 ">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            </p>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Safety.webp" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-0 text-center py-3">Safety
+                            </h4>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Security.webp" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-0 text-center py-3">Security
+                            </h4>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Serenity.webp" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-0 text-center py-3">Serenity
+                            </h4>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Smart living.webp" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-0 text-center py-3">Smart living
+                            </h4>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Tranquility.webp" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-0 text-center py-3">Tranquility
+                            </h4>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 ">
+                        <div className="services-item shine-animate-item bg-white mb-3">
+                          <div className="services-thumb">
+                            <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Wellness.webp" />
+                          </div>
+                          <div className="services-content px-3 mb-3">
+                            <h4 className="title fs-6 mb-0 text-center py-3">Wellness
+                            </h4>
+                            
                           </div>
                         </div>
                       </div>
