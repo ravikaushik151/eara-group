@@ -370,7 +370,7 @@ export default function Home() {
                             <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Comfort.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-0 text-center py-3">Comfort
+                            <h4 className="title fs-6 mb-0 text-center py-3">Comfort 
                             </h4>
                             
                           </div>
