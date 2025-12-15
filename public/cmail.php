@@ -3,7 +3,7 @@ header('Content-Type: text/plain'); // Ensure the response is plain text
 
 // --- Configuration ---
 // Main recipient
-$adminEmail = "lokesh@imsolutions.mobi";  
+$adminEmail = "info@imsolutions.mobi";  
 // Additional recipients
 $additionalRecipients = ['ravi.k@imsolutions.mobi', 'lokesh@imsolutions.mobi']; 
 // MUST be a verified, existing email on your domain for best delivery and spam prevention.
