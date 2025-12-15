@@ -33,7 +33,7 @@ export default async function BlogPost({ params }) {
                             />
                             <div className="overlay2 ">
                                 <div className="text-white d-block">
-                                    <h1 className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</h1>
+                                    <p className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</p>
                                     {/* <p className="text-center d-block fs-6 ">
                                         <Link className="text-white text-decoration-none" href='/'> Home</Link> / Blog
                                     </p> */}
@@ -55,9 +55,9 @@ export default async function BlogPost({ params }) {
                   <Image src={post.image} className="w-100 img-fluid" alt={post.title} width={1296} height={607} />
                 </div>
                 <div className="title text-left">
-                  <h2 className="text-main fs-2 fw-bold my-4 theme-color-dark">{post.title}</h2>
+                  <h1 className="text-main fs-2 fw-bold mt-4 mb-0 theme-color-dark">{post.title}</h1>
                 </div>
-                <div className="py-3">
+                <div className="py-2">
                   <div className=' theme-color-dark' dangerouslySetInnerHTML={{ __html: post.content }} />
                 </div>
               </div>
