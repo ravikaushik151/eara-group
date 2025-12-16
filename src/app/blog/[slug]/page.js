@@ -1,15 +1,63 @@
 // app/blog/[slug]/page.js
 import Image from 'next/image';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { posts } from '../../data/posts'; // Adjust if needed
+import { posts } from '../../data/posts';
 
+// 🔹 Static paths
 export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params; // ✅ FIX
+
+  const post = posts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return {};
+  }
+
+  const siteUrl = 'https://earagroup.com';
+  const canonicalUrl = `${siteUrl}/blog/${post.slug}`;
+
+  return {
+    metadataBase: new URL(siteUrl), // ✅ FIX WARNING
+    title: post.meta_title || post.title,
+    description: post.description,
+    keywords: post.keywords,
+
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
+    openGraph: {
+      title: post.meta_title || post.title,
+      description: post.description,
+      url: canonicalUrl,
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      type: 'article',
+    },
+
+    twitter: {
+      card: 'summary_large_image',
+      title: post.meta_title || post.title,
+      description: post.description,
+      images: [post.image],
+    },
+  };
+}
+
+
+// 🔹 Page Component
 export default async function BlogPost({ params }) {
   const post = posts.find((p) => p.slug === params.slug);
 
@@ -19,50 +67,42 @@ export default async function BlogPost({ params }) {
 
   return (
     <>
-         <div id="carouselExampleDark" className="header-section ">
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <div className="image-container">
-                            <Image 
-                                src="/images/blog-header.avif" 
-                                height={2880} 
-                                width={1920} 
-                                className='img-fluid masterpiece ' 
-                                alt="masterpiece" 
-                                style={{ objectPosition: '15% 100%' }} 
-                            />
-                            <div className="overlay2 ">
-                                <div className="text-white d-block">
-                                    <p className="text-center d-block fs-1 mb-3 text-uppercase"> Blog</p>
-                                    {/* <p className="text-center d-block fs-6 ">
-                                        <Link className="text-white text-decoration-none" href='/'> Home</Link> / Blog
-                                    </p> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-      <section className="section-padding theme-bg-light blogs" style={{ marginTop: '0px' }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 mb-3">
-              <div>
-
-                <div>
-                  <Image src={post.image} className="w-100 img-fluid" alt={post.title} width={1296} height={607} />
-                </div>
-                <div className="title text-left">
-                  <h1 className="text-main fs-2 fw-bold mt-4 mb-0 theme-color-dark">{post.title}</h1>
-                </div>
-                <div className="py-2">
-                  <div className=' theme-color-dark' dangerouslySetInnerHTML={{ __html: post.content }} />
-                </div>
-              </div>
-            </div>
+      {/* Header */}
+      <div className="header-section">
+        <div className="image-container">
+          <Image
+            src="/images/blog-header.avif"
+            height={2880}
+            width={1920}
+            className="img-fluid masterpiece"
+            alt="Blog Header"
+            priority
+          />
+          <div className="overlay2">
+            <p className="text-center fs-1 text-white text-uppercase">Blog</p>
           </div>
+        </div>
+      </div>
+
+      {/* Blog Content */}
+      <section className="section-padding theme-bg-light blogs">
+        <div className="container">
+          <Image
+            src={post.image}
+            className="w-100 img-fluid"
+            alt={post.title}
+            width={1296}
+            height={607}
+          />
+
+          <h1 className="fs-2 fw-bold mt-4 theme-color-dark">
+            {post.h1 || post.title}
+          </h1>
+
+          <div
+            className="theme-color-dark py-2"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
         </div>
       </section>
     </>
