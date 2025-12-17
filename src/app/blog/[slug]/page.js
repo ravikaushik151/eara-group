@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { posts } from '../../data/posts';
+import Script from "next/script";
 
 // 🔹 Static paths
 export async function generateStaticParams() {
@@ -67,6 +68,17 @@ export default async function BlogPost({ params }) {
 
   return (
     <>
+     {/* ✅ SCHEMA (ONLY IF EXISTS) */}
+          {post.schema && (
+  <Script
+    id="post-schema"
+    type="application/ld+json"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(post.schema),
+    }}
+  />
+)}
       {/* Header */}
       <div className="header-section">
         <div className="image-container">
