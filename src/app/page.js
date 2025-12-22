@@ -95,7 +95,9 @@ export default function Home() {
 
   return (
     <>
+
       <main className="main-wrapper">
+        <h1 className="d-none" style={{display:"none"}}>Eara Group</h1>
         <div className="overflow-clip" id="main-slider">
           <div
             id="carouselExampleDark"
