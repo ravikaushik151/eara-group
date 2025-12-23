@@ -107,41 +107,48 @@ export default function Footer() {
      
        
 
-         <Link href="./" className="text-decoration-none text-white">
+         <Link href="./" className="text-decoration-none text-white small">
           Home
          </Link>
          <span className="text-white mx-1">|</span>
-         <Link href="/about" className="text-decoration-none text-white">
+         <Link href="/about" className="text-decoration-none text-white small">
           About
          </Link>
          <span className="text-white mx-1">|</span>
-         <Link href="/microsite" className="text-decoration-none text-white">
+         <Link href="/microsite" className="text-decoration-none text-white small">
           Project
          </Link>
          <span className="text-white mx-1">|</span>
-         <Link href="/blog" className="text-decoration-none text-white">
+         <Link href="/blog" className="text-decoration-none text-white small">
           Blog
          </Link>
          <span className="text-white mx-1">|</span>
          <Link
           href="/career"
-          className="text-decoration-none text-white"
+          className="text-decoration-none text-white small"
          >
           Career
          </Link>
          <span className="text-white mx-1">|</span>
          <Link
           href="/contact"
-          className="text-decoration-none text-white"
+          className="text-decoration-none text-white small"
          >
           Contact
          </Link>
          <span className="text-white mx-1">|</span>
          <Link
           href="/privacy-policy"
-          className="text-decoration-none text-white"
+          className="text-decoration-none text-white small"
          >
           Privacy Policy
+         </Link>
+          <span className="text-white mx-1">|</span>
+          <Link
+          href="/terms-of-conditions"
+          className="text-decoration-none text-white small"
+         >
+          Terms & Conditions
          </Link>
         </p>
        

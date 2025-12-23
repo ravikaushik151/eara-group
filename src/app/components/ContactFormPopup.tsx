@@ -68,7 +68,7 @@ export default function ContactFormPopup({
 
         try {
             const res = await fetch(
-                'https://earagroup.com/emailer',
+                'https://earagroup.com/emailer/',
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
