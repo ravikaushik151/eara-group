@@ -9,14 +9,24 @@ error_reporting(E_ALL);
 // =======================================================
 // CORS HEADERS: Allows cross-origin POST requests
 // =======================================================
-header('Access-Control-Allow-Origin: *'); 
-header('Access-Control-Allow-Methods: POST, OPTIONS');
-// Allows the 'Content-Type: application/json' header
-header('Access-Control-Allow-Headers: Content-Type');
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Content-Type: text/plain");
 
-// Handle the preflight request (OPTIONS method)
+// Handle OPTIONS request
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
+    exit;
+}
+
+// Only allow POST
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode([
+        "status" => "error",
+        "message" => "Method Not Allowed"
+    ]);
     exit;
 }
 // =======================================================
@@ -170,11 +180,12 @@ if ($post_data) {
         curl_close($ch);
         
         if ($error) {
-    echo "cURL Error: " . $error;
+     "cURL Error: " . $error;
 } else {
-    echo $response;
+     $response; 
+     echo "OK";
 }
- echo "OK";
+
     } else {
         // Return a clear error message if email failed
         echo '<p style="color:red;">Error: Email submission failed.</p>';
