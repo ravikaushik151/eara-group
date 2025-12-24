@@ -93,7 +93,7 @@ export default function ChannelPartner() {
             };
 
             const response = await fetch(
-                'https://earagroup.com/emailer/',
+                'https://earagroup.com/channel-emailer/',
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
