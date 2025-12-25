@@ -10,7 +10,7 @@ export const metadata = {
     canonical: "https://earagroup.com/career/",
   },
  
-};
+}; 
 
 export default function Page() {
   return <Career />;
