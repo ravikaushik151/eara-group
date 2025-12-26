@@ -118,7 +118,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="auto"
-                    // poster="/images/hero-image-edit-4-new.avif"
+                     poster="/images/desktop-home-video.png"
                     style={{
                       objectFit: "cover",
                       height: "100%",
@@ -144,7 +144,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="auto"
-                    // poster="/images/mobile-img.avif" // fallback image before video loads
+                     poster="/images/mobile-home-video.png" // fallback image before video loads
                     style={{
                       objectFit: "cover",
                       height: "100%",
