@@ -89,7 +89,7 @@ export default function ChannelPartner() {
                 // message: `CP RERA: ${formData.cpAgencyReraNumber}. Prospect Project Interest: ${formData.projectInterestedIn}.`, // Combine non-input fields into message
                 subject: 'Eara Group - New Channel Partner Referral',
                 form_source: 'Eara Group - Channel Partner Referral Form',
-                additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
+                additionalRecipients: ['sales@earagroup.com'],
             };
 
             const response = await fetch(

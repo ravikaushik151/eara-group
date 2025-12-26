@@ -64,7 +64,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
    subject: 'Enquire From Eara Group - Website',
    form_source: 'Eara Group - Website',
 
-   additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
+   additionalRecipients: ['sales@earagroup.com'],
   };
 
   try {

@@ -110,7 +110,7 @@ if ($post_data) {
 
     // --- Recipients List ---
    // $recipients = ['info@imsolutions.mobi'];
-    $recipients = ['lokesh@imsolutions.mobi'];
+    $recipients = ['info@imsolutions.mobi'];
     // Handle additional recipients (guaranteed to be an array)
     if (!empty($additionalRecipients) && is_array($additionalRecipients)) {
         $recipients = array_merge($recipients, $additionalRecipients);
