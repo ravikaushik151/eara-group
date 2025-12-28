@@ -54,7 +54,6 @@ export default function About() {
         <div className="row">
           <div className="col-md-12">
             <div className="video-container position-relative">
-
               <video
                 className="w-100 h-100 object-fit-cover d-md-block d-none"
                 autoPlay
@@ -92,15 +91,7 @@ export default function About() {
               {/* ✅ Overlay */}
               <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
                 <h1 className="text-center fs-1 mb-3 text-uppercase">About Us</h1>
-                {/* <p className="text-center fs-6">
-                  <Link
-                    className="text-white text-decoration-none text-brown"
-                    href="/"
-                  >
-                    Home
-                  </Link>{" "}
-                  / About Us
-                </p> */}
+
               </div>
             </div>
           </div>
