@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./../about.css";
-
 import TestimonialSlider from "../components/Home/TestimonialSliderAbout";
 export const metadata = {
   title: 'Premium Residential Plots in Kanakapura Main Road - Eara Group',
@@ -63,7 +62,7 @@ export default function About() {
                 loop
                 playsInline
                 preload="auto"
-                // poster="/images/About_new copy_Eara.avif" 
+                // poster="/images/About_new copy_Eara.avif"
                 style={{
                   objectFit: "cover",
                   height: "100% !important",
@@ -80,7 +79,7 @@ export default function About() {
                 loop
                 playsInline
                 preload="auto"
-                // poster="/images/About_new copy_Eara.avif" 
+                // poster="/images/About_new copy_Eara.avif"
                 style={{
                   objectFit: "cover",
                   height: "auto !important",
@@ -202,10 +201,10 @@ export default function About() {
       </section>
       <section className="player-section py-5 text-white bg-black" style={{
         backgroundImage: `
-         linear-gradient(to bottom, 
-             rgba(23, 23, 23, 0.65), 
-             rgba(23, 23, 23, 0.65)   
-        ), 
+         linear-gradient(to bottom,
+             rgba(23, 23, 23, 0.65),
+             rgba(23, 23, 23, 0.65)
+        ),
          url('/images/Ethos-Innovation.avif')`,
         backgroundSize: "cover",
         backgroundPosition: "center center",
