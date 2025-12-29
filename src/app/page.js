@@ -118,6 +118,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="auto"
+                    fetchPriority="high" 
                      poster="/images/desktop-home-video.png"
                     style={{
                       objectFit: "cover",
@@ -229,7 +230,7 @@ export default function Home() {
                 <div className="row align-items-center">
                   <div className="col-md-6 px-md-0 text-center">
                     <ImageCompare
-                      beforeImg="/images/upcoming-projects.png"
+                      beforeImg="/images/upcoming-projects.webp"
                       afterImg="/images/upcoming-projects.avif"
                     />
                     {/* <Ongoing /> */}
