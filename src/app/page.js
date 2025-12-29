@@ -119,7 +119,7 @@ export default function Home() {
                     playsInline
                     preload="auto"
                     fetchPriority="high" 
-                     poster="/images/desktop-home-video.png"
+                    // poster="/images/desktop-home-video.png"
                     style={{
                       objectFit: "cover",
                       height: "100%",
@@ -145,7 +145,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="auto"
-                     poster="/images/mobile-home-video.webp" // fallback image before video loads
+                    // poster="/images/mobile-home-video.webp" // fallback image before video loads
                     style={{
                       objectFit: "cover",
                       height: "100%",
