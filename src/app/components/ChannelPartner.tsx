@@ -184,7 +184,7 @@ export default function ChannelPartner() {
                             <p className='lh-lg'>
                                 At EARA Group, we believe that great collaborations build greater success stories. As an Eara Group Channel Partner, you become an integral part of our vision - shaping communities, driving innovation, and redefining excellence in real estate.   </p>
                             <p className='lh-lg'> If you’re looking to grow as a trusted real estate channel partner in Bangalore, this is your opportunity to join a brand built on trust, transparency, and long-term value. Together, we’ll unlock new opportunities, create lasting value, and grow stronger as one team with a shared purpose. </p>
-                           
+
                             <p className='lh-lg'>
                                 Partner with us and be a part of a journey that’s truly transformative.
 
@@ -322,7 +322,7 @@ export default function ChannelPartner() {
                                             </select>
                                         </div>
 
-                                        {/* The original text area is now effectively used for the hidden/default message 
+                                        {/* The original text area is now effectively used for the hidden/default message
                                             but can be left here as an optional message field if desired, or removed. */}
                                         {/* <div className="col-12 form-group mb-3">
                                             <label htmlFor="message" className="form-label visually-hidden">Message</label>
