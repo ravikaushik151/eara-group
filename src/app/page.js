@@ -145,7 +145,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="auto"
-                     poster="/images/mobile-home-video.png" // fallback image before video loads
+                     poster="/images/mobile-home-video.webp" // fallback image before video loads
                     style={{
                       objectFit: "cover",
                       height: "100%",
