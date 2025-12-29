@@ -68,7 +68,7 @@ export default function ContactForm({
       message: form.message || 'interested',
       subject: 'Enquire From Eara Group - Website',
       form_source: 'Eara Group - Website',
-      additionalRecipients: ['sales@earagroup.com'],
+    //  additionalRecipients: ['sales@earagroup.com'],
     };
 
     try {

@@ -46,7 +46,7 @@ function validate_mobile($phone)
 // DATA HANDLING: Reads JSON input from the frontend
 // =======================================================
 $json_data = file_get_contents('php://input');
-$post_data = json_decode($json_data, true); 
+$post_data = json_decode($json_data, true);
 
 // Check if data is valid
 if (empty($post_data) || !is_array($post_data)) {
@@ -60,16 +60,16 @@ if ($post_data) {
     $name = trim($post_data['name'] ?? '');
     $email = trim($post_data['email'] ?? '');
     $phone = trim($post_data['phone'] ?? '');
-    
+
     // Additional fields from payload
-    $from = trim($post_data['form_source'] ?? 'Unknown Source'); 
+    $from = trim($post_data['form_source'] ?? 'Unknown Source');
     $spreadsheet = trim($post_data['spreadsheet'] ?? '');
-    
+
     // ðŸ’¡ FIXED: Get additionalRecipients without trim() to handle array type
-    $additionalRecipients = $post_data['additionalRecipients'] ?? []; 
-    
+    $additionalRecipients = $post_data['additionalRecipients'] ?? [];
+
     // Use the custom subject from the payload
-    $subject = trim($post_data['subject'] ?? "Enquiry from $from"); 
+    $subject = trim($post_data['subject'] ?? "Enquiry from $from");
     $error = '';
 
     // --- Validation ---
@@ -110,7 +110,7 @@ if ($post_data) {
 
     // --- Recipients List ---
    // $recipients = ['info@imsolutions.mobi'];
-    $recipients = ['info@imsolutions.mobi'];
+    $recipients = ['info@imsolutions.mobi', 'sales@earagroup.com',];
     // Handle additional recipients (guaranteed to be an array)
     if (!empty($additionalRecipients) && is_array($additionalRecipients)) {
         $recipients = array_merge($recipients, $additionalRecipients);
@@ -130,12 +130,12 @@ if ($post_data) {
         }
     }
 
-    
+
     // --- Final Response ---
     if ($all_sent) {
-       
-       
-        
+
+
+
         $url = "https://eara.tranquilcrmone.in/v2/createlead?" . http_build_query([
             "api_key"           => "TRNQUILCRMeara",
             "country_code"      => "91",
@@ -147,8 +147,8 @@ if ($post_data) {
             "campaign_name"     => "entercampaignname",
             "adgroup_name"      => "enteradgroup",
             "ad_name"           => "enteradname",
-           
-           
+
+
             "source_type"       => "3",
             "sub_source"        => "Portal",
             "remark"            => "testnote",
@@ -162,9 +162,9 @@ if ($post_data) {
             "activity_time"     => "",
             "activity_id"       => "1"
         ]);
-        
+
         $ch = curl_init();
-        
+
         curl_setopt_array($ch, [
             CURLOPT_URL            => $url,
             CURLOPT_RETURNTRANSFER => true,
@@ -173,16 +173,16 @@ if ($post_data) {
             CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST  => "GET",
         ]);
-        
+
         $response = curl_exec($ch);
         $error    = curl_error($ch);
-        
+
         curl_close($ch);
-        
+
         if ($error) {
      "cURL Error: " . $error;
 } else {
-     $response; 
+     $response;
      echo "OK";
 }
 

@@ -134,8 +134,8 @@ $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
    RECIPIENTS
 ======================================================= */
 $recipients = [
-    "lokesh@imsolutions.mobi",
-    "ravi.k@imsolutions.mobi"
+    "info@imsolutions.mobi",
+    "sales@earagroup.com"
 ];
 
 if (!empty($extraRecipients) && is_array($extraRecipients)) {
