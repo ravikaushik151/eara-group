@@ -233,16 +233,7 @@ export default function Home() {
                       beforeImg="/images/upcoming-projects.webp"
                       afterImg="/images/upcoming-projects.avif"
                     />
-                    {/* <Ongoing /> */}
-                    {/* <Image
-                      alt="Project"
-                      src="/images/upcoming-projects.avif"
-                      width={500}
-                      height={750}
-                      className="img-fluid p-0 mb-3 w-100"
-                      priority
-                      fetchPriority="high" style={{ objectFit: "cover", objectPosition: "bottom center" }}
-                    /> */}
+                  
                   </div>
                   <div
                     className="col-md-6 px-md-5 px-3 d-flex align-items-center"
@@ -321,31 +312,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* <UpcomingSlider 
-    projects={upcomingProjects}
-    sectionTitle=" Upcoming Projects" // Dynamic title
-/> */}
-
-          {/* <section className="quality-assurance-section bg-black">
-            <div className="image-wrapper py-4">
-              <div className="container">
-                <div className="row justify-content-center">
-                  <div className="col-lg-12 col-md-12 text-center">
-                    <div className="image-frame">
-                      <Image
-                        src="/images/hero-image-edit-4-new.jpg"
-                        alt="Business professionals walking"
-                        width={1400}
-                        height={700}
-                        className="img-fluid d-block mx-auto"
-                        priority
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
+        
 
           {/* Section 2: 360 Lifestyle Cards */}
           <CoreValuesSlider />
