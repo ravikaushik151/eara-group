@@ -134,10 +134,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="/fevicon.png" />
         <link rel="shortcut icon" type="image/png" href="/fevicon.png" />
         <link rel="apple-touch-icon" href="/fevicon.png" />
-        <link
-          rel="stylesheet"
-          href="/css/main.css"
-        />
+       
        
 
         {/* ✅ Schema.org JSON-LD */}
