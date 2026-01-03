@@ -7,8 +7,20 @@ import Footer from './components/Footer';
 import { Poppins } from 'next/font/google';
 
 export const metadata = {
-  title: 'Eara Group',
-  description: 'Eara Group',
+  title: 'Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.',
+  description: "Discover Eara Group's luxury villa plots for sale in Kanakapura Road. Build your dream home amidst nature with premium amenities & great connectivity.",
+  robots: {
+    index: true,        
+    follow: true,       
+    nocache: true,      
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 const poppins = Poppins({

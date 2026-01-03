@@ -29,7 +29,18 @@ export async function generateMetadata({ params }) {
       title: post.meta_title || post.title,
       description: post.description,
       keywords: post.keywords,
-
+      robots: {
+         index: true,
+         follow: true,
+         nocache: true,
+         googleBot: {
+           index: true,
+           follow: true,
+           'max-video-preview': -1,
+           'max-image-preview': 'large',
+           'max-snippet': -1,
+         },
+      },
       alternates: {
          canonical: canonicalUrl,
       },
