@@ -120,44 +120,48 @@ export const posts = [
     <ol >
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">What is the current price range for villa plots on Kanakapura Road?</h3>
-      <span>Prices typically range between ₹3,800 and ₹8,500+ per sq.ft (approx.), depending on location and project quality.</span></p>
+      <p>Prices typically range between ₹3,800 and ₹8,500+ per sq.ft (approx.), depending on location and project quality.</p></p>
       </li>
       <li aria-level="1" >
-      <h3 class="fs-6 fw-bold">Are villa plots on Kanakapura Road good for long-term investment?</h3>
-      <span>Yes, the corridor shows steady, infrastructure-led appreciation.</span></p>
+      <h3 class="fs-6 fw-bold">Are villa plots on Kanakapura Road good for long-term investment?
+      <p>Yes, the corridor shows steady, infrastructure-led appreciation.</p></p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">Has metro connectivity impacted plot prices?</h3>
-      <span>Yes, visible metro progress has positively influenced buyer demand and pricing.</span></p>
+      <p>Yes, visible metro progress has positively influenced buyer demand and pricing.</p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">Are gated villa plots better than standalone plots?</h3>
-      <span>Gated plots generally offer better infrastructure, security, and resale value.</span></p>
+      <p>Gated plots generally offer better infrastructure, security, and resale value.</p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">What plot sizes are commonly available?</h3>
-      <span>Most villa plots range between 1,200 and 2,400 sq.ft.</span></p>
+      <p>Most villa plots range between 1,200 and 2,400 sq.ft.</p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">Is bank financing available for villa plots here?</h3>
-      <span>Yes, banks typically finance plots in approved layouts by reputed developers.</span></p>
+      <p>Yes, banks typically finance plots in approved layouts by reputed developers.</p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">How important is legal due diligence?</h3>
-      <span>It is critical - clear titles and approvals are essential before purchase.</span></p>
+      <p>It is critical - clear titles and approvals are essential before purchase.</p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">Will prices rise further in the coming years?</h3>
-      <span>Based on current trends, further appreciation is expected, though exact figures may vary.</span></p>
+      <p>Based on current trends, further appreciation is expected, though exact figures may vary.</p>
       </li>
       <li aria-level="1" >
       <h3 class="fs-6 fw-bold">Is Kanakapura Road suitable for self-use?</h3>
-      <span>Yes, due to greenery, low density, and improving connectivity.</span></p>
+      <p>Yes, due to greenery, low density, and improving connectivity.</p>
+      </li>
+      <li aria-level="1" >
+      <h3 class="fs-6 fw-bold">Is now a good time to buy?</h3>
+      <p>For BOFU buyers, current pricing still offers a reasonable entry opportunity.</p><!--EndFragment-->
       </li>
     </ol>
     
-    <p><span>Is now a good time to buy?</h3>
-    <span>For BOFU buyers, current pricing still offers a reasonable entry opportunity.</span><!--EndFragment--></p>
+    
+   
     
     
     `,
