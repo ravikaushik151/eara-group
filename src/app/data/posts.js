@@ -6,12 +6,12 @@ export const posts = [
     title:
       "Plots for Sale in Kanakapura Road Bangalore: Price Trends for Villa Buyers",
     h1:
-      "Plots for Sale in Kanakapura Road Bangalore | Price Trends",
+      "Plots for Sale in Kanakapura Road Bangalore: Price Trends for Villa Buyers",
     meta_title:
      "Plots for Sale in Kanakapura Road Bangalore | Price Trends",
     description:
       "Explore plots for sale in Kanakapura Road Bangalore with current price trends, location insights, and factors that influence long-term investment value.",
-    image: "/images/plots-for-sale-in-kanakapura-road-bangalore.webp",
+    image: "/images/plots-for-sale-in-kanakapura-road-bangalore-price-trends.webp",
     excerpt:
       "Kanakapura Road has steadily transformed into one of Bengaluru’s most preferred corridors for plotted developments. For buyers actively shortlisting Plots for Sale in Kanakapura Road ",
 
