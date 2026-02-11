@@ -550,7 +550,7 @@ export default function Home() {
 
           <MasterPlanSection />
           <Gallery />
-          <Construction />
+        {/*  <Construction />*/}
 
           <section className="section_home-connectivity theme-bg-dark page-about-mv" id="location">
             <div className="padding-global">
