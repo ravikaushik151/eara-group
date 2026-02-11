@@ -52,10 +52,10 @@ export default function Gallery() {
   );
 
   return (
-    <section className="gallery-section same-gap gallery theme-bg-dark py-5" id="gallery">
+    <section className="gallery-section same-gap gallery theme-bg-light py-5" id="gallery">
       <div className="container">
         <div className="title text-center mb-4">
-          <h2 className="theme-color-light">Gallery</h2>
+          <h2 className="theme-color-dark">Gallery</h2>
         </div>
 
         <div className="row">
