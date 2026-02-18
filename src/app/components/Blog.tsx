@@ -201,7 +201,7 @@ export default function Blog() {
 
                                         {/* Use mt-auto on the button container to push it to the bottom */}
                                         <div className="text-center py-3 my-3 small mt-auto">
-                                            <Link href={`/blog/${post.slug}`} className="btn theme-bg-light">Read More</Link>
+                                            <Link href={`/blog/${post.slug}`} className="btn btn-dark">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +224,7 @@ export default function Blog() {
                                             className={`page-item mx-1 bg-black ${currentPage === i + 1 ? 'active' : ''}`}
                                             onClick={() => setCurrentPage(i + 1)}
                                         >
-                                            <button className="page-link btn text-light rounded-0 theme-bg-dark">{i + 1}</button>
+                                            <button className="page-link btn text-black rounded-0 theme-bg-dark border-dark">{i + 1}</button>
                                         </li>
                                     ))}
                                 </ul>

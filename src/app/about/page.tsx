@@ -226,14 +226,14 @@ export default function About() {
 
 
 
-                  <h5 className="fw-bold whtie mb-0 fs-3 text-center">Mr. L. N Reddy</h5>
-                  <h6 className="text-white text-muted small text-center"> (Founder & CEO)</h6>
+                  <h5 className="fw-bold  mb-0 fs-3 text-center text-black">Mr. L. N Reddy</h5>
+                  <h6 className="text-black text-muted small text-center"> (Founder & CEO)</h6>
 
-                  <p className="text-white small">
+                  <p className="text-black small">
                     <strong> Mr. L. N Reddy</strong>, Founder & CEO of EARA Group, brings more than 16 years of hands-on experience in the real-estate sector. Over the years, he has worked across product conceptualization, the acquisition of strategically located land parcels, and regulatory liaison - always with a clear focus on creating safe, high-quality, and value-driven developments that genuinely serve the evolving needs of homebuyers and investors.
 
                   </p>
-                  <p className="text-white small">His approach to leadership is rooted in clarity, integrity, and a strong sense of responsibility. Under his guidance, EARA Group continues to grow on the foundation of transparency, timely delivery, and ethical business practices. With a dedicated team of seasoned professionals and young, passionate talent, the company strives to craft real-estate solutions that not only meet expectations but meaningfully exceed them - building trust, nurturing long-term relationships, and ensuring a rewarding experience for every customer.</p>
+                  <p className="text-black small">His approach to leadership is rooted in clarity, integrity, and a strong sense of responsibility. Under his guidance, EARA Group continues to grow on the foundation of transparency, timely delivery, and ethical business practices. With a dedicated team of seasoned professionals and young, passionate talent, the company strives to craft real-estate solutions that not only meet expectations but meaningfully exceed them - building trust, nurturing long-term relationships, and ensuring a rewarding experience for every customer.</p>
 
                 </div>
 

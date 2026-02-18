@@ -11,8 +11,8 @@ export default function Footer() {
     <div className="site-footer__top bg-opacity-75" >
      <div className="container">
       <div className="site-footer__top-inner  py-2">
-       <div className="row g-4">
-        <div className="col-lg-3 col-md-3 pb-2" data-wow-delay="100ms">
+       <div className="row g-4 pb-5">
+        <div className="col-lg-3 col-md-3 pb-2 d-flex align-items-center" data-wow-delay="100ms">
          <div className=" ">
           <div className="">
            <Link href="/">
@@ -24,16 +24,16 @@ export default function Footer() {
              className="logo white-png d-block mx-auto"
             />
            </Link>
-           <p className="pt-3 text-center">
+           {/* <p className="pt-3 text-center">
             RERA No. : PRM/KA/RERA/1251/310/PR/220223/005733
-           </p>
+           </p> */}
           </div>
          </div>
         </div>
         <div className="col-lg-3 col-md-3" data-wow-delay="200ms">
          <div className=" ">
           <div className="">
-           <p className=" fs-6 small text-uppercase m-center">OUR ADDRESS</p>
+           <p className=" fs-6 small text-uppercase m-center fw-bold">OUR ADDRESS</p>
           </div>
           <p className=" text-white mb-0">MM-201, 2nd Floor, MANYA MANSION #11, Blue Bells Street, 7th Main, 7th Cross, Rajeevgandhinagar, Bangalore-560097</p>
          </div>
@@ -99,7 +99,7 @@ export default function Footer() {
      <div className="row">
       <div className="col-md-6">
        <div className="site-footer__bottom-inner">
-        <p className="text-center text-white">© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-white" target="_blank">IM Solutions</Link></p>
+        <p className="text-center text-black">© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-black" target="_blank">IM Solutions</Link></p>
        </div>
       </div>
      <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end px-3 px-md-0">
@@ -107,46 +107,46 @@ export default function Footer() {
      
        
 
-         <Link href="./" className="text-decoration-none text-white small">
+         <Link href="./" className="text-decoration-none text-black small">
           Home
          </Link>
          <span className="text-white mx-1">|</span>
-         <Link href="/about" className="text-decoration-none text-white small">
+         <Link href="/about" className="text-decoration-none text-black small">
           About
          </Link>
          <span className="text-white mx-1">|</span>
-         <Link href="/microsite" className="text-decoration-none text-white small">
+         <Link href="/microsite" className="text-decoration-none text-black small">
           Project
          </Link>
          <span className="text-white mx-1">|</span>
-         <Link href="/blog" className="text-decoration-none text-white small">
+         <Link href="/blog" className="text-decoration-none text-black small">
           Blog
          </Link>
          <span className="text-white mx-1">|</span>
          <Link
           href="/career"
-          className="text-decoration-none text-white small"
+          className="text-decoration-none text-black small"
          >
           Career
          </Link>
          <span className="text-white mx-1">|</span>
          <Link
           href="/contact"
-          className="text-decoration-none text-white small"
+          className="text-decoration-none text-black small"
          >
           Contact
          </Link>
          <span className="text-white mx-1">|</span>
          <Link
           href="/privacy-policy"
-          className="text-decoration-none text-white small"
+          className="text-decoration-none text-black small"
          >
           Privacy Policy
          </Link>
           <span className="text-white mx-1">|</span>
           <Link
           href="/terms-of-conditions"
-          className="text-decoration-none text-white small"
+          className="text-decoration-none text-black small"
          >
           Terms & Conditions
          </Link>

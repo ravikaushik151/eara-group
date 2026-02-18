@@ -13960,6 +13960,7 @@ html {
   --secondary-color: #1e1e1e;
   --accent-color: #1e1e1e;
   --green-bg: #0C5F17;
+  --light-bg: #f8f8f8;
 }
 
 body {
@@ -15725,11 +15726,12 @@ footer button:hover {
 }
 
 .theme-bg-light {
-  background-color: var(--primary-color) !important;
+ /* background-color: var(--primary-color) !important; */
+background-color: var(--primary-color) !important; 
 }
 
 .theme-bg-dark {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--light-bg) !important;
 }
 
 .theme-color-dark {
@@ -15737,7 +15739,8 @@ footer button:hover {
 }
 
 .theme-color-light {
-  color: var(--primary-color) !important;
+  /* color: var(--primary-color) !important; */
+  color: var(--secondary-color) !important;
 }
 
 .accent-bg {
@@ -15839,7 +15842,7 @@ footer button:hover {
 }
 
 .text-color-accent {
-  color: var(--accent);
+  color: var(--light-bg);
 }
 
 .text-color-offwhite {

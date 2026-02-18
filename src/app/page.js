@@ -197,7 +197,7 @@ export default function Home() {
                   <div className="text-start m-center">
                     <Link
                       href="/about"
-                      className="btn theme-bg-dark text-white border mt-1"
+                      className="btn btn-dark  border mt-1"
                     >
                       {" "}
                       Explore More
@@ -301,7 +301,7 @@ export default function Home() {
                         </div>
                       </div>
                       <p className="m-center py-md-0 py-1">
-                        <a href="/amidstnature" className="btn theme-bg-light">
+                        <a href="/amidstnature" className="btn btn-dark">
                           Explore More
                         </a>
                       </p>

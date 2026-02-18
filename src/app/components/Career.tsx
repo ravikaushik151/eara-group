@@ -102,7 +102,7 @@ export default function Career() {
               <div className="overlay2" style={{ marginTop: "-120px" }}>
                 <div className="text-white text-center">
                   <h1 className="fs-1 mb-0 text-uppercase">Career</h1>
-                  <p className="px-md-0 px-3">Explore exciting job openings in Eara Group and become part of a purpose-driven future.</p>
+                  {/* <p className="px-md-0 px-3">Explore exciting job openings in Eara Group and become part of a purpose-driven future.</p> */}
                 </div>
               </div>
             </div>
@@ -124,15 +124,15 @@ export default function Career() {
             {/* Why Join */}
             <div className="col-lg-6 mb-4">
               <h2 className="theme-color-dark mb-4">
-                Why Join <span className="text-color-accent">EARA</span> Group?
+                Why Join <span className="text-dark fw-bold">EARA</span> Group?
               </h2>
               <div className="row">
                 {reasons.map((reason) => (
                   <div key={reason} className="col-12 px-2 mb-3 ps-md-4 ps-5">
                     <div className="row px-1">
                       <div className="col-md-10 col-10 px-0">  
-                        <FaCheckCircle className="text-color-accent me-2" /> 
-                        <span className="text-dark">{reason}</span> 
+                        <FaCheckCircle className="text-color-accent me-2 text-dark" /> 
+                        <span className="text-black text">{reason}</span> 
                       </div>
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export default function Career() {
                     </div>
 
                     <div className="text-center col-md-12">
-                      <button type="submit" className="btn theme-bg-dark text-white py-2 px-4 mt-2">
+                      <button type="submit" className="btn btn-dark py-2 px-4 mt-2">
                         Submit
                       </button>
                     </div>
