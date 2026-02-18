@@ -24,12 +24,12 @@ export default function MyAccordion({ items }: AccordionProps) {
     <div className="accordion theme-bg-dark" id="myAccordion">
       {items.map((item) => (
         <div
-          className="accordion-item theme-bg-dark border-theme rounded-0 mb-3"
+          className="accordion-item theme-bg-dark border border-dark rounded-0 mb-3"
           key={item.id}
         >
           <h5 className="accordion-header" id={`heading${item.id}`}>
             <button
-              className={`accordion-button fs-6 fw-bold theme-color-light ${
+              className={`accordion-button fs-6 fw-bold theme-color-dark ${
                 openId === item.id ? '' : 'collapsed'
               }`}
               type="button"

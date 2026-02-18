@@ -35,7 +35,7 @@ export default function AmenitiesSection() {
                     {amenities.map((item, idx) => (
                         <div key={idx} className="col-6 col-sm-6 col-md-3 col-lg-2 ">
                             <div className="p-3 border rounded-3 shadow-sm bg-white theme-bg-dark h-100 d-flex flex-column align-items-center justify-content-center amenity-card">
-                                <Image src={item.icon} alt={item.title} width={50} height={50} className='white-png' />
+                                <Image src={item.icon} alt={item.title} width={50} height={50} className='' />
                                 <p className="small mt-2 text-center theme-color-light">{item.title}</p>
                             </div>
                         </div>

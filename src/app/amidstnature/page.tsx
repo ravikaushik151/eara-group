@@ -211,7 +211,7 @@ export default function Home() {
                     <div className="text-center  my-4">
                       <ContactFormPopup
                         buttonText="Download Brochure"
-                        buttonClassName="theme-bg-dark theme-color-light px-3 py-2 text-decoration-none rounded-2 "
+                        buttonClassName="btn btn-dark px-3 py-2 text-decoration-none rounded-2 "
                         redirectUrl="/download-page"
                       />
                     </div>
@@ -580,7 +580,7 @@ export default function Home() {
                           className="fs-2 text-color-offwhite theme-color-light m-center mb-3"
                         >
                           Located in{" "}
-                          <span className="text-white">
+                          <span className="text-black">
                             Kaggalipura,
                           </span>{" "}
                           Off Kanakapura Main  Road, Bengaluru.
@@ -701,7 +701,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="section_home-masterplan theme-bg-light lifestyle-section py-5" id="master-plan">
+          <section className="section_home-masterplan theme-bg-light lifestyle-section py-5 d-none" id="master-plan">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-12 d-block mx-auto">
