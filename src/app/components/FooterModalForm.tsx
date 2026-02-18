@@ -168,7 +168,7 @@ export default function FooterModalForm({ autoShowTime = 3500, redirectUrl }: Fo
           ></textarea>
          </div>
          <div className='text-center'>
-          <button type="submit" className="btn theme-bg-light theme-color-dark" disabled={submitting}>
+          <button type="submit" className="btn btn-dark" disabled={submitting}>
            {submitting ? 'Please Wait...' : 'Submit'}
           </button>
          </div>

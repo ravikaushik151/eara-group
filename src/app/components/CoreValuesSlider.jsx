@@ -55,7 +55,7 @@ export default function CoreValuesSlider() {
                         >
                             {coreValues.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="row mb-4 border border-light shadow ">
+                                    <div className="row mb-5 border border-light shadow ">
 
                                         <div
                                             className="col-lg-6 text-center corevalue"
@@ -80,27 +80,7 @@ export default function CoreValuesSlider() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <div className="mb-5 theme-bg-dark shadow p-3 d-none">
-                                        <div className="row">
-                                            <div className="col-md-8">
-                                                <img
-                                                    src={item.img}
-                                                    alt={item.title}
-                                                    className="img-fluid  p-2 eimg "
-                                                />
-                                            </div>
-                                            <div className="mb-md-0 mb-3 col-md-4 px-3 d-flex flex-column justify-content-center">
-                                                <div>
-                                                    <h5 className="theme-color-light text-start m-center fw-bold fs-4">
-                                                        {item.title}
-                                                    </h5>
-                                                    <p className="theme-color-light text-start m-center small">
-                                                        {item.text}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+                                     
                                 </SwiperSlide>
                             ))}
                         </Swiper>
