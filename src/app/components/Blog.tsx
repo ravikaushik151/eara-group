@@ -6,6 +6,9 @@ import { useState } from 'react';
 import { posts } from './../data/posts';
 //import "./../blog.css";
 
+
+
+
 interface Post {
     title: string;
     date: string;
@@ -14,7 +17,66 @@ interface Post {
     image: string;
 }
 
-const typedPosts: Post[] = posts as Post[];
+const staticPosts: Post[] = [
+    {
+        slug: "plots-for-sale-in-kanakapura-road-bangalore",
+        title:
+            "Plots for Sale in Kanakapura Road Bangalore: Price Trends for Villa Buyers",
+        date: "2026-01-06",
+        image: "/images/plots-for-sale-in-kanakapura-road-bangalore-price-trends.webp",
+        excerpt:
+            "Kanakapura Road has steadily transformed into one of Bengaluru’s most preferred corridors for plotted developments. For buyers actively shortlisting Plots for Sale in Kanakapura Road ",
+    },
+    {
+        slug: "how-to-choose-premium-villa-plots-in-kanakapura-road",
+        title: "How to Choose Premium Villa Plots in Kanakapura Road",
+
+        excerpt:
+            "Investing in Serenity: Why Nature-Focused Developments Promise Better ReReal estate investment has evolved far beyond square footage and price tags. Today&rsquo;s most successful investors ",
+          image: "/images/luxury-villa-plots-kaggalipura-2).webp",
+        date: "2026-01-02",
+    },
+    {
+        slug: "luxury-villa-plots-in-kaggalipura",
+        title: "Luxury Villa Plots in Kaggalipura: A Hidden Gem for Peaceful Living ",
+        image: "/images/luxury-villa-plots-kaggalipura.webp",
+        excerpt:
+            "Bengaluru&rsquo;s real estate story is constantly evolving, and while established hubs continue to thrive, discerning homebuyers are now looking beyond the obvious. One location quietly gaining attention is Kaggalipura..    ",
+        date: "2025-12-30",
+    },
+    {
+        slug: "bmrda-approved-sites-kanakapura-road-investment",
+        title: "Why BMRDA-Approved Sites in Kanakapura Road Are a Smart Investment",
+        image: "/images/BMRDA approved layout in Kanakapura Road for safe investment.webp",
+        excerpt:
+            "Kanakapura Road has quietly become one of Bengaluru&rsquo;s strongest growth corridors. Over the last decade, this stretch has transformed from a peaceful suburban route into a powerful real-estate destination driven by..    ",
+        date: "2025-12-15",
+    },
+    {
+        slug: "why-choose-integrated-townships",
+        title: "Why Choose Integrated Townships?",
+        image: "/images/Blog-img1_eara.avif",
+        excerpt:
+            "From better infrastructure to enhanced quality of life, integrated townships are the future of urban development. Learn how Kanakapura Road property investment is becoming one of Bengaluru’s most promising growth opportunities..    ",
+        date: "2025-05-21",
+    },
+    {
+        slug: "eco-conscious-architecture",
+        title: "Eco-Conscious Architecture",
+        image: "/images/Blog-img2_eara.avif",
+        excerpt:
+            "Transform your small balcony into an eco-friendly retreat with space-saving garden elements and sustainable design. Perfect for those exploring residential plots in Bangalore who value harmony between nature and urban life..    ",
+        date: "2025-05-22",
+    },
+    {
+        slug: "the-future-of-smart-living",
+        title: "The Future of Smart Living ",
+        image: "/images/Blog-img3_eara.avif",
+        excerpt:
+            "From voice-controlled lighting to multifunctional furniture, smart living is shaping the way we design our bedrooms. Dive into the latest real estate insights that define modern comfort and convenience..",
+        date: "2025-05-23",
+    }
+];
 
 
 export default function Blog() {
@@ -25,7 +87,7 @@ export default function Blog() {
     const postsPerPage = 6;
 
     // 🔍 Filter by title
-    const filteredPosts = typedPosts.filter((post) =>
+    const filteredPosts = staticPosts.filter((post) =>
         post.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
