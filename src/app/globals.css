@@ -19690,7 +19690,7 @@ footer {
 .corevalue-img {
   background-size: cover;
   background-position: 35% 100%;
-  
+  min-height: 330px;
 }
 
 /* Text Content */
@@ -19723,7 +19723,7 @@ footer {
   }
 
   .corevalue-img {
-    height: 320px;
+    min-height: 320px !important;
     border-radius: 14px;
   }
 
