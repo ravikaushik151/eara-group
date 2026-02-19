@@ -104,7 +104,7 @@ export default function Header() {
 
       {/* ✅ Desktop Navbar */}
       <div
-        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${isVisible ? "navbar-visible bg-white " : ""
+        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${isVisible ? "navbar-visible bg-light " : ""
           } ${lastScrollY < 100 ? "bg-transparent" : "bg-light"}`}
         style={{ zIndex: 999 }}
       >
