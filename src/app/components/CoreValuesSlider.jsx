@@ -37,16 +37,20 @@ export default function CoreValuesGrid() {
         <div className="row px-md-5 g-4">
           {coreValues.map((item, index) => (
             <div className="col-lg-3 col-md-6 col-12" key={index}>
-              <div
-                className="corevalue position-relative"
-                style={{
-                  backgroundImage: `url(${item.img})`,
-                }}
-              >
-                <div className="corevalue-overlay">
-                  <h5 className="corevalue-title">{item.title}</h5>
-                  <p className="corevalue-text">{item.text}</p>
+              <div className="corevalue-card">
+
+                {/* Image */}
+                <div
+                  className="corevalue-img"
+                  style={{ backgroundImage: `url(${item.img})` }}
+                ></div>
+
+                {/* Text */}
+                <div className="corevalue-content">
+                  <h5>{item.title}</h5>
+                  <p>{item.text}</p>
                 </div>
+
               </div>
             </div>
           ))}

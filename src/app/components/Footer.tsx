@@ -79,11 +79,11 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3  d-flex py-5" data-wow-delay="300ms">
+                <div className="col-lg-2 col-md-3  d-flex justify-content-center py-5" data-wow-delay="300ms">
                   <div className="">
                     <div className="">
                       <p className="  fs-6 small text-uppercase m-center fw-bold">Quick Links</p>
-                      <div className="ps-md-4">
+                      <div className="ps-md-4 m-center">
                         <Link href="./" className="text-decoration-none  d-block text-dark mb-2">
                           Home
                         </Link>

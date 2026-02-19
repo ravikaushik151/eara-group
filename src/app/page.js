@@ -236,7 +236,7 @@ export default function Home() {
 
                   </div>
                   <div
-                    className="col-md-6 px-md-5 px-3 d-flex align-items-center"
+                    className="col-md-6 px-md-5 px-3 py-3 d-flex align-items-center"
                     data-aos="fade-left"
                     data-aos-duration={1500}
                   >

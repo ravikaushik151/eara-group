@@ -19673,60 +19673,78 @@ footer {
     background: #738E62;
 }
 
-.corevalue {
+
+
+.corevalue-card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #111;
+  height: 100%;
+  transition: transform 0.35s ease;
+  text-align: center;
+ 
+}
+
+/* Image */
+.corevalue-img {
   background-size: cover;
   background-position: 35% 100%;
-  min-height: 45vh;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
+  
 }
 
-/* Overlay base */
-.corevalue-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 22px;
-
-  opacity: 0;
-  transition: all 0.35s ease;
+/* Text Content */
+.corevalue-content {
+  padding: 18px;
+  background: #111;
+  text-align: center;
 }
 
-/* Hidden initially */
-.corevalue-title,
-.corevalue-text {
-  transform: translateY(15px);
-  transition: all 0.35s ease;
-}
-
-.corevalue-title {
+.corevalue-content h5 {
   color: #fff;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
-.corevalue-text {
-  color: #e0e0e0;
-  font-size: 14px;
+.corevalue-content p {
+  color: #fff;
+  
+  margin: 0;
   line-height: 1.5;
+  text-align: center;
 }
 
-/* Hover reveal */
-.corevalue:hover .corevalue-overlay {
-  opacity: 1;
-}
+/* Desktop Hover Effect */
+@media (min-width: 768px) {
+  .corevalue-card {
+    background: transparent;
+  }
 
-.corevalue:hover .corevalue-title,
-.corevalue:hover .corevalue-text {
-  transform: translateY(0);
-}
+  .corevalue-img {
+    height: 320px;
+    border-radius: 14px;
+  }
 
-/* Optional zoom */
-.corevalue:hover {
-  transform: scale(1.03);
-  transition: transform 0.35s ease;
+  .corevalue-content {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 22px;
+    opacity: 0;
+    transition: all 0.35s ease;
+    text-align: left;
+  }
+
+  .corevalue-card:hover .corevalue-content {
+    opacity: 1;
+  }
+
+  .corevalue-card:hover {
+    transform: scale(1.03);
+  }
 }
