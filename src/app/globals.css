@@ -19750,4 +19750,18 @@ footer {
 }
 
 .btn-dark {background: #4A4A4A !important;}
-.btn-primary {background: #091b36 !important;}
+.btn-primary {
+  background: #091b36 !important;
+  border-color: #091b36 !important;
+}
+.bg-light {background-color: #f8f8f8 !important;}
+.bg-primary { background: #091b36 !important;}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background: #091b36 !important;
+  border-color: #091b36 !important;
+  box-shadow: none !important; /* optional */
+}

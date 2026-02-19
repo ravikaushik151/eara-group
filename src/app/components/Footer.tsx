@@ -133,7 +133,7 @@ export default function Footer() {
 
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4  d-flex accent-bg py-4 justify-content-center align-items-center" data-wow-delay="400ms">
+                <div className="col-lg-4 col-md-4  d-flex bg-primary py-4 justify-content-center align-items-center" data-wow-delay="400ms">
                   <div className="">
                     <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold">Get in Touch</p>
                     <ContactForm
@@ -148,7 +148,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="pt-3 accent-bg" style={{ overflow: 'hidden' }}>
+      <div className="pt-3 bg-primary" style={{ overflow: 'hidden' }}>
         <div className="container">
           <div className="row">
             <div className="col-md-6">

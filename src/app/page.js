@@ -197,7 +197,7 @@ export default function Home() {
                   <div className="text-start m-center">
                     <Link
                       href="/about"
-                      className="btn btn-dark  border mt-1"
+                      className="btn btn-primary  border mt-1"
                     >
                       {" "}
                       Explore More
@@ -301,7 +301,7 @@ export default function Home() {
                         </div>
                       </div>
                       <p className="m-center py-md-0 py-1">
-                        <a href="/amidstnature" className="btn btn-dark">
+                        <a href="/amidstnature" className="btn btn-primary">
                           Explore More
                         </a>
                       </p>
@@ -351,7 +351,7 @@ export default function Home() {
 
                     <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
                     <div className="text-center py-3 my-3 small mt-auto">
-                      <Link href={`/blog/${post.slug}`} className="btn btn-dark">Read More</Link>
+                      <Link href={`/blog/${post.slug}`} className="btn btn-primary">Read More</Link>
                     </div>
                   </div>
                 </div>

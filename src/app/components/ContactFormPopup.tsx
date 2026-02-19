@@ -110,7 +110,7 @@ export default function ContactFormPopup({
                     style={{ 
                         backgroundColor: 'rgba(0,0,0,0.5)', 
                         // Ensure it is on top of other elements
-                        zIndex: 1050, 
+                        zIndex: 1060, 
                         position: 'fixed',
                         top: 0,
                         left: 0,
@@ -125,7 +125,7 @@ export default function ContactFormPopup({
                         // Click inside the dialog is prevented from propagating to the backdrop
                         onClick={stopPropagation}
                     >
-                        <div className="modal-content theme-bg-dark">
+                        <div className="modal-content ">
                             <div className="modal-header">
                                 <h5 className="modal-title theme-color-light">Get in Touch</h5>
                                 <button type="button" className="btn-close theme-bg-light" onClick={handleClose}></button>
