@@ -144,7 +144,7 @@ export default function Project() {
 
 
                                 <div className="text-center">
-                                    <Link href="/amidstnature" className="btn theme-bg-dark text-light my-1  ">
+                                    <Link href="/amidstnature" className="btn btn-primary text-light my-1  ">
                                         Explore More
                                     </Link>
                                 </div>

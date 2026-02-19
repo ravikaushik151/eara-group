@@ -69,7 +69,7 @@ export default function Contact() {
 </p>
                       <ContactForm
                         inputClass="form-control mb-2"
-                        buttonClass="btn btn-dark px-4"
+                        buttonClass="btn btn-primary px-4"
                       />
                     </div>
                   </div>

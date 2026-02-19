@@ -218,7 +218,7 @@ export default function Career() {
                     </div>
 
                     <div className="text-center col-md-12">
-                      <button type="submit" className="btn btn-dark py-2 px-4 mt-2">
+                      <button type="submit" className="btn btn-primary py-2 px-4 mt-2">
                         Submit
                       </button>
                     </div>

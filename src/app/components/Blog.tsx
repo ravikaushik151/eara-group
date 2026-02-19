@@ -201,7 +201,7 @@ export default function Blog() {
 
                                         {/* Use mt-auto on the button container to push it to the bottom */}
                                         <div className="text-center py-3 my-3 small mt-auto">
-                                            <Link href={`/blog/${post.slug}`} className="btn btn-dark">Read More</Link>
+                                            <Link href={`/blog/${post.slug}`} className="btn btn-primary">Read More</Link>
                                         </div>
                                     </div>
                                 </div>
