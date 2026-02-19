@@ -552,7 +552,7 @@ export default function Home() {
           <Gallery />
         {/*  <Construction />*/}
 
-          <section className="section_home-connectivity theme-bg-dark page-about-mv" id="location">
+          <section className="section_home-connectivity theme-bg-light page-about-mv" id="location">
             <div className="padding-global">
               <div className="container-large">
                 <div className="home-connectivity_content">
@@ -587,7 +587,7 @@ export default function Home() {
                         </h3>
                       </div>
                       <div className="w-100">
-                        <div className="text-size-regular text-color-offwhite theme-color-light m-center lh">
+                        <div className="text-size-regular   m-center lh">
                           <p className="text-start m-center">
                             Surrounded by serene greenery and nestled along the city&rsquo;s fast-developing Kanakapura stretch, Amidst Nature is among the most sought-after premium villa plots in Kanakapura Road.
                           </p>

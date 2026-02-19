@@ -125,8 +125,8 @@ export default function Header() {
                     ? "white-png logo img-fluid"   // top → white
                     : "dark-png logo img-fluid"    // scrolled → dark
                   : lastScrollY < 100
-                    ? "dark-png logo img-fluid"    // other pages top
-                    : "logo img-fluid"             // other pages scrolled
+                    ? "white-png logo img-fluid"    // other pages top
+                    : "dark-png logo img-fluid"             // other pages scrolled
               }
 
 
@@ -162,8 +162,8 @@ export default function Header() {
           <div className="d-flex align-items-center">
             {!pathname?.includes('/amidstnature') && (<ContactFormPopup
               buttonText="Get In Touch"
-              buttonClassName="btn  mx-md-4 px-3 py-2 text-decoration-none rounded-0 mx-2"
-              redirectUrl="/download-page"
+              buttonClassName="btn btn-primary  mx-md-4 px-3 py-2 text-decoration-none rounded-0 mx-2"
+              redirectUrl="/thankyou"
             />)}
             {pathname?.includes('/amidstnature') && (
               <Image

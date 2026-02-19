@@ -62,7 +62,7 @@ export default function MyAccordion({ items }: AccordionProps) {
             aria-labelledby={`heading${item.id}`}
           >
             <div
-              className="accordion-body theme-color-light"
+              className="accordion-body bg-white"
               dangerouslySetInnerHTML={{ __html: item.content }}
             ></div>
           </div>
