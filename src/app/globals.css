@@ -19672,3 +19672,61 @@ footer {
 .upcomingProjects .swiper-scrollbar-drag {
     background: #738E62;
 }
+
+.corevalue {
+  background-size: cover;
+  background-position: 35% 100%;
+  min-height: 45vh;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay base */
+.corevalue-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 22px;
+
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+/* Hidden initially */
+.corevalue-title,
+.corevalue-text {
+  transform: translateY(15px);
+  transition: all 0.35s ease;
+}
+
+.corevalue-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.corevalue-text {
+  color: #e0e0e0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Hover reveal */
+.corevalue:hover .corevalue-overlay {
+  opacity: 1;
+}
+
+.corevalue:hover .corevalue-title,
+.corevalue:hover .corevalue-text {
+  transform: translateY(0);
+}
+
+/* Optional zoom */
+.corevalue:hover {
+  transform: scale(1.03);
+  transition: transform 0.35s ease;
+}

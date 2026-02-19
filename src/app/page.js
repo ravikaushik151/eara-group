@@ -97,7 +97,7 @@ export default function Home() {
     <>
 
       <main className="main-wrapper">
-        <h1 className="d-none" style={{display:"none"}}>Eara Group</h1>
+        <h1 className="d-none" style={{ display: "none" }}>Eara Group</h1>
         <div className="overflow-clip" id="main-slider">
           <div
             id="carouselExampleDark"
@@ -118,7 +118,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="auto"
-                    fetchPriority="high" 
+                    fetchPriority="high"
                     // poster="/images/desktop-home-video.png"
                     style={{
                       objectFit: "cover",
@@ -233,7 +233,7 @@ export default function Home() {
                       beforeImg="/images/upcoming-projects.webp"
                       afterImg="/images/upcoming-projects.avif"
                     />
-                  
+
                   </div>
                   <div
                     className="col-md-6 px-md-5 px-3 d-flex align-items-center"
@@ -312,7 +312,7 @@ export default function Home() {
             </div>
           </section>
 
-        
+
 
           {/* Section 2: 360 Lifestyle Cards */}
           <CoreValuesSlider />
@@ -331,7 +331,7 @@ export default function Home() {
                     loading="lazy"
                     width={578}
                     height={200}
-                    style={{ minHeight: "250px", objectFit: "cover" }}
+                    style={{ minHeight: "320px", objectFit: "cover" }}
                     className="w-100 h-auto object-cover"
                   />
 
@@ -348,7 +348,11 @@ export default function Home() {
                       </h4>
                     </Link>
 
-                    <p className="theme-color-light">{post.excerpt}</p>
+
+                    <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                    <div className="text-center py-3 my-3 small mt-auto">
+                      <Link href={`/blog/${post.slug}`} className="btn btn-dark">Read More</Link>
+                    </div>
                   </div>
                 </div>
               ))}
