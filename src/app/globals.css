@@ -19750,7 +19750,7 @@ footer {
 }
 
 .btn-dark {background: #111111 !important;}
-.btn-primary {
+/* .btn-primary {
   background: #091b36 !important;
   border-color: #091b36 !important;
 }
@@ -19763,5 +19763,20 @@ footer {
 .show > .btn-primary.dropdown-toggle {
   background: #091b36 !important;
   border-color: #091b36 !important;
-  box-shadow: none !important; /* optional */
+  box-shadow: none !important;
+} */
+.btn-primary {
+  background: #111111 !important;
+  border-color: #111111 !important;
 }
+
+.bg-primary { background: #111111 !important;}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background: #111111 !important;
+  border-color: #111111 !important;
+  box-shadow: none !important; /* optional */
+} 
