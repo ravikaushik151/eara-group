@@ -15610,6 +15610,9 @@ h5 {
   filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
+.dark-png {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7471%) hue-rotate(205deg) brightness(91%) contrast(109%);
+}
 .object-fit-cover {
   object-fit: cover;
   height: 100%;
@@ -19492,11 +19495,11 @@ footer textarea::placeholder {
 }
 
 footer {
-
+/* 
   background:
     linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)),
     url('/images/Footer_2.webp') !important;
-  /* Original image */
+  Original image */
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: bottom center !important;
