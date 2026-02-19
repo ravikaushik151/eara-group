@@ -341,7 +341,7 @@ export default function ChannelPartner() {
                                     <div className="text-center">
                                         <button
                                             type="submit"
-                                            className="btn theme-bg-dark text-white py-2 px-4 mt-0"
+                                            className="btn btn-primary text-white py-2 px-4 mt-0"
                                             disabled={loading}
                                         >
                                             {loading ? "Submitting..." : "Submit Referral"}

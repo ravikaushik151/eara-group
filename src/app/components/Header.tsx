@@ -38,9 +38,9 @@ export default function Header() {
     <>
       {/* ✅ Mobile Navbar */}
       <nav
-        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-white accent-bg d-md-none shadow-sm ${isVisible
-          ? "navbar-visible bg-white accent-bg navbar-dark"
-          : "navbar-hidden"
+        className={`navbar-animated position-fixed top-0 w-100 navbar navbar-expand-lg bg-primary  d-md-none shadow-sm ${isVisible
+          ? "navbar-visible bg-primary  navbar-dark"
+          : "position-fixed  navbar-dark"
           }`}
         style={{ zIndex: 999 }}
       >
