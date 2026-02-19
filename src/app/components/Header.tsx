@@ -121,11 +121,15 @@ export default function Header() {
               height={66}
               className={
                 pathname?.replace(/\/$/, "").startsWith("/amidstnature")
-                  ? "white-png logo img-fluid" // removed white-png
+                  ? lastScrollY < 100
+                    ? "white-png logo img-fluid"   // top → white
+                    : "dark-png logo img-fluid"    // scrolled → dark
                   : lastScrollY < 100
-                    ? "white-png logo img-fluid"
-                    : "dark-png logo img-fluid"
+                    ? "dark-png logo img-fluid"    // other pages top
+                    : "logo img-fluid"             // other pages scrolled
               }
+
+
               priority
               fetchPriority="high"
             />
@@ -153,12 +157,12 @@ export default function Header() {
               </Link>
             ))}
 
-            
+
           </nav>
           <div className="d-flex align-items-center">
             {!pathname?.includes('/amidstnature') && (<ContactFormPopup
               buttonText="Get In Touch"
-              buttonClassName="btn btn-primary mx-md-4 px-3 py-2 text-decoration-none rounded-0 mx-2"
+              buttonClassName="btn  mx-md-4 px-3 py-2 text-decoration-none rounded-0 mx-2"
               redirectUrl="/download-page"
             />)}
             {pathname?.includes('/amidstnature') && (
