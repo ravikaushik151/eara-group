@@ -19748,3 +19748,6 @@ footer {
     transform: scale(1.03);
   }
 }
+
+.btn-dark {background: #4A4A4A !important;}
+.btn-primary {background: #091b36 !important;}

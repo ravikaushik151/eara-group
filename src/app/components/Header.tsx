@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import ContactFormPopup from "./ContactFormPopup";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -84,7 +85,7 @@ export default function Header() {
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
                 { href: "/project", label: "Project" },
-                
+
                 { href: "/channel-partner", label: "Channel Partner" },
                 { href: "/blog", label: "Blogs" },
                 { href: "/career", label: "Career" },
@@ -103,11 +104,11 @@ export default function Header() {
 
       {/* ✅ Desktop Navbar */}
       <div
-        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${isVisible ? "navbar-visible bg-white " : "navbar-hidden"
-          } ${lastScrollY < 100 ? "bg-transparent" : "accent-bg"}`}
+        className={`navbar-animated position-fixed top-0 w-100 d-none d-md-block ${isVisible ? "navbar-visible bg-white " : ""
+          } ${lastScrollY < 100 ? "bg-transparent" : "bg-white"}`}
         style={{ zIndex: 999 }}
       >
-        <div className="container py-2 d-flex justify-content-between align-items-center">
+        <div className="container py-2   d-flex justify-content-between align-items-center">
           <Link href="/">
             <Image
               src={
@@ -123,13 +124,13 @@ export default function Header() {
                   ? "white-png logo img-fluid" // removed white-png
                   : lastScrollY < 100
                     ? "white-png logo img-fluid"
-                    : "white-png logo img-fluid"
+                    : "dark-png logo img-fluid"
               }
               priority
               fetchPriority="high"
             />
           </Link>
-          <nav className="d-flex gap-4 justify-content-center">
+          <nav className="d-flex gap-4 ps-md-5 justify-content-center">
             {[
               { href: "/", label: "Home" },
               { href: "/about", label: "About" },
@@ -142,7 +143,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-decoration-none d-flex align-items-center gap-2 mx-2 ${lastScrollY < 100 ? "text-white" : "text-white"
+                className={`text-decoration-none d-flex align-items-center gap-2 mx-2 ${lastScrollY < 100 ? "text-white" : "text-black"
                   }`}
               >
                 {/* <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
@@ -151,9 +152,15 @@ export default function Header() {
                 <span>{link.label}</span>
               </Link>
             ))}
+
+            
           </nav>
           <div className="d-flex align-items-center">
-            {!pathname?.includes('/amidstnature') && (<p style={{ minWidth: "120px" }}></p>)}
+            {!pathname?.includes('/amidstnature') && (<ContactFormPopup
+              buttonText="Get In Touch"
+              buttonClassName="btn btn-primary mx-md-4 px-3 py-2 text-decoration-none rounded-0 mx-2"
+              redirectUrl="/download-page"
+            />)}
             {pathname?.includes('/amidstnature') && (
               <Image
                 src="/images/Amidst-Nature-Logo.png"
