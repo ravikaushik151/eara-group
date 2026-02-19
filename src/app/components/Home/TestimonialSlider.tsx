@@ -20,7 +20,7 @@ const testimonials = [
     name: "Arjun Verma",
   },
   {
-    text: "I've been waiting for a project that truly respects nature without compromising on modern living, EARA's Amidst Nature is exactly that. The moment I saw their plan, I knew this is where I want to build my forever home. A green, peaceful sanctuary that's still so well-connected to the city!",
+    text: "I've been waiting for a project that truly respects nature without compromising on modern living, EARA's Amidst Nature is exactly that. The moment I saw their plan, I knew this is where I want to build my forever home. A green, peaceful sanctuary that's still so well connected to the city!",
     name: "Neha Iyer",
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Suresh Nair",
   },
   {
-    text: "What stood out to me was EARA's commitment to sustainability. Amidst Nature isn't just another real estate project — it's a green investment for future generations. I'm happy to be part of something so mindful and long-term.",
+    text: "What stood out to me was EARA's commitment to sustainability. Amidst Nature isn't just another real estate project, it's a green investment for future generations. I'm happy to be part of something so mindful and long-term.",
     name: "Ananya Reddy",
   },
 ];
