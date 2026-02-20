@@ -18,7 +18,7 @@ interface ChannelPartnerFormData {
     message: string; // Hidden message/default
 }
 
-export default function ChannelPartner() {
+export default function ChannelPartnerForm() {
     const [formData, setFormData] = useState<ChannelPartnerFormData>({
         cpFirmName: '',
         cpFirmEmail: '',
@@ -179,28 +179,16 @@ export default function ChannelPartner() {
                     </div>
 
                     <div className="row justify-content-center">
-                        <div className="col-lg-6 d-flex align-items-center">
-                            <div>
-                                <p className='lh-lg'>
-                                    At EARA Group, we believe that great collaborations build greater success stories. As an Eara Group Channel Partner, you become an integral part of our vision - shaping communities, driving innovation, and redefining excellence in real estate.   </p>
-                                <p className='lh-lg'> If you’re looking to grow as a trusted real estate channel partner in Bangalore, this is your opportunity to join a brand built on trust, transparency, and long-term value. Together, we’ll unlock new opportunities, create lasting value, and grow stronger as one team with a shared purpose. </p>
-
-                                <p className='lh-lg'>
-                                    Partner with us and be a part of a journey that’s truly transformative.
-
-                                </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 p-4">
+                       
+                        <div className="col-lg-6">
                             <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
-                                <h5 className="text-uppercase mb-0 theme-color-dark text-center" style={{ color: '#282563' }}>
+                                <h5 className="text-uppercase mb-4 theme-color-dark" style={{ color: '#282563' }}>
                                     Partner With Us
                                 </h5>
-                                <p className='text-center theme-color-dark small'> (Scan to connect with new opportunities.)</p>
-                                <Image src="/img/QR.png" className='img-fluid' width={1024} height={1024} alt="channel partner qr" />
-                                {/* <form onSubmit={handleSubmit}>
+
+                                <form onSubmit={handleSubmit}>
                                     <div className="row">
-                                      
+                                        {/* CP/Firm Details */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="cpFirmName" className="form-label visually-hidden">CP/Firm Name</label>
                                             <input
@@ -214,7 +202,7 @@ export default function ChannelPartner() {
                                                 required
                                             />
                                         </div>
-                                      
+                                        {/* Prospect Name */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="prospectName" className="form-label visually-hidden">Prospect Name</label>
                                             <input
@@ -229,7 +217,7 @@ export default function ChannelPartner() {
                                             />
                                         </div>
 
-                                        
+                                        {/* CP/Firm Email */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="cpFirmEmail" className="form-label visually-hidden">CP/Firm Email</label>
                                             <input
@@ -243,7 +231,7 @@ export default function ChannelPartner() {
                                                 required
                                             />
                                         </div>
-                                       
+                                        {/* Prospect Email */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="prospectEmail" className="form-label visually-hidden">Prospect Email</label>
                                             <input
@@ -258,7 +246,7 @@ export default function ChannelPartner() {
                                             />
                                         </div>
 
-                                       
+                                        {/* CP/Firm Mobile */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="cpFirmMobile" className="form-label visually-hidden">CP/Firm Mobile</label>
                                             <input
@@ -275,9 +263,9 @@ export default function ChannelPartner() {
                                                 title="Must be a 10-digit number"
                                             />
                                         </div>
-                                       
+                                        {/* Prospect Mobile Number (with country code placeholder/styling from image) */}
                                         <div className="col-md-6 form-group mb-3 d-flex">
-                                           
+                                            {/* Simplified country code representation from image */}
                                             <div className="input-group">
                                                 <span className="input-group-text py-2" style={{ backgroundColor: '#f8f9fa', borderRight: 'none' }}>+91</span>
                                                 <label htmlFor="prospectMobileNumber" className="form-label visually-hidden">Prospect Mobile Number</label>
@@ -294,7 +282,7 @@ export default function ChannelPartner() {
                                             </div>
                                         </div>
 
-                                       
+                                        {/* CP Agency Rera Number */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="cpAgencyReraNumber" className="form-label visually-hidden">CP Agency Rera Number</label>
                                             <input
@@ -307,7 +295,7 @@ export default function ChannelPartner() {
                                                 onChange={handleChange}
                                             />
                                         </div>
-                                        
+                                        {/* Project Interested In (Dropdown) */}
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="projectInterestedIn" className="form-label visually-hidden">Project Interested In</label>
                                             <select
@@ -323,7 +311,19 @@ export default function ChannelPartner() {
                                             </select>
                                         </div>
 
-                                       
+                                        {/* The original text area is now effectively used for the hidden/default message
+                                            but can be left here as an optional message field if desired, or removed. */}
+                                        {/* <div className="col-12 form-group mb-3">
+                                            <label htmlFor="message" className="form-label visually-hidden">Message</label>
+                                            <textarea
+                                                name="message"
+                                                id="message"
+                                                className="form-control"
+                                                placeholder="Additional Notes (Optional)"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                            ></textarea>
+                                        </div> */}
 
                                     </div>
 
@@ -339,7 +339,7 @@ export default function ChannelPartner() {
 
                                     {note && <p className={`mt-2 text-center ${success ? 'text-success' : 'text-danger'}`} style={{ fontWeight: 600 }}>{note}</p>}
                                     {success && <p className="text-success mt-2 text-center">✅ Thank you! Your referral has been submitted.</p>}
-                                </form> */}
+                                </form>
 
                             </div>
                         </div>
