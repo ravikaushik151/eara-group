@@ -179,7 +179,7 @@ export default function ChannelPartner() {
                     </div>
 
                     <div className="row justify-content-center">
-                        <div className="col-lg-6 d-flex align-items-center">
+                       {/* <div className="col-lg-6 d-flex align-items-center">
                             <div>
                                 <p className='lh-lg'>
                                     At EARA Group, we believe that great collaborations build greater success stories. As an Eara Group Channel Partner, you become an integral part of our vision - shaping communities, driving innovation, and redefining excellence in real estate.   </p>
@@ -190,7 +190,7 @@ export default function ChannelPartner() {
 
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-lg-6 p-4">
                             <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
                                 <h5 className="text-uppercase mb-0 theme-color-dark text-center" style={{ color: '#282563' }}>

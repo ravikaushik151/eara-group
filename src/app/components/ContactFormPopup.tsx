@@ -1,6 +1,8 @@
 'use client';
 
 import { useState, ChangeEvent, FormEvent, MouseEvent } from 'react';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css'; // Essential for flag dropdown styling
 
 // Define a type for the props
 interface ContactFormPopupProps {
@@ -31,7 +33,12 @@ export default function ContactFormPopup({
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // Validation remains the same...
+    // Handler for the international phone input
+    const handlePhoneChange = (phone: string) => {
+        setFormData((prev) => ({ ...prev, phone: phone }));
+    };
+
+    // Validation logic
     const validateForm = () => {
         let isValid = true;
         if (!formData.name.match(/^[a-zA-Z ]+$/)) {
@@ -40,8 +47,14 @@ export default function ContactFormPopup({
         } else if (!formData.email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
             setNote('Please enter a valid email address.');
             isValid = false;
-        } else if (!formData.phone.match(/^\d{10}$/)) {
-            setNote('Phone number must be 10 digits.');
+        } 
+        /**
+         * Updated Phone Validation: 
+         * Since international numbers vary in length and include '+', 
+         * we check for a minimum length instead of a strict 10-digit regex.
+         */
+        else if (formData.phone.length < 10) {
+            setNote('Please enter a valid phone number.');
             isValid = false;
         } else {
             setNote(null);
@@ -132,9 +145,16 @@ export default function ContactFormPopup({
                                 <button type="button" className="btn-close theme-bg-light" onClick={handleClose}></button>
                             </div>
                             <div className="modal-body">
-                                {note && <p style={{ color: note && (note.includes('Error') || note.includes('valid') || note.includes('digits')) ? 'red' : 'green', fontWeight: 600 }}>{note}</p>}
+                                {note && (
+                                    <p style={{ 
+                                        color: (note.includes('Error') || note.includes('valid') || note.includes('digits') || note.includes('contain')) ? 'red' : 'green', 
+                                        fontWeight: 600 
+                                    }}>
+                                        {note}
+                                    </p>
+                                )}
                                 <form onSubmit={handleSubmit}>
-                                    <div className="mb-1">
+                                    <div className="mb-2">
                                         <input
                                             type="text"
                                             name="name"
@@ -146,7 +166,7 @@ export default function ContactFormPopup({
                                             disabled={submitting}
                                         />
                                     </div>
-                                    <div className="mb-1">
+                                    <div className="mb-2">
                                         <input
                                             type="email"
                                             name="email"
@@ -158,19 +178,23 @@ export default function ContactFormPopup({
                                             disabled={submitting}
                                         />
                                     </div>
-                                    <div className="mb-1">
-                                        <input
-                                            type="tel"
-                                            name="phone"
-                                            placeholder='Phone'
-                                            className="form-control"
+
+                                    {/* International Phone Input */}
+                                    <div className="mb-2">
+                                        <PhoneInput
+                                            defaultCountry="in"
                                             value={formData.phone}
-                                            onChange={handleChange}
-                                            required
+                                            onChange={handlePhoneChange}
                                             disabled={submitting}
+                                            inputClassName="form-control w-100"
+                                            style={{
+                                                '--react-international-phone-height': '38px', // Matches Bootstrap default
+                                                '--react-international-phone-border-radius': '0.375rem',
+                                            } as React.CSSProperties}
                                         />
                                     </div>
-                                    <div className="mb-1">
+
+                                    <div className="mb-2">
                                         <textarea
                                             name="message"
                                             placeholder='Message'
@@ -195,5 +219,3 @@ export default function ContactFormPopup({
         </>
     );
 }
-// Example Usage:
-// <ContactFormPopup buttonText="Download Brochure" buttonClassName="btn btn-warning" redirectUrl="/download-success" />

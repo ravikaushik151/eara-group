@@ -68,7 +68,7 @@ export default function Contact() {
                       <p>Visit the Eara Group location to experience our work firsthand, or reach out to our team for any inquiries about projects, partnerships, or collaborations.
 </p>
                       <ContactForm
-                        inputClass="form-control mb-2"
+                        inputClass="form-control rounded-0"
                         buttonClass="btn btn-primary px-4"
                       />
                     </div>

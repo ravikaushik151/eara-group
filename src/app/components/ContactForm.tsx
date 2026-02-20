@@ -1,5 +1,7 @@
 'use client';
 import { useState, ChangeEvent, FormEvent } from 'react';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css'; // Required for flags and layout
 
 interface FormData {
   name: string;
@@ -36,6 +38,13 @@ export default function ContactForm({
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  /** * Specific handler for react-international-phone 
+   * since it returns a string value directly.
+   */
+  const handlePhoneChange = (phone: string) => {
+    setForm((prev) => ({ ...prev, mobile: phone }));
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
@@ -51,9 +60,12 @@ export default function ContactForm({
       return;
     }
 
-    const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(form.mobile)) {
-      setNote('Phone number must be 10 digits!');
+    /**
+     * Note: Strict 10-digit validation is removed here to allow 
+     * international formats, but we check if it's reasonably long.
+     */
+    if (form.mobile.length < 10) {
+      setNote('Please enter a valid phone number!');
       return;
     }
 
@@ -68,7 +80,6 @@ export default function ContactForm({
       message: form.message || 'interested',
       subject: 'Enquire From Eara Group - Website',
       form_source: 'Eara Group - Website',
-    //  additionalRecipients: ['sales@earagroup.com'],
     };
 
     try {
@@ -118,15 +129,28 @@ export default function ContactForm({
         className={inputClass}
         required
       />
-      <input
-        type="tel"
-        name="mobile"
-        placeholder="Mobile"
-        value={form.mobile}
-        onChange={handleChange}
-        className={inputClass}
-        required
-      />
+
+      {/* International Phone Input Integration */}
+      <div className="phone-input-wrapper ">
+        <PhoneInput
+          defaultCountry="in"
+          value={form.mobile}
+          onChange={handlePhoneChange}
+          inputClassName={inputClass}
+          className="w-100"
+          inputStyle={{
+            width: '100%',
+            height: '45px',   
+          }}
+          style={{
+            // CSS Variables to force consistency with your existing styles
+            '--react-international-phone-border-radius': '0px',
+            '--react-international-phone-height': '45px', // Matches standard Bootstrap/Input height
+            '--react-international-phone-border-color': '#dee2e6',
+          } as React.CSSProperties}
+        />
+      </div>
+
       {!hideMessageField && (
         <textarea
           name="message"
