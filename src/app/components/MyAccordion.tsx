@@ -21,7 +21,7 @@ export default function MyAccordion({ items }: AccordionProps) {
   };
 
   return (
-    <div className="accordion theme-bg-dark" id="myAccordion">
+    <div className="accordion " id="myAccordion">
       {items.map((item) => (
         <div
           className="accordion-item theme-bg-dark border border-dark rounded-0 mb-3"
