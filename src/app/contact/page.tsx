@@ -11,7 +11,7 @@ export const metadata = {
   alternates: {
     canonical: "https://earagroup.com/contact/",
   },
- 
+
 };
 export default function Contact() {
   return (
@@ -29,7 +29,7 @@ export default function Contact() {
               />
               <div className="overlay2 position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                 <div className="text-white d-block text-center">
-                  <h1 className="fs-1 mb-3 text-uppercase" style={{marginTop:"-50px"}}>Contact Us</h1>
+                  <h1 className="fs-1 mb-3 text-uppercase" style={{ marginTop: "-50px" }}>Contact Us</h1>
                   {/* <p className="fs-6 text-center">
                     <Link className="text-white text-decoration-none " href="/">
                       Home
@@ -62,11 +62,11 @@ export default function Contact() {
                   <div className="contact_form_inner px-md-5 px-3 mb-4">
                     <div className="contact_field">
                       <p className="text-main  theme-color-dark mb-3 fw-semibold fs-6">
-                      Feel free to contact us any time. We will get back to you as soon as we can!
+                        Feel free to contact us any time. We will get back to you as soon as we can!
 
                       </p>
                       <p>Visit the Eara Group location to experience our work firsthand, or reach out to our team for any inquiries about projects, partnerships, or collaborations.
-</p>
+                      </p>
                       <ContactForm
                         inputClass="form-control rounded-0"
                         buttonClass="btn btn-primary px-4"
@@ -81,17 +81,9 @@ export default function Contact() {
                     <div className="py-md-4">
                       <h4 className="text-black mb-3 theme-color-light ">Contact Info</h4>
 
-                      {/* <div className="d-flex info_single align-items-center pb-2">
-                        <Link
-                          href="tel:+911234567890"
-                          className="text-white text-decoration-none theme-color-dark"
-                        >
-                          <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 128C241 128 175.3 185.3 162.3 260.7C171.6 257.7 181.6 256 192 256L208 256C234.5 256 256 277.5 256 304L256 400C256 426.5 234.5 448 208 448L192 448C139 448 96 405 96 352L96 288C96 164.3 196.3 64 320 64C443.7 64 544 164.3 544 288L544 456.1C544 522.4 490.2 576.1 423.9 576.1L336 576L304 576C277.5 576 256 554.5 256 528C256 501.5 277.5 480 304 480L336 480C362.5 480 384 501.5 384 528L384 528L424 528C463.8 528 496 495.8 496 456L496 435.1C481.9 443.3 465.5 447.9 448 447.9L432 447.9C405.5 447.9 384 426.4 384 399.9L384 303.9C384 277.4 405.5 255.9 432 255.9L448 255.9C458.4 255.9 468.3 257.5 477.7 260.6C464.7 185.3 399.1 127.9 320 127.9z" /></svg>
-                          <span> +91 80 XXX XXXX</span>
-                        </Link>
-                      </div>  */}
 
-                      
+
+
 
                       <div className="d-flex info_single pb-2">
 
@@ -101,7 +93,15 @@ export default function Contact() {
                           MM-201, 2nd Floor,<br /> MANYA MANSION #11,<br /> Blue Bells Street, 7th Main,<br /> 7th Cross, Rajeevgandhinagar, <br />Bangalore-560097
                         </span>
                       </div>
-
+                      <div className="d-flex info_single align-items-center pb-2">
+                        <Link
+                          href="tel:+919071070207"
+                          className="text-white text-decoration-none theme-color-dark"
+                        >
+                          <svg style={{ width: "20px", height: "20px" }} className="w-8 h-8 text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 128C241 128 175.3 185.3 162.3 260.7C171.6 257.7 181.6 256 192 256L208 256C234.5 256 256 277.5 256 304L256 400C256 426.5 234.5 448 208 448L192 448C139 448 96 405 96 352L96 288C96 164.3 196.3 64 320 64C443.7 64 544 164.3 544 288L544 456.1C544 522.4 490.2 576.1 423.9 576.1L336 576L304 576C277.5 576 256 554.5 256 528C256 501.5 277.5 480 304 480L336 480C362.5 480 384 501.5 384 528L384 528L424 528C463.8 528 496 495.8 496 456L496 435.1C481.9 443.3 465.5 447.9 448 447.9L432 447.9C405.5 447.9 384 426.4 384 399.9L384 303.9C384 277.4 405.5 255.9 432 255.9L448 255.9C458.4 255.9 468.3 257.5 477.7 260.6C464.7 185.3 399.1 127.9 320 127.9z" /></svg>
+                          <span> +91 907 107 0207</span>
+                        </Link>
+                      </div>
                       <div className="d-flex info_single align-items-center pb-2">
                         <Link
                           href="mailto:info@earagroup.com"
