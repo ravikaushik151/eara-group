@@ -334,22 +334,22 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="same-gap mysection visible theme-bg-dark " >
+          <section className="padding-global mysection visible theme-bg-dark " >
             <div className="container-fluid">
               <div className="row p-0">
-                <div className="col-md-4 d-flex justify-content-center align-items-center">
+                <div className="col-md-12 d-flex justify-content-center align-items-center">
                   <div className="p-3">
                     <div className="row">
                       <div className="col-md-12">
                         <div><div className="title text-center">
-                          <h2 className="mb-3 theme-color-light">Project Unique Selling Points (USPs)</h2>
+                          <h2 className="mb-3 theme-color-light text-center">Project Unique Selling Points (USPs)</h2>
                         </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-8 d-flex justify-content-center align-items-center">
+                <div className="col-md-12 px-md-5 d-flex justify-content-center align-items-center">
                   <div className="p-3">
                     <div className="row">
                       <div className="col-md-3 ">
@@ -602,7 +602,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-md-10">
+                      <div className="col-md-12">
                         <MyAccordion items={faqItems} />
                       </div>
 

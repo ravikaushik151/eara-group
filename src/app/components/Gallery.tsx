@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-const slides = Array.from({ length: 5 }, (_, i) => ({
+const slides = Array.from({ length: 7 }, (_, i) => ({
   src: `/images/gallery/images${i + 1}.webp`,
   alt: `Gallery Image ${i + 1}`,
 }));
@@ -88,7 +88,7 @@ export default function Gallery() {
               modules={[Navigation, Thumbs, Mousewheel]}
               onSwiper={setThumbsSwiper}
               direction="vertical"
-              spaceBetween={20}
+              spaceBetween={50}
               slidesPerView={2}
               loop
               mousewheel
@@ -163,7 +163,7 @@ export default function Gallery() {
       <style jsx global>{`
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 400px;
+          max-height: 520px;
         }
         .swiper-thumb-image {
           opacity: 0.6;
