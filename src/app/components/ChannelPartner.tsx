@@ -193,10 +193,10 @@ export default function ChannelPartner() {
                         </div> */}
                         <div className="col-lg-6 p-4">
                             <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
-                                <h5 className="text-uppercase mb-0 theme-color-dark text-center" style={{ color: '#282563' }}>
+                                {/* <h5 className="text-uppercase mb-0 theme-color-dark text-center" style={{ color: '#282563' }}>
                                     Partner With Us
                                 </h5>
-                                <p className='text-center theme-color-dark small'> (Scan to connect with new opportunities.)</p>
+                                <p className='text-center theme-color-dark small'> (Scan to connect with new opportunities.)</p> */}
                                 <Image src="/img/QR.png" className='img-fluid' width={1024} height={1024} alt="channel partner qr" />
                                 {/* <form onSubmit={handleSubmit}>
                                     <div className="row">
