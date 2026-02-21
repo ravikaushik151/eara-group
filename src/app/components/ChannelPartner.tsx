@@ -192,7 +192,7 @@ export default function ChannelPartner() {
                             </div>
                         </div> */}
                         <div className="col-lg-6 p-4">
-                            <div className="px-3 px-md-4 py-4 border rounded shadow-sm bg-white">
+                            <div className="px-3 px-md-4 py-4  rounded shadow-sm bg-white">
                                 {/* <h5 className="text-uppercase mb-0 theme-color-dark text-center" style={{ color: '#282563' }}>
                                     Partner With Us
                                 </h5>
