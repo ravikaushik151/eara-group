@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="container ">
             <div className="site-footer__top-inner  py-2">
               <div className="row  pb-5">
-                <div className="col-lg-3 col-md-3 pb-2 d-flex align-items-center justify-content-center" data-wow-delay="100ms">
+                <div className="col-lg-2 col-md-2 pb-2 d-flex align-items-center justify-content-center" data-wow-delay="100ms">
                   <div className=" ">
 
                     <Link href="/">
@@ -28,7 +28,7 @@ export default function Footer() {
 
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-3  d-flex py-5 " data-wow-delay="200ms">
+                <div className="col-lg-3 col-md-3  d-flex py-5 ps-md-5" data-wow-delay="200ms">
                   <div className=" ">
                     <div className="">
                       <p className=" fs-6 small text-uppercase m-center fw-bold">OUR ADDRESS</p>
@@ -79,7 +79,7 @@ export default function Footer() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-2 col-md-3  d-flex justify-content-center py-5" data-wow-delay="300ms">
+                <div className="col-lg-3 col-md-3  d-flex justify-content-center py-5" data-wow-delay="300ms">
                   <div className="">
                     <div className="">
                       <p className="  fs-6 small text-uppercase m-center fw-bold">Quick Links</p>
