@@ -133,8 +133,8 @@ export default function Footer() {
 
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4  d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
-                  <div className="bg-primary px-3  py-4">
+                <div className="col-lg-4 col-md-4 bg-primary py-4 d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
+                  <div className="bg-primary  ">
                     <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold">Get in Touch</p>
                     <ContactForm
                       inputClass="form-control mb-0 rounded-0"
