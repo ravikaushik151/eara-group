@@ -9,7 +9,7 @@ export default function Footer() {
 
       <footer className="footer  text-dark theme-bg-dark" >
         <div className="site-footer__top bg-opacity-75" >
-          <div className="container-fluid px-md-5">
+          <div className="container ">
             <div className="site-footer__top-inner  py-2">
               <div className="row  pb-5">
                 <div className="col-lg-3 col-md-3 pb-2 d-flex align-items-center justify-content-center" data-wow-delay="100ms">
@@ -133,11 +133,11 @@ export default function Footer() {
 
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 bg-primary py-4 d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
-                  <div className="bg-primary  ">
-                    <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold">Get in Touch</p>
+                <div className="col-lg-4 col-md-4  d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
+                  <div className="bg-primary  px-4 py-4">
+                    <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold pb-1">Get in Touch</p>
                     <ContactForm
-                      inputClass="form-control mb-0 rounded-0"
+                      inputClass="form-control mb-0 rounded-0 "
                       buttonClass="btn btn-light px-4"
                     />
                   </div>
