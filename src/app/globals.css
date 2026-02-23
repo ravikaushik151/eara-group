@@ -13970,7 +13970,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "Poppins", sans-serif;
   font-display: swap;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 /* Focus state style for keyboard navigation for the focusable elements */
@@ -19371,7 +19371,7 @@ section {
 
 .section-2 h2,
 section h2 {
-  font-size: 2.5rem !important;
+  font-size: 2.2rem !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
   font-family: "Poppins", sans-serif !important;
@@ -19393,7 +19393,7 @@ section h2 {
 
   .section-2 h2,
   section h2 {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
     font-weight: 600 !important;
     text-transform: uppercase !important;
     font-family: "Poppins", sans-serif !important;
