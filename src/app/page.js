@@ -230,7 +230,7 @@ export default function Home() {
                     planned with precision, combining modern infrastructure,
                     long-term value, and green living at its core.
                   </p>
-                  <div className="text-start m-center mb-md-5 ">
+                  <div className="text-center m-center mb-md-5 ">
                     <Link
                       href="/about"
                       className="btn btn-primary  border mt-1 mb-md-5 "
