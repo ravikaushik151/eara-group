@@ -30,7 +30,7 @@ export default function CoreValuesGrid() {
         <div className="row px-md-5 justify-content-center">
                     <div className="title text-center mb-3">
                         <h2 className="text-black mb-4 theme-color-dark fw-bold">
-                            Eara Group Core Values
+                            Our Core Values
                         </h2>
                     </div>
                 </div>

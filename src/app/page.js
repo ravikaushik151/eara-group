@@ -211,7 +211,7 @@ export default function Home() {
               <div className="row ">
                 <div className="col-md-5 offset-md-6 ">
                   <h2 className="mb-0 theme-color-dark">
-                    Green Thinking. Luxurious Living.
+                    Green Thinking.<br/> Luxurious Living.
                   </h2>
                   <span className="fs-4 theme-color-dark">
                     Because true luxury is not loud. It&rsquo;s peaceful.
@@ -230,7 +230,7 @@ export default function Home() {
                     planned with precision, combining modern infrastructure,
                     long-term value, and green living at its core.
                   </p>
-                  <div className="text-center m-center mb-md-5 ">
+                  <div className="text-start m-center mb-md-5 ">
                     <Link
                       href="/about"
                       className="btn btn-primary  border mt-1 mb-md-5 "
@@ -297,8 +297,8 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="noclass">
-                        <p className="text-justify m-center lh-md text-black mt-3 theme-color-light ">
-                          The project is nestled just Off Kanakapura Main Road,{" "}
+                        <p className="text-justify pe-md-5 m-center lh-md text-black mt-3 theme-color-light ">
+                          The project is nestled just Off Kanakapura Main Road,
                           <br /> thoughtfully designed to offer a blend of
                           serene living and modern infrastructure.
                         </p>
@@ -386,7 +386,7 @@ export default function Home() {
 
 
                     <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                    <div className="text-center py-3 my-3 small mt-auto">
+                    <div className="text-center pt-5 mb-3 my-3 small mt-auto">
                       <Link href={`/blog/${post.slug}`} className="btn btn-primary">Read More</Link>
                     </div>
                   </div>

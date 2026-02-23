@@ -209,7 +209,7 @@ export default function Blog() {
                                         <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
 
                                         {/* Use mt-auto on the button container to push it to the bottom */}
-                                        <div className="text-center py-3 my-3 small mt-auto">
+                                        <div className="text-center pt-5 mb-3 mt-5 small mt-auto">
                                             <Link href={`/blog/${post.slug}`} className="btn btn-primary">Read More</Link>
                                         </div>
                                     </div>

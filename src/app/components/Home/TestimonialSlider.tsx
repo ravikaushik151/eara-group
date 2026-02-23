@@ -36,13 +36,13 @@ const testimonials = [
 const TestimonialSlider = ({
   sectionClass = "px-md-5 px-3 bg-light theme-bg-dark testimonials-light",
   headingClass = "text-center mb-4 fw-bold theme-color-light",
-  cardClass = "info-box p-4 bg-white theme-bg-light shadow-sm h-100 rounded d-flex flex-column justify-content-between mb-md-5",
-  textClass = "theme-color-dark mb-3",
-  nameClass = "text-center fw-bold theme-color-dark fw-bold mt-auto",
+  cardClass = "info-box px-5 py-5 bg-white theme-bg-light shadow-sm h-100 rounded d-flex flex-column justify-content-between mb-md-5",
+  textClass = "theme-color-dark my-3 lh-lg",
+  nameClass = "text-center fw-bold theme-color-dark fw-bold mt-auto ",
 }) => {
   return (
     <section className={sectionClass}>
-      <h2 className={headingClass}>TESTIMONIALS</h2>
+      <h2 className={headingClass}>SUCCESS STORY </h2>
 
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -58,9 +58,12 @@ const TestimonialSlider = ({
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className={cardClass}>
-              <p className={textClass}>{item.text}</p>
-              <h6 className={nameClass}>- {item.name}</h6>
+            <div >
+              <div className={cardClass}>
+                <p className={textClass}>{item.text}</p>
+                <h6 className={nameClass}>- {item.name}</h6>
+              </div>
+
             </div>
           </SwiperSlide>
         ))}

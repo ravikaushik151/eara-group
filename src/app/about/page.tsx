@@ -33,7 +33,7 @@ export default function About() {
                     {" "}
                     About us
                   </h1>
-                  <p className="text-center d-block fs-6 ">
+                  <p className="text-center d-block fs-6 d-none">
                     <Link
                       className="text-white text-decoration-none text-brown"
                       href="/"
