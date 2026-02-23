@@ -22,7 +22,7 @@ const staticPosts: Post[] = [
         slug: "bmrda-residential-plots-in-kanakapura-road",
         title:
             "BMRDA Residential Plots in Kanakapura Road | Investment Guide",
-        date: "2026-02-23",
+        date: "2026-02-16",
         image: "/images/bmrda-residential-plots-in-kanakapura-road.webp",
         excerpt:
             "When it comes to plotted developments, the smartest buyers don’t start with aesthetics or “future potential.” They start with legality. In a growth corridor like Kanakapura Road",
