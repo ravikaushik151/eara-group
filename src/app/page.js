@@ -259,7 +259,7 @@ export default function Home() {
                 <div className="row">
                   <div className="title text-center mb-3">
                     <h2 className="text-black mb-4 theme-color-light">
-                      Upcoming Project
+                      Ongoing Project
                     </h2>
                   </div>
                 </div>
