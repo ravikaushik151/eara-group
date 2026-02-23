@@ -9,7 +9,7 @@ export default function Footer() {
 
       <footer className="footer  text-dark theme-bg-dark" >
         <div className="site-footer__top bg-opacity-75" >
-          <div className="container">
+          <div className="container-fluid px-md-5">
             <div className="site-footer__top-inner  py-2">
               <div className="row  pb-5">
                 <div className="col-lg-3 col-md-3 pb-2 d-flex align-items-center justify-content-center" data-wow-delay="100ms">
