@@ -55,7 +55,7 @@ export default function Footer() {
 
                     <div className=" footer-widget__Contact">
                       <div className="">
-                        <p className=" fw-bold text-uppercase  m-center ">CONNECT WITH US</p>
+                        <p className="mb-2 fw-bold text-uppercase  m-center ">CONNECT WITH US</p>
                       </div>
                       <div className="site-footer__social d-flex flex-wrap gap-2 justify-content-md-start justify-content-center  ">
                         <Link href="https://www.facebook.com/profile.php?id=61577460860336" className="text-dark " target="_blank">
@@ -133,12 +133,12 @@ export default function Footer() {
 
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4  d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
+                <div className="col-lg-4 col-md-4  theme-bg-dark d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
                   <div className="bg-primary  px-4 py-4">
-                    <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold pb-1">Get in Touch</p>
+                    <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold pt-3">Get in Touch</p>
                     <ContactForm
                       inputClass="form-control mb-0 rounded-0 "
-                      buttonClass="btn btn-light px-4"
+                      buttonClass="btn btn-light px-4 mb-4"
                     />
                   </div>
 
