@@ -15582,7 +15582,7 @@ h2 {
 
 .section-2 h2,
 section h2 {
-  font-size: 2rem !important;
+  font-size: 2rem !important; 
   font-weight: 600 !important;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
