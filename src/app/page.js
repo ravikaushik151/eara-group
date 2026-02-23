@@ -367,7 +367,7 @@ export default function Home() {
                     loading="lazy"
                     width={578}
                     height={200}
-                    style={{ minHeight: "320px", objectFit: "cover" }}
+                    style={{  objectFit: "cover" }}
                     className="w-100 h-auto object-cover rounded-0"
                   />
 

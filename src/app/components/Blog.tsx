@@ -194,7 +194,7 @@ export default function Blog() {
                                                 alt={post.title}
                                                 width={500}
                                                 height={500}
-                                                style={{ minHeight: "250px", objectFit: "cover" }}
+                                                style={{  objectFit: "cover" }}
                                             />
                                         </Link>
                                     </div>
