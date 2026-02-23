@@ -19,7 +19,7 @@ export default function LatestBlogs() {
                             width={578}
                             height={200}
                             style={{ minHeight: "250px", objectFit: "cover" }}
-                            className="w-100 h-auto object-cover"
+                            className="w-100 h-auto object-cover rounded-0"
                         />
                         <div className="content">
                             {/* Agar detail page banana ho to Link use karo */}

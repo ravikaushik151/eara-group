@@ -82,8 +82,8 @@ export default function Footer() {
                 <div className="col-lg-3 col-md-3  d-flex justify-content-center py-5" data-wow-delay="300ms">
                   <div className="">
                     <div className="">
-                      <p className="  fs-6 small text-uppercase m-center fw-bold">Quick Links</p>
-                      <div className="ps-md-4 m-center">
+                      <p className=" text-center fs-6 small text-uppercase m-center fw-bold">Quick Links</p>
+                      <div className="text-center m-center">
                         <Link href="./" className="text-decoration-none  d-block text-dark mb-2">
                           Home
                         </Link>
@@ -151,12 +151,12 @@ export default function Footer() {
       <div className="pt-3 bg-primary" style={{ overflow: 'hidden' }}>
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-12">
               <div className="site-footer__bottom-inner">
                 <p className="text-center text-white">© {new Date().getFullYear()} Eara Group. All rights reserved. Digital Partner : <Link href="https://www.imsolutions.co/" className="f-link text-white" target="_blank">IM Solutions</Link></p>
               </div>
             </div>
-            <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end px-3 px-md-0">
+            {/* <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end px-3 px-md-0">
               <p className="d-flex flex-wrap gap-1 justify-content-center justify-content-md-end text-center text-md-end ">
 
 
@@ -206,7 +206,7 @@ export default function Footer() {
                 </Link>
               </p>
 
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

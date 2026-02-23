@@ -14,17 +14,17 @@ export default function About() {
 
   return (
     <>
-      {/* <div id="carouselExampleDark" className="header-section ">
+      <div id="carouselExampleDark" className="header-section ">
         <div className="row">
           <div className="col-md-12">
             <div className="image-container">
               <Image
-                src="/images/About_new copy_Eara.webp"
+                src="/images/Abouts us_EARA.webp"
                 height={2880}
                 width={1920}
                 className="img-fluid masterpiece"
                 alt="masterpiece"
-                style={{ objectPosition: "top" }}
+                style={{ objectPosition: "bottom" }}
               />
               <div className="overlay2 ">
                 <div className="text-white d-block text-brown">
@@ -48,9 +48,9 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div> 
 
-      <div id="carouselExampleDark" className="header-section position-relative">
+      {/* <div id="carouselExampleDark" className="header-section position-relative">
         <div className="row">
           <div className="col-md-12">
             <div className="video-container position-relative">
@@ -88,7 +88,7 @@ export default function About() {
                 <source src="/images/abou-mobile.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              {/* ✅ Overlay */}
+              
               <div className="overlay2 position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-brown">
                 <h1 className="text-center fs-1 mb-3 text-uppercase">About Us</h1>
 
@@ -96,7 +96,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <section className="theme-bg-light section pb-0" id="TOP">
         <div className="container-fluid">

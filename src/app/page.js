@@ -99,7 +99,7 @@ export default function Home() {
       <main className="main-wrapper">
         <h1 className="d-none" style={{ display: "none" }}>Eara Group</h1>
         <div className="overflow-clip" id="main-slider">
-          <div
+          {/* <div
             id="carouselExampleDark"
             className="header-section position-relative"
           >
@@ -109,7 +109,7 @@ export default function Home() {
                   className="video-container position-relative "
                   style={{ lineHeight: "0 !important" }}
                 >
-                  {/* ✅ Background video */}
+                 
 
                   <video
                     className="w-100 h-100 object-fit-cover d-none d-md-block"
@@ -166,8 +166,44 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div> */}
+          <div
+            id="carouselExampleDark"
+            className="header-section position-relative"
+          >
+            <div className="row">
+              <div className="col-md-12">
+                <div
+                  className="image-container position-relative"
+                  style={{ lineHeight: "0" }}
+                >
+                  {/* Desktop Image */}
+                  <img
+                    src="/images/HomePG_Eara.webp"
+                    alt="Banner"
+                    className="w-100 d-none d-md-block"
+                    style={{
+                      height: "100%",
+                      objectFit: "cover",
+                      width: "100%",
+                    }}
+                  />
+
+                  {/* Mobile Image */}
+                  <img
+                    src="/images/HomePG_Eara.webp"
+                    alt="Banner"
+                    className="w-100 d-md-none"
+                    style={{
+                      height: "100vh",
+                      objectFit: "cover",
+                      width: "100%",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          {/* <MicroHomeHeroSlider /> */}
         </div>
         <div id="scroll-more">
           <section className="section-1 px-md-5 px-3 theme-bg-light homehome">
@@ -332,7 +368,7 @@ export default function Home() {
                     width={578}
                     height={200}
                     style={{ minHeight: "320px", objectFit: "cover" }}
-                    className="w-100 h-auto object-cover"
+                    className="w-100 h-auto object-cover rounded-0"
                   />
 
                   <div className="content">
