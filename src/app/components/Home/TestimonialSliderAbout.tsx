@@ -42,7 +42,9 @@ const TestimonialSlider = ({
 }) => {
   return (
     <section className={sectionClass}>
-      <h2 className={headingClass}>SUCCESS STORIES </h2>
+      <div className='container'>
+        <div className="row">
+ <h2 className={headingClass}>SUCCESS STORIES </h2>
 
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -65,6 +67,9 @@ const TestimonialSlider = ({
           </SwiperSlide>
         ))}
       </Swiper>
+        </div>
+      </div>
+     
     </section>
   );
 };

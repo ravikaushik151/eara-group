@@ -257,7 +257,7 @@ export default function About() {
 
 
       <TestimonialSlider
-         sectionClass = "px-md-5 px-3 bg-light theme-bg-light testimonials-light"
+         sectionClass = " px-3 bg-light theme-bg-light testimonials-light"
   headingClass = "text-center mb-4 fw-bold theme-color-light"
   cardClass = "info-box px-5 py-5 bg-white theme-bg-dark shadow-sm h-100 rounded d-flex flex-column justify-content-between mb-md-5"
   textClass = "theme-color-dark my-3 lh-lg"
