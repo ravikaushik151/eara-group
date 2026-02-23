@@ -206,12 +206,12 @@ export default function Home() {
           </div>
         </div>
         <div id="scroll-more">
-          <section className="section-1 px-md-5 px-3 theme-bg-light homehome">
+          <section className="section-1  px-3 theme-bg-light homehome">
             <div className="container">
               <div className="row ">
                 <div className="col-md-5 offset-md-6 ">
                   <h2 className="mb-0 theme-color-dark">
-                    Green Thinking.<br/> Luxurious Living.
+                    Green Thinking.<br /> Luxurious Living.
                   </h2>
                   <span className="fs-4 theme-color-dark">
                     Because true luxury is not loud. It&rsquo;s peaceful.
@@ -230,10 +230,10 @@ export default function Home() {
                     planned with precision, combining modern infrastructure,
                     long-term value, and green living at its core.
                   </p>
-                  <div className="text-start m-center mb-md-5 ">
+                  <div className="text-start m-center mb-md-5 pb-4">
                     <Link
                       href="/about"
-                      className="btn btn-primary  border mt-1 mb-md-5 "
+                      className="btn btn-primary  border mt-1 mt-md-3  mb-md-5 "
                     >
                       {" "}
                       Explore More
@@ -264,7 +264,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="row align-items-center">
-                  <div className="col-md-6 px-md-0 text-center">
+                  <div className="col-md-6 px-md-5 px-md-0 text-center">
                     <ImageCompare
                       beforeImg="/images/upcoming-projects.webp"
                       afterImg="/images/upcoming-projects.avif"
@@ -272,7 +272,7 @@ export default function Home() {
 
                   </div>
                   <div
-                    className="col-md-6 px-md-5 px-3 py-3 d-flex align-items-center"
+                    className="col-md-6 px-md-3 px-3 py-3 d-flex align-items-center"
                     data-aos="fade-left"
                     data-aos-duration={1500}
                   >
@@ -355,44 +355,47 @@ export default function Home() {
           <TestimonialSlider />
           {/* Section 4: Blog Section */}
 
-          <section className="px-md-5 px-3 theme-bg-light blog">
-            <h2 className="text-center theme-color-dark">LATEST BLOGS</h2>
+          <section className=" px-3 theme-bg-light blog">
+            <div className="container">
+              <h2 className="text-center theme-color-dark">LATEST BLOGS</h2>
 
-            <div className="blog-grid">
-              {posts.slice(0, 3).map((post) => (
-                <div key={post.slug} className="blog-card theme-bg-dark">
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    loading="lazy"
-                    width={578}
-                    height={200}
-                    style={{  objectFit: "cover" }}
-                    className="w-100 h-auto object-cover rounded-0"
-                  />
+              <div className="blog-grid">
+                {posts.slice(0, 3).map((post) => (
+                  <div key={post.slug} className="blog-card theme-bg-dark">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      loading="lazy"
+                      width={578}
+                      height={200}
+                      style={{ objectFit: "cover" }}
+                      className="w-100 h-auto object-cover rounded-0"
+                    />
 
-                  <div className="content">
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="text-decoration-none"
-                    >
-                      <h4
-                        className="theme-color-light text-center cursor-pointer fs-5"
-                        style={{ fontWeight: 600 }}
+                    <div className="content">
+                      <Link
+                        href={`/blog/${post.slug}`}
+                        className="text-decoration-none"
                       >
-                        {post.title}
-                      </h4>
-                    </Link>
+                        <h4
+                          className="theme-color-light text-center cursor-pointer fs-5"
+                          style={{ fontWeight: 600 }}
+                        >
+                          {post.title}
+                        </h4>
+                      </Link>
 
 
-                    <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-                    <div className="text-center pt-5 mb-3 my-3 small mt-auto">
-                      <Link href={`/blog/${post.slug}`} className="btn btn-primary">Read More</Link>
+                      <p className=' mb-0 theme-color-light' dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                      <div className="text-center pt-5 mb-3 my-3 small mt-auto">
+                        <Link href={`/blog/${post.slug}`} className="btn btn-primary">Read More</Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+
           </section>
         </div>
       </main>

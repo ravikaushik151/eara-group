@@ -26,15 +26,15 @@ const coreValues = [
 export default function CoreValuesGrid() {
   return (
     <section className="lifestyle-section section theme-bg-light">
-      <div className="container-fluid">
-        <div className="row px-md-5 justify-content-center">
+      <div className="container">
+        <div className="row  justify-content-center">
                     <div className="title text-center mb-3">
                         <h2 className="text-black mb-4 theme-color-dark fw-bold">
                             Our Core Values
                         </h2>
                     </div>
                 </div>
-        <div className="row px-md-5 g-4">
+        <div className="row  g-4">
           {coreValues.map((item, index) => (
             <div className="col-lg-3 col-md-6 col-12" key={index}>
               <div className="corevalue-card">
