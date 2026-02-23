@@ -28,7 +28,7 @@ const testimonials = [
     name: "Suresh Nair",
   },
   {
-    text: "What stood out to me was EARA's commitment to sustainability. Amidst Nature isn't just another real estate project — it's a green investment for future generations. I'm happy to be part of something so mindful and long-term.",
+    text: "What stood out to me was EARA's commitment to sustainability. Amidst Nature isn't just another real estate project, it's a green investment for future generations. I'm happy to be part of something so mindful and long-term.",
     name: "Ananya Reddy",
   },
 ];
