@@ -209,7 +209,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 hr {
@@ -15582,7 +15582,7 @@ h2 {
 
 .section-2 h2,
 section h2 {
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
   font-weight: 600 !important;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -15590,7 +15590,7 @@ section h2 {
   margin-bottom: 40px;
   line-height: 1.25 !important;
 }
-
+.fs-4 {font-size: 1.25rem !important;}
 .text-bg-dark {
   background: #292564 !important;
 }
