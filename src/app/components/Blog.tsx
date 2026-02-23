@@ -41,7 +41,7 @@ const staticPosts: Post[] = [
         title: "How to Choose Premium Villa Plots in Kanakapura Road",
 
         excerpt:
-            "Investing in Serenity: Why Nature-Focused Developments Promise Better ReReal estate investment has evolved far beyond square footage and price tags. Today&rsquo;s most successful investors ",
+            "Investing in Serenity: Why Nature-Focused Developments Promise Better Real estate investment has evolved far beyond square footage and price tags. Today&rsquo;s most successful investors ",
           image: "/images/luxury-villa-plots-kaggalipura-2).webp",
         date: "2026-01-02",
     },

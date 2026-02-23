@@ -101,6 +101,7 @@ export default function About() {
       <section className="theme-bg-light section pb-0" id="TOP">
         <div className="container-fluid">
           <div className="row">
+           
             <div className="col-md-12">
               <div className=" text-center ">
                 <h2
@@ -117,10 +118,13 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-4 aboutabout theme-bg-light">
+      <section className="py-4  theme-bg-light mb-4">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 offset-md-6 pt-4 py-5 d-flex align-items-center">
+             <div className="col-md-6">
+              <Image src="/images/About_us2.webp" className="img-fluid p-3" width={636} height={421} alt="about" />
+            </div>
+            <div className="col-md-6  pt-4 py-5 d-flex align-items-center">
               <div>
                 <h2 className="mb-2 theme-color-dark fs-2 text-center">About Us</h2>
                 <p className="mb-2 theme-color-dark">
