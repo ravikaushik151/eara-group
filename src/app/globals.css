@@ -15248,7 +15248,7 @@ h2 {
 }
 
 .blog-card p {
-  font-size: 16px;
+  font-size: 14px !important;
   color: #555;
 }
 
@@ -15468,7 +15468,7 @@ h2 {
 
 .footer-heading {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
