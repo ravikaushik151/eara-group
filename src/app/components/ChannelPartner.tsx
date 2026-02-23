@@ -191,16 +191,26 @@ export default function ChannelPartner() {
                                 </p>
                             </div>
                         </div> */}
-                        <div className="col-lg-6 p-4">
-                            <div className="  rounded-2  ">
+                        <div className="col-lg-4 p-4">
+                            <div className="    ">
                                 {/* <h5 className="text-uppercase mb-0 theme-color-dark text-center" style={{ color: '#282563' }}>
                                     Partner With Us
                                 </h5>
                                 <p className='text-center theme-color-dark small'> (Scan to connect with new opportunities.)</p> */}
                                 <Image src="/img/QR.png" className='img-fluid' width={1024} height={1024} alt="channel partner qr" />
-                                {/* <form onSubmit={handleSubmit}>
+                               
+
+                            </div>
+                        </div>
+
+                        <div className="col-lg-5  d-flex align-items-center">
+                            <div className=" border    px-3 py-5">
+                               
+                                <form onSubmit={handleSubmit}>
                                     <div className="row">
-                                      
+                                      <div className="col-md-12">
+                                        <p className='text-center fw-bold fs-5 '>Partner With Us</p>
+                                      </div>
                                         <div className="col-md-6 form-group mb-3">
                                             <label htmlFor="cpFirmName" className="form-label visually-hidden">CP/Firm Name</label>
                                             <input
@@ -339,7 +349,7 @@ export default function ChannelPartner() {
 
                                     {note && <p className={`mt-2 text-center ${success ? 'text-success' : 'text-danger'}`} style={{ fontWeight: 600 }}>{note}</p>}
                                     {success && <p className="text-success mt-2 text-center">✅ Thank you! Your referral has been submitted.</p>}
-                                </form> */}
+                                </form> 
 
                             </div>
                         </div>
