@@ -34,11 +34,11 @@ export async function generateMetadata({ params }) {
          follow: true,
          nocache: true,
          googleBot: {
-           index: true,
-           follow: true,
-           'max-video-preview': -1,
-           'max-image-preview': 'large',
-           'max-snippet': -1,
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
          },
       },
       alternates: {
@@ -96,21 +96,39 @@ export default async function BlogPost({ params }) {
          )}
 
          {/* Header */}
-         <div className="header-section">
-            <div className="image-container">
-               <Image
-                  src="/images/blog-header.avif"
-                  height={2880}
-                  width={1920}
-                  className="img-fluid masterpiece"
-                  alt="Blog Header"
-                  priority
-               />
-               <div className="overlay2">
-                  <p className="text-center fs-1 text-white text-uppercase">Blog</p>
-               </div>
-            </div>
-         </div>
+        <div id="blogheader" className="header-section">
+                        <div className='row'>
+                            <div className='col-md-12'>
+                                <div className="image-container">
+                                    <Image
+                                        src="/images/blog-header.avif"
+                                        height={2880}
+                                        width={1920}
+                                        className='img-fluid masterpiece d-md-block d-none'
+                                        alt="blog"
+                                        id='blogheader'
+                                        style={{ objectPosition: '100% 100%' }}
+                                    />
+                                    <Image
+                                        src="/images/Mobile_ban_Eara.webp"
+                                        height={2880}
+                                        width={1920}
+                                        className='img-fluid  d-md-none'
+                                        alt="blog"
+                                        id='blogheadermobile'
+                                        style={{ objectPosition: '100% 100%' }}
+                                    />
+        
+                                    <div className="overlay2 ">
+                                        <div className="text-white d-block">
+                                            <h1 className="text-center d-block fs-1 mb-0 text-uppercase"> Blog</h1>
+                                            {/* Removed commented-out Link */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
          {/* Blog Content */}
          <section className="section-padding theme-bg-light blogs">
@@ -123,7 +141,7 @@ export default async function BlogPost({ params }) {
                   height={607}
                />
 
-               <h1 className="fs-2 fw-bold mt-4 theme-color-dark">
+               <h1 className="fs-2 fw-bold mt-4 theme-color-dark m-center">
                   {post.h1 || post.title}
                </h1>
 

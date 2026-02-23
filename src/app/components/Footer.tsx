@@ -33,7 +33,7 @@ export default function Footer() {
                     <div className="">
                       <p className=" fs-6 small text-uppercase m-center fw-bold">OUR ADDRESS</p>
                     </div>
-                    <p className=" text-dark mb-0 pe-md-4">MM-201, 2nd Floor, MANYA MANSION #11, Blue Bells Street, 7th Main, 7th Cross, Rajeevgandhinagar, Bangalore-560097</p>
+                    <p className=" text-dark mb-0 pe-md-4 text-start m-center">MM-201, 2nd Floor, MANYA MANSION #11, Blue Bells Street, 7th Main, 7th Cross, Rajeevgandhinagar, Bangalore-560097</p>
                     <ul className=" list-unstyled my-3  m-center">
                       <li className="d-flex align-items-center mb-2  justify-content-md-start justify-content-center">
                         <div className="icon ">
@@ -133,8 +133,8 @@ export default function Footer() {
 
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4  d-flex bg-primary py-4 justify-content-center align-items-center" data-wow-delay="400ms">
-                  <div className="">
+                <div className="col-lg-4 col-md-4 py-4 d-flex  justify-content-center align-items-center" data-wow-delay="400ms">
+                  <div className="bg-primary px-3 py-3">
                     <p className=" text-white fs-6 small text-uppercase m-center text-center fw-bold">Get in Touch</p>
                     <ContactForm
                       inputClass="form-control mb-0 rounded-0"
