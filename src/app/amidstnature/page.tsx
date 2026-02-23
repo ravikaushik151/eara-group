@@ -549,7 +549,7 @@ export default function Home() {
           </section>
 
 
-          <MasterPlanSection />
+          {/* <MasterPlanSection /> */}
           <Gallery />
           {/*  <Construction />*/}
 

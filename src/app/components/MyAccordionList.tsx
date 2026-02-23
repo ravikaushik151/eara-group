@@ -43,8 +43,8 @@ export default function LocationGrid({ items }: LocationGridProps) {
                   dangerouslySetInnerHTML={{
                     __html: `
                       .location-list ul { 
-                        list-style: none; 
-                        padding: 0; 
+                        list-style: disc; 
+                        padding: 0 15px; 
                         margin: 0; 
                       }
                       .location-list li { 
