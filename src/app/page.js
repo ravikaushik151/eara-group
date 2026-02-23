@@ -208,8 +208,8 @@ export default function Home() {
         <div id="scroll-more">
           <section className="section-1 px-md-5 px-3 theme-bg-light homehome">
             <div className="container">
-              <div className="row py-md-5">
-                <div className="col-md-5 offset-md-6 py-lg-5">
+              <div className="row ">
+                <div className="col-md-5 offset-md-6 ">
                   <h2 className="mb-0 theme-color-dark">
                     Green Thinking. Luxurious Living.
                   </h2>
@@ -230,10 +230,10 @@ export default function Home() {
                     planned with precision, combining modern infrastructure,
                     long-term value, and green living at its core.
                   </p>
-                  <div className="text-start m-center">
+                  <div className="text-start m-center mb-md-5 ">
                     <Link
                       href="/about"
-                      className="btn btn-primary  border mt-1"
+                      className="btn btn-primary  border mt-1 mb-md-5 "
                     >
                       {" "}
                       Explore More
