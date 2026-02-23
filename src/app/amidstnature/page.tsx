@@ -19,6 +19,7 @@ import MicroHomeHeroSlider from "../components/Microsite/MicroHomeHeroSlider";
 import Clubhouse from "../components/ClubhouseMarquee";
 import MasterPlanSection from "../components/Microsite/MasterPlanSection";
 import MyAccordion from "../components/MyAccordion";
+import MyAccordionList from "../components/MyAccordionList";
 import Gallery from "../components/Gallery";
 import Construction from "../components/Construction";
 
@@ -360,7 +361,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Accessibility
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -370,13 +371,13 @@ export default function Home() {
                             <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Comfort.webp" />
                           </div>
                           <div className="services-content px-3 mb-3">
-                            <h4 className="title fs-6 mb-0 text-center py-3">Comfort 
+                            <h4 className="title fs-6 mb-0 text-center py-3">Comfort
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-3 ">
+                      <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
                             <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Community.webp" />
@@ -384,11 +385,11 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Community
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-3 ">
+                      <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
                             <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Freedom.webp" />
@@ -396,11 +397,11 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Freedom
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-3 ">
+                      <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
                             <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Legacy.webp" />
@@ -408,11 +409,11 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Legacy
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
-                       <div className="col-md-3 ">
+                      <div className="col-md-3 ">
                         <div className="services-item shine-animate-item bg-white mb-3">
                           <div className="services-thumb">
                             <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/usp/Open space.webp" />
@@ -420,7 +421,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Open space
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -432,7 +433,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Safety
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -444,7 +445,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Security
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -456,7 +457,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Serenity
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -468,7 +469,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Smart living
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -480,7 +481,7 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Tranquility
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
@@ -492,11 +493,11 @@ export default function Home() {
                           <div className="services-content px-3 mb-3">
                             <h4 className="title fs-6 mb-0 text-center py-3">Wellness
                             </h4>
-                            
+
                           </div>
                         </div>
                       </div>
-                      
+
 
 
 
@@ -550,9 +551,9 @@ export default function Home() {
 
           <MasterPlanSection />
           <Gallery />
-        {/*  <Construction />*/}
+          {/*  <Construction />*/}
 
-          <section className="section_home-connectivity theme-bg-light page-about-mv" id="location">
+          <section className="section_home-connectivity theme-bg-light page-about-mv d-none" id="location">
             <div className="padding-global">
               <div className="container-large">
                 <div className="home-connectivity_content">
@@ -607,100 +608,58 @@ export default function Home() {
                       </div>
 
                     </div>
-                    {/* <div className="home-connectivity_distance-wrapper">
-                      <div className="home-connectivity_distance m-center">
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">
-                              • Art of Living International Center
-                            </div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;7 mins</div>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div className="home-connectivity_distance m-center">
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">
-                              • Vajarahalli Metro Station
-                            </div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;15 mins</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="home-connectivity_distance m-center">
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">
-                              • NICE Road Junction
-                            </div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;10 mins</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="home-connectivity_distance m-center">
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">
-                              • Kumarans School
-                            </div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;10–15 mins</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="home-connectivity_distance m-center">
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">
-                              • Metro Cash & Carry
-                            </div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;20–25 mins</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="home-connectivity_distance m-center">
-                        <div className="home-connectivity_distance-text">
-                          <div className="text-color-offwhite">
-                            <div className="text-size-large theme-color-light m-center">
-                              • Global Village Tech Park
-                            </div>
-                          </div>
-                          <div className="text-color-silvermist">
-                            <div className="text-size-regular theme-color-light m-center">&nbsp;&nbsp;&nbsp;20–25 mins</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <Image
-                      width={800}
-                      height={200}
-                      src="/images/page-6.png"
-                      loading="lazy"
-                      alt=""
-                      className="home-masterplan_img img-fluid bg-transparent mt-3 rounded-3"
-                      style={{ top: "220px", maxHeight: "270px", objectFit: "cover", objectPosition: "bottom bottom", position: "absolute", opacity: ".6" }}
-                    /> */}
                   </div>
                 </div>
               </div>
             </div>
           </section>
+          <section className="section_home-connectivity theme-bg-light page-about-mv" id="location">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <h2
+                    data-animate={1}
+                    className="heading-style-h2 text-color-offwhite theme-color-light m-center text-center"
+                  >
+                    Location
+                  </h2>
+                </div>
+                <div className="row">
+                  <div className="col-md-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.187708608875!2d77.51706043914793!3d12.804854316360881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1759994801277!5m2!1sen!2sin" width="100%" height="380" loading="lazy" ></iframe>
+                    <div className=" mt-3">
+                      <h3
+                        data-animate={1}
+                        className="fs-2 text-color-offwhite theme-color-light m-center mb-3"
+                      >
+                        Located in{" "}
+                        <span className="text-black">
+                          Kaggalipura,
+                        </span>{" "}
+                        Off Kanakapura Main  Road, Bengaluru.
+                      </h3>
+                    </div>
+                    <div className="w-100">
+                      <div className="   m-center lh">
+                        <p className="text-start m-center">
+                          Surrounded by serene greenery and nestled along the city&rsquo;s fast-developing Kanakapura stretch, Amidst Nature is among the most sought-after premium villa plots in Kanakapura Road.
+                        </p>
+                        <p className="text-start  m-center">
+                          For those seeking villa plots in Kaggalipura, this address offers unmatched tranquility and long-term value -  perfectly placed for families and investors alike.
+                        </p>
 
+                        <br />
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <MyAccordionList items={faqItems} />
+              </div>
+            </div>
+          </section>
           <section className="section_home-masterplan theme-bg-light lifestyle-section py-5 d-none" id="master-plan">
             <div className="container">
               <div className="row align-items-center">
