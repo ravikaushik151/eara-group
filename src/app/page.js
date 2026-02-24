@@ -12,6 +12,7 @@ import LatestBlogs from "./components/LatestBlogs";
 import CoreValuesSlider from "./components/CoreValuesSlider";
 import Ongoing from "./components/Ongoing";
 import ImageCompare from "./components/ImageCompare";
+import RealEstateHero from "./components/RealEstateHero";
 export const metadata = {
   title: "Eara Group - Luxury Villa Plots for Sale in Kanakapura Road.",
   description:
@@ -351,7 +352,8 @@ export default function Home() {
 
 
           {/* Section 2: 360 Lifestyle Cards */}
-          <CoreValuesSlider />
+          {/* <CoreValuesSlider /> */}
+          <RealEstateHero />
           <TestimonialSlider />
           {/* Section 4: Blog Section */}
 
