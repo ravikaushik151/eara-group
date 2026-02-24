@@ -106,9 +106,9 @@ export default function Project() {
             </div>
 
             {/* Intro Section */}
-            <section className="py-5 aboutproject theme-bg-light" id="TOP" >
-                <div className="container pt-4">
-                    <div className="row py-md-4">
+            <section className=" aboutproject theme-bg-light" id="TOP" >
+                <div className="container ">
+                    <div className="row py-3">
                         {/* <div className="col-md-6">
                             <Image
                                 alt="Luxury interior"
@@ -119,13 +119,13 @@ export default function Project() {
                                 style={{ objectFit: "cover", marginTop: "0% !important", }}
                             />
                         </div> */}
-                        <div className="col-md-5 ps-lg-4  offset-md-7  d-flex align-items-center">
+                        <div className="col-md-5 ps-lg-4  offset-md-7  d-flex align-items-center ">
                             <div className="mb-md-0">
                                 <h2 className=" theme-color-dark text-center mb-1">Amidst Nature</h2>
                                 <p className="fs-5 theme-color-dark text-center mb-1">
                                     Where <span className="text-success">Green</span> is the New <span className="text-gold">Gold</span>
                                 </p>
-                                <p className="mt-3 theme-color-dark text-center mb-2 ">
+                                <p className=" theme-color-dark text-center mb-2 ">
                                     <strong>
 
                                         Every plot at &ldquo;Amidst Nature is a promise of green mornings, golden silence, and grounded luxury.
