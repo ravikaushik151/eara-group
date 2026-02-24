@@ -35,7 +35,7 @@ export default function Contact() {
 
 
 
-            <section className="section-padding bg-white theme-bg-dark contact">
+            <section className="section-padding bg-white theme-bg-light contact">
                 <div className="container">
 
 
