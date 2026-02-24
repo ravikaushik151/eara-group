@@ -19867,6 +19867,7 @@ footer {
   display: flex;
   flex-direction: column;
   height: 600px;
+  
 }
 
 .hero-menu-item {
@@ -19877,7 +19878,7 @@ footer {
   padding: 0 7% 0 10%;
   display: flex;
   align-items: center;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: background 0.4s ease;
   outline: none;
@@ -19905,10 +19906,10 @@ footer {
 }
 
 .menu-text {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 1.5rem !important;
+  
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   transition: transform 0.4s ease;
   transition: margin 0.35s ease;
 }
@@ -19936,9 +19937,24 @@ footer {
   right: -15px;
 }
 
-.hero-menu-item.active .menu-text {
-  margin-left: 30px;
-}
+
+
+
+  .menu-text {
+    transition: transform 0.35s ease;
+    
+  }
+
+  .hero-menu-item:hover .menu-text {
+  
+     margin: 0 auto;
+  }
+
+  .hero-menu-item.active .menu-text {
+    transform: scale(1.2);
+     margin: 0 auto;
+  }
+  
 
 /* =========================
    RIGHT SLIDER
