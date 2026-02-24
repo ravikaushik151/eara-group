@@ -20006,6 +20006,7 @@ footer {
 
   .menu-text {
     transition: transform 0.35s ease;
+    font-size: 1.25rem !important;
   }
 
   .hero-menu-item:hover .menu-text {
