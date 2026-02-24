@@ -19866,8 +19866,8 @@ footer {
 .hero-menu {
   display: flex;
   flex-direction: column;
-  height: 600px;
-  
+  height: 650px;
+
 }
 
 .hero-menu-item {
@@ -19875,7 +19875,7 @@ footer {
   flex: 1;
   width: 100%;
   border: none;
-  padding: 0 7% 0 10%;
+  /* padding: 0 7% 0 10%; */
   display: flex;
   align-items: center;
   text-align: center;
@@ -19907,7 +19907,7 @@ footer {
 
 .menu-text {
   font-size: 1.5rem !important;
-  
+
   text-transform: uppercase;
   margin: 0 auto;
   transition: transform 0.4s ease;
@@ -19940,27 +19940,27 @@ footer {
 
 
 
-  .menu-text {
-    transition: transform 0.35s ease;
-    
-  }
+.menu-text {
+  transition: transform 0.35s ease;
 
-  .hero-menu-item:hover .menu-text {
-  
-     margin: 0 auto;
-  }
+}
 
-  .hero-menu-item.active .menu-text {
-    transform: scale(1.2);
-     margin: 0 auto;
-  }
-  
+.hero-menu-item:hover .menu-text {
+
+  margin: 0 auto;
+}
+
+.hero-menu-item.active .menu-text {
+  transform: scale(1.2);
+  margin: 0 auto;
+}
+
 
 /* =========================
    RIGHT SLIDER
 ========================= */
 .hero-swiper {
-  height: 600px;
+  height: 650px;
   width: 100%;
   /* Ensures it fills col-md-8 */
   padding: 0 !important;
@@ -20027,14 +20027,15 @@ footer {
 
   .hero-menu-item:hover .menu-text {
     transform: scale(1.08);
-     margin: 0 auto;
+    margin: 0 auto;
   }
 
   .hero-menu-item.active .menu-text {
     transform: scale(1.08);
-     margin: 0 auto;
+    margin: 0 auto;
   }
-    .menu-text {
+
+  .menu-text {
     text-align: center;
     margin: 0 auto;
   }
