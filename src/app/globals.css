@@ -19978,7 +19978,7 @@ footer {
   height: 120%;
   object-fit: cover;
   transition: transform 4s ease-out;
-  object-position: 30% 100%;
+  object-position: bottom center;
   /* Slower, more elegant crawl */
 }
 
@@ -20018,7 +20018,7 @@ footer {
     padding: 25px 20px;
   }
 
-
+.hero-image { object-position:  center;}
 
   .menu-text {
     transition: transform 0.35s ease;

@@ -8,10 +8,10 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const menuItems = [
-  { id: 0, label: "Sustainability", image: "/images/Sustainability_Eara.webp" },
-  { id: 1, label: "Innovation", image: "/images/Innovations_Eara.webp" },
-  { id: 2, label: "Integrity", image: "/images/Integrity_Eara.webp" },
-  { id: 3, label: "Quality", image: "/images/Quality_Eara.webp" },
+  { id: 0, label: "Sustainability", image: "/images/Sustainability.webp" },
+  { id: 1, label: "Innovation", image: "/images/Innovation.webp" },
+  { id: 2, label: "Integrity", image: "/images/Integrity.webp" },
+  { id: 3, label: "Quality", image: "/images/Quallity.webp" },
 ];
 
 export default function RealEstateHero() {
