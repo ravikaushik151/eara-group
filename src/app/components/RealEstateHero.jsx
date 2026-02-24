@@ -86,7 +86,7 @@ export default function RealEstateHero() {
                 </div>
 
                 {/* RIGHT SLIDER */}
-                <div className="hero-slider">
+                <div className="hero-slider p-0">
                     <Swiper
                         modules={[HashNavigation, EffectFade, Controller]}
                         effect="fade"
