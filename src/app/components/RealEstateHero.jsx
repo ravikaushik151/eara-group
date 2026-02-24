@@ -60,7 +60,7 @@ export default function RealEstateHero() {
             <Swiper
               modules={[EffectFade, Autoplay]}
               effect="fade"
-              speed={1000}
+              speed={2000}
               loop={true}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               onSwiper={setSwiperRef}

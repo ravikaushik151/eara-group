@@ -19962,12 +19962,13 @@ footer {
   height: 120%;
   object-fit: cover;
   transition: transform 4s ease-out;
+  object-position: 30% 100%;
   /* Slower, more elegant crawl */
 }
 
 /* Image moving upward */
 .swiper-slide-active .hero-image {
-  transform: translateY(-15%);
+  transform: translateY(-10%);
 }
 
 .white-overlay {
