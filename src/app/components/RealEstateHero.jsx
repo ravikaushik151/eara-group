@@ -8,10 +8,10 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const menuItems = [
-  { id: 0, label: "Sustainability", image: "/images/Sustainability.webp" },
-  { id: 1, label: "Innovation", image: "/images/Innovation.webp" },
-  { id: 2, label: "Integrity", image: "/images/Integrity.webp" },
-  { id: 3, label: "Quality", image: "/images/Quallity.webp" },
+  { id: 0, label: "Sustainability", image: "/images/Sustainability.webp", text: "Creating future-ready communities that respect the land and restore balance with nature.", },
+  { id: 1, label: "Innovation", image: "/images/Innovation.webp", text: "Blending thoughtful design with cutting-edge planning to build smarter, greener spaces.", },
+  { id: 2, label: "Integrity", image: "/images/Integrity.webp", text: "Rooted in transparency and trust, every decision guided by what’s right and reliable.", },
+  { id: 3, label: "Quality", image: "/images/Quallity.webp", text: "Delivering excellence in every detail, from foundation to finish.", },
 ];
 
 export default function RealEstateHero() {
@@ -27,16 +27,16 @@ export default function RealEstateHero() {
   return (
     <section className="hero-section p-0">
       <div className="container-fluid p-0 section-start">
-         <div className="row  justify-content-center">
-                    <div className="title text-center mb-3">
-                        <h2 className="text-black  theme-color-dark fw-bold">
-                            Our Core Values
-                        </h2>
-                    </div>
-                </div>
+        <div className="row  justify-content-center">
+          <div className="title text-center mb-3">
+            <h2 className="text-black  theme-color-dark fw-bold">
+              Our Core Values
+            </h2>
+          </div>
+        </div>
         {/* g-0 is critical to remove the gap between menu and slider */}
         <div className="row g-0 align-items-stretch">
-          
+
           {/* LEFT MENU - col-md-4 ensures a 1/3 width */}
           <div className="col-md-4 ps-md-5">
             <div className="hero-menu ps-md-5">
@@ -66,7 +66,7 @@ export default function RealEstateHero() {
               onSwiper={setSwiperRef}
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
               className="hero-swiper p-0"
-             
+
             >
               {menuItems.map((item, index) => (
                 <SwiperSlide key={index}>
@@ -76,7 +76,13 @@ export default function RealEstateHero() {
                       alt={item.label}
                       className="hero-image"
                     />
-                    <div className="white-overlay"></div>
+                    <div className="white-overlay">
+                      <div className="">
+                        <p className="text-white fs-5 position-absolute bottom-0 start-50 translate-middle-x w-100 text-center px-3 px-md-5 mb-5">
+                          {item.text}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
