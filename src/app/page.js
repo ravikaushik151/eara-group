@@ -266,10 +266,11 @@ export default function Home() {
                 </div>
                 <div className="row align-items-center">
                   <div className="col-md-6 px-md-5 px-md-0 text-center">
-                    <ImageCompare
+                    <Image src="/images/upcoming-projects.avif" className="img-luid" width={550} height={470} alt="ongoing projects" />
+                    {/* <ImageCompare
                       beforeImg="/images/upcoming-projects.webp"
                       afterImg="/images/upcoming-projects.avif"
-                    />
+                    /> */}
 
                   </div>
                   <div
